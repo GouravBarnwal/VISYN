@@ -1,0 +1,15 @@
+.git
+.github
+.venv
+venv
+env
+data
+.vscode
+__pycache__
+*.pyc
+*.pyo
+*.log
+.ipynb_checkpoints
+artifacts/evaluation/localization/visualizations
+artifacts/evaluation/localization/visualizations_hybrid
+artifacts/patch_banks
