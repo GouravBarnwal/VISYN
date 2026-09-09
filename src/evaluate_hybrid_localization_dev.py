@@ -500,7 +500,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — HYBRID MOBILENET L8 LOCALIZATION"
+        "VISYN — HYBRID MOBILENET L8 LOCALIZATION"
     )
     print("=" * 72)
 

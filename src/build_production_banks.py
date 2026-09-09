@@ -193,7 +193,7 @@ def validate_bank(
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — PRODUCTION REFERENCE BANK BUILDER")
+    print("VISYN — PRODUCTION REFERENCE BANK BUILDER")
     print("=" * 72)
 
     split = load_json(

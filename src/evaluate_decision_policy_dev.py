@@ -73,7 +73,7 @@ def main():
     total_defect = Counter()
 
     print("=" * 72)
-    print("VISIONFORGE — FULL DEVELOPMENT DECISION POLICY EVALUATION")
+    print("VISYN — FULL DEVELOPMENT DECISION POLICY EVALUATION")
     print("=" * 72)
     print()
     print("Score: TOP5")

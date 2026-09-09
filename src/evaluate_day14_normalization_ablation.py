@@ -71,7 +71,7 @@ def load_model():
 
 def preprocess_image(image_path):
     """
-    Canonical VisionForge preprocessing.
+    Canonical VISYN preprocessing.
 
     This MUST remain identical to the established
     Day 11 production/evaluation protocol.
@@ -370,7 +370,7 @@ def calculate_metrics(
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — DAY 14 NORMALIZATION ABLATION")
+    print("VISYN — DAY 14 NORMALIZATION ABLATION")
     print("=" * 72)
 
     print()

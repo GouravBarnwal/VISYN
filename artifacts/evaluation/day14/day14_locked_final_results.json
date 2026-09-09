@@ -1,5 +1,5 @@
 {
-  "experiment": "VisionForge Day 14 corrected locked final-set evaluation",
+  "experiment": "VISYN Day 14 corrected locked final-set evaluation",
   "final_test_used": true,
   "final_test_used_for_tuning": false,
   "preprocessing": {

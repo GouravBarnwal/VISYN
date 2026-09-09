@@ -101,7 +101,7 @@ def build_inspection_result(
 if __name__ == "__main__":
 
     print("=" * 72)
-    print("VISIONFORGE — INSPECTION RESULT TEST")
+    print("VISYN — INSPECTION RESULT TEST")
     print("=" * 72)
     print()
 

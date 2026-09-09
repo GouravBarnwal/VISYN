@@ -172,7 +172,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — SPATIAL MOBILENET L8 PATCH BANKS"
+        "VISYN — SPATIAL MOBILENET L8 PATCH BANKS"
     )
     print("=" * 72)
 

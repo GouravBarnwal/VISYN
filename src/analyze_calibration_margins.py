@@ -47,7 +47,7 @@ def main():
     results = {}
 
     print("=" * 72)
-    print("VISIONFORGE — CALIBRATION MARGIN ANALYSIS")
+    print("VISYN — CALIBRATION MARGIN ANALYSIS")
     print("=" * 72)
     print()
     print("Threshold: P99.0")

@@ -9,7 +9,7 @@ from PIL import Image
 from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 
 # ============================================================
-# VISIONFORGE — DAY 16
+# VISYN — DAY 16
 # BATCHED FEATURE EXTRACTION BENCHMARK
 # ============================================================
 
@@ -370,7 +370,7 @@ def check_equivalence(
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 16")
+    print("VISYN — DAY 16")
     print("BATCHED FEATURE EXTRACTION BENCHMARK")
     print("=" * 72)
 

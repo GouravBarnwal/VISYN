@@ -34,7 +34,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — CALIBRATION CANDIDATE ANALYSIS"
+        "VISYN — CALIBRATION CANDIDATE ANALYSIS"
     )
     print("=" * 72)
 

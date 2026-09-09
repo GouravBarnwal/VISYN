@@ -296,7 +296,7 @@ def evaluate(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "320x320 REPRODUCTION"
     )
     print("=" * 80)

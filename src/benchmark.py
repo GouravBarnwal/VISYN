@@ -280,7 +280,7 @@ def print_timing(times):
 def main():
 
     print("=" * 60)
-    print("VISIONFORGE CPU BENCHMARK")
+    print("VISYN CPU BENCHMARK")
     print("=" * 60)
 
     images = get_test_images()

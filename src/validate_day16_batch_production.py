@@ -17,7 +17,7 @@ from mobilenet_batch_extractor import (
 
 
 # ============================================================
-# VISIONFORGE — DAY 16
+# VISYN — DAY 16
 # BATCHED PRODUCTION PATH VALIDATION
 # ============================================================
 
@@ -384,7 +384,7 @@ def classify(
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 16")
+    print("VISYN — DAY 16")
     print("BATCHED PRODUCTION PATH VALIDATION")
     print("=" * 72)
 

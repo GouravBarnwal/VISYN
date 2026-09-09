@@ -469,7 +469,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — END-TO-END DEVELOPMENT "
+        "VISYN — END-TO-END DEVELOPMENT "
         "INSPECTION TEST"
     )
     print("=" * 72)

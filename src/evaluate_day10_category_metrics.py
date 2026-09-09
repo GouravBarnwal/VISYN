@@ -146,7 +146,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 10 CATEGORY-LEVEL EVALUATION"
+        "VISYN — DAY 10 CATEGORY-LEVEL EVALUATION"
     )
     print("=" * 72)
 

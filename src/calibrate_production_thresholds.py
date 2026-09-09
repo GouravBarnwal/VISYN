@@ -62,7 +62,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — PRODUCTION SCORE CALIBRATION"
+        "VISYN — PRODUCTION SCORE CALIBRATION"
     )
     print(
         "NORMAL DEVELOPMENT ONLY"

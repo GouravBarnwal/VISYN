@@ -129,7 +129,7 @@ def main():
         )
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 10 SUMMARY")
+    print("VISYN — DAY 10 SUMMARY")
     print("=" * 72)
     print()
     print("Category macro AUROC:")

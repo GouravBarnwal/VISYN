@@ -75,7 +75,7 @@ def main():
     manifest = load_manifest()
 
     print("=" * 72)
-    print("VISIONFORGE — PRODUCTION ARTIFACT INTEGRITY")
+    print("VISYN — PRODUCTION ARTIFACT INTEGRITY")
     print("=" * 72)
 
     failures = []

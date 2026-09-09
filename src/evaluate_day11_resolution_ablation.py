@@ -327,7 +327,7 @@ def calculate_metrics(
 def main():
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 11 RESOLUTION ABLATION"
+        "VISYN — DAY 11 RESOLUTION ABLATION"
     )
     print("=" * 72)
 

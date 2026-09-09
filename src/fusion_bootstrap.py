@@ -350,7 +350,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — FUSION BOOTSTRAP STABILITY"
+        "VISYN — FUSION BOOTSTRAP STABILITY"
     )
     print("=" * 72)
 

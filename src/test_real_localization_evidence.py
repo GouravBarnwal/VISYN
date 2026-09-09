@@ -260,7 +260,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — REAL LOCALIZATION "
+        "VISYN — REAL LOCALIZATION "
         "EVIDENCE INTEGRATION TEST"
     )
     print("=" * 72)

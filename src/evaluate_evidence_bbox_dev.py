@@ -921,7 +921,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — LOCALIZATION "
+        "VISYN — LOCALIZATION "
         "BOUNDING-BOX EVIDENCE — DEVELOPMENT SET"
     )
     print("=" * 72)

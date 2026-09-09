@@ -9,7 +9,7 @@ from src.production_config import (
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — PRODUCTION STARTUP TEST")
+    print("VISYN — PRODUCTION STARTUP TEST")
     print("=" * 72)
 
     print()

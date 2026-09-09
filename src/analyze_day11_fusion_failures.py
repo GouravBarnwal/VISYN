@@ -38,7 +38,7 @@ def main():
 
     print()
     print("=" * 72)
-    print("VISIONFORGE — DAY 11 FUSION FAILURE ANALYSIS")
+    print("VISYN — DAY 11 FUSION FAILURE ANALYSIS")
     print("=" * 72)
     print()
     print("Comparison: 50/50 L4+L8 fusion vs L8")

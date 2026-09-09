@@ -6,7 +6,7 @@ from PIL import Image
 
 
 # ============================================================
-# IMPORT VISIONFORGE LOCALIZATION EVIDENCE MODULE
+# IMPORT VISYN LOCALIZATION EVIDENCE MODULE
 # ============================================================
 
 sys.path.insert(
@@ -43,7 +43,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — LOCALIZATION EVIDENCE TEST"
+        "VISYN — LOCALIZATION EVIDENCE TEST"
     )
     print("=" * 72)
 

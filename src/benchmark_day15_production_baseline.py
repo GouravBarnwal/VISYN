@@ -9,7 +9,7 @@ from PIL import Image
 from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 
 # ============================================================
-# VISIONFORGE — DAY 15
+# VISYN — DAY 15
 # PRODUCTION LATENCY BASELINE
 # ============================================================
 
@@ -90,7 +90,7 @@ def preprocess_image(image_path):
     image = Image.open(image_path).convert("RGB")
 
     # IMPORTANT:
-    # This is the frozen VisionForge protocol.
+    # This is the frozen VISYN protocol.
     # Direct resize — no center crop.
     image = image.resize(
         (IMAGE_SIZE, IMAGE_SIZE),
@@ -501,7 +501,7 @@ def benchmark_category(
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 15 " "PRODUCTION LATENCY BASELINE")
+    print("VISYN — DAY 15 " "PRODUCTION LATENCY BASELINE")
     print("=" * 72)
 
     print()
@@ -527,7 +527,7 @@ def main():
     print(f"Model load time: " f"{model_load_time:.2f} ms")
 
     results = {
-        "experiment": ("VisionForge Day 15 " "production latency baseline"),
+        "experiment": ("VISYN Day 15 " "production latency baseline"),
         "device": "CPU",
         "model": "MobileNetV3-Small",
         "layers": ["L4", "L8"],

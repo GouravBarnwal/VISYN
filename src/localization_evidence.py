@@ -5,7 +5,7 @@ import numpy as np
 
 
 # ============================================================
-# VISIONFORGE — LOCALIZATION EVIDENCE
+# VISYN — LOCALIZATION EVIDENCE
 # ============================================================
 #
 # Converts an anomaly heatmap into structured inspection

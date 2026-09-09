@@ -294,7 +294,7 @@ def calculate_metrics(
 
 def main():
     print("=" * 80)
-    print("VISIONFORGE — ALL-CATEGORY " "224 vs 320 RESOLUTION COMPARISON")
+    print("VISYN — ALL-CATEGORY " "224 vs 320 RESOLUTION COMPARISON")
     print("=" * 80)
     print(f"Dataset root: {DATA_ROOT}")
     print(f"Categories: {len(CATEGORIES)}")

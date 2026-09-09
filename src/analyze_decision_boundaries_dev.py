@@ -62,7 +62,7 @@ def main():
     results = {}
 
     print("=" * 72)
-    print("VISIONFORGE — DECISION BOUNDARY ANALYSIS")
+    print("VISYN — DECISION BOUNDARY ANALYSIS")
     print("=" * 72)
     print()
     print("Normal source: normal development only")

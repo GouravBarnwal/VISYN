@@ -356,7 +356,7 @@ def evaluate_layer_configuration(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "320x320 FEATURE-LAYER TUNING"
     )
     print("=" * 80)

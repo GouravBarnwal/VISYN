@@ -1,5 +1,5 @@
 {
-  "experiment": "VisionForge Day 15 production latency baseline",
+  "experiment": "VISYN Day 15 production latency baseline",
   "device": "CPU",
   "model": "MobileNetV3-Small",
   "layers": [

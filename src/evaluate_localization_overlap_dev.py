@@ -557,7 +557,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — LOCALIZATION OVERLAP ANALYSIS"
+        "VISYN — LOCALIZATION OVERLAP ANALYSIS"
     )
     print("=" * 72)
 

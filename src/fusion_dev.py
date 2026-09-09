@@ -223,7 +223,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — GLOBAL DEVELOPMENT FUSION SELECTION"
+        "VISYN — GLOBAL DEVELOPMENT FUSION SELECTION"
     )
     print("=" * 72)
 

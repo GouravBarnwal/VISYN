@@ -508,7 +508,7 @@ def benchmark_category(
 
 def main():
     print("=" * 70)
-    print("VISIONFORGE — DAY 14 ARCHITECTURE COST BENCHMARK")
+    print("VISYN — DAY 14 ARCHITECTURE COST BENCHMARK")
     print("=" * 70)
 
     print(

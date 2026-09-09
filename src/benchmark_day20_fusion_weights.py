@@ -288,7 +288,7 @@ def calculate_metrics(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "L4/L8 FUSION WEIGHT TUNING"
     )
     print("=" * 80)

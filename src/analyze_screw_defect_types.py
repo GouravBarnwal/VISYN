@@ -27,7 +27,7 @@ def main():
     threshold = engine.thresholds[CATEGORY]
 
     print("=" * 72)
-    print("VISIONFORGE — SCREW DEFECT-TYPE ANALYSIS")
+    print("VISYN — SCREW DEFECT-TYPE ANALYSIS")
     print("=" * 72)
     print(f"Threshold: {threshold:.6f}")
     print()

@@ -380,7 +380,7 @@ def evaluate_method(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "MULTI-SCALE SCORING"
     )
     print("=" * 80)

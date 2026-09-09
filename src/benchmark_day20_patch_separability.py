@@ -329,7 +329,7 @@ def summarize_scores(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "PATCH-LEVEL SEPARABILITY"
     )
     print("=" * 80)

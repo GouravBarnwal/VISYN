@@ -86,7 +86,7 @@ def get_paths(category, split, data):
 
 print("=" * 72)
 print(
-    "VISIONFORGE — DEVELOPMENT MODEL COMPARISON"
+    "VISYN — DEVELOPMENT MODEL COMPARISON"
 )
 print("=" * 72)
 

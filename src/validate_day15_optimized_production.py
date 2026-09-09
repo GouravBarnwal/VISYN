@@ -8,7 +8,7 @@ from PIL import Image
 from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 
 # ============================================================
-# VISIONFORGE — DAY 15
+# VISYN — DAY 15
 # OPTIMIZED PRODUCTION PATH VALIDATION
 # ============================================================
 
@@ -378,7 +378,7 @@ def classify(
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 15")
+    print("VISYN — DAY 15")
     print("OPTIMIZED PRODUCTION PATH VALIDATION")
     print("=" * 72)
 

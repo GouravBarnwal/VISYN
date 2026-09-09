@@ -4,7 +4,7 @@ from src.validate_production_artifacts import main as validate_artifacts
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — PRODUCTION BUNDLE VALIDATION")
+    print("VISYN — PRODUCTION BUNDLE VALIDATION")
     print("=" * 72)
     print()
 

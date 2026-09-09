@@ -325,7 +325,7 @@ def defect_type_from_path(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "AGGREGATION TUNING"
     )
     print("=" * 80)

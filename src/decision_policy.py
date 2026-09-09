@@ -69,7 +69,7 @@ def classify(category, score):
 if __name__ == "__main__":
 
     print("=" * 72)
-    print("VISIONFORGE — DECISION POLICY TEST")
+    print("VISYN — DECISION POLICY TEST")
     print("=" * 72)
     print()
 

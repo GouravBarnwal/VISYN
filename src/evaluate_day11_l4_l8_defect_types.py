@@ -9,7 +9,7 @@ from torchvision.models import mobilenet_v3_small
 
 
 # ============================================================
-# VISIONFORGE — DAY 11
+# VISYN — DAY 11
 # L4 + L8 FUSION DEFECT-TYPE ANALYSIS
 # ============================================================
 
@@ -369,7 +369,7 @@ def main():
     print()
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 11 "
+        "VISYN — DAY 11 "
         "L4 + L8 DEFECT-TYPE ANALYSIS"
     )
     print("=" * 72)

@@ -304,7 +304,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — HYBRID LOCALIZATION "
+        "VISYN — HYBRID LOCALIZATION "
         "DEFECT-TYPE ANALYSIS"
     )
     print("=" * 72)

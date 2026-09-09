@@ -228,7 +228,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — TARGETED SCREW RESOLUTION"
+        "VISYN — TARGETED SCREW RESOLUTION"
     )
     print("=" * 72)
     print()

@@ -1,5 +1,5 @@
 {
-  "artifact_type": "VisionForge production inference bundle",
+  "artifact_type": "VISYN production inference bundle",
   "schema_version": "1.0",
   "generated_at_utc": "2026-09-08T20:53:36.021652+00:00",
   "model": {

@@ -406,7 +406,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — HYBRID LOCALIZATION VISUALIZATION"
+        "VISYN — HYBRID LOCALIZATION VISUALIZATION"
     )
     print("=" * 72)
 

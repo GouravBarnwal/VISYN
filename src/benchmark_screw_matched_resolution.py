@@ -255,7 +255,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — MATCHED SCREW "
+        "VISYN — MATCHED SCREW "
         "RESOLUTION EXPERIMENT"
     )
     print("=" * 72)

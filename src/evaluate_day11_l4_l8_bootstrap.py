@@ -270,7 +270,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 11 L4 + L8 BOOTSTRAP"
+        "VISYN — DAY 11 L4 + L8 BOOTSTRAP"
     )
     print("=" * 72)
 

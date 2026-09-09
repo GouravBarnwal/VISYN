@@ -300,7 +300,7 @@ def main():
     defect_images = resolve_paths(category_defect["development"])
 
     print("=" * 72)
-    print("VISIONFORGE — CONTROLLED SCREW " "RESOLUTION EVALUATION")
+    print("VISYN — CONTROLLED SCREW " "RESOLUTION EVALUATION")
     print("=" * 72)
 
     print(f"Dataset root: {DATA_ROOT}")

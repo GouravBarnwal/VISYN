@@ -10,7 +10,7 @@ from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 
 
 # ============================================================
-# VISIONFORGE — DAY 15
+# VISYN — DAY 15
 # CHUNKED SCORING TRADE-OFF BENCHMARK
 # ============================================================
 
@@ -478,7 +478,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 15"
+        "VISYN — DAY 15"
     )
     print(
         "CHUNKED SCORING TRADE-OFF"

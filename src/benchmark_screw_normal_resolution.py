@@ -235,7 +235,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — NORMAL SCREW "
+        "VISYN — NORMAL SCREW "
         "RESOLUTION ANALYSIS"
     )
     print("=" * 72)

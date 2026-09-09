@@ -377,7 +377,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — SPATIAL MOBILENET L8 LOCALIZATION"
+        "VISYN — SPATIAL MOBILENET L8 LOCALIZATION"
     )
     print("=" * 72)
 

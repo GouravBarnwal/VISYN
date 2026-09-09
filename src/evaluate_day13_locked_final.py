@@ -9,7 +9,7 @@ from sklearn.metrics import average_precision_score, roc_auc_score
 from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 
 # ============================================================
-# VISIONFORGE — DAY 14
+# VISYN — DAY 14
 # CORRECTED LOCKED FINAL-SET EVALUATION
 # ============================================================
 
@@ -32,7 +32,7 @@ CATEGORIES = [
 
 TOP_K = 5
 
-# Canonical VisionForge preprocessing
+# Canonical VISYN preprocessing
 IMAGE_SIZE = 224
 
 IMAGENET_MEAN = torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1)
@@ -302,7 +302,7 @@ def calculate_metrics(
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — DAY 14")
+    print("VISYN — DAY 14")
     print("CORRECTED LOCKED FINAL-SET EVALUATION")
     print("=" * 72)
 
@@ -325,7 +325,7 @@ def main():
     model = load_model()
 
     results = {
-        "experiment": ("VisionForge Day 14 corrected " "locked final-set evaluation"),
+        "experiment": ("VISYN Day 14 corrected " "locked final-set evaluation"),
         "final_test_used": True,
         "final_test_used_for_tuning": False,
         "preprocessing": {

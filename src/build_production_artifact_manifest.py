@@ -171,7 +171,7 @@ def build_manifest() -> dict:
 
     return {
         "artifact_type": (
-            "VisionForge production inference bundle"
+            "VISYN production inference bundle"
         ),
         "schema_version": "1.0",
         "generated_at_utc": (
@@ -263,7 +263,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — PRODUCTION ARTIFACT MANIFEST"
+        "VISYN — PRODUCTION ARTIFACT MANIFEST"
     )
     print("=" * 72)
     print(f"Output: {OUTPUT_PATH}")

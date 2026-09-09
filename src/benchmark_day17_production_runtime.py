@@ -156,7 +156,7 @@ def summarize(latencies):
 def main():
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 17"
+        "VISYN — DAY 17"
     )
     print(
         "PRODUCTION RUNTIME BENCHMARK"

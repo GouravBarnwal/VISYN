@@ -670,7 +670,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — EVIDENCE THRESHOLD "
+        "VISYN — EVIDENCE THRESHOLD "
         "REFINEMENT — DEVELOPMENT SET"
     )
     print("=" * 72)

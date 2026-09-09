@@ -99,7 +99,7 @@ def score_reference(
 def main():
     print("=" * 72)
     print(
-        "VISIONFORGE — DAY 17"
+        "VISYN — DAY 17"
     )
     print(
         "PRODUCTION ENGINE VALIDATION"

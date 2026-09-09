@@ -48,7 +48,7 @@ def main():
     calibration_categories = calibration["categories"]
 
     print("=" * 72)
-    print("VISIONFORGE — CALIBRATED DEFECT DEVELOPMENT EVALUATION")
+    print("VISYN — CALIBRATED DEFECT DEVELOPMENT EVALUATION")
     print("=" * 72)
     print()
     print("Threshold source:")

@@ -497,7 +497,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — LOCALIZATION VISUAL INSPECTION"
+        "VISYN — LOCALIZATION VISUAL INSPECTION"
     )
     print("=" * 72)
 

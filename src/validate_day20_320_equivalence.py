@@ -255,7 +255,7 @@ def score_image(
 def main():
     print("=" * 80)
     print(
-        "VISIONFORGE — DAY 20 "
+        "VISYN — DAY 20 "
         "320x320 BASELINE EQUIVALENCE"
     )
     print("=" * 80)

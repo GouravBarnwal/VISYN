@@ -404,7 +404,7 @@ def calculate_metrics(
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — DAY 11 L4 + L8 FUSION")
+    print("VISYN — DAY 11 L4 + L8 FUSION")
     print("=" * 72)
 
     print()

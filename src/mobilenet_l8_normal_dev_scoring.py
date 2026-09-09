@@ -215,7 +215,7 @@ def main():
 
     print("=" * 72)
     print(
-        "VISIONFORGE — MOBILE L8 "
+        "VISYN — MOBILE L8 "
         "NORMAL DEVELOPMENT SCORING"
     )
     print("=" * 72)

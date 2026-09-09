@@ -27,7 +27,7 @@ def load_json(path):
 def main():
 
     print("=" * 72)
-    print("VISIONFORGE — FINAL DEVELOPMENT MODEL SELECTION")
+    print("VISYN — FINAL DEVELOPMENT MODEL SELECTION")
     print("=" * 72)
 
     comparison = load_json(COMPARISON_PATH)

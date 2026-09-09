@@ -112,7 +112,7 @@ def classify_score(score, threshold):
 
 def main():
     print("=" * 72)
-    print("VISIONFORGE — DAY 10 DEFECT-TYPE ANALYSIS")
+    print("VISYN — DAY 10 DEFECT-TYPE ANALYSIS")
     print("=" * 72)
 
     print()
