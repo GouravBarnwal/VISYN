@@ -12,9 +12,8 @@ from src.production_config import (
 )
 from src.production_inference import ProductionInferenceEngine
 
-
 # ============================================================
-# VISIONFORGE — PRODUCTION LOCALIZATION
+# VISYN — PRODUCTION LOCALIZATION
 # ============================================================
 #
 # Localization is explanatory only.
@@ -43,9 +42,7 @@ L8_CHANNELS = 48
 LOCALIZATION_PERCENTILE = 95.0
 MIN_COMPONENT_AREA = 4
 
-LOCALIZATION_METHOD = (
-    "l4_l8_patch_distance_p95_largest_component"
-)
+LOCALIZATION_METHOD = "l4_l8_patch_distance_p95_largest_component"
 
 
 # ============================================================
@@ -55,50 +52,34 @@ LOCALIZATION_METHOD = (
 
 def _validate_category(category):
     if category not in CATEGORIES:
-        raise ValueError(
-            f"Unsupported category: {category}"
-        )
+        raise ValueError(f"Unsupported category: {category}")
 
 
 def _validate_feature_shapes(l4_queries, l8_queries):
     if l4_queries.ndim != 3:
-        raise RuntimeError(
-            f"Unexpected L4 query shape: {l4_queries.shape}"
-        )
+        raise RuntimeError(f"Unexpected L4 query shape: {l4_queries.shape}")
 
     if l8_queries.ndim != 3:
-        raise RuntimeError(
-            f"Unexpected L8 query shape: {l8_queries.shape}"
-        )
+        raise RuntimeError(f"Unexpected L8 query shape: {l8_queries.shape}")
 
     if l4_queries.shape[1] != FEATURE_H * FEATURE_W:
-        raise RuntimeError(
-            f"Unexpected L4 patch count: "
-            f"{l4_queries.shape}"
-        )
+        raise RuntimeError(f"Unexpected L4 patch count: " f"{l4_queries.shape}")
 
     if l8_queries.shape[1] != FEATURE_H * FEATURE_W:
-        raise RuntimeError(
-            f"Unexpected L8 patch count: "
-            f"{l8_queries.shape}"
-        )
+        raise RuntimeError(f"Unexpected L8 patch count: " f"{l8_queries.shape}")
 
     if l4_queries.shape[2] != L4_CHANNELS:
         raise RuntimeError(
-            f"Unexpected L4 descriptor dimension: "
-            f"{l4_queries.shape}"
+            f"Unexpected L4 descriptor dimension: " f"{l4_queries.shape}"
         )
 
     if l8_queries.shape[2] != L8_CHANNELS:
         raise RuntimeError(
-            f"Unexpected L8 descriptor dimension: "
-            f"{l8_queries.shape}"
+            f"Unexpected L8 descriptor dimension: " f"{l8_queries.shape}"
         )
 
     if l4_queries.shape[0] != l8_queries.shape[0]:
-        raise RuntimeError(
-            "L4/L8 batch sizes do not match."
-        )
+        raise RuntimeError("L4/L8 batch sizes do not match.")
 
 
 # ============================================================
@@ -125,20 +106,13 @@ def _nearest_patch_distances(
     """
 
     if query_patches.ndim != 2:
-        raise ValueError(
-            "query_patches must be 2D."
-        )
+        raise ValueError("query_patches must be 2D.")
 
     if reference_bank.ndim != 2:
-        raise ValueError(
-            "reference_bank must be 2D."
-        )
+        raise ValueError("reference_bank must be 2D.")
 
     if query_patches.shape[1] != reference_bank.shape[1]:
-        raise ValueError(
-            "Query/reference descriptor dimensions "
-            "do not match."
-        )
+        raise ValueError("Query/reference descriptor dimensions " "do not match.")
 
     best_similarity = np.full(
         query_patches.shape[0],
@@ -158,14 +132,9 @@ def _nearest_patch_distances(
             num_references,
         )
 
-        reference_chunk = reference_bank[
-            start:end
-        ]
+        reference_chunk = reference_bank[start:end]
 
-        similarities = (
-            query_patches
-            @ reference_chunk.T
-        )
+        similarities = query_patches @ reference_chunk.T
 
         chunk_best = np.max(
             similarities,
@@ -177,23 +146,16 @@ def _nearest_patch_distances(
             chunk_best,
         )
 
-    squared_distance = (
-        2.0
-        - 2.0 * best_similarity
-    )
+    squared_distance = 2.0 - 2.0 * best_similarity
 
     squared_distance = np.maximum(
         squared_distance,
         0.0,
     )
 
-    distances = np.sqrt(
-        squared_distance
-    )
+    distances = np.sqrt(squared_distance)
 
-    return distances.astype(
-        np.float32
-    )
+    return distances.astype(np.float32)
 
 
 # ============================================================
@@ -204,13 +166,8 @@ def _nearest_patch_distances(
 def _reshape_patch_scores(
     patch_scores,
 ):
-    if patch_scores.shape != (
-        FEATURE_H * FEATURE_W,
-    ):
-        raise RuntimeError(
-            f"Expected 196 patch scores, "
-            f"got {patch_scores.shape}"
-        )
+    if patch_scores.shape != (FEATURE_H * FEATURE_W,):
+        raise RuntimeError(f"Expected 196 patch scores, " f"got {patch_scores.shape}")
 
     return patch_scores.reshape(
         FEATURE_H,
@@ -227,9 +184,7 @@ def _upsample_heatmap(
         heatmap,
         (width, height),
         interpolation=cv2.INTER_CUBIC,
-    ).astype(
-        np.float32
-    )
+    ).astype(np.float32)
 
 
 # ============================================================
@@ -265,18 +220,11 @@ def _largest_component(
     Keep only the largest connected evidence component.
     """
 
-    mask_uint8 = (
-        binary_mask.astype(
-            np.uint8
-        )
-        * 255
-    )
+    mask_uint8 = binary_mask.astype(np.uint8) * 255
 
-    num_labels, labels, stats, centroids = (
-        cv2.connectedComponentsWithStats(
-            mask_uint8,
-            connectivity=8,
-        )
+    num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(
+        mask_uint8,
+        connectivity=8,
     )
 
     if num_labels <= 1:
@@ -290,14 +238,7 @@ def _largest_component(
         cv2.CC_STAT_AREA,
     ]
 
-    largest_index = (
-        1
-        + int(
-            np.argmax(
-                component_areas
-            )
-        )
-    )
+    largest_index = 1 + int(np.argmax(component_areas))
 
     largest_area = int(
         stats[
@@ -312,11 +253,7 @@ def _largest_component(
             dtype=np.uint8,
         )
 
-    component_mask = (
-        labels == largest_index
-    ).astype(
-        np.uint8
-    )
+    component_mask = (labels == largest_index).astype(np.uint8)
 
     return component_mask
 
@@ -329,9 +266,7 @@ def _largest_component(
 def _bounding_box(
     binary_mask,
 ):
-    ys, xs = np.where(
-        binary_mask > 0
-    )
+    ys, xs = np.where(binary_mask > 0)
 
     if len(xs) == 0:
         return None
@@ -364,25 +299,15 @@ def _center(
     if bounding_box is None:
         return None
 
-    center_x = (
-        bounding_box["x"]
-        + bounding_box["width"] / 2.0
-    )
+    center_x = bounding_box["x"] + bounding_box["width"] / 2.0
 
-    center_y = (
-        bounding_box["y"]
-        + bounding_box["height"] / 2.0
-    )
+    center_y = bounding_box["y"] + bounding_box["height"] / 2.0
 
     return {
         "x": float(center_x),
         "y": float(center_y),
-        "x_normalized": float(
-            center_x / max(width, 1)
-        ),
-        "y_normalized": float(
-            center_y / max(height, 1)
-        ),
+        "x_normalized": float(center_x / max(width, 1)),
+        "y_normalized": float(center_y / max(height, 1)),
     }
 
 
@@ -395,21 +320,11 @@ def _heatmap_statistics(
     heatmap,
 ):
     return {
-        "min": float(
-            np.min(heatmap)
-        ),
-        "max": float(
-            np.max(heatmap)
-        ),
-        "mean": float(
-            np.mean(heatmap)
-        ),
-        "std": float(
-            np.std(heatmap)
-        ),
-        "median": float(
-            np.median(heatmap)
-        ),
+        "min": float(np.min(heatmap)),
+        "max": float(np.max(heatmap)),
+        "mean": float(np.mean(heatmap)),
+        "std": float(np.std(heatmap)),
+        "median": float(np.median(heatmap)),
     }
 
 
@@ -417,9 +332,7 @@ def _region_statistics(
     heatmap,
     mask,
 ):
-    values = heatmap[
-        mask > 0
-    ]
+    values = heatmap[mask > 0]
 
     if values.size == 0:
         return {
@@ -430,18 +343,10 @@ def _region_statistics(
         }
 
     return {
-        "pixel_count": int(
-            values.size
-        ),
-        "mean_anomaly": float(
-            np.mean(values)
-        ),
-        "max_anomaly": float(
-            np.max(values)
-        ),
-        "min_anomaly": float(
-            np.min(values)
-        ),
+        "pixel_count": int(values.size),
+        "mean_anomaly": float(np.mean(values)),
+        "max_anomaly": float(np.max(values)),
+        "min_anomaly": float(np.min(values)),
     }
 
 
@@ -453,17 +358,11 @@ def _region_statistics(
 def _normalize_heatmap(
     heatmap,
 ):
-    minimum = np.min(
-        heatmap
-    )
+    minimum = np.min(heatmap)
 
-    maximum = np.max(
-        heatmap
-    )
+    maximum = np.max(heatmap)
 
-    denominator = (
-        maximum - minimum
-    )
+    denominator = maximum - minimum
 
     if denominator <= 1e-12:
         return np.zeros_like(
@@ -471,13 +370,9 @@ def _normalize_heatmap(
             dtype=np.float32,
         )
 
-    normalized = (
-        heatmap - minimum
-    ) / denominator
+    normalized = (heatmap - minimum) / denominator
 
-    return normalized.astype(
-        np.float32
-    )
+    return normalized.astype(np.float32)
 
 
 # ============================================================
@@ -497,11 +392,7 @@ class ProductionLocalizer:
         self,
         engine=None,
     ):
-        self.engine = (
-            engine
-            if engine is not None
-            else ProductionInferenceEngine()
-        )
+        self.engine = engine if engine is not None else ProductionInferenceEngine()
 
     def localize(
         self,
@@ -515,34 +406,21 @@ class ProductionLocalizer:
             dict
         """
 
-        _validate_category(
-            category
-        )
+        _validate_category(category)
 
-        image_path = Path(
-            image_path
-        )
+        image_path = Path(image_path)
 
         if not image_path.exists():
-            raise FileNotFoundError(
-                f"Image not found: "
-                f"{image_path}"
-            )
+            raise FileNotFoundError(f"Image not found: " f"{image_path}")
 
-        with Image.open(
-            image_path
-        ) as image:
+        with Image.open(image_path) as image:
             width, height = image.size
 
         # --------------------------------------------------------
         # Production feature extraction
         # --------------------------------------------------------
 
-        l4_queries, l8_queries = (
-            self.engine.extract_features(
-                [image_path]
-            )
-        )
+        l4_queries, l8_queries = self.engine.extract_features([image_path])
 
         _validate_feature_shapes(
             l4_queries,
@@ -553,77 +431,39 @@ class ProductionLocalizer:
         # Reference banks
         # --------------------------------------------------------
 
-        l4_bank = (
-            self.engine.reference_banks[
-                category
-            ]["L4"]
-            .detach()
-            .cpu()
-            .numpy()
-        )
+        l4_bank = self.engine.reference_banks[category]["L4"].detach().cpu().numpy()
 
-        l8_bank = (
-            self.engine.reference_banks[
-                category
-            ]["L8"]
-            .detach()
-            .cpu()
-            .numpy()
-        )
+        l8_bank = self.engine.reference_banks[category]["L8"].detach().cpu().numpy()
 
         # --------------------------------------------------------
         # Patch-level anomaly distances
         # --------------------------------------------------------
 
-        l4_patch_scores = (
-            _nearest_patch_distances(
-                l4_queries[0]
-                .detach()
-                .cpu()
-                .numpy(),
-                l4_bank,
-            )
+        l4_patch_scores = _nearest_patch_distances(
+            l4_queries[0].detach().cpu().numpy(),
+            l4_bank,
         )
 
-        l8_patch_scores = (
-            _nearest_patch_distances(
-                l8_queries[0]
-                .detach()
-                .cpu()
-                .numpy(),
-                l8_bank,
-            )
+        l8_patch_scores = _nearest_patch_distances(
+            l8_queries[0].detach().cpu().numpy(),
+            l8_bank,
         )
 
         # --------------------------------------------------------
         # 14 x 14 heatmaps
         # --------------------------------------------------------
 
-        l4_low_res = (
-            _reshape_patch_scores(
-                l4_patch_scores
-            )
-        )
+        l4_low_res = _reshape_patch_scores(l4_patch_scores)
 
-        l8_low_res = (
-            _reshape_patch_scores(
-                l8_patch_scores
-            )
-        )
+        l8_low_res = _reshape_patch_scores(l8_patch_scores)
 
         # --------------------------------------------------------
         # L4/L8 production-consistent fusion
         # --------------------------------------------------------
 
         fused_low_res = (
-            FUSION_WEIGHT_L4
-            * l4_low_res
-            +
-            FUSION_WEIGHT_L8
-            * l8_low_res
-        ).astype(
-            np.float32
-        )
+            FUSION_WEIGHT_L4 * l4_low_res + FUSION_WEIGHT_L8 * l8_low_res
+        ).astype(np.float32)
 
         # --------------------------------------------------------
         # Original-resolution heatmaps
@@ -651,34 +491,21 @@ class ProductionLocalizer:
         # P95 evidence threshold
         # --------------------------------------------------------
 
-        evidence_threshold = (
-            _p95_threshold(
-                fused_heatmap
-            )
-        )
+        evidence_threshold = _p95_threshold(fused_heatmap)
 
-        binary_mask = (
-            fused_heatmap
-            >= evidence_threshold
-        ).astype(
-            np.uint8
-        )
+        binary_mask = (fused_heatmap >= evidence_threshold).astype(np.uint8)
 
         # --------------------------------------------------------
         # Largest connected component
         # --------------------------------------------------------
 
-        evidence_mask = _largest_component(
-            binary_mask
-        )
+        evidence_mask = _largest_component(binary_mask)
 
         # --------------------------------------------------------
         # Bounding box
         # --------------------------------------------------------
 
-        bounding_box = _bounding_box(
-            evidence_mask
-        )
+        bounding_box = _bounding_box(evidence_mask)
 
         # --------------------------------------------------------
         # Center
@@ -694,28 +521,18 @@ class ProductionLocalizer:
         # Evidence statistics
         # --------------------------------------------------------
 
-        heatmap_stats = (
-            _heatmap_statistics(
-                fused_heatmap
-            )
-        )
+        heatmap_stats = _heatmap_statistics(fused_heatmap)
 
-        region_stats = (
-            _region_statistics(
-                fused_heatmap,
-                evidence_mask,
-            )
+        region_stats = _region_statistics(
+            fused_heatmap,
+            evidence_mask,
         )
 
         # --------------------------------------------------------
         # Visualization heatmap
         # --------------------------------------------------------
 
-        normalized_heatmap = (
-            _normalize_heatmap(
-                fused_heatmap
-            )
-        )
+        normalized_heatmap = _normalize_heatmap(fused_heatmap)
 
         # --------------------------------------------------------
         # Result
@@ -723,74 +540,31 @@ class ProductionLocalizer:
 
         return {
             "method": LOCALIZATION_METHOD,
-
             "feature_map": [
                 FEATURE_H,
                 FEATURE_W,
             ],
-
-            "patch_count": (
-                FEATURE_H
-                * FEATURE_W
-            ),
-
+            "patch_count": (FEATURE_H * FEATURE_W),
             "fusion": {
-                "l4_weight": float(
-                    FUSION_WEIGHT_L4
-                ),
-                "l8_weight": float(
-                    FUSION_WEIGHT_L8
-                ),
+                "l4_weight": float(FUSION_WEIGHT_L4),
+                "l8_weight": float(FUSION_WEIGHT_L8),
             },
-
             "threshold": {
                 "method": "P95",
                 "value": evidence_threshold,
             },
-
             "image": {
                 "width": int(width),
                 "height": int(height),
             },
-
             "bounding_box": bounding_box,
-
             "center": center,
-
-            "heatmap_statistics": (
-                heatmap_stats
-            ),
-
-            "region_statistics": (
-                region_stats
-            ),
-
-            "heatmap": (
-                normalized_heatmap
-                .round(4)
-                .tolist()
-            ),
-
-            "evidence_mask": (
-                evidence_mask
-                .tolist()
-            ),
-
-            "l4_heatmap": (
-                _normalize_heatmap(
-                    l4_heatmap
-                )
-                .round(4)
-                .tolist()
-            ),
-
-            "l8_heatmap": (
-                _normalize_heatmap(
-                    l8_heatmap
-                )
-                .round(4)
-                .tolist()
-            ),
+            "heatmap_statistics": (heatmap_stats),
+            "region_statistics": (region_stats),
+            "heatmap": (normalized_heatmap.round(4).tolist()),
+            "evidence_mask": (evidence_mask.tolist()),
+            "l4_heatmap": (_normalize_heatmap(l4_heatmap).round(4).tolist()),
+            "l8_heatmap": (_normalize_heatmap(l8_heatmap).round(4).tolist()),
         }
 
 
@@ -804,9 +578,7 @@ def localize_image(
     category,
     engine=None,
 ):
-    localizer = ProductionLocalizer(
-        engine=engine
-    )
+    localizer = ProductionLocalizer(engine=engine)
 
     return localizer.localize(
         image_path,
@@ -820,6 +592,4 @@ def localize_image(
 
 
 if __name__ == "__main__":
-    print(
-        "Production localization module loaded."
-    )
+    print("Production localization module loaded.")

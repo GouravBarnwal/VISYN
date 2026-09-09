@@ -65,23 +65,22 @@ async def lifespan(app: FastAPI):
     global engine
     global localizer
 
-    print("Loading VisionForge production engine...")
-
+    print("Loading VISYN production engine...")
     engine = ProductionInferenceEngine()
     localizer = ProductionLocalizer(engine)
 
-    print("VisionForge production engine loaded.")
+    print("VISYN production engine loaded.")
 
     yield
 
     engine = None
     localizer = None
 
-    print("VisionForge production engine unloaded.")
+    print("VISYN production engine unloaded.")
 
 
 app = FastAPI(
-    title="VisionForge",
+    title="VISYN",
     description="Industrial visual anomaly detection API.",
     version="1.0.0",
     lifespan=lifespan,

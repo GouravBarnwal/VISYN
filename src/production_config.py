@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 # ============================================================
-# VISIONFORGE — PRODUCTION CONFIGURATION
+# VISYN — PRODUCTION CONFIGURATION
 # ============================================================
 
 

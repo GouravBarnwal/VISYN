@@ -30,7 +30,7 @@ REFERENCE_BANK_MANIFEST = ARTIFACTS_ROOT / "production" / "reference_bank_manife
 
 class ProductionInferenceEngine:
     """
-    VisionForge production inference engine.
+    VISYN production inference engine.
 
     The model, reference banks, and calibrated thresholds
     are loaded once during initialization.
