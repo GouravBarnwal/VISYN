@@ -1,0 +1,210 @@
+{
+  "split": "development",
+  "final_test_used": false,
+  "model": "MobileNetV3-Small",
+  "aggregation": "TOP5",
+  "layers": [
+    "L3",
+    "L8"
+  ],
+  "area_bins": [
+    {
+      "name": "tiny",
+      "lower_percent": 0.0,
+      "upper_percent": 0.1
+    },
+    {
+      "name": "small",
+      "lower_percent": 0.1,
+      "upper_percent": 0.5
+    },
+    {
+      "name": "medium",
+      "lower_percent": 0.5,
+      "upper_percent": 2.0
+    },
+    {
+      "name": "large",
+      "lower_percent": 2.0,
+      "upper_percent": 100.01
+    }
+  ],
+  "categories": {
+    "bottle": {
+      "normal_count": 42,
+      "defect_count": 31,
+      "bins": {
+        "tiny": {
+          "defect_count": 0
+        },
+        "small": {
+          "defect_count": 0
+        },
+        "medium": {
+          "defect_count": 5,
+          "L3_AUROC": 1.0,
+          "L3_AP": 1.0,
+          "L8_AUROC": 1.0,
+          "L8_AP": 1.0
+        },
+        "large": {
+          "defect_count": 26,
+          "L3_AUROC": 0.9990842490842491,
+          "L3_AP": 0.9985754985754984,
+          "L8_AUROC": 1.0,
+          "L8_AP": 0.9999999999999999
+        }
+      }
+    },
+    "hazelnut": {
+      "normal_count": 79,
+      "defect_count": 34,
+      "bins": {
+        "tiny": {
+          "defect_count": 0
+        },
+        "small": {
+          "defect_count": 2,
+          "L3_AUROC": 0.5822784810126582,
+          "L3_AP": 0.042444821731748725,
+          "L8_AUROC": 0.9240506329113923,
+          "L8_AP": 0.5714285714285714
+        },
+        "medium": {
+          "defect_count": 19,
+          "L3_AUROC": 0.7221852098600933,
+          "L3_AP": 0.4508228447383348,
+          "L8_AUROC": 0.9906728847435042,
+          "L8_AP": 0.9739324258580804
+        },
+        "large": {
+          "defect_count": 13,
+          "L3_AUROC": 0.9016553067185978,
+          "L3_AP": 0.8292292956086058,
+          "L8_AUROC": 0.9980525803310614,
+          "L8_AP": 0.9885883347421807
+        }
+      }
+    },
+    "cable": {
+      "normal_count": 45,
+      "defect_count": 45,
+      "bins": {
+        "tiny": {
+          "defect_count": 0
+        },
+        "small": {
+          "defect_count": 1,
+          "L3_AUROC": 0.7111111111111111,
+          "L3_AP": 0.07142857142857142,
+          "L8_AUROC": 0.9333333333333333,
+          "L8_AP": 0.25
+        },
+        "medium": {
+          "defect_count": 11,
+          "L3_AUROC": 0.5313131313131313,
+          "L3_AP": 0.2641391733116456,
+          "L8_AUROC": 0.8727272727272727,
+          "L8_AP": 0.7247073216638434
+        },
+        "large": {
+          "defect_count": 33,
+          "L3_AUROC": 0.6747474747474748,
+          "L3_AP": 0.6177321035385471,
+          "L8_AUROC": 0.9562289562289562,
+          "L8_AP": 0.9584940474595646
+        }
+      }
+    },
+    "capsule": {
+      "normal_count": 44,
+      "defect_count": 53,
+      "bins": {
+        "tiny": {
+          "defect_count": 2,
+          "L3_AUROC": 0.7159090909090909,
+          "L3_AP": 0.16666666666666666,
+          "L8_AUROC": 0.5454545454545454,
+          "L8_AP": 0.15064102564102563
+        },
+        "small": {
+          "defect_count": 25,
+          "L3_AUROC": 0.9,
+          "L3_AP": 0.8706860623664154,
+          "L8_AUROC": 0.7954545454545454,
+          "L8_AP": 0.6148159534463898
+        },
+        "medium": {
+          "defect_count": 17,
+          "L3_AUROC": 0.9893048128342247,
+          "L3_AP": 0.9742905056759548,
+          "L8_AUROC": 0.966577540106952,
+          "L8_AP": 0.9357863989268165
+        },
+        "large": {
+          "defect_count": 9,
+          "L3_AUROC": 0.9722222222222222,
+          "L3_AP": 0.9046296296296297,
+          "L8_AUROC": 1.0,
+          "L8_AP": 1.0000000000000002
+        }
+      }
+    },
+    "screw": {
+      "normal_count": 64,
+      "defect_count": 58,
+      "bins": {
+        "tiny": {
+          "defect_count": 0
+        },
+        "small": {
+          "defect_count": 49,
+          "L3_AUROC": 0.5322066326530612,
+          "L3_AP": 0.4605462233917861,
+          "L8_AUROC": 0.7002551020408163,
+          "L8_AP": 0.6401874249823163
+        },
+        "medium": {
+          "defect_count": 9,
+          "L3_AUROC": 0.6736111111111112,
+          "L3_AP": 0.18465690965690965,
+          "L8_AUROC": 0.8003472222222222,
+          "L8_AP": 0.4170046538527193
+        },
+        "large": {
+          "defect_count": 0
+        }
+      }
+    },
+    "metal_nut": {
+      "normal_count": 44,
+      "defect_count": 45,
+      "bins": {
+        "tiny": {
+          "defect_count": 0
+        },
+        "small": {
+          "defect_count": 1,
+          "L3_AUROC": 0.75,
+          "L3_AP": 0.08333333333333333,
+          "L8_AUROC": 0.9318181818181819,
+          "L8_AP": 0.25
+        },
+        "medium": {
+          "defect_count": 9,
+          "L3_AUROC": 0.8459595959595959,
+          "L3_AP": 0.5715217329464641,
+          "L8_AUROC": 0.9924242424242424,
+          "L8_AP": 0.9722222222222223
+        },
+        "large": {
+          "defect_count": 35,
+          "L3_AUROC": 0.864935064935065,
+          "L3_AP": 0.8849789006020238,
+          "L8_AUROC": 0.9974025974025974,
+          "L8_AP": 0.9968682968682969
+        }
+      }
+    }
+  }
+}

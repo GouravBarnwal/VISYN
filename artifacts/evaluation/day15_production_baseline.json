@@ -1,0 +1,311 @@
+{
+  "experiment": "VisionForge Day 15 production latency baseline",
+  "device": "CPU",
+  "model": "MobileNetV3-Small",
+  "layers": [
+    "L4",
+    "L8"
+  ],
+  "fusion": "raw_50_50",
+  "distance": "Euclidean",
+  "aggregation": "TOP5",
+  "preprocessing": {
+    "resize": "direct_224x224",
+    "scaling": "/255",
+    "normalization": "ImageNet mean/std",
+    "center_crop": false
+  },
+  "warmup_runs": 3,
+  "timed_runs": 20,
+  "model_load_time_ms": 150.80569999997806,
+  "categories": {
+    "bottle": {
+      "category": "bottle",
+      "reference_count": 167,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          32732,
+          40
+        ],
+        "l8_shape": [
+          32732,
+          48
+        ],
+        "l4_memory_mb": 4.9945068359375,
+        "l8_memory_mb": 5.993408203125,
+        "combined_memory_mb": 10.9879150390625
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 26.15453999998749,
+          "median_ms": 27.39404999996964,
+          "p95_ms": 30.486379999976517,
+          "min_ms": 20.74529999998731,
+          "max_ms": 31.81819999997515
+        },
+        "l4_scoring": {
+          "mean_ms": 14.647049999996398,
+          "median_ms": 14.419250000003103,
+          "p95_ms": 17.35561499997118,
+          "min_ms": 12.109699999996337,
+          "max_ms": 17.715299999963463
+        },
+        "l8_scoring": {
+          "mean_ms": 15.141929999998638,
+          "median_ms": 13.593999999983453,
+          "p95_ms": 19.62788999999532,
+          "min_ms": 12.669800000026044,
+          "max_ms": 20.08139999998093
+        },
+        "end_to_end": {
+          "mean_ms": 49.34657999999672,
+          "median_ms": 47.75034999997274,
+          "p95_ms": 59.384865000006926,
+          "min_ms": 39.79610000004641,
+          "max_ms": 59.78460000000041
+        }
+      }
+    },
+    "hazelnut": {
+      "category": "hazelnut",
+      "reference_count": 312,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          61152,
+          40
+        ],
+        "l8_shape": [
+          61152,
+          48
+        ],
+        "l4_memory_mb": 9.3310546875,
+        "l8_memory_mb": 11.197265625,
+        "combined_memory_mb": 20.5283203125
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 33.477230000011104,
+          "median_ms": 32.31260000001157,
+          "p95_ms": 47.27895500000157,
+          "min_ms": 22.874800000010964,
+          "max_ms": 56.169199999999364
+        },
+        "l4_scoring": {
+          "mean_ms": 37.20912999999655,
+          "median_ms": 30.635649999993575,
+          "p95_ms": 54.937364999995,
+          "min_ms": 29.327499999965312,
+          "max_ms": 55.94279999996843
+        },
+        "l8_scoring": {
+          "mean_ms": 32.588100000003806,
+          "median_ms": 30.53919999999266,
+          "p95_ms": 45.04984500001397,
+          "min_ms": 25.97889999998415,
+          "max_ms": 54.092099999991206
+        },
+        "end_to_end": {
+          "mean_ms": 87.2883100000081,
+          "median_ms": 82.17820000001552,
+          "p95_ms": 110.65926499999817,
+          "min_ms": 75.15330000001086,
+          "max_ms": 116.39869999999064
+        }
+      }
+    },
+    "cable": {
+      "category": "cable",
+      "reference_count": 179,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          35084,
+          40
+        ],
+        "l8_shape": [
+          35084,
+          48
+        ],
+        "l4_memory_mb": 5.3533935546875,
+        "l8_memory_mb": 6.424072265625,
+        "combined_memory_mb": 11.7774658203125
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 19.342369999975517,
+          "median_ms": 19.26029999998491,
+          "p95_ms": 21.398794999964817,
+          "min_ms": 17.598999999961507,
+          "max_ms": 22.272199999974873
+        },
+        "l4_scoring": {
+          "mean_ms": 16.138110000002825,
+          "median_ms": 14.921549999996842,
+          "p95_ms": 21.009280000006925,
+          "min_ms": 12.852099999975053,
+          "max_ms": 21.08290000001034
+        },
+        "l8_scoring": {
+          "mean_ms": 16.88105000001201,
+          "median_ms": 14.97260000002143,
+          "p95_ms": 24.018720000020718,
+          "min_ms": 13.326000000006388,
+          "max_ms": 25.874700000031225
+        },
+        "end_to_end": {
+          "mean_ms": 54.536510000002636,
+          "median_ms": 54.44645000002879,
+          "p95_ms": 61.78253500000039,
+          "min_ms": 48.22529999995595,
+          "max_ms": 64.52200000001085
+        }
+      }
+    },
+    "capsule": {
+      "category": "capsule",
+      "reference_count": 175,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          34300,
+          40
+        ],
+        "l8_shape": [
+          34300,
+          48
+        ],
+        "l4_memory_mb": 5.2337646484375,
+        "l8_memory_mb": 6.280517578125,
+        "combined_memory_mb": 11.5142822265625
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 20.572679999997945,
+          "median_ms": 20.526399999994283,
+          "p95_ms": 23.452470000009384,
+          "min_ms": 18.26189999997041,
+          "max_ms": 23.838300000022628
+        },
+        "l4_scoring": {
+          "mean_ms": 14.971120000006977,
+          "median_ms": 14.14140000002817,
+          "p95_ms": 18.835590000000476,
+          "min_ms": 12.881899999968027,
+          "max_ms": 20.6382000000076
+        },
+        "l8_scoring": {
+          "mean_ms": 15.942579999995132,
+          "median_ms": 14.94554999999309,
+          "p95_ms": 20.526989999984835,
+          "min_ms": 13.929899999993722,
+          "max_ms": 20.90579999997999
+        },
+        "end_to_end": {
+          "mean_ms": 56.83904999999072,
+          "median_ms": 53.399099999978716,
+          "p95_ms": 71.2766700000202,
+          "min_ms": 47.687699999983124,
+          "max_ms": 73.14569999999776
+        }
+      }
+    },
+    "screw": {
+      "category": "screw",
+      "reference_count": 256,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          50176,
+          40
+        ],
+        "l8_shape": [
+          50176,
+          48
+        ],
+        "l4_memory_mb": 7.65625,
+        "l8_memory_mb": 9.1875,
+        "combined_memory_mb": 16.84375
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 27.03839999999218,
+          "median_ms": 28.309349999972255,
+          "p95_ms": 33.60277999999254,
+          "min_ms": 20.40230000000065,
+          "max_ms": 35.974099999975806
+        },
+        "l4_scoring": {
+          "mean_ms": 26.258150000001024,
+          "median_ms": 24.797750000004726,
+          "p95_ms": 32.76710000000377,
+          "min_ms": 21.222300000033556,
+          "max_ms": 34.65890000001082
+        },
+        "l8_scoring": {
+          "mean_ms": 26.65768000001094,
+          "median_ms": 25.063549999998713,
+          "p95_ms": 33.21432500002004,
+          "min_ms": 22.002699999973174,
+          "max_ms": 33.50030000001425
+        },
+        "end_to_end": {
+          "mean_ms": 84.66936999998893,
+          "median_ms": 83.30890000002,
+          "p95_ms": 98.31330999995771,
+          "min_ms": 73.33510000000842,
+          "max_ms": 98.74629999995932
+        }
+      }
+    },
+    "metal_nut": {
+      "category": "metal_nut",
+      "reference_count": 176,
+      "query_count": 10,
+      "reference_bank": {
+        "l4_shape": [
+          34496,
+          40
+        ],
+        "l8_shape": [
+          34496,
+          48
+        ],
+        "l4_memory_mb": 5.263671875,
+        "l8_memory_mb": 6.31640625,
+        "combined_memory_mb": 11.580078125
+      },
+      "timing_ms": {
+        "feature_extraction": {
+          "mean_ms": 21.584619999993038,
+          "median_ms": 21.354800000011664,
+          "p95_ms": 23.62679500000411,
+          "min_ms": 19.930999999985488,
+          "max_ms": 24.053799999990133
+        },
+        "l4_scoring": {
+          "mean_ms": 14.745010000001457,
+          "median_ms": 13.324600000004239,
+          "p95_ms": 20.030004999986765,
+          "min_ms": 12.754099999995105,
+          "max_ms": 22.513599999967937
+        },
+        "l8_scoring": {
+          "mean_ms": 15.451749999994036,
+          "median_ms": 14.021299999996018,
+          "p95_ms": 20.407369999998078,
+          "min_ms": 12.837399999966692,
+          "max_ms": 21.97760000001381
+        },
+        "end_to_end": {
+          "mean_ms": 53.02276999999549,
+          "median_ms": 51.063349999992624,
+          "p95_ms": 63.56018999998127,
+          "min_ms": 44.64020000000346,
+          "max_ms": 66.11069999996744
+        }
+      }
+    }
+  }
+}

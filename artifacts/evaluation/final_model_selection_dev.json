@@ -1,0 +1,71 @@
+{
+  "protocol": {
+    "split": "development_only",
+    "categories": [
+      "bottle",
+      "hazelnut",
+      "cable",
+      "capsule",
+      "screw",
+      "metal_nut"
+    ],
+    "aggregations": [
+      "max",
+      "top5",
+      "top10"
+    ],
+    "final_test_used": false
+  },
+  "standalone": {
+    "MobileNet L8": {
+      "max": 0.9870894066937943,
+      "top5": 0.9867218075349676,
+      "top10": 0.9860179728722581
+    },
+    "DINOv2": {
+      "max": 0.9657805735624287,
+      "top5": 0.9764874156636608,
+      "top10": 0.9802360742050253
+    }
+  },
+  "fusion_best": {
+    "max": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9878546720939783
+    },
+    "top5": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9871158134693933
+    },
+    "top10": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9863854088208789
+    }
+  },
+  "best_standalone": {
+    "model": "MobileNet L8",
+    "aggregation": "max",
+    "macro_auroc": 0.9870894066937943
+  },
+  "best_fusion": {
+    "aggregation": "max",
+    "mobile_weight": 0.1,
+    "dino_weight": 0.9,
+    "macro_auroc": 0.9878546720939783
+  },
+  "fusion_bootstrap_pooled": {
+    "mobile_auroc": 0.9360311155246608,
+    "fusion_auroc": 0.9366576819407009,
+    "difference": 0.0006265664160400863
+  },
+  "production_candidate": {
+    "model": "MobileNet L8",
+    "aggregation": "max",
+    "macro_development_auroc": 0.9870894066937943,
+    "decision": "selected_for_next_stage",
+    "reason": "Strongest standalone development configuration. Fusion provided only a very small development improvement and did not demonstrate robust stability."
+  }
+}

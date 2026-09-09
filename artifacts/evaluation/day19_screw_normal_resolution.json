@@ -1,0 +1,42 @@
+{
+  "category": "screw",
+  "images_tested": 20,
+  "threshold": 0.6448165547847747,
+  "resolutions": [
+    224,
+    320,
+    448
+  ],
+  "results": {
+    "224": {
+      "count": 20,
+      "mean_score": 0.48451827093958855,
+      "median_score": 0.4879525825381279,
+      "max_score": 0.5407528579235077,
+      "p95_score": 0.53697210252285,
+      "false_positives": 0,
+      "false_positive_rate": 0.0,
+      "images_per_second": 9.178027764818932
+    },
+    "320": {
+      "count": 20,
+      "mean_score": 0.6702031373977662,
+      "median_score": 0.6720944046974182,
+      "max_score": 0.7395614981651306,
+      "p95_score": 0.7046949878334999,
+      "false_positives": 15,
+      "false_positive_rate": 0.75,
+      "images_per_second": 6.418535704148121
+    },
+    "448": {
+      "count": 20,
+      "mean_score": 0.8505609720945358,
+      "median_score": 0.8477511554956436,
+      "max_score": 0.8882020115852356,
+      "p95_score": 0.8779874488711357,
+      "false_positives": 20,
+      "false_positive_rate": 1.0,
+      "images_per_second": 3.8205770664548986
+    }
+  }
+}

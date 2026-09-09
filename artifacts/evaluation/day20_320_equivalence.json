@@ -1,0 +1,40 @@
+{
+  "experiment": "Day 20 320x320 baseline equivalence",
+  "resolution": 320,
+  "top_k": 5,
+  "chunk_size": 8192,
+  "results": {
+    "capsule": {
+      "reference_images": 175,
+      "normal_images": 44,
+      "defect_images": 53,
+      "reference_l4_shape": [
+        70000,
+        40
+      ],
+      "reference_l8_shape": [
+        70000,
+        48
+      ],
+      "max_repeated_l4_diff": 0.0,
+      "max_repeated_l8_diff": 0.0,
+      "max_repeated_fusion_diff": 0.0
+    },
+    "screw": {
+      "reference_images": 256,
+      "normal_images": 64,
+      "defect_images": 58,
+      "reference_l4_shape": [
+        102400,
+        40
+      ],
+      "reference_l8_shape": [
+        102400,
+        48
+      ],
+      "max_repeated_l4_diff": 0.0,
+      "max_repeated_l8_diff": 0.0,
+      "max_repeated_fusion_diff": 0.0
+    }
+  }
+}

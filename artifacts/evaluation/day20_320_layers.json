@@ -1,0 +1,180 @@
+{
+  "experiment": "Day 20 320x320 feature-layer tuning",
+  "resolution": 320,
+  "top_k": 5,
+  "categories": [
+    "capsule",
+    "screw"
+  ],
+  "configurations": {
+    "L4_ONLY": 1.0,
+    "L8_ONLY": 0.0,
+    "L4_75_L8_25": 0.75,
+    "L4_60_L8_40": 0.6,
+    "L4_50_L8_50": 0.5,
+    "L4_40_L8_60": 0.4,
+    "L4_25_L8_75": 0.25
+  },
+  "reference_split": "normal_splits.json",
+  "defect_split": "defect_splits.json development only",
+  "results": {
+    "capsule": {
+      "L4_ONLY": {
+        "threshold": 0.7431690138578415,
+        "auroc": 0.8619210977701544,
+        "average_precision": 0.8810076996168441,
+        "detected": 17,
+        "defect_count": 53,
+        "detection_rate": 0.32075471698113206,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L8_ONLY": {
+        "threshold": 0.8992290204763412,
+        "auroc": 0.8010291595197255,
+        "average_precision": 0.8497019017659733,
+        "detected": 20,
+        "defect_count": 53,
+        "detection_rate": 0.37735849056603776,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L4_75_L8_25": {
+        "threshold": 0.7821840155124664,
+        "auroc": 0.8683533447684392,
+        "average_precision": 0.8853806362261541,
+        "detected": 16,
+        "defect_count": 53,
+        "detection_rate": 0.3018867924528302,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L4_60_L8_40": {
+        "threshold": 0.8055930165052414,
+        "auroc": 0.8666380789022299,
+        "average_precision": 0.884447139311634,
+        "detected": 17,
+        "defect_count": 53,
+        "detection_rate": 0.32075471698113206,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L4_50_L8_50": {
+        "threshold": 0.8211990171670914,
+        "auroc": 0.8623499142367068,
+        "average_precision": 0.8823891842869815,
+        "detected": 18,
+        "defect_count": 53,
+        "detection_rate": 0.33962264150943394,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L4_40_L8_60": {
+        "threshold": 0.8368050178289413,
+        "auroc": 0.8554888507718696,
+        "average_precision": 0.8785510612332805,
+        "detected": 17,
+        "defect_count": 53,
+        "detection_rate": 0.32075471698113206,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "L4_25_L8_75": {
+        "threshold": 0.8602140188217163,
+        "auroc": 0.8421955403087478,
+        "average_precision": 0.8701334998833106,
+        "detected": 16,
+        "defect_count": 53,
+        "detection_rate": 0.3018867924528302,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728
+      }
+    },
+    "screw": {
+      "L4_ONLY": {
+        "threshold": 0.8022132885456085,
+        "auroc": 0.6740301724137931,
+        "average_precision": 0.6390018185218457,
+        "detected": 4,
+        "defect_count": 58,
+        "detection_rate": 0.06896551724137931,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L8_ONLY": {
+        "threshold": 0.9576557791233061,
+        "auroc": 0.6883081896551724,
+        "average_precision": 0.6503951269219702,
+        "detected": 5,
+        "defect_count": 58,
+        "detection_rate": 0.08620689655172414,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L4_75_L8_25": {
+        "threshold": 0.8206028488278388,
+        "auroc": 0.7130926724137931,
+        "average_precision": 0.6813255725757628,
+        "detected": 4,
+        "defect_count": 58,
+        "detection_rate": 0.06896551724137931,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L4_60_L8_40": {
+        "threshold": 0.8383272888660431,
+        "auroc": 0.7233297413793104,
+        "average_precision": 0.6962347386843436,
+        "detected": 3,
+        "defect_count": 58,
+        "detection_rate": 0.05172413793103448,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L4_50_L8_50": {
+        "threshold": 0.852174511551857,
+        "auroc": 0.7252155172413793,
+        "average_precision": 0.6980030730337493,
+        "detected": 6,
+        "defect_count": 58,
+        "detection_rate": 0.10344827586206896,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L4_40_L8_60": {
+        "threshold": 0.8660217342376708,
+        "auroc": 0.7235991379310346,
+        "average_precision": 0.6953608107330962,
+        "detected": 7,
+        "defect_count": 58,
+        "detection_rate": 0.1206896551724138,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      },
+      "L4_25_L8_75": {
+        "threshold": 0.8996686759591102,
+        "auroc": 0.7155172413793103,
+        "average_precision": 0.680715105215913,
+        "detected": 6,
+        "defect_count": 58,
+        "detection_rate": 0.10344827586206896,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "experiment": "Day 20 ROI-assisted scoring",
+  "resolution": 224,
+  "top_k": 5,
+  "categories": [
+    "capsule",
+    "screw"
+  ],
+  "reference_split": "normal_splits.json",
+  "defect_split": "defect_splits.json development only",
+  "results": {
+    "capsule": {
+      "FULL_IMAGE": {
+        "threshold": 0.7091109347343445,
+        "auroc": 0.8173241852487135,
+        "average_precision": 0.8395482270366701,
+        "detected": 14,
+        "defect_count": 53,
+        "detection_rate": 0.2641509433962264,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728,
+        "normal_roi_fraction_l4_mean": 0.3359230055658627,
+        "normal_roi_fraction_l8_mean": 0.3359230055658627,
+        "defect_roi_fraction_l4_mean": 0.342895648825568,
+        "defect_roi_fraction_l8_mean": 0.342895648825568
+      },
+      "ROI_ONLY": {
+        "threshold": 0.506962201744318,
+        "auroc": 0.9288164665523155,
+        "average_precision": 0.9390079699603889,
+        "detected": 24,
+        "defect_count": 53,
+        "detection_rate": 0.4528301886792453,
+        "false_positives": 1,
+        "normal_count": 44,
+        "false_positive_rate": 0.022727272727272728,
+        "normal_roi_fraction_l4_mean": 0.3359230055658627,
+        "normal_roi_fraction_l8_mean": 0.3359230055658627,
+        "defect_roi_fraction_l4_mean": 0.342895648825568,
+        "defect_roi_fraction_l8_mean": 0.342895648825568
+      }
+    },
+    "screw": {
+      "FULL_IMAGE": {
+        "threshold": 0.9212595844268798,
+        "auroc": 0.5754310344827587,
+        "average_precision": 0.524685663656822,
+        "detected": 0,
+        "defect_count": 58,
+        "detection_rate": 0.0,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625,
+        "normal_roi_fraction_l4_mean": 0.36838329081632654,
+        "normal_roi_fraction_l8_mean": 0.36838329081632654,
+        "defect_roi_fraction_l4_mean": 0.36127726952850103,
+        "defect_roi_fraction_l8_mean": 0.36127726952850103
+      },
+      "ROI_ONLY": {
+        "threshold": 0.773728654384613,
+        "auroc": 0.6683728448275862,
+        "average_precision": 0.5751711308007669,
+        "detected": 1,
+        "defect_count": 58,
+        "detection_rate": 0.017241379310344827,
+        "false_positives": 1,
+        "normal_count": 64,
+        "false_positive_rate": 0.015625,
+        "normal_roi_fraction_l4_mean": 0.36838329081632654,
+        "normal_roi_fraction_l8_mean": 0.36838329081632654,
+        "defect_roi_fraction_l4_mean": 0.36127726952850103,
+        "defect_roi_fraction_l8_mean": 0.36127726952850103
+      }
+    }
+  }
+}

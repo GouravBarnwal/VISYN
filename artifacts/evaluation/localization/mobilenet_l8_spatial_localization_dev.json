@@ -1,0 +1,99 @@
+{
+  "protocol": {
+    "model": "MobileNetV3-Small",
+    "representation": "L8",
+    "feature_map": "48x14x14",
+    "patch_count": 196,
+    "descriptor_dimension": 48,
+    "distance": "1 - cosine_similarity",
+    "reference_bank": "canonical normal reference split",
+    "evaluation_split": "development defect split",
+    "matching_strategy": "same spatial location",
+    "heatmap_interpolation": "bicubic",
+    "final_test_used": false
+  },
+  "baseline_comparison": {
+    "global_reference_macro_pixel_auroc": 0.9041
+  },
+  "results": {
+    "bottle": {
+      "development_defect_images": 31,
+      "valid_images": 31,
+      "missing_masks": 0,
+      "pixel_auroc": 0.9695563730506086,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 167,
+      "matching_strategy": "same_spatial_location"
+    },
+    "hazelnut": {
+      "development_defect_images": 34,
+      "valid_images": 34,
+      "missing_masks": 0,
+      "pixel_auroc": 0.9662630882020824,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 312,
+      "matching_strategy": "same_spatial_location"
+    },
+    "cable": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "missing_masks": 0,
+      "pixel_auroc": 0.935185382271814,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 179,
+      "matching_strategy": "same_spatial_location"
+    },
+    "capsule": {
+      "development_defect_images": 53,
+      "valid_images": 53,
+      "missing_masks": 0,
+      "pixel_auroc": 0.9611361236875533,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 175,
+      "matching_strategy": "same_spatial_location"
+    },
+    "screw": {
+      "development_defect_images": 58,
+      "valid_images": 58,
+      "missing_masks": 0,
+      "pixel_auroc": 0.9293827374344877,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 256,
+      "matching_strategy": "same_spatial_location"
+    },
+    "metal_nut": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "missing_masks": 0,
+      "pixel_auroc": 0.8724300283195073,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_images": 176,
+      "matching_strategy": "same_spatial_location"
+    }
+  },
+  "macro_pixel_auroc": 0.9389922888276755
+}

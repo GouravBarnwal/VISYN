@@ -1,0 +1,293 @@
+{
+  "source": "artifacts\\evaluation\\mobilenet_l8_normal_dev_scores.json",
+  "categories": {
+    "bottle": {
+      "count": 42,
+      "mean": 0.393220138336931,
+      "std": 0.04492812280121628,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.4488039255142212,
+          "flagged_count": 3,
+          "false_positive_rate": 0.07142857142857142
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.4642460115253926,
+          "flagged_count": 2,
+          "false_positive_rate": 0.047619047619047616
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.46985351681709286,
+          "flagged_count": 1,
+          "false_positive_rate": 0.023809523809523808
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.47166456103324894,
+          "flagged_count": 1,
+          "false_positive_rate": 0.023809523809523808
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.48307638393936353,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.5055404453399717,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.5280045067405799,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    },
+    "hazelnut": {
+      "count": 79,
+      "mean": 0.6884158698818351,
+      "std": 0.03236219208014174,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.7379185795783997,
+          "flagged_count": 4,
+          "false_positive_rate": 0.05063291139240506
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.7420623213052749,
+          "flagged_count": 2,
+          "false_positive_rate": 0.02531645569620253
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.7513870668411254,
+          "flagged_count": 1,
+          "false_positive_rate": 0.012658227848101266
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.7646452224254608,
+          "flagged_count": 1,
+          "false_positive_rate": 0.012658227848101266
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.7531402540421186,
+          "flagged_count": 1,
+          "false_positive_rate": 0.012658227848101266
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.7693213500821895,
+          "flagged_count": 1,
+          "false_positive_rate": 0.012658227848101266
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.7855024461222604,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    },
+    "cable": {
+      "count": 45,
+      "mean": 0.6548835568957858,
+      "std": 0.027836107282545174,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.6972174763679504,
+          "flagged_count": 3,
+          "false_positive_rate": 0.06666666666666667
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.7011252880096436,
+          "flagged_count": 2,
+          "false_positive_rate": 0.044444444444444446
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.7059989047050477,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022222222222222223
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.7077662384510041,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022222222222222223
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.7105557714608761,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.7244738251021487,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.7383918787434214,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    },
+    "capsule": {
+      "count": 44,
+      "mean": 0.3762078962542794,
+      "std": 0.04671050294244807,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.4726481661200524,
+          "flagged_count": 3,
+          "false_positive_rate": 0.06818181818181818
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.4828387938439846,
+          "flagged_count": 2,
+          "false_positive_rate": 0.045454545454545456
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.5000054594874382,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.5062980531156062,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022727272727272728
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.4696289021391756,
+          "flagged_count": 3,
+          "false_positive_rate": 0.06818181818181818
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.4929841536103996,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.5163394050816237,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    },
+    "screw": {
+      "count": 64,
+      "mean": 0.5360952978953719,
+      "std": 0.04055080241134254,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.592959600687027,
+          "flagged_count": 4,
+          "false_positive_rate": 0.0625
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.6283901542425154,
+          "flagged_count": 2,
+          "false_positive_rate": 0.03125
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.6448165547847747,
+          "flagged_count": 1,
+          "false_positive_rate": 0.015625
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.6451568788290024,
+          "flagged_count": 1,
+          "false_positive_rate": 0.015625
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.617196902718057,
+          "flagged_count": 2,
+          "false_positive_rate": 0.03125
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.6374723039237282,
+          "flagged_count": 2,
+          "false_positive_rate": 0.03125
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.6577477051293995,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    },
+    "metal_nut": {
+      "count": 44,
+      "mean": 0.656461394645951,
+      "std": 0.03601552861892288,
+      "percentile_candidates": [
+        {
+          "percentile": 95.0,
+          "threshold": 0.7225281834602356,
+          "flagged_count": 3,
+          "false_positive_rate": 0.06818181818181818
+        },
+        {
+          "percentile": 97.5,
+          "threshold": 0.733642628788948,
+          "flagged_count": 2,
+          "false_positive_rate": 0.045454545454545456
+        },
+        {
+          "percentile": 99.0,
+          "threshold": 0.7377763795852661,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        {
+          "percentile": 99.5,
+          "threshold": 0.7390940690040588,
+          "flagged_count": 1,
+          "false_positive_rate": 0.022727272727272728
+        }
+      ],
+      "sigma_candidates": {
+        "mean_plus_2.0std": {
+          "threshold": 0.7284924518837967,
+          "flagged_count": 2,
+          "false_positive_rate": 0.045454545454545456
+        },
+        "mean_plus_2.5std": {
+          "threshold": 0.7465002161932582,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        },
+        "mean_plus_3.0std": {
+          "threshold": 0.7645079805027196,
+          "flagged_count": 0,
+          "false_positive_rate": 0.0
+        }
+      }
+    }
+  }
+}

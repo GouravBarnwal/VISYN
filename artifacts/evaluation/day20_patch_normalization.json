@@ -1,0 +1,248 @@
+{
+  "experiment": "Day 20 patch-score normalization",
+  "categories": [
+    "capsule",
+    "screw"
+  ],
+  "image_size": 224,
+  "top_k": 5,
+  "methods": [
+    "RAW",
+    "ZSCORE",
+    "ROBUST",
+    "PERCENTILE"
+  ],
+  "reference_split": "normal_splits.json",
+  "defect_split": "defect_splits.json development only",
+  "normal_statistics_source": "normal development patch scores",
+  "results": {
+    "capsule": {
+      "normal_patch_statistics": {
+        "L4": {
+          "mean": 0.10857661813497543,
+          "std": 0.04017030447721481,
+          "median": 0.09946056455373764,
+          "mad": 0.018109239637851715,
+          "p01": 0.05562008172273636,
+          "p50": 0.09946056455373764,
+          "p95": 0.18644653260707855,
+          "p99": 0.26040416955947876
+        },
+        "L8": {
+          "mean": 0.201700359582901,
+          "std": 0.06359264999628067,
+          "median": 0.19583380222320557,
+          "mad": 0.04243545979261398,
+          "p01": 0.09089290350675583,
+          "p50": 0.19583380222320557,
+          "p95": 0.3135144114494324,
+          "p99": 0.3833117187023163
+        }
+      },
+      "methods": {
+        "RAW": {
+          "threshold": 0.435908810198307,
+          "auroc": 0.9172384219554031,
+          "average_precision": 0.9330702402330413,
+          "defect_detection": 25,
+          "defect_count": 53,
+          "detection_rate": 0.4716981132075472,
+          "normal_false_positives": 1,
+          "normal_count": 44,
+          "false_positive_rate": 0.022727272727272728,
+          "normal_score_summary": {
+            "mean": 0.31567709655924275,
+            "p95": 0.38637290969491006,
+            "max": 0.43880024552345276
+          },
+          "defect_score_summary": {
+            "mean": 0.46939885124283015,
+            "median": 0.42382532358169556,
+            "min": 0.2829834893345833,
+            "max": 0.9306305944919586
+          }
+        },
+        "ZSCORE": {
+          "threshold": 5.63465164899826,
+          "auroc": 0.9202401372212693,
+          "average_precision": 0.9356226117664761,
+          "defect_detection": 25,
+          "defect_count": 53,
+          "detection_rate": 0.4716981132075472,
+          "normal_false_positives": 1,
+          "normal_count": 44,
+          "false_positive_rate": 0.022727272727272728,
+          "normal_score_summary": {
+            "mean": 3.1964267289096657,
+            "p95": 4.50991690158844,
+            "max": 5.636213541030884
+          },
+          "defect_score_summary": {
+            "mean": 6.352703085485494,
+            "median": 5.407236099243164,
+            "min": 2.572646379470825,
+            "max": 16.02165699005127
+          }
+        },
+        "ROBUST": {
+          "threshold": 7.537234373092652,
+          "auroc": 0.9215265866209262,
+          "average_precision": 0.936749883100154,
+          "defect_detection": 25,
+          "defect_count": 53,
+          "detection_rate": 0.4716981132075472,
+          "normal_false_positives": 1,
+          "normal_count": 44,
+          "false_positive_rate": 0.022727272727272728,
+          "normal_score_summary": {
+            "mean": 4.332788447087461,
+            "p95": 6.090603774785996,
+            "max": 7.593518257141113
+          },
+          "defect_score_summary": {
+            "mean": 8.49696094809838,
+            "median": 7.443566203117371,
+            "min": 3.557755708694458,
+            "max": 21.45412302017212
+          }
+        },
+        "PERCENTILE": {
+          "threshold": 1.4735754323005676,
+          "auroc": 0.9193825042881647,
+          "average_precision": 0.9348473228266614,
+          "defect_detection": 25,
+          "defect_count": 53,
+          "detection_rate": 0.4716981132075472,
+          "normal_false_positives": 1,
+          "normal_count": 44,
+          "false_positive_rate": 0.022727272727272728,
+          "normal_score_summary": {
+            "mean": 0.9750157357616858,
+            "p95": 1.2486654937267303,
+            "max": 1.4764556288719177
+          },
+          "defect_score_summary": {
+            "mean": 1.6186550085274678,
+            "median": 1.426283359527588,
+            "min": 0.8457073271274567,
+            "max": 3.581575036048889
+          }
+        }
+      }
+    },
+    "screw": {
+      "normal_patch_statistics": {
+        "L4": {
+          "mean": 0.15343831479549408,
+          "std": 0.08273230493068695,
+          "median": 0.12543624639511108,
+          "mad": 0.03568143770098686,
+          "p01": 0.05964973568916321,
+          "p50": 0.12543624639511108,
+          "p95": 0.33461493253707886,
+          "p99": 0.4215832054615021
+        },
+        "L8": {
+          "mean": 0.33302053809165955,
+          "std": 0.08239124715328217,
+          "median": 0.3265678882598877,
+          "mad": 0.05702918767929077,
+          "p01": 0.1727457046508789,
+          "p50": 0.3265678882598877,
+          "p95": 0.47785067558288574,
+          "p99": 0.5474461913108826
+        }
+      },
+      "methods": {
+        "RAW": {
+          "threshold": 0.5403675021231173,
+          "auroc": 0.8211206896551725,
+          "average_precision": 0.8034845876007316,
+          "defect_detection": 12,
+          "defect_count": 58,
+          "detection_rate": 0.20689655172413793,
+          "normal_false_positives": 1,
+          "normal_count": 64,
+          "false_positive_rate": 0.015625,
+          "normal_score_summary": {
+            "mean": 0.47408746206201613,
+            "p95": 0.5212216071784496,
+            "max": 0.5570591986179352
+          },
+          "defect_score_summary": {
+            "mean": 0.5142711028456688,
+            "median": 0.5151267722249031,
+            "min": 0.4536803960800171,
+            "max": 0.6220737099647522
+          }
+        },
+        "ZSCORE": {
+          "threshold": 3.598333971500396,
+          "auroc": 0.8203125,
+          "average_precision": 0.8028373286268403,
+          "defect_detection": 12,
+          "defect_count": 58,
+          "detection_rate": 0.20689655172413793,
+          "normal_false_positives": 1,
+          "normal_count": 64,
+          "false_positive_rate": 0.015625,
+          "normal_score_summary": {
+            "mean": 2.7955022994428873,
+            "p95": 3.3661015450954435,
+            "max": 3.801133155822754
+          },
+          "defect_score_summary": {
+            "mean": 3.2820499004988837,
+            "median": 3.292301058769226,
+            "min": 2.5473657846450806,
+            "max": 4.588286399841309
+          }
+        },
+        "ROBUST": {
+          "threshold": 4.961731939315795,
+          "auroc": 0.8273168103448276,
+          "average_precision": 0.8072421833482948,
+          "defect_detection": 16,
+          "defect_count": 58,
+          "detection_rate": 0.27586206896551724,
+          "normal_false_positives": 1,
+          "normal_count": 64,
+          "false_positive_rate": 0.015625,
+          "normal_score_summary": {
+            "mean": 3.948280560784042,
+            "p95": 4.747555071115494,
+            "max": 5.129641056060791
+          },
+          "defect_score_summary": {
+            "mean": 4.588959851141634,
+            "median": 4.596421599388123,
+            "min": 3.5865540504455566,
+            "max": 6.173203468322754
+          }
+        },
+        "PERCENTILE": {
+          "threshold": 1.1516665452718733,
+          "auroc": 0.8211206896551724,
+          "average_precision": 0.8037686981294339,
+          "defect_detection": 12,
+          "defect_count": 58,
+          "detection_rate": 0.20689655172413793,
+          "normal_false_positives": 1,
+          "normal_count": 64,
+          "false_positive_rate": 0.015625,
+          "normal_score_summary": {
+            "mean": 0.971724474336952,
+            "p95": 1.1002961203455925,
+            "max": 1.195820689201355
+          },
+          "defect_score_summary": {
+            "mean": 1.0811673228082985,
+            "median": 1.0837034583091736,
+            "min": 0.9181120991706848,
+            "max": 1.372985064983368
+          }
+        }
+      }
+    }
+  }
+}

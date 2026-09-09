@@ -1,0 +1,220 @@
+{
+  "protocol": {
+    "representation": "MobileNetV3-Small L8",
+    "feature_map": "48x14x14",
+    "localization_method": "hybrid_global_spatial",
+    "alpha": 0.75,
+    "global_contribution": 0.25,
+    "spatial_contribution": 0.75,
+    "split": "development defect split",
+    "final_test_used": false,
+    "seed": 42
+  },
+  "categories": {
+    "bottle": {
+      "defect_types": {
+        "broken_large": {
+          "pixel_auroc": 0.8867845226781361,
+          "images": 10,
+          "valid_images": 10,
+          "missing_masks": 0
+        },
+        "broken_small": {
+          "pixel_auroc": 0.9411968544954953,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "contamination": {
+          "pixel_auroc": 0.712896157041565,
+          "images": 10,
+          "valid_images": 10,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.846959178071732
+    },
+    "hazelnut": {
+      "defect_types": {
+        "crack": {
+          "pixel_auroc": 0.9683506199274491,
+          "images": 9,
+          "valid_images": 9,
+          "missing_masks": 0
+        },
+        "cut": {
+          "pixel_auroc": 0.9749418081009928,
+          "images": 8,
+          "valid_images": 8,
+          "missing_masks": 0
+        },
+        "hole": {
+          "pixel_auroc": 0.9788625487888667,
+          "images": 9,
+          "valid_images": 9,
+          "missing_masks": 0
+        },
+        "print": {
+          "pixel_auroc": 0.9638592239680759,
+          "images": 8,
+          "valid_images": 8,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.9715035501963462
+    },
+    "cable": {
+      "defect_types": {
+        "bent_wire": {
+          "pixel_auroc": 0.8509737421307738,
+          "images": 6,
+          "valid_images": 6,
+          "missing_masks": 0
+        },
+        "cable_swap": {
+          "pixel_auroc": 0.611832773568549,
+          "images": 6,
+          "valid_images": 6,
+          "missing_masks": 0
+        },
+        "combined": {
+          "pixel_auroc": 0.6701094981140439,
+          "images": 5,
+          "valid_images": 5,
+          "missing_masks": 0
+        },
+        "cut_inner_insulation": {
+          "pixel_auroc": 0.7112398892707368,
+          "images": 7,
+          "valid_images": 7,
+          "missing_masks": 0
+        },
+        "cut_outer_insulation": {
+          "pixel_auroc": 0.6583033298555026,
+          "images": 5,
+          "valid_images": 5,
+          "missing_masks": 0
+        },
+        "missing_cable": {
+          "pixel_auroc": 0.7883782776436764,
+          "images": 6,
+          "valid_images": 6,
+          "missing_masks": 0
+        },
+        "missing_wire": {
+          "pixel_auroc": 0.3459771098459279,
+          "images": 5,
+          "valid_images": 5,
+          "missing_masks": 0
+        },
+        "poke_insulation": {
+          "pixel_auroc": 0.9356552574411356,
+          "images": 5,
+          "valid_images": 5,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.6965587347337932
+    },
+    "capsule": {
+      "defect_types": {
+        "crack": {
+          "pixel_auroc": 0.9620979714097948,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "faulty_imprint": {
+          "pixel_auroc": 0.913320950497936,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "poke": {
+          "pixel_auroc": 0.8110902195662251,
+          "images": 10,
+          "valid_images": 10,
+          "missing_masks": 0
+        },
+        "scratch": {
+          "pixel_auroc": 0.7951964569971323,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "squeeze": {
+          "pixel_auroc": 0.8457238826351607,
+          "images": 10,
+          "valid_images": 10,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.8654858962212499
+    },
+    "screw": {
+      "defect_types": {
+        "manipulated_front": {
+          "pixel_auroc": 0.9363508842729151,
+          "images": 12,
+          "valid_images": 12,
+          "missing_masks": 0
+        },
+        "scratch_head": {
+          "pixel_auroc": 0.9827150819934016,
+          "images": 12,
+          "valid_images": 12,
+          "missing_masks": 0
+        },
+        "scratch_neck": {
+          "pixel_auroc": 0.969203072189684,
+          "images": 12,
+          "valid_images": 12,
+          "missing_masks": 0
+        },
+        "thread_side": {
+          "pixel_auroc": 0.822379146981607,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "thread_top": {
+          "pixel_auroc": 0.8895046572161468,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.9200305685307508
+    },
+    "metal_nut": {
+      "defect_types": {
+        "bent": {
+          "pixel_auroc": 0.9295257470588636,
+          "images": 12,
+          "valid_images": 12,
+          "missing_masks": 0
+        },
+        "color": {
+          "pixel_auroc": 0.8680734353382237,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "flip": {
+          "pixel_auroc": 0.7308110606810757,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        },
+        "scratch": {
+          "pixel_auroc": 0.8662450276471447,
+          "images": 11,
+          "valid_images": 11,
+          "missing_masks": 0
+        }
+      },
+      "defect_type_macro_pixel_auroc": 0.8486638176813269
+    }
+  },
+  "overall_defect_type_macro_pixel_auroc": 0.8582002909058666
+}

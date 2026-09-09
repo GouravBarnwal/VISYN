@@ -1,0 +1,212 @@
+{
+  "model": "MobileNetV3-Small",
+  "distance_metric": "euclidean_cdist_p2",
+  "aggregation": "TOP5",
+  "split": "canonical_development",
+  "final_set_used": false,
+  "layers": {
+    "L4": {
+      "layer_index": 4,
+      "categories": {
+        "bottle": {
+          "normal_count": 42,
+          "defect_count": 31,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "normal_median": 0.3178786188364029,
+          "defect_median": 0.8480475544929504
+        },
+        "hazelnut": {
+          "normal_count": 79,
+          "defect_count": 34,
+          "auroc": 0.9802680565897244,
+          "average_precision": 0.9725660603724541,
+          "normal_median": 0.4986526370048523,
+          "defect_median": 0.6258408725261688
+        },
+        "cable": {
+          "normal_count": 45,
+          "defect_count": 45,
+          "auroc": 0.9180246913580247,
+          "average_precision": 0.9367902967523674,
+          "normal_median": 0.5966824293136597,
+          "defect_median": 0.6606613993644714
+        },
+        "capsule": {
+          "normal_count": 44,
+          "defect_count": 53,
+          "auroc": 0.9292452830188679,
+          "average_precision": 0.9438927659803512,
+          "normal_median": 0.25199076533317566,
+          "defect_median": 0.3889244496822357
+        },
+        "screw": {
+          "normal_count": 64,
+          "defect_count": 58,
+          "auroc": 0.84375,
+          "average_precision": 0.8258341550294586,
+          "normal_median": 0.4160154163837433,
+          "defect_median": 0.471388578414917
+        },
+        "metal_nut": {
+          "normal_count": 44,
+          "defect_count": 45,
+          "auroc": 0.9606060606060606,
+          "average_precision": 0.9756574330592606,
+          "normal_median": 0.5483851432800293,
+          "defect_median": 0.6899235248565674
+        }
+      },
+      "macro": {
+        "auroc": 0.9386490152621129,
+        "average_precision": 0.9424567851989819
+      }
+    },
+    "L6": {
+      "layer_index": 6,
+      "categories": {
+        "bottle": {
+          "normal_count": 42,
+          "defect_count": 31,
+          "auroc": 0.999231950844854,
+          "average_precision": 0.998991935483871,
+          "normal_median": 0.3519008755683899,
+          "defect_median": 0.8866757154464722
+        },
+        "hazelnut": {
+          "normal_count": 79,
+          "defect_count": 34,
+          "auroc": 0.9501116902457185,
+          "average_precision": 0.8979862789929951,
+          "normal_median": 0.6171139478683472,
+          "defect_median": 0.7344911992549896
+        },
+        "cable": {
+          "normal_count": 45,
+          "defect_count": 45,
+          "auroc": 0.9619753086419752,
+          "average_precision": 0.9623692625769298,
+          "normal_median": 0.6117595434188843,
+          "defect_median": 0.7226992845535278
+        },
+        "capsule": {
+          "normal_count": 44,
+          "defect_count": 53,
+          "auroc": 0.8820754716981132,
+          "average_precision": 0.905533314762666,
+          "normal_median": 0.3013797700405121,
+          "defect_median": 0.4009895324707031
+        },
+        "screw": {
+          "normal_count": 64,
+          "defect_count": 58,
+          "auroc": 0.7917564655172414,
+          "average_precision": 0.7678458917582507,
+          "normal_median": 0.4625753164291382,
+          "defect_median": 0.507670670747757
+        },
+        "metal_nut": {
+          "normal_count": 44,
+          "defect_count": 45,
+          "auroc": 0.9712121212121212,
+          "average_precision": 0.9750385481663185,
+          "normal_median": 0.5968383550643921,
+          "defect_median": 0.7534080743789673
+        }
+      },
+      "macro": {
+        "auroc": 0.9260605013600038,
+        "average_precision": 0.9179608719568385
+      }
+    },
+    "L8": {
+      "layer_index": 8,
+      "categories": {
+        "bottle": {
+          "normal_count": 42,
+          "defect_count": 31,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "normal_median": 0.3971990495920181,
+          "defect_median": 0.893389880657196
+        },
+        "hazelnut": {
+          "normal_count": 79,
+          "defect_count": 34,
+          "auroc": 0.9728220402084884,
+          "average_precision": 0.9534372689139424,
+          "normal_median": 0.6903859972953796,
+          "defect_median": 0.8057008385658264
+        },
+        "cable": {
+          "normal_count": 45,
+          "defect_count": 45,
+          "auroc": 0.9674074074074074,
+          "average_precision": 0.9739633663475622,
+          "normal_median": 0.6539841294288635,
+          "defect_median": 0.7996193170547485
+        },
+        "capsule": {
+          "normal_count": 44,
+          "defect_count": 53,
+          "auroc": 0.8876500857632934,
+          "average_precision": 0.9125879811464442,
+          "normal_median": 0.37402112782001495,
+          "defect_median": 0.48050084710121155
+        },
+        "screw": {
+          "normal_count": 64,
+          "defect_count": 58,
+          "auroc": 0.7839439655172414,
+          "average_precision": 0.7505124818168807,
+          "normal_median": 0.5354127883911133,
+          "defect_median": 0.5752660632133484
+        },
+        "metal_nut": {
+          "normal_count": 44,
+          "defect_count": 45,
+          "auroc": 0.991919191919192,
+          "average_precision": 0.9928926049795616,
+          "normal_median": 0.6581222414970398,
+          "defect_median": 0.8120402097702026
+        }
+      },
+      "macro": {
+        "auroc": 0.933957115135937,
+        "average_precision": 0.9305656172007318
+      }
+    }
+  },
+  "comparison": {
+    "macro": {
+      "L4_minus_L8": 0.004691900126175819,
+      "L6_minus_L8": -0.007896613775933203
+    },
+    "categories": {
+      "bottle": {
+        "L4_minus_L8": 0.0,
+        "L6_minus_L8": -0.0007680491551459445
+      },
+      "hazelnut": {
+        "L4_minus_L8": 0.007446016381235987,
+        "L6_minus_L8": -0.022710349962769882
+      },
+      "cable": {
+        "L4_minus_L8": -0.04938271604938271,
+        "L6_minus_L8": -0.005432098765432158
+      },
+      "capsule": {
+        "L4_minus_L8": 0.04159519725557448,
+        "L6_minus_L8": -0.005574614065180228
+      },
+      "screw": {
+        "L4_minus_L8": 0.05980603448275856,
+        "L6_minus_L8": 0.0078125
+      },
+      "metal_nut": {
+        "L4_minus_L8": -0.031313131313131404,
+        "L6_minus_L8": -0.020707070707070785
+      }
+    }
+  }
+}

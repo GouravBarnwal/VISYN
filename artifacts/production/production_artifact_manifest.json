@@ -1,0 +1,295 @@
+{
+  "artifact_type": "VisionForge production inference bundle",
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-09-08T20:53:36.021652+00:00",
+  "model": {
+    "name": "MobileNetV3-Small",
+    "feature_layers": {
+      "L4": 4,
+      "L8": 8
+    },
+    "patches_per_layer": 196
+  },
+  "preprocessing": {
+    "resize": [
+      224,
+      224
+    ],
+    "resize_mode": "direct",
+    "center_crop": false,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "scoring": {
+    "distance": "euclidean_equivalent",
+    "aggregation": "TOP5",
+    "top_k": 5,
+    "chunk_size": 8192,
+    "fusion": {
+      "L4_weight": 0.5,
+      "L8_weight": 0.5
+    }
+  },
+  "decision_policy": {
+    "threshold_percentile": 99.0,
+    "review_multiplier": 1.1
+  },
+  "localization": {
+    "method": "l4_l8_patch_distance_p95_largest_component",
+    "alpha": null
+  },
+  "reference_split": {
+    "seed": 42,
+    "reference_ratio": 0.8,
+    "manifest": {
+      "path": "production\\reference_bank_manifest.json",
+      "size_bytes": 2461,
+      "sha256": "5427ff159a690118e4fe691af27f6c018b26cf012feb9a8fe28cb5343fa3150e"
+    }
+  },
+  "thresholds": {
+    "artifact": {
+      "path": "evaluation\\production_thresholds.json",
+      "size_bytes": 3469,
+      "sha256": "98433c9f48d5e00beeeebfd9cb5743a885d3de107bf58d6440d8c44aae40a6fb"
+    },
+    "categories": {
+      "bottle": {
+        "threshold": 0.46985351681709286,
+        "percentile": 99.0,
+        "normal_development_count": 42,
+        "normal_development_min": 0.24628813564777374,
+        "normal_development_max": 0.4734756052494049,
+        "normal_development_mean": 0.393220138336931,
+        "normal_development_std": 0.04492812280121628,
+        "normal_development_median": 0.392646923661232,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.023809523809523808
+      },
+      "hazelnut": {
+        "threshold": 0.7513870668411254,
+        "percentile": 99.0,
+        "normal_development_count": 79,
+        "normal_development_min": 0.6178401112556458,
+        "normal_development_max": 0.7779033780097961,
+        "normal_development_mean": 0.6884158698818351,
+        "normal_development_std": 0.03236219208014174,
+        "normal_development_median": 0.6928761005401611,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.012658227848101266
+      },
+      "cable": {
+        "threshold": 0.7059989047050477,
+        "percentile": 99.0,
+        "normal_development_count": 45,
+        "normal_development_min": 0.6000472903251648,
+        "normal_development_max": 0.7095335721969604,
+        "normal_development_mean": 0.6548835568957858,
+        "normal_development_std": 0.027836107282545174,
+        "normal_development_median": 0.6571990251541138,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.022222222222222223
+      },
+      "capsule": {
+        "threshold": 0.5000054594874382,
+        "percentile": 99.0,
+        "normal_development_count": 44,
+        "normal_development_min": 0.30818137526512146,
+        "normal_development_max": 0.5125906467437744,
+        "normal_development_mean": 0.3762078962542794,
+        "normal_development_std": 0.04671050294244807,
+        "normal_development_median": 0.35880498588085175,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.022727272727272728
+      },
+      "screw": {
+        "threshold": 0.6448165547847747,
+        "percentile": 99.0,
+        "normal_development_count": 64,
+        "normal_development_min": 0.43514394760131836,
+        "normal_development_max": 0.64549720287323,
+        "normal_development_mean": 0.5360952978953719,
+        "normal_development_std": 0.04055080241134254,
+        "normal_development_median": 0.5392993688583374,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.015625
+      },
+      "metal_nut": {
+        "threshold": 0.7377763795852661,
+        "percentile": 99.0,
+        "normal_development_count": 44,
+        "normal_development_min": 0.5890865325927734,
+        "normal_development_max": 0.7404117584228516,
+        "normal_development_mean": 0.656461394645951,
+        "normal_development_std": 0.03601552861892288,
+        "normal_development_median": 0.6530610024929047,
+        "flagged_at_threshold": 1,
+        "false_positive_rate": 0.022727272727272728
+      }
+    }
+  },
+  "runtime": {
+    "default_batch_size": 1,
+    "bulk_batch_size": 8
+  },
+  "reference_banks": {
+    "bottle": {
+      "reference_images": 167,
+      "L4": {
+        "shape": [
+          32732,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\bottle\\L4.npy",
+          "size_bytes": 5237248,
+          "sha256": "aba4f1be2be8a71346240900db6ff3f27cc9f3c38c81a0e7d5dec8bdbaefc2de"
+        }
+      },
+      "L8": {
+        "shape": [
+          32732,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\bottle\\L8.npy",
+          "size_bytes": 6284672,
+          "sha256": "ad280bb5bf7c2f1604bfdc7eecdd6d08c2202ecd7567a7041e0762533b665e99"
+        }
+      }
+    },
+    "hazelnut": {
+      "reference_images": 312,
+      "L4": {
+        "shape": [
+          61152,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\hazelnut\\L4.npy",
+          "size_bytes": 9784448,
+          "sha256": "97143879a4932982f1f0a5d0273731dc7ce55cb7a80cea834f4dbdfc3e2985f2"
+        }
+      },
+      "L8": {
+        "shape": [
+          61152,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\hazelnut\\L8.npy",
+          "size_bytes": 11741312,
+          "sha256": "e30ce93957546cdd7216afdf593722a34371cbb194c2b6a39b4bb6872344e125"
+        }
+      }
+    },
+    "cable": {
+      "reference_images": 179,
+      "L4": {
+        "shape": [
+          35084,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\cable\\L4.npy",
+          "size_bytes": 5613568,
+          "sha256": "db7c16b9ada19a13bb81b8a4eaa2380d73dd46fa8188bf8142a4b3aae932fd22"
+        }
+      },
+      "L8": {
+        "shape": [
+          35084,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\cable\\L8.npy",
+          "size_bytes": 6736256,
+          "sha256": "3957a0356685fad39b5a8cfc53ce10ff98d7405ab566dde2df02f7c5ed15089d"
+        }
+      }
+    },
+    "capsule": {
+      "reference_images": 175,
+      "L4": {
+        "shape": [
+          34300,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\capsule\\L4.npy",
+          "size_bytes": 5488128,
+          "sha256": "b64eb0a5c93b05784674f74bed90dff36a210e2c55e7bbd7a719f51e70160abe"
+        }
+      },
+      "L8": {
+        "shape": [
+          34300,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\capsule\\L8.npy",
+          "size_bytes": 6585728,
+          "sha256": "7c5a4d96ccd7164e872888bae24f161bf94a15329b1c3b290c997746ea54cb58"
+        }
+      }
+    },
+    "screw": {
+      "reference_images": 256,
+      "L4": {
+        "shape": [
+          50176,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\screw\\L4.npy",
+          "size_bytes": 8028288,
+          "sha256": "1342b7b0179199eb2d8fe5117e9ac65badde0561c03a5ea7c5c33a23b31722e1"
+        }
+      },
+      "L8": {
+        "shape": [
+          50176,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\screw\\L8.npy",
+          "size_bytes": 9633920,
+          "sha256": "1018e5eeb53366d91e145dbfeb617067b9f38e84c6d64c46b352df6d6fa732d3"
+        }
+      }
+    },
+    "metal_nut": {
+      "reference_images": 176,
+      "L4": {
+        "shape": [
+          34496,
+          40
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\metal_nut\\L4.npy",
+          "size_bytes": 5519488,
+          "sha256": "93b6fb2117e9911286b0f1e350af2804b1be7ca29c574e90b1d9f0b2b5d502d1"
+        }
+      },
+      "L8": {
+        "shape": [
+          34496,
+          48
+        ],
+        "artifact": {
+          "path": "production\\reference_banks\\metal_nut\\L8.npy",
+          "size_bytes": 6623360,
+          "sha256": "c14654d3ed0c687dd3779c414a3e314d5fcd245c7bede0a900057cbfcc828951"
+        }
+      }
+    }
+  }
+}

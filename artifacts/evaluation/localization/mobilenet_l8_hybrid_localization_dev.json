@@ -1,0 +1,164 @@
+{
+  "protocol": {
+    "model": "MobileNetV3-Small",
+    "representation": "L8",
+    "feature_map": "48x14x14",
+    "patch_count": 196,
+    "descriptor_dimension": 48,
+    "evaluation_split": "development defect split",
+    "final_test_used": false,
+    "global_reference_bank": "canonical normal reference split",
+    "spatial_reference_bank": "canonical normal reference split",
+    "global_matching": "all normal reference patches",
+    "spatial_matching": "same spatial location",
+    "hybrid_definition": "(1-alpha)*global + alpha*spatial",
+    "alpha_definition": "spatial contribution",
+    "alphas_tested": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "heatmap_interpolation": "bicubic"
+  },
+  "baseline_results": {
+    "global_macro_pixel_auroc": 0.9041,
+    "spatial_macro_pixel_auroc": 0.939
+  },
+  "category_results": {
+    "bottle": {
+      "development_defect_images": 31,
+      "valid_images": 31,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.9474566524325763,
+        "0.25": 0.9612873378431852,
+        "0.5": 0.9677899721409153,
+        "0.75": 0.9695216002888738,
+        "1.0": 0.9695563730506086
+      }
+    },
+    "hazelnut": {
+      "development_defect_images": 34,
+      "valid_images": 34,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.9617101403906261,
+        "0.25": 0.9664179381220106,
+        "0.5": 0.9678890273020371,
+        "0.75": 0.9675672687629739,
+        "1.0": 0.9662630882020824
+      }
+    },
+    "cable": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.8429684693048,
+        "0.25": 0.8882829852616593,
+        "0.5": 0.9149760545790377,
+        "0.75": 0.9286706930372264,
+        "1.0": 0.935185382271814
+      }
+    },
+    "capsule": {
+      "development_defect_images": 53,
+      "valid_images": 53,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.8830926892588546,
+        "0.25": 0.919021675701534,
+        "0.5": 0.941211944995687,
+        "0.75": 0.9565367906714426,
+        "1.0": 0.9611361236875533
+      }
+    },
+    "screw": {
+      "development_defect_images": 58,
+      "valid_images": 58,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.949914782481432,
+        "0.25": 0.9564512734020705,
+        "0.5": 0.9544338056395413,
+        "0.75": 0.9448112506162821,
+        "1.0": 0.9293827374344877
+      }
+    },
+    "metal_nut": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "missing_masks": 0,
+      "pixel_auroc_by_alpha": {
+        "0.0": 0.8393413458989147,
+        "0.25": 0.8642530117287431,
+        "0.5": 0.8710496418613247,
+        "0.75": 0.8725664083701502,
+        "1.0": 0.8724300283195073
+      }
+    }
+  },
+  "macro_results": {
+    "0.0": {
+      "macro_pixel_auroc": 0.9040806799612007,
+      "category_pixel_auroc": {
+        "bottle": 0.9474566524325763,
+        "hazelnut": 0.9617101403906261,
+        "cable": 0.8429684693048,
+        "capsule": 0.8830926892588546,
+        "screw": 0.949914782481432,
+        "metal_nut": 0.8393413458989147
+      }
+    },
+    "0.25": {
+      "macro_pixel_auroc": 0.9259523703432005,
+      "category_pixel_auroc": {
+        "bottle": 0.9612873378431852,
+        "hazelnut": 0.9664179381220106,
+        "cable": 0.8882829852616593,
+        "capsule": 0.919021675701534,
+        "screw": 0.9564512734020705,
+        "metal_nut": 0.8642530117287431
+      }
+    },
+    "0.5": {
+      "macro_pixel_auroc": 0.9362250744197572,
+      "category_pixel_auroc": {
+        "bottle": 0.9677899721409153,
+        "hazelnut": 0.9678890273020371,
+        "cable": 0.9149760545790377,
+        "capsule": 0.941211944995687,
+        "screw": 0.9544338056395413,
+        "metal_nut": 0.8710496418613247
+      }
+    },
+    "0.75": {
+      "macro_pixel_auroc": 0.9399456686244915,
+      "category_pixel_auroc": {
+        "bottle": 0.9695216002888738,
+        "hazelnut": 0.9675672687629739,
+        "cable": 0.9286706930372264,
+        "capsule": 0.9565367906714426,
+        "screw": 0.9448112506162821,
+        "metal_nut": 0.8725664083701502
+      }
+    },
+    "1.0": {
+      "macro_pixel_auroc": 0.9389922888276755,
+      "category_pixel_auroc": {
+        "bottle": 0.9695563730506086,
+        "hazelnut": 0.9662630882020824,
+        "cable": 0.935185382271814,
+        "capsule": 0.9611361236875533,
+        "screw": 0.9293827374344877,
+        "metal_nut": 0.8724300283195073
+      }
+    }
+  },
+  "best_configuration": {
+    "alpha": 0.75,
+    "macro_pixel_auroc": 0.9399456686244915
+  }
+}

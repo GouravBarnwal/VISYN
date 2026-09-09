@@ -1,0 +1,143 @@
+{
+  "experiment": "Day 15 reference-bank layout benchmark",
+  "device": "CPU",
+  "top_k": 5,
+  "current_layout": "[N, C]",
+  "optimized_layout": "[C, N]",
+  "categories": {
+    "bottle": {
+      "reference_count": 167,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.393669000003683,
+          "transposed_mean_ms": 6.37976749999325,
+          "speedup": 1.0021789979039908,
+          "latency_reduction_percent": 0.21742601955818674
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.166346499995825,
+          "transposed_mean_ms": 6.225003000001834,
+          "speedup": 0.9905772736164157,
+          "latency_reduction_percent": -0.9512358737227666
+        }
+      }
+    },
+    "hazelnut": {
+      "reference_count": 312,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 12.619806500008508,
+          "transposed_mean_ms": 12.85938299999657,
+          "speedup": 0.9813695182740786,
+          "latency_reduction_percent": -1.8984165881457793
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 11.846682499999588,
+          "transposed_mean_ms": 11.897261000001436,
+          "speedup": 0.9957487273749949,
+          "latency_reduction_percent": -0.4269423106582737
+        }
+      }
+    },
+    "cable": {
+      "reference_count": 179,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.402395499994782,
+          "transposed_mean_ms": 6.489187499992113,
+          "speedup": 0.986625136044006,
+          "latency_reduction_percent": -1.355617596529335
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.537402499996006,
+          "transposed_mean_ms": 6.523655499992174,
+          "speedup": 1.0021072541313454,
+          "latency_reduction_percent": 0.21028229489985506
+        }
+      }
+    },
+    "capsule": {
+      "reference_count": 175,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.348446000001786,
+          "transposed_mean_ms": 6.413133499997912,
+          "speedup": 0.9899132771840558,
+          "latency_reduction_percent": -1.0189501493138131
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.1754380000036235,
+          "transposed_mean_ms": 6.206061000003729,
+          "speedup": 0.9950656301960153,
+          "latency_reduction_percent": -0.49588385471746044
+        }
+      }
+    },
+    "screw": {
+      "reference_count": 256,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 10.739606000004187,
+          "transposed_mean_ms": 10.49609049998935,
+          "speedup": 1.023200590735673,
+          "latency_reduction_percent": 2.2674528284812534
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 9.337700000010045,
+          "transposed_mean_ms": 9.440226000000393,
+          "speedup": 0.9891394549250893,
+          "latency_reduction_percent": -1.0979791596457122
+        }
+      }
+    },
+    "metal_nut": {
+      "reference_count": 176,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 6.24283250000417,
+          "transposed_mean_ms": 7.347682499989787,
+          "speedup": 0.84963286043087,
+          "latency_reduction_percent": -17.697895946829888
+        },
+        "L8": {
+          "max_score_difference": 0.0,
+          "mean_score_difference": 0.0,
+          "current_mean_ms": 7.391536999987238,
+          "transposed_mean_ms": 6.767467999998189,
+          "speedup": 1.0922160252533468,
+          "latency_reduction_percent": 8.44302071396148
+        }
+      }
+    }
+  },
+  "global_max_score_difference": 0.0,
+  "equivalence_pass": true
+}

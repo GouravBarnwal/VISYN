@@ -1,0 +1,250 @@
+{
+  "threshold_policy": "P99.0",
+  "score_aggregation": "TOP5",
+  "threshold_source": "artifacts\\evaluation\\calibration_candidates.json",
+  "defect_source": "artifacts\\evaluation\\mobilenet_l8_dev_scores.json",
+  "final_defect_set_used": false,
+  "categories": {
+    "bottle": {
+      "threshold": 0.11158741138875483,
+      "total": 31,
+      "detected": 31,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "broken_large": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "broken_small": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "contamination": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    },
+    "hazelnut": {
+      "threshold": 0.28279238045215604,
+      "total": 34,
+      "detected": 34,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "crack": {
+          "total": 9,
+          "detected": 9,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "cut": {
+          "total": 8,
+          "detected": 8,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "hole": {
+          "total": 9,
+          "detected": 9,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "print": {
+          "total": 8,
+          "detected": 8,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    },
+    "cable": {
+      "threshold": 0.2499224865436554,
+      "total": 45,
+      "detected": 45,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "bent_wire": {
+          "total": 6,
+          "detected": 6,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "cable_swap": {
+          "total": 6,
+          "detected": 6,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "combined": {
+          "total": 5,
+          "detected": 5,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "cut_inner_insulation": {
+          "total": 7,
+          "detected": 7,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "cut_outer_insulation": {
+          "total": 5,
+          "detected": 5,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "missing_cable": {
+          "total": 6,
+          "detected": 6,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "missing_wire": {
+          "total": 5,
+          "detected": 5,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "poke_insulation": {
+          "total": 5,
+          "detected": 5,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    },
+    "capsule": {
+      "threshold": 0.1279035346210003,
+      "total": 53,
+      "detected": 53,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "crack": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "faulty_imprint": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "poke": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "scratch": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "squeeze": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    },
+    "screw": {
+      "threshold": 0.21168590649962424,
+      "total": 58,
+      "detected": 58,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "manipulated_front": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "scratch_head": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "scratch_neck": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "thread_side": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "thread_top": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    },
+    "metal_nut": {
+      "threshold": 0.2734225884079933,
+      "total": 45,
+      "detected": 45,
+      "missed": 0,
+      "recall": 1.0,
+      "defect_types": {
+        "bent": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "color": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "flip": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        },
+        "scratch": {
+          "total": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall": 1.0
+        }
+      },
+      "missed_samples": []
+    }
+  },
+  "pooled": {
+    "detected": 266,
+    "total": 266,
+    "missed": 0,
+    "recall": 1.0
+  },
+  "macro_category_recall": 1.0
+}

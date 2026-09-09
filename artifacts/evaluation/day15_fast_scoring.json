@@ -1,0 +1,144 @@
+{
+  "experiment": "Day 15 fast scoring equivalence benchmark",
+  "device": "CPU",
+  "top_k": 5,
+  "original_method": "torch.cdist",
+  "optimized_method": "normalized_feature_matmul",
+  "mathematical_equivalence": "Euclidean distance ranking via normalized dot product",
+  "categories": {
+    "bottle": {
+      "reference_count": 167,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 3.2782554626464844e-07,
+          "mean_score_difference": 1.4901161193847656e-07,
+          "cdist_mean_ms": 13.747017000000596,
+          "matmul_mean_ms": 5.376685499999212,
+          "speedup": 2.5567827986224247,
+          "latency_reduction_percent": 60.888347632079174
+        },
+        "L8": {
+          "max_score_difference": 2.384185791015625e-07,
+          "mean_score_difference": 6.556510925292969e-08,
+          "cdist_mean_ms": 13.75458500000093,
+          "matmul_mean_ms": 5.91361749999578,
+          "speedup": 2.3259172579238925,
+          "latency_reduction_percent": 57.00620920227415
+        }
+      }
+    },
+    "hazelnut": {
+      "reference_count": 312,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 8.940696716308594e-08,
+          "mean_score_difference": 2.9802322387695312e-08,
+          "cdist_mean_ms": 39.31877900000302,
+          "matmul_mean_ms": 17.07446749999633,
+          "speedup": 2.302782151186353,
+          "latency_reduction_percent": 56.57426823962408
+        },
+        "L8": {
+          "max_score_difference": 1.1920928955078125e-07,
+          "mean_score_difference": 4.1723251342773435e-08,
+          "cdist_mean_ms": 32.393293999998605,
+          "matmul_mean_ms": 16.83338150000452,
+          "speedup": 1.9243485927049122,
+          "latency_reduction_percent": 48.034363223433694
+        }
+      }
+    },
+    "cable": {
+      "reference_count": 179,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 1.7881393432617188e-07,
+          "mean_score_difference": 6.556510925292969e-08,
+          "cdist_mean_ms": 19.556355000002554,
+          "matmul_mean_ms": 7.714284499996893,
+          "speedup": 2.535083454597822,
+          "latency_reduction_percent": 60.5535668584668
+        },
+        "L8": {
+          "max_score_difference": 1.1920928955078125e-07,
+          "mean_score_difference": 3.5762786865234374e-08,
+          "cdist_mean_ms": 17.155172500001186,
+          "matmul_mean_ms": 7.145404500004133,
+          "speedup": 2.4008679284694465,
+          "latency_reduction_percent": 58.34839608868031
+        }
+      }
+    },
+    "capsule": {
+      "reference_count": 175,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 2.384185791015625e-07,
+          "mean_score_difference": 1.0728836059570313e-07,
+          "cdist_mean_ms": 15.105053999996585,
+          "matmul_mean_ms": 6.2683130000039,
+          "speedup": 2.4097478859123957,
+          "latency_reduction_percent": 58.50188287969499
+        },
+        "L8": {
+          "max_score_difference": 1.1920928955078125e-07,
+          "mean_score_difference": 6.258487701416016e-08,
+          "cdist_mean_ms": 15.053569500001913,
+          "matmul_mean_ms": 6.583528999998407,
+          "speedup": 2.2865501921546265,
+          "latency_reduction_percent": 56.26599392258713
+        }
+      }
+    },
+    "screw": {
+      "reference_count": 256,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 1.7881393432617188e-07,
+          "mean_score_difference": 8.344650268554687e-08,
+          "cdist_mean_ms": 25.782575999997448,
+          "matmul_mean_ms": 10.013315499998612,
+          "speedup": 2.5748290863301992,
+          "latency_reduction_percent": 61.16247073217353
+        },
+        "L8": {
+          "max_score_difference": 2.980232238769531e-07,
+          "mean_score_difference": 7.152557373046875e-08,
+          "cdist_mean_ms": 26.463185999998018,
+          "matmul_mean_ms": 10.026709499999242,
+          "speedup": 2.6392692438132386,
+          "latency_reduction_percent": 62.11072430961263
+        }
+      }
+    },
+    "metal_nut": {
+      "reference_count": 176,
+      "query_count": 10,
+      "layers": {
+        "L4": {
+          "max_score_difference": 1.7881393432617188e-07,
+          "mean_score_difference": 5.960464477539063e-08,
+          "cdist_mean_ms": 15.222786500000893,
+          "matmul_mean_ms": 6.467234999996663,
+          "speedup": 2.3538322791747555,
+          "latency_reduction_percent": 57.51608944921954
+        },
+        "L8": {
+          "max_score_difference": 1.7881393432617188e-07,
+          "mean_score_difference": 4.76837158203125e-08,
+          "cdist_mean_ms": 16.242219500001625,
+          "matmul_mean_ms": 7.6846529999971835,
+          "speedup": 2.113591791328454,
+          "latency_reduction_percent": 52.68717431139005
+        }
+      }
+    }
+  },
+  "global_max_score_difference": 3.2782554626464844e-07,
+  "equivalence_pass": true
+}

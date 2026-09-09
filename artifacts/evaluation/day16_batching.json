@@ -1,0 +1,267 @@
+{
+  "experiment": "Day 16 batched feature extraction",
+  "device": "CPU",
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "categories": {
+    "bottle": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 2.7567148208618164e-07,
+        "max_l8_feature_difference": 8.493661880493164e-07,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 300.1237399999809,
+          "median_total_ms": 296.4286000001266,
+          "p95_total_ms": 344.6674200001098,
+          "mean_per_image_ms": 18.757733749998806,
+          "images_per_second": 53.311344180906914
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 232.7122749999262,
+          "median_total_ms": 230.4367500000808,
+          "p95_total_ms": 242.26881999998113,
+          "mean_per_image_ms": 14.544517187495387,
+          "images_per_second": 68.75443076651231
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 128.56605999995736,
+          "median_total_ms": 128.38084999975763,
+          "p95_total_ms": 131.41871999994237,
+          "mean_per_image_ms": 8.035378749997335,
+          "images_per_second": 124.44964090838054
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 81.14411499998369,
+          "median_total_ms": 79.0501999999833,
+          "p95_total_ms": 88.35778999989546,
+          "mean_per_image_ms": 5.07150718749898,
+          "images_per_second": 197.1800419537907
+        }
+      }
+    },
+    "hazelnut": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 3.501772880554199e-07,
+        "max_l8_feature_difference": 9.5367431640625e-07,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 294.86044000002494,
+          "median_total_ms": 292.72100000002865,
+          "p95_total_ms": 309.0800900004069,
+          "mean_per_image_ms": 18.42877750000156,
+          "images_per_second": 54.26295911380532
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 216.11376000000746,
+          "median_total_ms": 215.520849999848,
+          "p95_total_ms": 223.791890000075,
+          "mean_per_image_ms": 13.507110000000466,
+          "images_per_second": 74.03508226407911
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 123.60450499998024,
+          "median_total_ms": 123.12235000013061,
+          "p95_total_ms": 129.91317000014533,
+          "mean_per_image_ms": 7.725281562498765,
+          "images_per_second": 129.44512014349766
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 79.34240500005671,
+          "median_total_ms": 78.67659999988064,
+          "p95_total_ms": 85.1194050003869,
+          "mean_per_image_ms": 4.958900312503545,
+          "images_per_second": 201.65761297491
+        }
+      }
+    },
+    "cable": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 3.073364496231079e-07,
+        "max_l8_feature_difference": 5.662441253662109e-07,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 295.06150000004254,
+          "median_total_ms": 295.2580000001035,
+          "p95_total_ms": 307.5303899998062,
+          "mean_per_image_ms": 18.44134375000266,
+          "images_per_second": 54.22598339667389
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 215.3769600000487,
+          "median_total_ms": 215.7022000001234,
+          "p95_total_ms": 219.59583499983637,
+          "mean_per_image_ms": 13.461060000003044,
+          "images_per_second": 74.28835470607618
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 124.36872000000676,
+          "median_total_ms": 123.52495000004637,
+          "p95_total_ms": 130.50723000017115,
+          "mean_per_image_ms": 7.7730450000004225,
+          "images_per_second": 128.6497119211256
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 80.20841499999278,
+          "median_total_ms": 79.3218500000421,
+          "p95_total_ms": 86.66122999968593,
+          "mean_per_image_ms": 5.013025937499549,
+          "images_per_second": 199.4803163733062
+        }
+      }
+    },
+    "capsule": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 3.650784492492676e-07,
+        "max_l8_feature_difference": 1.0551884770393372e-06,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 293.0887299999995,
+          "median_total_ms": 292.4494000001232,
+          "p95_total_ms": 303.26362500020423,
+          "mean_per_image_ms": 18.318045624999968,
+          "images_per_second": 54.59097659606369
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 216.35264000003644,
+          "median_total_ms": 215.28059999991456,
+          "p95_total_ms": 225.9330149999414,
+          "mean_per_image_ms": 13.522040000002278,
+          "images_per_second": 73.95333840158966
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 124.74568500003897,
+          "median_total_ms": 124.23639999974512,
+          "p95_total_ms": 130.32971000011457,
+          "mean_per_image_ms": 7.796605312502436,
+          "images_per_second": 128.26094946686933
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 79.73905999997442,
+          "median_total_ms": 78.21050000006835,
+          "p95_total_ms": 86.09218000021883,
+          "mean_per_image_ms": 4.983691249998401,
+          "images_per_second": 200.65448476574886
+        }
+      }
+    },
+    "screw": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 3.4458935260772705e-07,
+        "max_l8_feature_difference": 7.748603820800781e-07,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 305.61917499999254,
+          "median_total_ms": 298.8498500001242,
+          "p95_total_ms": 367.0895699998482,
+          "mean_per_image_ms": 19.101198437499534,
+          "images_per_second": 52.352736048058475
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 221.65171000003738,
+          "median_total_ms": 220.6468000001678,
+          "p95_total_ms": 231.43538999975135,
+          "mean_per_image_ms": 13.853231875002336,
+          "images_per_second": 72.18532173741092
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 123.47732999999153,
+          "median_total_ms": 122.8783999999905,
+          "p95_total_ms": 125.53602500008765,
+          "mean_per_image_ms": 7.71733312499947,
+          "images_per_second": 129.57844164593692
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 81.11205500001688,
+          "median_total_ms": 78.9153499999884,
+          "p95_total_ms": 93.10061500009397,
+          "mean_per_image_ms": 5.069503437501055,
+          "images_per_second": 197.25797848416823
+        }
+      }
+    },
+    "metal_nut": {
+      "benchmark_images": 16,
+      "feature_equivalence": {
+        "max_l4_feature_difference": 2.8312206268310547e-07,
+        "max_l8_feature_difference": 7.152557373046875e-07,
+        "pass": true
+      },
+      "batch_results": {
+        "1": {
+          "batch_size": 1,
+          "mean_total_ms": 293.65367499995045,
+          "median_total_ms": 294.52139999989413,
+          "p95_total_ms": 298.3691850000241,
+          "mean_per_image_ms": 18.353354687496903,
+          "images_per_second": 54.48595186150046
+        },
+        "2": {
+          "batch_size": 2,
+          "mean_total_ms": 221.16172499995628,
+          "median_total_ms": 220.03114999984064,
+          "p95_total_ms": 226.867785000195,
+          "mean_per_image_ms": 13.822607812497267,
+          "images_per_second": 72.34524870884943
+        },
+        "4": {
+          "batch_size": 4,
+          "mean_total_ms": 124.92387500001314,
+          "median_total_ms": 124.05894999983502,
+          "p95_total_ms": 131.37858500003858,
+          "mean_per_image_ms": 7.807742187500821,
+          "images_per_second": 128.07799950168305
+        },
+        "8": {
+          "batch_size": 8,
+          "mean_total_ms": 79.57832500003406,
+          "median_total_ms": 78.07984999999462,
+          "p95_total_ms": 86.83677000030912,
+          "mean_per_image_ms": 4.9736453125021285,
+          "images_per_second": 201.05977349979597
+        }
+      }
+    }
+  },
+  "global_max_l4_feature_difference": 3.650784492492676e-07,
+  "global_max_l8_feature_difference": 1.0551884770393372e-06,
+  "feature_equivalence_pass": true
+}

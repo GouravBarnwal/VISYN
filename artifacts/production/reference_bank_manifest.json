@@ -1,0 +1,110 @@
+{
+  "model": "MobileNetV3-Small",
+  "feature_layers": {
+    "L4": {
+      "layer_index": 4,
+      "channels": 40,
+      "patches_per_image": 196
+    },
+    "L8": {
+      "layer_index": 8,
+      "channels": 48,
+      "patches_per_image": 196
+    }
+  },
+  "preprocessing": {
+    "resize": [
+      224,
+      224
+    ],
+    "resize_mode": "direct",
+    "normalization": "ImageNet",
+    "center_crop": false
+  },
+  "reference_split": {
+    "path": "D:\\VisionForge\\artifacts\\splits\\normal_splits.json",
+    "seed": 42,
+    "reference_ratio": 0.8
+  },
+  "dtype": "float32",
+  "categories": {
+    "bottle": {
+      "reference_images": 167,
+      "l4_shape": [
+        32732,
+        40
+      ],
+      "l8_shape": [
+        32732,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\bottle\\L4.npy",
+      "l8_path": "production\\reference_banks\\bottle\\L8.npy"
+    },
+    "hazelnut": {
+      "reference_images": 312,
+      "l4_shape": [
+        61152,
+        40
+      ],
+      "l8_shape": [
+        61152,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\hazelnut\\L4.npy",
+      "l8_path": "production\\reference_banks\\hazelnut\\L8.npy"
+    },
+    "cable": {
+      "reference_images": 179,
+      "l4_shape": [
+        35084,
+        40
+      ],
+      "l8_shape": [
+        35084,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\cable\\L4.npy",
+      "l8_path": "production\\reference_banks\\cable\\L8.npy"
+    },
+    "capsule": {
+      "reference_images": 175,
+      "l4_shape": [
+        34300,
+        40
+      ],
+      "l8_shape": [
+        34300,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\capsule\\L4.npy",
+      "l8_path": "production\\reference_banks\\capsule\\L8.npy"
+    },
+    "screw": {
+      "reference_images": 256,
+      "l4_shape": [
+        50176,
+        40
+      ],
+      "l8_shape": [
+        50176,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\screw\\L4.npy",
+      "l8_path": "production\\reference_banks\\screw\\L8.npy"
+    },
+    "metal_nut": {
+      "reference_images": 176,
+      "l4_shape": [
+        34496,
+        40
+      ],
+      "l8_shape": [
+        34496,
+        48
+      ],
+      "l4_path": "production\\reference_banks\\metal_nut\\L4.npy",
+      "l8_path": "production\\reference_banks\\metal_nut\\L8.npy"
+    }
+  }
+}

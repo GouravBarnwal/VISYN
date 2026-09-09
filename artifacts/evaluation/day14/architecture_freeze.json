@@ -1,0 +1,81 @@
+{
+  "project": "VisionForge",
+  "stage": "Day 14 architecture freeze",
+  "status": "FROZEN",
+
+  "production_architecture": {
+    "model": "MobileNetV3-Small",
+    "feature_layers": ["L4", "L8"],
+    "layer_shapes": {
+      "L4": [40, 14, 14],
+      "L8": [48, 14, 14]
+    },
+    "fusion": {
+      "type": "raw_weighted_average",
+      "L4_weight": 0.5,
+      "L8_weight": 0.5
+    },
+    "distance": "Euclidean",
+    "aggregation": "TOP5"
+  },
+
+  "preprocessing": {
+    "resize": "direct_224x224",
+    "scaling": "/255",
+    "normalization": "ImageNet mean/std",
+    "center_crop": false
+  },
+
+  "reference_protocol": {
+    "normal_reference_ratio": 0.8,
+    "seed": 42,
+    "reference_selection": "canonical normal split"
+  },
+
+  "decision_policy": {
+    "production_calibration": "category-specific P99",
+    "review_multiplier": 1.10,
+    "decisions": ["PASS", "REVIEW", "FAIL"]
+  },
+
+  "localization": {
+    "method": "hybrid_alpha_0.75_p95_largest_component",
+    "role": "explanatory evidence only",
+    "affects_classification": false
+  },
+
+  "research_components_not_in_production": [
+    "DINOv2",
+    "TOP10 aggregation",
+    "median/MAD score normalization",
+    "naive diversity reference selection",
+    "L3-only architecture"
+  ],
+
+  "locked_final_evaluation": {
+    "final_test_used_for_tuning": false,
+    "macro_auroc": 0.9511,
+    "macro_average_precision": 0.9525
+  },
+
+  "architecture_selection_evidence": {
+    "development_fusion_macro_auroc": 0.9512,
+    "locked_final_fusion_macro_auroc": 0.9511,
+    "locked_final_l8_macro_auroc": 0.9228,
+    "locked_final_gain_over_l8": 0.0283,
+    "bootstrap_mean_auroc_gain_over_l8": 0.0227,
+    "bootstrap_categories_improved": 4,
+    "bootstrap_categories_with_ci_above_zero": 3,
+    "bank_compression_result": "gradual degradation without collapse",
+    "normalization_ablation_auroc_gain": -0.0013
+  },
+
+  "known_limitations": [
+    "Screw remains the most difficult category.",
+    "Capsule contains subtle localized defects that remain challenging.",
+    "Localization heatmaps provide approximate evidence rather than precise segmentation.",
+    "Reference-bank compression reduces performance, especially for screw."
+  ],
+
+  "next_stage": "CPU/RAM/latency optimization and production artifact preparation"
+}

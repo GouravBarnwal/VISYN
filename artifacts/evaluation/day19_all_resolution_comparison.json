@@ -1,0 +1,556 @@
+{
+  "experiment": "controlled all-category resolution comparison",
+  "resolutions": [
+    224,
+    320
+  ],
+  "categories": [
+    "bottle",
+    "hazelnut",
+    "cable",
+    "capsule",
+    "screw",
+    "metal_nut"
+  ],
+  "reference_split": "normal_splits.json",
+  "defect_split": "defect_splits.json development only",
+  "threshold_method": "P99 normal development",
+  "scoring": {
+    "feature_layers": [
+      "L4",
+      "L8"
+    ],
+    "top_k": 5,
+    "fusion": "0.5 L4 + 0.5 L8"
+  },
+  "results": {
+    "bottle": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.422586045116186,
+        "reference_images": 167,
+        "reference_bank": {
+          "L4_shape": [
+            32732,
+            40
+          ],
+          "L8_shape": [
+            32732,
+            48
+          ],
+          "L4_MB": 4.9945068359375,
+          "L8_MB": 5.993408203125
+        },
+        "normal": {
+          "count": 42,
+          "mean": 0.3534656965306827,
+          "p95": 0.4006713569164276,
+          "max": 0.43547751009464264,
+          "false_positives": 1,
+          "false_positive_rate": 0.023809523809523808
+        },
+        "defects": {
+          "count": 31,
+          "detected": 31,
+          "detection_rate": 1.0,
+          "mean": 0.8539295177305898,
+          "min": 0.523107260465622,
+          "max": 0.9816341996192932
+        },
+        "metrics": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        "latency": {
+          "reference_build_seconds": 11.234757799999898,
+          "mean_ms": 124.11525479449179,
+          "p50_ms": 118.49990000018806,
+          "p95_ms": 157.0908599999711
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.5057776238024234,
+        "reference_images": 167,
+        "reference_bank": {
+          "L4_shape": [
+            66800,
+            40
+          ],
+          "L8_shape": [
+            66800,
+            48
+          ],
+          "L4_MB": 10.19287109375,
+          "L8_MB": 12.2314453125
+        },
+        "normal": {
+          "count": 42,
+          "mean": 0.43221675604581833,
+          "p95": 0.47879069671034813,
+          "max": 0.5122219175100327,
+          "false_positives": 1,
+          "false_positive_rate": 0.023809523809523808
+        },
+        "defects": {
+          "count": 31,
+          "detected": 31,
+          "detection_rate": 1.0,
+          "mean": 0.8835370281050282,
+          "min": 0.6358889937400818,
+          "max": 0.9796515107154846
+        },
+        "metrics": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        "latency": {
+          "reference_build_seconds": 13.640376599999854,
+          "mean_ms": 270.75061780821784,
+          "p50_ms": 267.35310000003665,
+          "p95_ms": 290.26507999997193
+        }
+      }
+    },
+    "hazelnut": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.6423608362674713,
+        "reference_images": 312,
+        "reference_bank": {
+          "L4_shape": [
+            61152,
+            40
+          ],
+          "L8_shape": [
+            61152,
+            48
+          ],
+          "L4_MB": 9.3310546875,
+          "L8_MB": 11.197265625
+        },
+        "normal": {
+          "count": 79,
+          "mean": 0.5911049827744689,
+          "p95": 0.6247043967247009,
+          "max": 0.6519834399223328,
+          "false_positives": 1,
+          "false_positive_rate": 0.012658227848101266
+        },
+        "defects": {
+          "count": 34,
+          "detected": 31,
+          "detection_rate": 0.9117647058823529,
+          "mean": 0.7313679272637648,
+          "min": 0.6340526938438416,
+          "max": 0.917943149805069
+        },
+        "metrics": {
+          "auroc": 0.9977661950856292,
+          "average_precision": 0.9949398271738238
+        },
+        "latency": {
+          "reference_build_seconds": 40.8567352,
+          "mean_ms": 213.03382212390795,
+          "p50_ms": 208.3926000000247,
+          "p95_ms": 232.26687999967908
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.6407473456859588,
+        "reference_images": 312,
+        "reference_bank": {
+          "L4_shape": [
+            124800,
+            40
+          ],
+          "L8_shape": [
+            124800,
+            48
+          ],
+          "L4_MB": 19.04296875,
+          "L8_MB": 22.8515625
+        },
+        "normal": {
+          "count": 79,
+          "mean": 0.6029247924496856,
+          "p95": 0.6330986559391022,
+          "max": 0.6540333032608032,
+          "false_positives": 1,
+          "false_positive_rate": 0.012658227848101266
+        },
+        "defects": {
+          "count": 34,
+          "detected": 33,
+          "detection_rate": 0.9705882352941176,
+          "mean": 0.7469921405701077,
+          "min": 0.6257515996694565,
+          "max": 0.9496656060218811
+        },
+        "metrics": {
+          "auroc": 0.9955323901712584,
+          "average_precision": 0.9919454056132258
+        },
+        "latency": {
+          "reference_build_seconds": 35.93350790000022,
+          "mean_ms": 502.9657522123808,
+          "p50_ms": 496.0455999998885,
+          "p95_ms": 547.8252999999313
+        }
+      }
+    },
+    "cable": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.6584148931503296,
+        "reference_images": 179,
+        "reference_bank": {
+          "L4_shape": [
+            35084,
+            40
+          ],
+          "L8_shape": [
+            35084,
+            48
+          ],
+          "L4_MB": 5.3533935546875,
+          "L8_MB": 6.424072265625
+        },
+        "normal": {
+          "count": 45,
+          "mean": 0.6252177119255066,
+          "p95": 0.6530339419841766,
+          "max": 0.6588924825191498,
+          "false_positives": 1,
+          "false_positive_rate": 0.022222222222222223
+        },
+        "defects": {
+          "count": 45,
+          "detected": 37,
+          "detection_rate": 0.8222222222222222,
+          "mean": 0.7436267806424035,
+          "min": 0.6189111769199371,
+          "max": 0.9708544909954071
+        },
+        "metrics": {
+          "auroc": 0.9609876543209876,
+          "average_precision": 0.9700363495223461
+        },
+        "latency": {
+          "reference_build_seconds": 25.296905499999866,
+          "mean_ms": 192.27464222221897,
+          "p50_ms": 197.66195000011066,
+          "p95_ms": 206.30553999976655
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.6978705406188965,
+        "reference_images": 179,
+        "reference_bank": {
+          "L4_shape": [
+            71600,
+            40
+          ],
+          "L8_shape": [
+            71600,
+            48
+          ],
+          "L4_MB": 10.92529296875,
+          "L8_MB": 13.1103515625
+        },
+        "normal": {
+          "count": 45,
+          "mean": 0.6591861347357432,
+          "p95": 0.6829393923282623,
+          "max": 0.6985141932964325,
+          "false_positives": 1,
+          "false_positive_rate": 0.022222222222222223
+        },
+        "defects": {
+          "count": 45,
+          "detected": 37,
+          "detection_rate": 0.8222222222222222,
+          "mean": 0.755723406208886,
+          "min": 0.6437074244022369,
+          "max": 0.8943711519241333
+        },
+        "metrics": {
+          "auroc": 0.9654320987654321,
+          "average_precision": 0.9743382448554474
+        },
+        "latency": {
+          "reference_build_seconds": 22.074929599999905,
+          "mean_ms": 317.38002999997866,
+          "p50_ms": 314.030799999955,
+          "p95_ms": 335.4991099997278
+        }
+      }
+    },
+    "capsule": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.4359088081121445,
+        "reference_images": 175,
+        "reference_bank": {
+          "L4_shape": [
+            34300,
+            40
+          ],
+          "L8_shape": [
+            34300,
+            48
+          ],
+          "L4_MB": 5.2337646484375,
+          "L8_MB": 6.280517578125
+        },
+        "normal": {
+          "count": 44,
+          "mean": 0.31567709605124866,
+          "p95": 0.38637290969491006,
+          "max": 0.43880023062229156,
+          "false_positives": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        "defects": {
+          "count": 53,
+          "detected": 25,
+          "detection_rate": 0.4716981132075472,
+          "mean": 0.46939884660378944,
+          "min": 0.2829834893345833,
+          "max": 0.9306305944919586
+        },
+        "metrics": {
+          "auroc": 0.9172384219554031,
+          "average_precision": 0.9330702402330413
+        },
+        "latency": {
+          "reference_build_seconds": 24.366635699999733,
+          "mean_ms": 191.12709793817257,
+          "p50_ms": 196.10830000010537,
+          "p95_ms": 204.31561999994298
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.5388013322651387,
+        "reference_images": 175,
+        "reference_bank": {
+          "L4_shape": [
+            70000,
+            40
+          ],
+          "L8_shape": [
+            70000,
+            48
+          ],
+          "L4_MB": 10.68115234375,
+          "L8_MB": 12.8173828125
+        },
+        "normal": {
+          "count": 44,
+          "mean": 0.39383340728553856,
+          "p95": 0.4588487036526203,
+          "max": 0.5958400517702103,
+          "false_positives": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        "defects": {
+          "count": 53,
+          "detected": 26,
+          "detection_rate": 0.49056603773584906,
+          "mean": 0.5639859615069516,
+          "min": 0.363822877407074,
+          "max": 0.9683024883270264
+        },
+        "metrics": {
+          "auroc": 0.9558319039451114,
+          "average_precision": 0.9610042519599084
+        },
+        "latency": {
+          "reference_build_seconds": 21.36499089999961,
+          "mean_ms": 314.5083206185443,
+          "p50_ms": 311.803499999769,
+          "p95_ms": 324.5363799998813
+        }
+      }
+    },
+    "screw": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.5403674910962581,
+        "reference_images": 256,
+        "reference_bank": {
+          "L4_shape": [
+            50176,
+            40
+          ],
+          "L8_shape": [
+            50176,
+            48
+          ],
+          "L4_MB": 7.65625,
+          "L8_MB": 9.1875
+        },
+        "normal": {
+          "count": 64,
+          "mean": 0.47408746602013707,
+          "p95": 0.5212215863168239,
+          "max": 0.5570591688156128,
+          "false_positives": 1,
+          "false_positive_rate": 0.015625
+        },
+        "defects": {
+          "count": 58,
+          "detected": 12,
+          "detection_rate": 0.20689655172413793,
+          "mean": 0.5142711007903362,
+          "min": 0.4536803960800171,
+          "max": 0.6220737099647522
+        },
+        "metrics": {
+          "auroc": 0.8211206896551725,
+          "average_precision": 0.8034845876007316
+        },
+        "latency": {
+          "reference_build_seconds": 17.978991099999803,
+          "mean_ms": 160.81407540983105,
+          "p50_ms": 156.77894999998898,
+          "p95_ms": 198.89577000017195
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.5780422034859657,
+        "reference_images": 256,
+        "reference_bank": {
+          "L4_shape": [
+            102400,
+            40
+          ],
+          "L8_shape": [
+            102400,
+            48
+          ],
+          "L4_MB": 15.625,
+          "L8_MB": 18.75
+        },
+        "normal": {
+          "count": 64,
+          "mean": 0.5226336964406073,
+          "p95": 0.5586953237652779,
+          "max": 0.5997506380081177,
+          "false_positives": 1,
+          "false_positive_rate": 0.015625
+        },
+        "defects": {
+          "count": 58,
+          "detected": 28,
+          "detection_rate": 0.4827586206896552,
+          "mean": 0.5766224812330871,
+          "min": 0.5141086429357529,
+          "max": 0.6732318997383118
+        },
+        "metrics": {
+          "auroc": 0.9191810344827587,
+          "average_precision": 0.9183087277004953
+        },
+        "latency": {
+          "reference_build_seconds": 18.264510799999698,
+          "mean_ms": 357.5011229508551,
+          "p50_ms": 350.31274999983,
+          "p95_ms": 413.04941999965195
+        }
+      }
+    },
+    "metal_nut": {
+      "224": {
+        "resolution": 224,
+        "threshold": 0.6698386919498444,
+        "reference_images": 176,
+        "reference_bank": {
+          "L4_shape": [
+            34496,
+            40
+          ],
+          "L8_shape": [
+            34496,
+            48
+          ],
+          "L4_MB": 5.263671875,
+          "L8_MB": 6.31640625
+        },
+        "normal": {
+          "count": 44,
+          "mean": 0.6028590954162858,
+          "p95": 0.6587666615843774,
+          "max": 0.6741357147693634,
+          "false_positives": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        "defects": {
+          "count": 45,
+          "detected": 42,
+          "detection_rate": 0.9333333333333333,
+          "mean": 0.7515709002812704,
+          "min": 0.6149187684059143,
+          "max": 0.8304035067558289
+        },
+        "metrics": {
+          "auroc": 0.9898989898989898,
+          "average_precision": 0.991408025953536
+        },
+        "latency": {
+          "reference_build_seconds": 13.817702299999837,
+          "mean_ms": 132.0982337078471,
+          "p50_ms": 127.43909999971947,
+          "p95_ms": 151.0007000000769
+        }
+      },
+      "320": {
+        "resolution": 320,
+        "threshold": 0.6986305028200149,
+        "reference_images": 176,
+        "reference_bank": {
+          "L4_shape": [
+            70400,
+            40
+          ],
+          "L8_shape": [
+            70400,
+            48
+          ],
+          "L4_MB": 10.7421875,
+          "L8_MB": 12.890625
+        },
+        "normal": {
+          "count": 44,
+          "mean": 0.6462304524400018,
+          "p95": 0.6917694076895714,
+          "max": 0.7027583420276642,
+          "false_positives": 1,
+          "false_positive_rate": 0.022727272727272728
+        },
+        "defects": {
+          "count": 45,
+          "detected": 43,
+          "detection_rate": 0.9555555555555556,
+          "mean": 0.7677937222851647,
+          "min": 0.6599792838096619,
+          "max": 0.835718959569931
+        },
+        "metrics": {
+          "auroc": 0.9939393939393939,
+          "average_precision": 0.9949607182940516
+        },
+        "latency": {
+          "reference_build_seconds": 12.350030599999627,
+          "mean_ms": 271.3138741572835,
+          "p50_ms": 262.7812000000631,
+          "p95_ms": 330.16704000001477
+        }
+      }
+    }
+  }
+}

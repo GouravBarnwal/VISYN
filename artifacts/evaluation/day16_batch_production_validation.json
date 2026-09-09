@@ -1,0 +1,622 @@
+{
+  "architecture": "MobileNetV3-Small L4+L8",
+  "fusion": "raw_50_50",
+  "distance": "Euclidean-equivalent",
+  "aggregation": "TOP5",
+  "chunk_size": 8192,
+  "batch_size": 8,
+  "categories": {
+    "bottle": {
+      "threshold": 0.46985351681709286,
+      "samples": [
+        {
+          "path": "bottle\\train\\good\\001.png",
+          "l4_difference": 2.0116567611694336e-07,
+          "l8_difference": 4.917383193969727e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.344823956489563,
+          "batch_fusion": 0.3448238968849182,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\006.png",
+          "l4_difference": 2.2351741790771484e-07,
+          "l8_difference": 5.364418029785156e-07,
+          "fusion_difference": 2.9802322387695312e-08,
+          "original_fusion": 0.43547749519348145,
+          "batch_fusion": 0.43547746539115906,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\007.png",
+          "l4_difference": 1.6391277313232422e-07,
+          "l8_difference": 5.811452865600586e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.3270789384841919,
+          "batch_fusion": 0.32707881927490234,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\008.png",
+          "l4_difference": 2.60770320892334e-07,
+          "l8_difference": 4.76837158203125e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.36236709356307983,
+          "batch_fusion": 0.36236703395843506,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\022.png",
+          "l4_difference": 2.1606683731079102e-07,
+          "l8_difference": 4.76837158203125e-07,
+          "fusion_difference": 2.9802322387695312e-08,
+          "original_fusion": 0.3118637800216675,
+          "batch_fusion": 0.31186380982398987,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\023.png",
+          "l4_difference": 2.086162567138672e-07,
+          "l8_difference": 5.513429641723633e-07,
+          "fusion_difference": 8.940696716308594e-08,
+          "original_fusion": 0.40094414353370667,
+          "batch_fusion": 0.40094423294067383,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\026.png",
+          "l4_difference": 2.8032809495925903e-07,
+          "l8_difference": 4.917383193969727e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.34896036982536316,
+          "batch_fusion": 0.34896036982536316,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "bottle\\train\\good\\028.png",
+          "l4_difference": 2.3469328880310059e-07,
+          "l8_difference": 5.327165126800537e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.33850449323654175,
+          "batch_fusion": 0.3385045528411865,
+          "threshold": 0.46985351681709286,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    },
+    "hazelnut": {
+      "threshold": 0.7513870668411254,
+      "samples": [
+        {
+          "path": "hazelnut\\train\\good\\003.png",
+          "l4_difference": 3.501772880554199e-07,
+          "l8_difference": 9.238719940185547e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.5898009538650513,
+          "batch_fusion": 0.5898010730743408,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\007.png",
+          "l4_difference": 3.427267074584961e-07,
+          "l8_difference": 8.810311555862427e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.607365608215332,
+          "batch_fusion": 0.607365608215332,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\010.png",
+          "l4_difference": 3.3527612686157227e-07,
+          "l8_difference": 8.456408977508545e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.6088354587554932,
+          "batch_fusion": 0.6088353991508484,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\016.png",
+          "l4_difference": 2.8312206268310547e-07,
+          "l8_difference": 8.940696716308594e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5737653970718384,
+          "batch_fusion": 0.5737654566764832,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\025.png",
+          "l4_difference": 3.2782554626464844e-07,
+          "l8_difference": 1.0132789611816406e-06,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.6083450317382812,
+          "batch_fusion": 0.6083449721336365,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\027.png",
+          "l4_difference": 4.0978193283081055e-07,
+          "l8_difference": 9.387731552124023e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5937177538871765,
+          "batch_fusion": 0.5937178134918213,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\030.png",
+          "l4_difference": 2.980232238769531e-07,
+          "l8_difference": 7.748603820800781e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.617592453956604,
+          "batch_fusion": 0.617592453956604,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "hazelnut\\train\\good\\031.png",
+          "l4_difference": 3.725290298461914e-07,
+          "l8_difference": 1.0523945093154907e-06,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.6077712178230286,
+          "batch_fusion": 0.607771098613739,
+          "threshold": 0.7513870668411254,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    },
+    "cable": {
+      "threshold": 0.7059989047050477,
+      "samples": [
+        {
+          "path": "cable\\train\\good\\015.png",
+          "l4_difference": 2.682209014892578e-07,
+          "l8_difference": 4.842877388000488e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.6002469658851624,
+          "batch_fusion": 0.6002470254898071,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\016.png",
+          "l4_difference": 3.073364496231079e-07,
+          "l8_difference": 4.76837158203125e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.6007751226425171,
+          "batch_fusion": 0.6007751226425171,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\019.png",
+          "l4_difference": 2.384185791015625e-07,
+          "l8_difference": 4.76837158203125e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.6213832497596741,
+          "batch_fusion": 0.6213832497596741,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\020.png",
+          "l4_difference": 2.384185791015625e-07,
+          "l8_difference": 4.470348358154297e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.6177207231521606,
+          "batch_fusion": 0.6177207231521606,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\035.png",
+          "l4_difference": 2.682209014892578e-07,
+          "l8_difference": 5.811452865600586e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.6101656556129456,
+          "batch_fusion": 0.6101656556129456,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\038.png",
+          "l4_difference": 2.5331974029541016e-07,
+          "l8_difference": 6.407499313354492e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.6474505662918091,
+          "batch_fusion": 0.6474504470825195,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\039.png",
+          "l4_difference": 2.5425106287002563e-07,
+          "l8_difference": 4.246830940246582e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.6145893335342407,
+          "batch_fusion": 0.6145893335342407,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "cable\\train\\good\\040.png",
+          "l4_difference": 2.8312206268310547e-07,
+          "l8_difference": 5.513429641723633e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.6344168782234192,
+          "batch_fusion": 0.6344168186187744,
+          "threshold": 0.7059989047050477,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    },
+    "capsule": {
+      "threshold": 0.5000054594874382,
+      "samples": [
+        {
+          "path": "capsule\\train\\good\\025.png",
+          "l4_difference": 2.8312206268310547e-07,
+          "l8_difference": 7.152557373046875e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.26253384351730347,
+          "batch_fusion": 0.2625337839126587,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\030.png",
+          "l4_difference": 1.7881393432617188e-07,
+          "l8_difference": 8.419156074523926e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.2888116240501404,
+          "batch_fusion": 0.28881174325942993,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\047.png",
+          "l4_difference": 3.650784492492676e-07,
+          "l8_difference": 7.227063179016113e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.2895978093147278,
+          "batch_fusion": 0.2895978093147278,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\049.png",
+          "l4_difference": 2.6635825634002686e-07,
+          "l8_difference": 9.98377799987793e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.282953143119812,
+          "batch_fusion": 0.28295308351516724,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\055.png",
+          "l4_difference": 2.6263296604156494e-07,
+          "l8_difference": 1.0058283805847168e-06,
+          "fusion_difference": 8.940696716308594e-08,
+          "original_fusion": 0.3167870044708252,
+          "batch_fusion": 0.31678691506385803,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\056.png",
+          "l4_difference": 1.9371509552001953e-07,
+          "l8_difference": 8.866190910339355e-07,
+          "fusion_difference": 2.086162567138672e-07,
+          "original_fusion": 0.2840706706047058,
+          "batch_fusion": 0.2840704619884491,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\058.png",
+          "l4_difference": 2.6263296604156494e-07,
+          "l8_difference": 9.685754776000977e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.3008362650871277,
+          "batch_fusion": 0.30083632469177246,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "capsule\\train\\good\\059.png",
+          "l4_difference": 2.5331974029541016e-07,
+          "l8_difference": 6.854534149169922e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.27125921845436096,
+          "batch_fusion": 0.2712593376636505,
+          "threshold": 0.5000054594874382,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    },
+    "screw": {
+      "threshold": 0.6448165547847747,
+      "samples": [
+        {
+          "path": "screw\\train\\good\\001.png",
+          "l4_difference": 3.129243850708008e-07,
+          "l8_difference": 8.195638656616211e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5305644273757935,
+          "batch_fusion": 0.5305643677711487,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\007.png",
+          "l4_difference": 2.7567148208618164e-07,
+          "l8_difference": 6.854534149169922e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.4835958778858185,
+          "batch_fusion": 0.4835958778858185,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\014.png",
+          "l4_difference": 3.4458935260772705e-07,
+          "l8_difference": 7.450580596923828e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.45065808296203613,
+          "batch_fusion": 0.45065808296203613,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\022.png",
+          "l4_difference": 2.980232238769531e-07,
+          "l8_difference": 9.834766387939453e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.44312912225723267,
+          "batch_fusion": 0.44312918186187744,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\026.png",
+          "l4_difference": 2.5331974029541016e-07,
+          "l8_difference": 8.046627044677734e-07,
+          "fusion_difference": 8.940696716308594e-08,
+          "original_fusion": 0.45436105132102966,
+          "batch_fusion": 0.4543611407279968,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\035.png",
+          "l4_difference": 2.5331974029541016e-07,
+          "l8_difference": 7.450580596923828e-07,
+          "fusion_difference": 2.9802322387695312e-08,
+          "original_fusion": 0.4996074140071869,
+          "batch_fusion": 0.4996074438095093,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\047.png",
+          "l4_difference": 2.2351741790771484e-07,
+          "l8_difference": 9.741634130477905e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.5073850154876709,
+          "batch_fusion": 0.5073851346969604,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "screw\\train\\good\\058.png",
+          "l4_difference": 2.384185791015625e-07,
+          "l8_difference": 9.387731552124023e-07,
+          "fusion_difference": 2.9802322387695312e-08,
+          "original_fusion": 0.4673745036125183,
+          "batch_fusion": 0.4673745334148407,
+          "threshold": 0.6448165547847747,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    },
+    "metal_nut": {
+      "threshold": 0.7377763795852661,
+      "samples": [
+        {
+          "path": "metal_nut\\train\\good\\000.png",
+          "l4_difference": 2.1047890186309814e-07,
+          "l8_difference": 6.258487701416016e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.5771661996841431,
+          "batch_fusion": 0.5771661996841431,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\003.png",
+          "l4_difference": 2.551823854446411e-07,
+          "l8_difference": 5.774199962615967e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5941804051399231,
+          "batch_fusion": 0.5941804647445679,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\005.png",
+          "l4_difference": 2.8312206268310547e-07,
+          "l8_difference": 5.140900611877441e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5893721580505371,
+          "batch_fusion": 0.5893720984458923,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\006.png",
+          "l4_difference": 2.2351741790771484e-07,
+          "l8_difference": 5.424953997135162e-07,
+          "fusion_difference": 1.1920928955078125e-07,
+          "original_fusion": 0.6036640405654907,
+          "batch_fusion": 0.6036639213562012,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\012.png",
+          "l4_difference": 3.7997961044311523e-07,
+          "l8_difference": 4.470348358154297e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.632452130317688,
+          "batch_fusion": 0.632452130317688,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\015.png",
+          "l4_difference": 2.6263296604156494e-07,
+          "l8_difference": 6.705522537231445e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.5906365513801575,
+          "batch_fusion": 0.5906366109848022,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\017.png",
+          "l4_difference": 3.390014171600342e-07,
+          "l8_difference": 6.258487701416016e-07,
+          "fusion_difference": 5.960464477539063e-08,
+          "original_fusion": 0.6124961972236633,
+          "batch_fusion": 0.6124962568283081,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        },
+        {
+          "path": "metal_nut\\train\\good\\023.png",
+          "l4_difference": 2.5331974029541016e-07,
+          "l8_difference": 5.513429641723633e-07,
+          "fusion_difference": 0.0,
+          "original_fusion": 0.5818074941635132,
+          "batch_fusion": 0.5818074941635132,
+          "threshold": 0.7377763795852661,
+          "original_decision": "PASS",
+          "batch_decision": "PASS",
+          "decision_match": true
+        }
+      ]
+    }
+  },
+  "global_max_l4_difference": 4.0978193283081055e-07,
+  "global_max_l8_difference": 1.0523945093154907e-06,
+  "global_max_fusion_difference": 2.086162567138672e-07,
+  "decision_matches": 48,
+  "decision_total": 48,
+  "equivalence_pass": true
+}

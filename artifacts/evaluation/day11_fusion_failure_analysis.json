@@ -1,0 +1,1231 @@
+{
+  "bottle": {
+    "normal_count": 42,
+    "defect_count": 31,
+    "defect_mean_score_shift": 3.349158695792501,
+    "defect_median_score_shift": 3.5582524962561557,
+    "defect_samples_improved": 30,
+    "defect_samples_regressed": 1,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "broken_large": {
+        "count": 10,
+        "mean_score_shift": 3.843991384507112,
+        "median_score_shift": 3.7530209679303344,
+        "min_score_shift": 2.8428619391404695,
+        "max_score_shift": 5.253182233440189,
+        "samples_improved": 10,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      },
+      "broken_small": {
+        "count": 11,
+        "mean_score_shift": 3.9957659813905027,
+        "median_score_shift": 4.071840264119924,
+        "min_score_shift": 1.631872123233375,
+        "max_score_shift": 6.3113105807924335,
+        "samples_improved": 11,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      },
+      "contamination": {
+        "count": 10,
+        "mean_score_shift": 2.143057992920089,
+        "median_score_shift": 2.2354086167119895,
+        "min_score_shift": -1.2702866109225361,
+        "max_score_shift": 5.275360357719382,
+        "samples_improved": 9,
+        "samples_regressed": 1,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\bottle\\test\\contamination\\015.png",
+        "defect_type": "contamination",
+        "L8_normalized": 20.980504858127862,
+        "fusion_normalized": 19.710218247205326,
+        "fusion_minus_L8": -1.2702866109225361
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\019.png",
+        "defect_type": "contamination",
+        "L8_normalized": 6.657699698519929,
+        "fusion_normalized": 6.844483625090158,
+        "fusion_minus_L8": 0.1867839265702287
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\002.png",
+        "defect_type": "contamination",
+        "L8_normalized": 12.481782234027108,
+        "fusion_normalized": 12.739221880978825,
+        "fusion_minus_L8": 0.25743964695171684
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\013.png",
+        "defect_type": "contamination",
+        "L8_normalized": 22.22223835430029,
+        "fusion_normalized": 23.423813342393178,
+        "fusion_minus_L8": 1.2015749880928865
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\016.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 19.522124765491778,
+        "fusion_normalized": 21.153996888725153,
+        "fusion_minus_L8": 1.631872123233375
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\015.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 13.187082760407325,
+        "fusion_normalized": 14.913869055076706,
+        "fusion_minus_L8": 1.726786294669381
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\007.png",
+        "defect_type": "contamination",
+        "L8_normalized": 24.101182860900682,
+        "fusion_normalized": 26.19164352085309,
+        "fusion_minus_L8": 2.0904606599524094
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\005.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 15.856805791605815,
+        "fusion_normalized": 18.131974000504414,
+        "fusion_minus_L8": 2.2751682088985987
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\000.png",
+        "defect_type": "contamination",
+        "L8_normalized": 20.094587308229922,
+        "fusion_normalized": 22.474943881701492,
+        "fusion_minus_L8": 2.3803565734715697
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\009.png",
+        "defect_type": "contamination",
+        "L8_normalized": 15.959688214378236,
+        "fusion_normalized": 18.577009733432362,
+        "fusion_minus_L8": 2.6173215190541264
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\bottle\\test\\broken_small\\001.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 18.28755163451164,
+        "fusion_normalized": 24.598862215304074,
+        "fusion_minus_L8": 6.3113105807924335
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\020.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 18.95925492574025,
+        "fusion_normalized": 24.877826004327147,
+        "fusion_minus_L8": 5.918571078586897
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\004.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 18.288877121961356,
+        "fusion_normalized": 24.158736947983087,
+        "fusion_minus_L8": 5.869859826021731
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\003.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 18.45014703914686,
+        "fusion_normalized": 23.940910309608768,
+        "fusion_minus_L8": 5.490763270461908
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\005.png",
+        "defect_type": "contamination",
+        "L8_normalized": 22.633021035280855,
+        "fusion_normalized": 27.908381393000237,
+        "fusion_minus_L8": 5.275360357719382
+      },
+      {
+        "path": "data\\bottle\\test\\broken_large\\014.png",
+        "defect_type": "broken_large",
+        "L8_normalized": 18.35882049836734,
+        "fusion_normalized": 23.61200273180753,
+        "fusion_minus_L8": 5.253182233440189
+      },
+      {
+        "path": "data\\bottle\\test\\contamination\\012.png",
+        "defect_type": "contamination",
+        "L8_normalized": 8.895158953160985,
+        "fusion_normalized": 14.018141173592031,
+        "fusion_minus_L8": 5.122982220431046
+      },
+      {
+        "path": "data\\bottle\\test\\broken_large\\004.png",
+        "defect_type": "broken_large",
+        "L8_normalized": 20.355890533411905,
+        "fusion_normalized": 24.91010071298617,
+        "fusion_minus_L8": 4.554210179574266
+      },
+      {
+        "path": "data\\bottle\\test\\broken_small\\011.png",
+        "defect_type": "broken_small",
+        "L8_normalized": 14.973270475165615,
+        "fusion_normalized": 19.372081035130254,
+        "fusion_minus_L8": 4.398810559964639
+      },
+      {
+        "path": "data\\bottle\\test\\broken_large\\005.png",
+        "defect_type": "broken_large",
+        "L8_normalized": 21.27616827085949,
+        "fusion_normalized": 25.572649717208783,
+        "fusion_minus_L8": 4.2964814463492935
+      }
+    ]
+  },
+  "hazelnut": {
+    "normal_count": 79,
+    "defect_count": 34,
+    "defect_mean_score_shift": 2.8906147385904593,
+    "defect_median_score_shift": 1.5706398314998666,
+    "defect_samples_improved": 29,
+    "defect_samples_regressed": 5,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "crack": {
+        "count": 9,
+        "mean_score_shift": 0.8460092070286714,
+        "median_score_shift": 0.6668730334411626,
+        "min_score_shift": -0.5310091369718233,
+        "max_score_shift": 4.062803328881326,
+        "samples_improved": 7,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      },
+      "cut": {
+        "count": 8,
+        "mean_score_shift": 1.1059072716580214,
+        "median_score_shift": 1.2627907459994776,
+        "min_score_shift": -0.3823443881107984,
+        "max_score_shift": 1.9456260726727876,
+        "samples_improved": 7,
+        "samples_regressed": 1,
+        "samples_unchanged": 0
+      },
+      "hole": {
+        "count": 9,
+        "mean_score_shift": 1.759518944964187,
+        "median_score_shift": 2.12750163366941,
+        "min_score_shift": -0.623925933550435,
+        "max_score_shift": 3.8244832592558766,
+        "samples_improved": 7,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      },
+      "print": {
+        "count": 8,
+        "mean_score_shift": 8.247986196359467,
+        "median_score_shift": 8.76023493047674,
+        "min_score_shift": 2.412897196340397,
+        "max_score_shift": 11.989646080723235,
+        "samples_improved": 8,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\hazelnut\\test\\hole\\016.png",
+        "defect_type": "hole",
+        "L8_normalized": 4.964277287307235,
+        "fusion_normalized": 4.3403513537568,
+        "fusion_minus_L8": -0.623925933550435
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\016.png",
+        "defect_type": "crack",
+        "L8_normalized": 2.4980995077643344,
+        "fusion_normalized": 1.9670903707925111,
+        "fusion_minus_L8": -0.5310091369718233
+      },
+      {
+        "path": "data\\hazelnut\\test\\hole\\006.png",
+        "defect_type": "hole",
+        "L8_normalized": 5.982158501286074,
+        "fusion_normalized": 5.558795369795696,
+        "fusion_minus_L8": -0.42336313149037785
+      },
+      {
+        "path": "data\\hazelnut\\test\\cut\\014.png",
+        "defect_type": "cut",
+        "L8_normalized": 1.0227264762981636,
+        "fusion_normalized": 0.6403820881873652,
+        "fusion_minus_L8": -0.3823443881107984
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\005.png",
+        "defect_type": "crack",
+        "L8_normalized": 3.9571729272720053,
+        "fusion_normalized": 3.8444595084458615,
+        "fusion_minus_L8": -0.11271341882614383
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\013.png",
+        "defect_type": "crack",
+        "L8_normalized": 4.5470684294014445,
+        "fusion_normalized": 4.591999595529832,
+        "fusion_minus_L8": 0.044931166128387545
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\004.png",
+        "defect_type": "crack",
+        "L8_normalized": 3.358479325868421,
+        "fusion_normalized": 3.7046452851313156,
+        "fusion_minus_L8": 0.3461659592628945
+      },
+      {
+        "path": "data\\hazelnut\\test\\cut\\011.png",
+        "defect_type": "cut",
+        "L8_normalized": 5.981499695126937,
+        "fusion_normalized": 6.6095324340658195,
+        "fusion_minus_L8": 0.6280327389388827
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\010.png",
+        "defect_type": "crack",
+        "L8_normalized": 6.661747424932309,
+        "fusion_normalized": 7.3286204583734715,
+        "fusion_minus_L8": 0.6668730334411626
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\006.png",
+        "defect_type": "crack",
+        "L8_normalized": 5.231481589638521,
+        "fusion_normalized": 6.077539387446963,
+        "fusion_minus_L8": 0.8460577978084425
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\hazelnut\\test\\print\\008.png",
+        "defect_type": "print",
+        "L8_normalized": 8.741869467605193,
+        "fusion_normalized": 20.731515548328428,
+        "fusion_minus_L8": 11.989646080723235
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\016.png",
+        "defect_type": "print",
+        "L8_normalized": 6.950451702733578,
+        "fusion_normalized": 17.75252012343446,
+        "fusion_minus_L8": 10.802068420700884
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\011.png",
+        "defect_type": "print",
+        "L8_normalized": 7.391580831076961,
+        "fusion_normalized": 17.238728031756075,
+        "fusion_minus_L8": 9.847147200679114
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\007.png",
+        "defect_type": "print",
+        "L8_normalized": 6.967963798367936,
+        "fusion_normalized": 16.807232710428362,
+        "fusion_minus_L8": 9.839268912060426
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\009.png",
+        "defect_type": "print",
+        "L8_normalized": 3.3790681864374705,
+        "fusion_normalized": 11.060269135330524,
+        "fusion_minus_L8": 7.6812009488930535
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\014.png",
+        "defect_type": "print",
+        "L8_normalized": 6.291963265716148,
+        "fusion_normalized": 13.482735561468568,
+        "fusion_minus_L8": 7.19077229575242
+      },
+      {
+        "path": "data\\hazelnut\\test\\print\\005.png",
+        "defect_type": "print",
+        "L8_normalized": 4.492415552497739,
+        "fusion_normalized": 10.71330406822393,
+        "fusion_minus_L8": 6.220888515726191
+      },
+      {
+        "path": "data\\hazelnut\\test\\crack\\009.png",
+        "defect_type": "crack",
+        "L8_normalized": 7.805895147028247,
+        "fusion_normalized": 11.868698475909573,
+        "fusion_minus_L8": 4.062803328881326
+      },
+      {
+        "path": "data\\hazelnut\\test\\hole\\002.png",
+        "defect_type": "hole",
+        "L8_normalized": 2.226659689239733,
+        "fusion_normalized": 6.05114294849561,
+        "fusion_minus_L8": 3.8244832592558766
+      },
+      {
+        "path": "data\\hazelnut\\test\\hole\\017.png",
+        "defect_type": "hole",
+        "L8_normalized": 5.508278296542202,
+        "fusion_normalized": 8.971337529428355,
+        "fusion_minus_L8": 3.4630592328861534
+      }
+    ]
+  },
+  "cable": {
+    "normal_count": 45,
+    "defect_count": 45,
+    "defect_mean_score_shift": 1.3288272667232857,
+    "defect_median_score_shift": 0.09936268529085446,
+    "defect_samples_improved": 23,
+    "defect_samples_regressed": 22,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "bent_wire": {
+        "count": 6,
+        "mean_score_shift": 0.9323839956198289,
+        "median_score_shift": 1.2445771008424318,
+        "min_score_shift": -0.6539868639302231,
+        "max_score_shift": 2.2311979825934056,
+        "samples_improved": 4,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      },
+      "cable_swap": {
+        "count": 6,
+        "mean_score_shift": -0.5946804679981716,
+        "median_score_shift": -0.8442291537135385,
+        "min_score_shift": -1.5450145458196538,
+        "max_score_shift": 0.6090251815410233,
+        "samples_improved": 2,
+        "samples_regressed": 4,
+        "samples_unchanged": 0
+      },
+      "combined": {
+        "count": 5,
+        "mean_score_shift": 3.2364952564476526,
+        "median_score_shift": 1.829577958097067,
+        "min_score_shift": -1.0058394527492922,
+        "max_score_shift": 7.540056312161642,
+        "samples_improved": 4,
+        "samples_regressed": 1,
+        "samples_unchanged": 0
+      },
+      "cut_inner_insulation": {
+        "count": 7,
+        "mean_score_shift": -0.19716788183355835,
+        "median_score_shift": 0.13904687953053685,
+        "min_score_shift": -1.7048705889137716,
+        "max_score_shift": 1.160057595076081,
+        "samples_improved": 4,
+        "samples_regressed": 3,
+        "samples_unchanged": 0
+      },
+      "cut_outer_insulation": {
+        "count": 5,
+        "mean_score_shift": -1.9899910857072327,
+        "median_score_shift": -1.9152920530848325,
+        "min_score_shift": -3.2174846700546786,
+        "max_score_shift": -0.8557311633843705,
+        "samples_improved": 0,
+        "samples_regressed": 5,
+        "samples_unchanged": 0
+      },
+      "missing_cable": {
+        "count": 6,
+        "mean_score_shift": 7.829836379267925,
+        "median_score_shift": 7.561049887877845,
+        "min_score_shift": 7.018455342728972,
+        "max_score_shift": 9.331800618146975,
+        "samples_improved": 6,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      },
+      "missing_wire": {
+        "count": 5,
+        "mean_score_shift": 2.600902460714262,
+        "median_score_shift": 2.2477865305036375,
+        "min_score_shift": -0.4804776773583347,
+        "max_score_shift": 6.600779539091767,
+        "samples_improved": 3,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      },
+      "poke_insulation": {
+        "count": 5,
+        "mean_score_shift": -1.4129740846456298,
+        "median_score_shift": -1.0658190012223354,
+        "min_score_shift": -2.5554153795541996,
+        "max_score_shift": -0.1286127686202434,
+        "samples_improved": 0,
+        "samples_regressed": 5,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\cable\\test\\cut_outer_insulation\\009.png",
+        "defect_type": "cut_outer_insulation",
+        "L8_normalized": 5.824867055068693,
+        "fusion_normalized": 2.6073823850140143,
+        "fusion_minus_L8": -3.2174846700546786
+      },
+      {
+        "path": "data\\cable\\test\\cut_outer_insulation\\005.png",
+        "defect_type": "cut_outer_insulation",
+        "L8_normalized": 8.675644675092146,
+        "fusion_normalized": 5.949782185606944,
+        "fusion_minus_L8": -2.725862489485202
+      },
+      {
+        "path": "data\\cable\\test\\poke_insulation\\007.png",
+        "defect_type": "poke_insulation",
+        "L8_normalized": 7.9776657178093755,
+        "fusion_normalized": 5.422250338255176,
+        "fusion_minus_L8": -2.5554153795541996
+      },
+      {
+        "path": "data\\cable\\test\\poke_insulation\\005.png",
+        "defect_type": "poke_insulation",
+        "L8_normalized": 8.037467040614356,
+        "fusion_normalized": 5.6601682892827,
+        "fusion_minus_L8": -2.377298751331656
+      },
+      {
+        "path": "data\\cable\\test\\cut_outer_insulation\\002.png",
+        "defect_type": "cut_outer_insulation",
+        "L8_normalized": 6.7681850714673715,
+        "fusion_normalized": 4.852893018382539,
+        "fusion_minus_L8": -1.9152920530848325
+      },
+      {
+        "path": "data\\cable\\test\\cut_inner_insulation\\002.png",
+        "defect_type": "cut_inner_insulation",
+        "L8_normalized": 5.696298057756733,
+        "fusion_normalized": 3.9914274688429616,
+        "fusion_minus_L8": -1.7048705889137716
+      },
+      {
+        "path": "data\\cable\\test\\cable_swap\\009.png",
+        "defect_type": "cable_swap",
+        "L8_normalized": 2.458370343430387,
+        "fusion_normalized": 0.9133557976107334,
+        "fusion_minus_L8": -1.5450145458196538
+      },
+      {
+        "path": "data\\cable\\test\\cut_outer_insulation\\003.png",
+        "defect_type": "cut_outer_insulation",
+        "L8_normalized": 5.709549421010545,
+        "fusion_normalized": 4.473964368483466,
+        "fusion_minus_L8": -1.235585052527079
+      },
+      {
+        "path": "data\\cable\\test\\cut_inner_insulation\\008.png",
+        "defect_type": "cut_inner_insulation",
+        "L8_normalized": 5.0899922366221615,
+        "fusion_normalized": 3.8880796729246243,
+        "fusion_minus_L8": -1.2019125636975372
+      },
+      {
+        "path": "data\\cable\\test\\poke_insulation\\001.png",
+        "defect_type": "poke_insulation",
+        "L8_normalized": 4.66908893380613,
+        "fusion_normalized": 3.6032699325837942,
+        "fusion_minus_L8": -1.0658190012223354
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\cable\\test\\missing_cable\\005.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 6.556186572853356,
+        "fusion_normalized": 15.887987191000331,
+        "fusion_minus_L8": 9.331800618146975
+      },
+      {
+        "path": "data\\cable\\test\\missing_cable\\008.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 9.25812881611985,
+        "fusion_normalized": 17.69798277451583,
+        "fusion_minus_L8": 8.439853958395979
+      },
+      {
+        "path": "data\\cable\\test\\missing_cable\\010.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 8.003149646684712,
+        "fusion_normalized": 15.947578482900271,
+        "fusion_minus_L8": 7.944428836215559
+      },
+      {
+        "path": "data\\cable\\test\\combined\\005.png",
+        "defect_type": "combined",
+        "L8_normalized": 9.87566705600123,
+        "fusion_normalized": 17.415723368162872,
+        "fusion_minus_L8": 7.540056312161642
+      },
+      {
+        "path": "data\\cable\\test\\combined\\010.png",
+        "defect_type": "combined",
+        "L8_normalized": 6.770341565311456,
+        "fusion_normalized": 14.240592445492162,
+        "fusion_minus_L8": 7.470250880180706
+      },
+      {
+        "path": "data\\cable\\test\\missing_cable\\007.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 12.098482994006114,
+        "fusion_normalized": 19.276153933546244,
+        "fusion_minus_L8": 7.17767093954013
+      },
+      {
+        "path": "data\\cable\\test\\missing_cable\\002.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 5.667683132954257,
+        "fusion_normalized": 12.7344917135342,
+        "fusion_minus_L8": 7.066808580579944
+      },
+      {
+        "path": "data\\cable\\test\\missing_cable\\006.png",
+        "defect_type": "missing_cable",
+        "L8_normalized": 12.306611460424259,
+        "fusion_normalized": 19.32506680315323,
+        "fusion_minus_L8": 7.018455342728972
+      },
+      {
+        "path": "data\\cable\\test\\missing_wire\\003.png",
+        "defect_type": "missing_wire",
+        "L8_normalized": 2.896478970105167,
+        "fusion_normalized": 9.497258509196934,
+        "fusion_minus_L8": 6.600779539091767
+      },
+      {
+        "path": "data\\cable\\test\\missing_wire\\004.png",
+        "defect_type": "missing_wire",
+        "L8_normalized": 2.349925513536953,
+        "fusion_normalized": 7.156061656122695,
+        "fusion_minus_L8": 4.806136142585743
+      }
+    ]
+  },
+  "capsule": {
+    "normal_count": 44,
+    "defect_count": 53,
+    "defect_mean_score_shift": 0.7553098782006291,
+    "defect_median_score_shift": 0.8280717926449781,
+    "defect_samples_improved": 42,
+    "defect_samples_regressed": 11,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "crack": {
+        "count": 11,
+        "mean_score_shift": 0.6133188192426992,
+        "median_score_shift": 0.3783479398214471,
+        "min_score_shift": -1.3369698049403715,
+        "max_score_shift": 2.3782594807182766,
+        "samples_improved": 7,
+        "samples_regressed": 4,
+        "samples_unchanged": 0
+      },
+      "faulty_imprint": {
+        "count": 11,
+        "mean_score_shift": 0.9403460828809528,
+        "median_score_shift": 0.8280717926449781,
+        "min_score_shift": -0.38132246491086574,
+        "max_score_shift": 2.1574336884992817,
+        "samples_improved": 10,
+        "samples_regressed": 1,
+        "samples_unchanged": 0
+      },
+      "poke": {
+        "count": 10,
+        "mean_score_shift": 1.231032431448631,
+        "median_score_shift": 1.034682382850578,
+        "min_score_shift": -0.5738414702159225,
+        "max_score_shift": 4.025153570613567,
+        "samples_improved": 9,
+        "samples_regressed": 1,
+        "samples_unchanged": 0
+      },
+      "scratch": {
+        "count": 11,
+        "mean_score_shift": 0.4748202676398458,
+        "median_score_shift": 0.5804735900628759,
+        "min_score_shift": -0.5018510560185467,
+        "max_score_shift": 1.816096438509243,
+        "samples_improved": 8,
+        "samples_regressed": 3,
+        "samples_unchanged": 0
+      },
+      "squeeze": {
+        "count": 10,
+        "mean_score_shift": 0.5407762362748569,
+        "median_score_shift": 0.816776577662019,
+        "min_score_shift": -1.6936301684748436,
+        "max_score_shift": 1.5600088718974803,
+        "samples_improved": 8,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\capsule\\test\\squeeze\\015.png",
+        "defect_type": "squeeze",
+        "L8_normalized": 16.762231860764427,
+        "fusion_normalized": 15.068601692289583,
+        "fusion_minus_L8": -1.6936301684748436
+      },
+      {
+        "path": "data\\capsule\\test\\crack\\016.png",
+        "defect_type": "crack",
+        "L8_normalized": 2.9936653157296793,
+        "fusion_normalized": 1.6566955107893078,
+        "fusion_minus_L8": -1.3369698049403715
+      },
+      {
+        "path": "data\\capsule\\test\\poke\\010.png",
+        "defect_type": "poke",
+        "L8_normalized": 1.8501331900129927,
+        "fusion_normalized": 1.2762917197970702,
+        "fusion_minus_L8": -0.5738414702159225
+      },
+      {
+        "path": "data\\capsule\\test\\scratch\\001.png",
+        "defect_type": "scratch",
+        "L8_normalized": 1.8369426875011474,
+        "fusion_normalized": 1.3350916314826007,
+        "fusion_minus_L8": -0.5018510560185467
+      },
+      {
+        "path": "data\\capsule\\test\\scratch\\015.png",
+        "defect_type": "scratch",
+        "L8_normalized": 5.5505698819238924,
+        "fusion_normalized": 5.057961904232714,
+        "fusion_minus_L8": -0.49260797769117826
+      },
+      {
+        "path": "data\\capsule\\test\\crack\\013.png",
+        "defect_type": "crack",
+        "L8_normalized": 3.0052016513114017,
+        "fusion_normalized": 2.5357479703954646,
+        "fusion_minus_L8": -0.4694536809159371
+      },
+      {
+        "path": "data\\capsule\\test\\crack\\017.png",
+        "defect_type": "crack",
+        "L8_normalized": 11.227250615468398,
+        "fusion_normalized": 10.812635057403298,
+        "fusion_minus_L8": -0.4146155580650994
+      },
+      {
+        "path": "data\\capsule\\test\\faulty_imprint\\009.png",
+        "defect_type": "faulty_imprint",
+        "L8_normalized": 1.951854257899106,
+        "fusion_normalized": 1.5705317929882403,
+        "fusion_minus_L8": -0.38132246491086574
+      },
+      {
+        "path": "data\\capsule\\test\\scratch\\018.png",
+        "defect_type": "scratch",
+        "L8_normalized": 7.532535179092635,
+        "fusion_normalized": 7.199600442268929,
+        "fusion_minus_L8": -0.3329347368237059
+      },
+      {
+        "path": "data\\capsule\\test\\squeeze\\011.png",
+        "defect_type": "squeeze",
+        "L8_normalized": 15.953438056445641,
+        "fusion_normalized": 15.854233078877268,
+        "fusion_minus_L8": -0.09920497756837321
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\capsule\\test\\poke\\000.png",
+        "defect_type": "poke",
+        "L8_normalized": 11.41170144632524,
+        "fusion_normalized": 15.436855016938807,
+        "fusion_minus_L8": 4.025153570613567
+      },
+      {
+        "path": "data\\capsule\\test\\crack\\002.png",
+        "defect_type": "crack",
+        "L8_normalized": 4.085883592336577,
+        "fusion_normalized": 6.464143073054854,
+        "fusion_minus_L8": 2.3782594807182766
+      },
+      {
+        "path": "data\\capsule\\test\\crack\\012.png",
+        "defect_type": "crack",
+        "L8_normalized": 9.729325972868399,
+        "fusion_normalized": 12.09277121612383,
+        "fusion_minus_L8": 2.3634452432554323
+      },
+      {
+        "path": "data\\capsule\\test\\poke\\012.png",
+        "defect_type": "poke",
+        "L8_normalized": 1.7388562996020618,
+        "fusion_normalized": 4.079005952506485,
+        "fusion_minus_L8": 2.3401496529044232
+      },
+      {
+        "path": "data\\capsule\\test\\faulty_imprint\\010.png",
+        "defect_type": "faulty_imprint",
+        "L8_normalized": 1.9273650405791012,
+        "fusion_normalized": 4.084798729078383,
+        "fusion_minus_L8": 2.1574336884992817
+      },
+      {
+        "path": "data\\capsule\\test\\faulty_imprint\\003.png",
+        "defect_type": "faulty_imprint",
+        "L8_normalized": -0.10006027205028994,
+        "fusion_normalized": 1.8998362061331624,
+        "fusion_minus_L8": 1.9998964781834523
+      },
+      {
+        "path": "data\\capsule\\test\\faulty_imprint\\006.png",
+        "defect_type": "faulty_imprint",
+        "L8_normalized": -0.1997284188326191,
+        "fusion_normalized": 1.6412600159593598,
+        "fusion_minus_L8": 1.840988434791979
+      },
+      {
+        "path": "data\\capsule\\test\\scratch\\009.png",
+        "defect_type": "scratch",
+        "L8_normalized": -0.22070839545807777,
+        "fusion_normalized": 1.5953880430511653,
+        "fusion_minus_L8": 1.816096438509243
+      },
+      {
+        "path": "data\\capsule\\test\\faulty_imprint\\005.png",
+        "defect_type": "faulty_imprint",
+        "L8_normalized": 5.735355217560685,
+        "fusion_normalized": 7.327079363778454,
+        "fusion_minus_L8": 1.5917241462177687
+      },
+      {
+        "path": "data\\capsule\\test\\squeeze\\013.png",
+        "defect_type": "squeeze",
+        "L8_normalized": 6.712637447810115,
+        "fusion_normalized": 8.272646319707595,
+        "fusion_minus_L8": 1.5600088718974803
+      }
+    ]
+  },
+  "screw": {
+    "normal_count": 64,
+    "defect_count": 58,
+    "defect_mean_score_shift": 0.3570422925300962,
+    "defect_median_score_shift": 0.43403345581109504,
+    "defect_samples_improved": 38,
+    "defect_samples_regressed": 20,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "manipulated_front": {
+        "count": 12,
+        "mean_score_shift": 0.7048802674610409,
+        "median_score_shift": 0.8166275766458311,
+        "min_score_shift": -0.3225457724823404,
+        "max_score_shift": 1.986445126451851,
+        "samples_improved": 10,
+        "samples_regressed": 2,
+        "samples_unchanged": 0
+      },
+      "scratch_head": {
+        "count": 12,
+        "mean_score_shift": 1.092760396927798,
+        "median_score_shift": 1.2227704756268079,
+        "min_score_shift": 0.01490417410068856,
+        "max_score_shift": 2.0303458855288246,
+        "samples_improved": 12,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      },
+      "scratch_neck": {
+        "count": 12,
+        "mean_score_shift": -0.6052252921317651,
+        "median_score_shift": -0.8645447035284576,
+        "min_score_shift": -1.507979298946458,
+        "max_score_shift": 0.794254260684561,
+        "samples_improved": 3,
+        "samples_regressed": 9,
+        "samples_unchanged": 0
+      },
+      "thread_side": {
+        "count": 11,
+        "mean_score_shift": 0.059437100683598226,
+        "median_score_shift": 0.18322766976374072,
+        "min_score_shift": -0.8134766201580357,
+        "max_score_shift": 1.0210715649067381,
+        "samples_improved": 6,
+        "samples_regressed": 5,
+        "samples_unchanged": 0
+      },
+      "thread_top": {
+        "count": 11,
+        "mean_score_shift": 0.5223327629219194,
+        "median_score_shift": 0.6065135761535907,
+        "min_score_shift": -0.7972322548471551,
+        "max_score_shift": 2.207135799842762,
+        "samples_improved": 7,
+        "samples_regressed": 4,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\screw\\test\\scratch_neck\\013.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 5.267466664711876,
+        "fusion_normalized": 3.7594873657654184,
+        "fusion_minus_L8": -1.507979298946458
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\016.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 2.528946783269925,
+        "fusion_normalized": 1.0805625396728185,
+        "fusion_minus_L8": -1.4483842435971064
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\015.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 4.43995005510066,
+        "fusion_normalized": 3.0966131221085416,
+        "fusion_minus_L8": -1.343336932992118
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\007.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 5.509995088588665,
+        "fusion_normalized": 4.4573761595753965,
+        "fusion_minus_L8": -1.0526189290132688
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\008.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 6.014924826084726,
+        "fusion_normalized": 5.0219012286171365,
+        "fusion_minus_L8": -0.9930235974675892
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\000.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 2.4626891565322993,
+        "fusion_normalized": 1.5921989624955695,
+        "fusion_minus_L8": -0.8704901940367298
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\004.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 4.086983293870999,
+        "fusion_normalized": 3.2283840808508133,
+        "fusion_minus_L8": -0.8585992130201854
+      },
+      {
+        "path": "data\\screw\\test\\thread_side\\000.png",
+        "defect_type": "thread_side",
+        "L8_normalized": 2.6643209179696568,
+        "fusion_normalized": 1.850844297811621,
+        "fusion_minus_L8": -0.8134766201580357
+      },
+      {
+        "path": "data\\screw\\test\\thread_top\\009.png",
+        "defect_type": "thread_top",
+        "L8_normalized": 3.1342427996510698,
+        "fusion_normalized": 2.3370105448039147,
+        "fusion_minus_L8": -0.7972322548471551
+      },
+      {
+        "path": "data\\screw\\test\\scratch_neck\\018.png",
+        "defect_type": "scratch_neck",
+        "L8_normalized": 2.4225719668369776,
+        "fusion_normalized": 1.6426370736118476,
+        "fusion_minus_L8": -0.77993489322513
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\screw\\test\\thread_top\\005.png",
+        "defect_type": "thread_top",
+        "L8_normalized": 1.9098939281761071,
+        "fusion_normalized": 4.117029728018869,
+        "fusion_minus_L8": 2.207135799842762
+      },
+      {
+        "path": "data\\screw\\test\\scratch_head\\015.png",
+        "defect_type": "scratch_head",
+        "L8_normalized": 0.9942602461570039,
+        "fusion_normalized": 3.0246061316858284,
+        "fusion_minus_L8": 2.0303458855288246
+      },
+      {
+        "path": "data\\screw\\test\\manipulated_front\\001.png",
+        "defect_type": "manipulated_front",
+        "L8_normalized": -0.1355842746871724,
+        "fusion_normalized": 1.8508608517646785,
+        "fusion_minus_L8": 1.986445126451851
+      },
+      {
+        "path": "data\\screw\\test\\scratch_head\\011.png",
+        "defect_type": "scratch_head",
+        "L8_normalized": 0.0794304717642718,
+        "fusion_normalized": 2.042445181015529,
+        "fusion_minus_L8": 1.9630147092512573
+      },
+      {
+        "path": "data\\screw\\test\\scratch_head\\014.png",
+        "defect_type": "scratch_head",
+        "L8_normalized": -0.8676386862829901,
+        "fusion_normalized": 0.7791724676604955,
+        "fusion_minus_L8": 1.6468111539434855
+      },
+      {
+        "path": "data\\screw\\test\\scratch_head\\007.png",
+        "defect_type": "scratch_head",
+        "L8_normalized": 1.5126829256373229,
+        "fusion_normalized": 3.0004985006337876,
+        "fusion_minus_L8": 1.4878155749964648
+      },
+      {
+        "path": "data\\screw\\test\\scratch_head\\023.png",
+        "defect_type": "scratch_head",
+        "L8_normalized": -0.41226044652303845,
+        "fusion_normalized": 0.9711160696731305,
+        "fusion_minus_L8": 1.3833765161961689
+      },
+      {
+        "path": "data\\screw\\test\\manipulated_front\\016.png",
+        "defect_type": "manipulated_front",
+        "L8_normalized": 2.171393594639964,
+        "fusion_normalized": 3.5276974143143525,
+        "fusion_minus_L8": 1.3563038196743884
+      },
+      {
+        "path": "data\\screw\\test\\thread_top\\001.png",
+        "defect_type": "thread_top",
+        "L8_normalized": 1.519979181480314,
+        "fusion_normalized": 2.8284460085014365,
+        "fusion_minus_L8": 1.3084668270211224
+      },
+      {
+        "path": "data\\screw\\test\\manipulated_front\\017.png",
+        "defect_type": "manipulated_front",
+        "L8_normalized": 0.9753525342638136,
+        "fusion_normalized": 2.254823993941077,
+        "fusion_minus_L8": 1.2794714596772634
+      }
+    ]
+  },
+  "metal_nut": {
+    "normal_count": 44,
+    "defect_count": 45,
+    "defect_mean_score_shift": 0.05792577650118801,
+    "defect_median_score_shift": -0.07049590725533683,
+    "defect_samples_improved": 20,
+    "defect_samples_regressed": 25,
+    "defect_samples_unchanged": 0,
+    "defect_types": {
+      "bent": {
+        "count": 12,
+        "mean_score_shift": -0.5504061712567937,
+        "median_score_shift": -0.5244680123286636,
+        "min_score_shift": -2.7958158387201637,
+        "max_score_shift": 1.5977206873059184,
+        "samples_improved": 3,
+        "samples_regressed": 9,
+        "samples_unchanged": 0
+      },
+      "color": {
+        "count": 11,
+        "mean_score_shift": -0.33717094204736436,
+        "median_score_shift": -0.86033810353163,
+        "min_score_shift": -2.139118160088635,
+        "max_score_shift": 2.7865939767248538,
+        "samples_improved": 4,
+        "samples_regressed": 7,
+        "samples_unchanged": 0
+      },
+      "flip": {
+        "count": 11,
+        "mean_score_shift": 1.7535514907056642,
+        "median_score_shift": 1.6626225337121205,
+        "min_score_shift": 0.8834242847900935,
+        "max_score_shift": 2.8413570849402605,
+        "samples_improved": 11,
+        "samples_regressed": 0,
+        "samples_unchanged": 0
+      },
+      "scratch": {
+        "count": 11,
+        "mean_score_shift": -0.5789683670551186,
+        "median_score_shift": -0.490302692062059,
+        "min_score_shift": -1.684883353591581,
+        "max_score_shift": 0.5833100174063244,
+        "samples_improved": 2,
+        "samples_regressed": 9,
+        "samples_unchanged": 0
+      }
+    },
+    "largest_regressions": [
+      {
+        "path": "data\\metal_nut\\test\\bent\\011.png",
+        "defect_type": "bent",
+        "L8_normalized": 7.161907939553183,
+        "fusion_normalized": 4.366092100833019,
+        "fusion_minus_L8": -2.7958158387201637
+      },
+      {
+        "path": "data\\metal_nut\\test\\color\\004.png",
+        "defect_type": "color",
+        "L8_normalized": 2.658089001960212,
+        "fusion_normalized": 0.5189708418715768,
+        "fusion_minus_L8": -2.139118160088635
+      },
+      {
+        "path": "data\\metal_nut\\test\\bent\\019.png",
+        "defect_type": "bent",
+        "L8_normalized": 6.594080438197717,
+        "fusion_normalized": 4.551544428716175,
+        "fusion_minus_L8": -2.042536009481542
+      },
+      {
+        "path": "data\\metal_nut\\test\\color\\007.png",
+        "defect_type": "color",
+        "L8_normalized": 8.578273623333473,
+        "fusion_normalized": 6.658582772184748,
+        "fusion_minus_L8": -1.919690851148725
+      },
+      {
+        "path": "data\\metal_nut\\test\\scratch\\003.png",
+        "defect_type": "scratch",
+        "L8_normalized": 6.255150074376833,
+        "fusion_normalized": 4.570266720785252,
+        "fusion_minus_L8": -1.684883353591581
+      },
+      {
+        "path": "data\\metal_nut\\test\\scratch\\014.png",
+        "defect_type": "scratch",
+        "L8_normalized": 7.525664873281339,
+        "fusion_normalized": 5.84517999523916,
+        "fusion_minus_L8": -1.6804848780421784
+      },
+      {
+        "path": "data\\metal_nut\\test\\scratch\\000.png",
+        "defect_type": "scratch",
+        "L8_normalized": 2.0776688771183496,
+        "fusion_normalized": 0.7467754112360148,
+        "fusion_minus_L8": -1.3308934658823348
+      },
+      {
+        "path": "data\\metal_nut\\test\\color\\001.png",
+        "defect_type": "color",
+        "L8_normalized": 5.6869694568405835,
+        "fusion_normalized": 4.373671428589324,
+        "fusion_minus_L8": -1.3132980282512596
+      },
+      {
+        "path": "data\\metal_nut\\test\\color\\016.png",
+        "defect_type": "color",
+        "L8_normalized": 7.886691412603745,
+        "fusion_normalized": 6.701809442394247,
+        "fusion_minus_L8": -1.1848819702094975
+      },
+      {
+        "path": "data\\metal_nut\\test\\bent\\018.png",
+        "defect_type": "bent",
+        "L8_normalized": 5.75220975657227,
+        "fusion_normalized": 4.5965253839698175,
+        "fusion_minus_L8": -1.1556843726024528
+      }
+    ],
+    "largest_improvements": [
+      {
+        "path": "data\\metal_nut\\test\\flip\\015.png",
+        "defect_type": "flip",
+        "L8_normalized": 7.173243803089071,
+        "fusion_normalized": 10.014600888029332,
+        "fusion_minus_L8": 2.8413570849402605
+      },
+      {
+        "path": "data\\metal_nut\\test\\color\\015.png",
+        "defect_type": "color",
+        "L8_normalized": 7.164174000083413,
+        "fusion_normalized": 9.950767976808267,
+        "fusion_minus_L8": 2.7865939767248538
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\013.png",
+        "defect_type": "flip",
+        "L8_normalized": 8.058906452016515,
+        "fusion_normalized": 10.392430660458713,
+        "fusion_minus_L8": 2.3335242084421974
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\018.png",
+        "defect_type": "flip",
+        "L8_normalized": 7.758262779608236,
+        "fusion_normalized": 10.010767439957629,
+        "fusion_minus_L8": 2.252504660349393
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\008.png",
+        "defect_type": "flip",
+        "L8_normalized": 7.711946170635748,
+        "fusion_normalized": 9.703533890492695,
+        "fusion_minus_L8": 1.9915877198569465
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\021.png",
+        "defect_type": "flip",
+        "L8_normalized": 9.510884041651027,
+        "fusion_normalized": 11.2149221555215,
+        "fusion_minus_L8": 1.7040381138704728
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\014.png",
+        "defect_type": "flip",
+        "L8_normalized": 8.405877855166757,
+        "fusion_normalized": 10.068500388878878,
+        "fusion_minus_L8": 1.6626225337121205
+      },
+      {
+        "path": "data\\metal_nut\\test\\bent\\021.png",
+        "defect_type": "bent",
+        "L8_normalized": 1.8949076198023105,
+        "fusion_normalized": 3.492628307108229,
+        "fusion_minus_L8": 1.5977206873059184
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\005.png",
+        "defect_type": "flip",
+        "L8_normalized": 8.660749885306751,
+        "fusion_normalized": 10.181272253882602,
+        "fusion_minus_L8": 1.5205223685758504
+      },
+      {
+        "path": "data\\metal_nut\\test\\flip\\004.png",
+        "defect_type": "flip",
+        "L8_normalized": 8.71862201276223,
+        "fusion_normalized": 10.230433311100622,
+        "fusion_minus_L8": 1.511811298338392
+      }
+    ]
+  },
+  "summary": {
+    "total_defect_samples": 266,
+    "samples_improved": 182,
+    "samples_regressed": 84,
+    "samples_unchanged": 0,
+    "mean_defect_score_shift": 1.222739038113246,
+    "median_defect_score_shift": 0.7933919683528902,
+    "interpretation": "Positive values indicate that the 50/50 fusion strengthens defect evidence relative to L8. Negative values indicate that fusion weakens the L8 defect score."
+  }
+}

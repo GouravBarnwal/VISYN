@@ -1,0 +1,403 @@
+{
+  "score": "TOP5",
+  "calibration": "P99",
+  "final_defect_set_used": false,
+  "categories": {
+    "bottle": {
+      "threshold": 0.11158741138875483,
+      "normal": {
+        "count": 42,
+        "mean": 0.07885303295084409,
+        "p95": 0.10171604752540588,
+        "p99": 0.11158741138875483,
+        "max": 0.11257573217153549
+      },
+      "defect": {
+        "count": 31,
+        "min": 0.5827523469924927,
+        "p25": 0.8434287905693054,
+        "median": 0.8969424962997437,
+        "max": 1.0213243961334229
+      },
+      "closest_normal_margin": 0.0009883207827806606,
+      "closest_defect_margin": 0.47116493560373784,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.11158741138875483,
+          "normal_pass": 41,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 31,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.12274615252763033,
+          "normal_pass": 41,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 31,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.13948426423594354,
+          "normal_pass": 41,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 31,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.16738111708313225,
+          "normal_pass": 41,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 31,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.22317482277750966,
+          "normal_pass": 41,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 31,
+          "defect_fail_recall": 1.0
+        }
+      }
+    },
+    "hazelnut": {
+      "threshold": 0.28279238045215604,
+      "normal": {
+        "count": 79,
+        "mean": 0.23799838050256802,
+        "p95": 0.27329489290714265,
+        "p99": 0.28279238045215604,
+        "max": 0.3034505844116211
+      },
+      "defect": {
+        "count": 34,
+        "min": 0.7066347002983093,
+        "p25": 0.776356503367424,
+        "median": 0.8043753206729889,
+        "max": 0.9108511805534363
+      },
+      "closest_normal_margin": 0.02065820395946505,
+      "closest_defect_margin": 0.4238423198461533,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.28279238045215604,
+          "normal_pass": 78,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 34,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.3110716184973717,
+          "normal_pass": 78,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 34,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.3534904755651951,
+          "normal_pass": 78,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 34,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.42418857067823407,
+          "normal_pass": 78,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 34,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.5655847609043121,
+          "normal_pass": 78,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 34,
+          "defect_fail_recall": 1.0
+        }
+      }
+    },
+    "cable": {
+      "threshold": 0.2499224865436554,
+      "normal": {
+        "count": 45,
+        "mean": 0.21544411182403564,
+        "p95": 0.24417807459831237,
+        "p99": 0.2499224865436554,
+        "max": 0.2523568272590637
+      },
+      "defect": {
+        "count": 45,
+        "min": 0.6641682386398315,
+        "p25": 0.734085202217102,
+        "median": 0.7972548007965088,
+        "max": 0.9757592082023621
+      },
+      "closest_normal_margin": 0.002434340715408323,
+      "closest_defect_margin": 0.41424575209617615,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.2499224865436554,
+          "normal_pass": 44,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.27491473519802095,
+          "normal_pass": 44,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.31240310817956923,
+          "normal_pass": 44,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.3748837298154831,
+          "normal_pass": 44,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.4998449730873108,
+          "normal_pass": 44,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        }
+      }
+    },
+    "capsule": {
+      "threshold": 0.1279035346210003,
+      "normal": {
+        "count": 44,
+        "mean": 0.07250249690630219,
+        "p95": 0.11291863583028318,
+        "p99": 0.1279035346210003,
+        "max": 0.13526102900505066
+      },
+      "defect": {
+        "count": 53,
+        "min": 0.33474329113960266,
+        "p25": 0.4241149425506592,
+        "median": 0.4812220633029938,
+        "max": 0.862958550453186
+      },
+      "closest_normal_margin": 0.007357494384050367,
+      "closest_defect_margin": 0.20683975651860237,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.1279035346210003,
+          "normal_pass": 43,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 53,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.14069388808310032,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 53,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.15987941827625035,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 53,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.19185530193150044,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 53,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.2558070692420006,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 53,
+          "defect_fail_recall": 1.0
+        }
+      }
+    },
+    "screw": {
+      "threshold": 0.21168590649962424,
+      "normal": {
+        "count": 64,
+        "mean": 0.1449836198007688,
+        "p95": 0.17697633132338522,
+        "p99": 0.21168590649962424,
+        "max": 0.2135661095380783
+      },
+      "defect": {
+        "count": 58,
+        "min": 0.49876919388771057,
+        "p25": 0.5504287332296371,
+        "median": 0.5688503086566925,
+        "max": 0.6979040503501892
+      },
+      "closest_normal_margin": 0.0018802030384540702,
+      "closest_defect_margin": 0.2870832873880863,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.21168590649962424,
+          "normal_pass": 63,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 58,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.23285449714958667,
+          "normal_pass": 63,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 58,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.2646073831245303,
+          "normal_pass": 63,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 58,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.31752885974943634,
+          "normal_pass": 63,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 58,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.4233718129992485,
+          "normal_pass": 63,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 58,
+          "defect_fail_recall": 1.0
+        }
+      }
+    },
+    "metal_nut": {
+      "threshold": 0.2734225884079933,
+      "normal": {
+        "count": 44,
+        "mean": 0.21671468730677257,
+        "p95": 0.26148163974285127,
+        "p99": 0.2734225884079933,
+        "max": 0.27420487999916077
+      },
+      "defect": {
+        "count": 45,
+        "min": 0.6933375597000122,
+        "p25": 0.7785655856132507,
+        "median": 0.820743203163147,
+        "max": 0.8654463887214661
+      },
+      "closest_normal_margin": 0.0007822915911674388,
+      "closest_defect_margin": 0.4199149712920189,
+      "candidate_review_bands": {
+        "1.00x": {
+          "review_upper": 0.2734225884079933,
+          "normal_pass": 43,
+          "normal_review": 0,
+          "normal_fail": 1,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.10x": {
+          "review_upper": 0.3007648472487927,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.25x": {
+          "review_upper": 0.34177823550999165,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "1.50x": {
+          "review_upper": 0.41013388261199,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        },
+        "2.00x": {
+          "review_upper": 0.5468451768159867,
+          "normal_pass": 43,
+          "normal_review": 1,
+          "normal_fail": 0,
+          "defect_review": 0,
+          "defect_fail": 45,
+          "defect_fail_recall": 1.0
+        }
+      }
+    }
+  }
+}

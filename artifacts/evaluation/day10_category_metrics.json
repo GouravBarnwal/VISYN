@@ -1,0 +1,111 @@
+{
+  "model": "MobileNetV3-Small-L8",
+  "distance_metric": "euclidean_cdist_p2",
+  "aggregation": "TOP5",
+  "split": "canonical_development",
+  "final_set_used": false,
+  "categories": {
+    "bottle": {
+      "normal_count": 42,
+      "defect_count": 31,
+      "auroc": 1.0,
+      "average_precision": 1.0,
+      "normal_mean": 0.393220138336931,
+      "defect_mean": 0.8810791142525212,
+      "normal_median": 0.392646923661232,
+      "defect_median": 0.8969424962997437,
+      "normal_min": 0.24628813564777374,
+      "normal_max": 0.4734756052494049,
+      "defect_min": 0.5827523469924927,
+      "defect_max": 1.0213243961334229
+    },
+    "hazelnut": {
+      "normal_count": 79,
+      "defect_count": 34,
+      "auroc": 0.9761727475800447,
+      "average_precision": 0.9586966752460494,
+      "normal_mean": 0.6884158698818351,
+      "defect_mean": 0.8086676597595215,
+      "normal_median": 0.6928761005401611,
+      "defect_median": 0.8043753206729889,
+      "normal_min": 0.6178401112556458,
+      "normal_max": 0.7779033780097961,
+      "defect_min": 0.7066347002983093,
+      "defect_max": 0.9108511805534363
+    },
+    "cable": {
+      "normal_count": 45,
+      "defect_count": 45,
+      "auroc": 0.9674074074074074,
+      "average_precision": 0.9738095897047875,
+      "normal_mean": 0.6548835568957858,
+      "defect_mean": 0.7946232040723165,
+      "normal_median": 0.6571990251541138,
+      "defect_median": 0.7972548007965088,
+      "normal_min": 0.6000472903251648,
+      "normal_max": 0.7095335721969604,
+      "defect_min": 0.6641682386398315,
+      "defect_max": 0.9757592082023621
+    },
+    "capsule": {
+      "normal_count": 44,
+      "defect_count": 53,
+      "auroc": 0.8795025728987993,
+      "average_precision": 0.9062480698757276,
+      "normal_mean": 0.3762078962542794,
+      "defect_mean": 0.5168501133064054,
+      "normal_median": 0.35880498588085175,
+      "defect_median": 0.4812220633029938,
+      "normal_min": 0.30818137526512146,
+      "normal_max": 0.5125906467437744,
+      "defect_min": 0.33474329113960266,
+      "defect_max": 0.862958550453186
+    },
+    "screw": {
+      "normal_count": 64,
+      "defect_count": 58,
+      "auroc": 0.7640086206896552,
+      "average_precision": 0.7337948397960128,
+      "normal_mean": 0.5360952978953719,
+      "defect_mean": 0.576053741163221,
+      "normal_median": 0.5392993688583374,
+      "defect_median": 0.5688503086566925,
+      "normal_min": 0.43514394760131836,
+      "normal_max": 0.64549720287323,
+      "defect_min": 0.49876919388771057,
+      "defect_max": 0.6979040503501892
+    },
+    "metal_nut": {
+      "normal_count": 44,
+      "defect_count": 45,
+      "auroc": 0.9924242424242424,
+      "average_precision": 0.9931307309198151,
+      "normal_mean": 0.656461394645951,
+      "defect_mean": 0.8077507906489902,
+      "normal_median": 0.6530610024929047,
+      "defect_median": 0.820743203163147,
+      "normal_min": 0.5890865325927734,
+      "normal_max": 0.7404117584228516,
+      "defect_min": 0.6933375597000122,
+      "defect_max": 0.8654463887214661
+    }
+  },
+  "macro": {
+    "auroc": 0.9299192651666915,
+    "average_precision": 0.9276133175903988
+  },
+  "pooled": {
+    "normal_count": 318,
+    "defect_count": 266,
+    "auroc": 0.7431077694235588,
+    "average_precision": 0.7940857323116642,
+    "normal_mean": 0.5664069416856615,
+    "defect_mean": 0.7057111117624699,
+    "normal_median": 0.6152801811695099,
+    "defect_median": 0.7452821433544159,
+    "normal_min": 0.24628813564777374,
+    "normal_max": 0.7779033780097961,
+    "defect_min": 0.33474329113960266,
+    "defect_max": 1.0213243961334229
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "category": "screw",
+  "threshold": 0.6448165547847747,
+  "images_per_type": 10,
+  "defect_types": {
+    "manipulated_front": {
+      "images": 10,
+      "pass": 10,
+      "review": 0,
+      "fail": 0,
+      "detected": 0,
+      "detection_rate": 0.0,
+      "fail_rate": 0.0,
+      "min_score": 0.4751591980457306,
+      "max_score": 0.5636788606643677,
+      "mean_score": 0.5205580204725265
+    },
+    "scratch_head": {
+      "images": 10,
+      "pass": 10,
+      "review": 0,
+      "fail": 0,
+      "detected": 0,
+      "detection_rate": 0.0,
+      "fail_rate": 0.0,
+      "min_score": 0.4536803364753723,
+      "max_score": 0.5428016781806946,
+      "mean_score": 0.5080145806074142
+    },
+    "scratch_neck": {
+      "images": 10,
+      "pass": 10,
+      "review": 0,
+      "fail": 0,
+      "detected": 0,
+      "detection_rate": 0.0,
+      "fail_rate": 0.0,
+      "min_score": 0.5020968317985535,
+      "max_score": 0.5960130095481873,
+      "mean_score": 0.5453268766403199
+    },
+    "thread_side": {
+      "images": 10,
+      "pass": 10,
+      "review": 0,
+      "fail": 0,
+      "detected": 0,
+      "detection_rate": 0.0,
+      "fail_rate": 0.0,
+      "min_score": 0.475454181432724,
+      "max_score": 0.5176151394844055,
+      "mean_score": 0.49581111073493955
+    },
+    "thread_top": {
+      "images": 10,
+      "pass": 10,
+      "review": 0,
+      "fail": 0,
+      "detected": 0,
+      "detection_rate": 0.0,
+      "fail_rate": 0.0,
+      "min_score": 0.4533841907978058,
+      "max_score": 0.6175839900970459,
+      "mean_score": 0.5294300973415375
+    }
+  }
+}

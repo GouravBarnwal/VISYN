@@ -1,0 +1,91 @@
+{
+  "experiment": "Day 15 feature extraction benchmark",
+  "device": "CPU",
+  "model": "MobileNetV3-Small",
+  "layers": [
+    "L4",
+    "L8"
+  ],
+  "categories": {
+    "bottle": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 18.972262999998293,
+      "optimized_mean_ms": 19.183421499997166,
+      "speedup": 0.9889926570190357,
+      "latency_reduction_percent": -1.1129853091267572
+    },
+    "hazelnut": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 20.577356499995858,
+      "optimized_mean_ms": 20.534735500006036,
+      "speedup": 1.0020755563172368,
+      "latency_reduction_percent": 0.20712573060505113
+    },
+    "cable": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 19.913249000009046,
+      "optimized_mean_ms": 19.695433499999808,
+      "speedup": 1.0110591879081636,
+      "latency_reduction_percent": 1.0938220076951666
+    },
+    "capsule": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 19.86417450000431,
+      "optimized_mean_ms": 19.64099000001397,
+      "speedup": 1.0113632001233226,
+      "latency_reduction_percent": 1.123552856376142
+    },
+    "screw": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 19.75385499999561,
+      "optimized_mean_ms": 19.703533000002835,
+      "speedup": 1.002553958216162,
+      "latency_reduction_percent": 0.25474521298646247
+    },
+    "metal_nut": {
+      "query_count": 10,
+      "equivalence": {
+        "raw_l4_max_difference": 0.0,
+        "raw_l8_max_difference": 0.0,
+        "normalized_l4_max_difference": 0.0,
+        "normalized_l8_max_difference": 0.0
+      },
+      "current_mean_ms": 19.33803500001204,
+      "optimized_mean_ms": 19.802298999985624,
+      "speedup": 0.9765550454533628,
+      "latency_reduction_percent": -2.4007816718363273
+    }
+  },
+  "global_max_feature_difference": 0.0,
+  "equivalence_pass": true
+}

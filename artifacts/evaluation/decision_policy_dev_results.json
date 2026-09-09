@@ -1,0 +1,121 @@
+{
+  "score": "TOP5",
+  "threshold_policy": "P99",
+  "review_multiplier": 1.1,
+  "final_defect_set_used": false,
+  "categories": {
+    "bottle": {
+      "threshold": 0.46985351681709286,
+      "review_threshold": 0.5168388684988022,
+      "normal": {
+        "total": 42,
+        "PASS": 41,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 31,
+        "PASS": 0,
+        "REVIEW": 0,
+        "FAIL": 31
+      }
+    },
+    "hazelnut": {
+      "threshold": 0.7513870668411254,
+      "review_threshold": 0.826525773525238,
+      "normal": {
+        "total": 79,
+        "PASS": 78,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 34,
+        "PASS": 5,
+        "REVIEW": 16,
+        "FAIL": 13
+      }
+    },
+    "cable": {
+      "threshold": 0.7059989047050477,
+      "review_threshold": 0.7765987951755525,
+      "normal": {
+        "total": 45,
+        "PASS": 44,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 45,
+        "PASS": 7,
+        "REVIEW": 12,
+        "FAIL": 26
+      }
+    },
+    "capsule": {
+      "threshold": 0.5000054594874382,
+      "review_threshold": 0.5500060054361822,
+      "normal": {
+        "total": 44,
+        "PASS": 43,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 53,
+        "PASS": 29,
+        "REVIEW": 5,
+        "FAIL": 19
+      }
+    },
+    "screw": {
+      "threshold": 0.6448165547847747,
+      "review_threshold": 0.7092982102632522,
+      "normal": {
+        "total": 64,
+        "PASS": 63,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 58,
+        "PASS": 52,
+        "REVIEW": 6,
+        "FAIL": 0
+      }
+    },
+    "metal_nut": {
+      "threshold": 0.7377763795852661,
+      "review_threshold": 0.8115540175437927,
+      "normal": {
+        "total": 44,
+        "PASS": 43,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "defect": {
+        "total": 45,
+        "PASS": 4,
+        "REVIEW": 14,
+        "FAIL": 27
+      }
+    }
+  },
+  "pooled": {
+    "normal": {
+      "total": 318,
+      "PASS": 312,
+      "REVIEW": 6,
+      "FAIL": 0
+    },
+    "defect": {
+      "total": 266,
+      "PASS": 97,
+      "REVIEW": 53,
+      "FAIL": 116
+    },
+    "normal_anomalous_decision_rate": 0.018867924528301886,
+    "defect_detection_rate": 0.6353383458646616,
+    "defect_direct_fail_rate": 0.43609022556390975
+  }
+}

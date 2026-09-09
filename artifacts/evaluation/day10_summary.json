@@ -1,0 +1,239 @@
+{
+  "day": 10,
+  "model": "MobileNetV3-Small-L8",
+  "distance_metric": "euclidean_cdist_p2",
+  "aggregation": "TOP5",
+  "evaluation_split": "canonical_development",
+  "final_set_used": false,
+  "category_metrics": {
+    "bottle": {
+      "auroc": 1.0,
+      "average_precision": 1.0
+    },
+    "hazelnut": {
+      "auroc": 0.9761727475800447,
+      "average_precision": 0.9586966752460494
+    },
+    "cable": {
+      "auroc": 0.9674074074074074,
+      "average_precision": 0.9738095897047875
+    },
+    "capsule": {
+      "auroc": 0.8795025728987993,
+      "average_precision": 0.9062480698757276
+    },
+    "screw": {
+      "auroc": 0.7640086206896552,
+      "average_precision": 0.7337948397960128
+    },
+    "metal_nut": {
+      "auroc": 0.9924242424242424,
+      "average_precision": 0.9931307309198151
+    }
+  },
+  "macro_category_metrics": {
+    "auroc": 0.9299192651666915,
+    "average_precision": 0.9276133175903988
+  },
+  "defect_type_metrics": {
+    "defect_type_count": 29,
+    "auroc": 0.9247166298532192,
+    "average_precision": 0.8089224641629751
+  },
+  "weakest_defect_types_by_auroc": [
+    {
+      "category": "screw",
+      "defect_type": "scratch_head",
+      "auroc": 0.6484375,
+      "average_precision": 0.2592842773230912,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "screw",
+      "defect_type": "thread_side",
+      "auroc": 0.6775568181818182,
+      "average_precision": 0.26428878827446073,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "screw",
+      "defect_type": "manipulated_front",
+      "auroc": 0.7838541666666667,
+      "average_precision": 0.3197152583941202,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "cable",
+      "defect_type": "missing_wire",
+      "auroc": 0.7955555555555556,
+      "average_precision": 0.5232168229610685,
+      "detection_rate": 0.4,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "screw",
+      "defect_type": "thread_top",
+      "auroc": 0.796875,
+      "average_precision": 0.5071896942770149,
+      "detection_rate": 0.18181818181818182,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "capsule",
+      "defect_type": "faulty_imprint",
+      "auroc": 0.8057851239669421,
+      "average_precision": 0.5561224451783183,
+      "detection_rate": 0.18181818181818182,
+      "direct_fail_rate": 0.09090909090909091
+    },
+    {
+      "category": "capsule",
+      "defect_type": "poke",
+      "auroc": 0.8318181818181818,
+      "average_precision": 0.5535324675324675,
+      "detection_rate": 0.2,
+      "direct_fail_rate": 0.2
+    },
+    {
+      "category": "capsule",
+      "defect_type": "crack",
+      "auroc": 0.8698347107438017,
+      "average_precision": 0.8073536312172676,
+      "detection_rate": 0.5454545454545454,
+      "direct_fail_rate": 0.5454545454545454
+    },
+    {
+      "category": "capsule",
+      "defect_type": "scratch",
+      "auroc": 0.8966942148760331,
+      "average_precision": 0.7036712118012377,
+      "detection_rate": 0.36363636363636365,
+      "direct_fail_rate": 0.18181818181818182
+    },
+    {
+      "category": "screw",
+      "defect_type": "scratch_neck",
+      "auroc": 0.9088541666666666,
+      "average_precision": 0.6897301063631709,
+      "detection_rate": 0.3333333333333333,
+      "direct_fail_rate": 0.0
+    }
+  ],
+  "weakest_defect_types_by_detection": [
+    {
+      "category": "screw",
+      "defect_type": "manipulated_front",
+      "auroc": 0.7838541666666667,
+      "average_precision": 0.3197152583941202,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "screw",
+      "defect_type": "scratch_head",
+      "auroc": 0.6484375,
+      "average_precision": 0.2592842773230912,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "screw",
+      "defect_type": "thread_side",
+      "auroc": 0.6775568181818182,
+      "average_precision": 0.26428878827446073,
+      "detection_rate": 0.0,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "capsule",
+      "defect_type": "faulty_imprint",
+      "auroc": 0.8057851239669421,
+      "average_precision": 0.5561224451783183,
+      "detection_rate": 0.18181818181818182,
+      "direct_fail_rate": 0.09090909090909091
+    },
+    {
+      "category": "screw",
+      "defect_type": "thread_top",
+      "auroc": 0.796875,
+      "average_precision": 0.5071896942770149,
+      "detection_rate": 0.18181818181818182,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "capsule",
+      "defect_type": "poke",
+      "auroc": 0.8318181818181818,
+      "average_precision": 0.5535324675324675,
+      "detection_rate": 0.2,
+      "direct_fail_rate": 0.2
+    },
+    {
+      "category": "screw",
+      "defect_type": "scratch_neck",
+      "auroc": 0.9088541666666666,
+      "average_precision": 0.6897301063631709,
+      "detection_rate": 0.3333333333333333,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "capsule",
+      "defect_type": "scratch",
+      "auroc": 0.8966942148760331,
+      "average_precision": 0.7036712118012377,
+      "detection_rate": 0.36363636363636365,
+      "direct_fail_rate": 0.18181818181818182
+    },
+    {
+      "category": "cable",
+      "defect_type": "missing_wire",
+      "auroc": 0.7955555555555556,
+      "average_precision": 0.5232168229610685,
+      "detection_rate": 0.4,
+      "direct_fail_rate": 0.0
+    },
+    {
+      "category": "cable",
+      "defect_type": "cable_swap",
+      "auroc": 0.9296296296296297,
+      "average_precision": 0.7595238095238095,
+      "detection_rate": 0.5,
+      "direct_fail_rate": 0.0
+    }
+  ],
+  "failure_analysis": {
+    "primary_failure_mode": "Subtle localized defects show reduced separability in the MobileNet L8 representation.",
+    "strong_categories": [
+      "bottle",
+      "hazelnut",
+      "cable",
+      "metal_nut"
+    ],
+    "weaker_categories": [
+      "capsule",
+      "screw"
+    ],
+    "key_screw_failures": [
+      "scratch_head",
+      "thread_side",
+      "manipulated_front",
+      "thread_top"
+    ],
+    "key_capsule_failures": [
+      "faulty_imprint",
+      "poke",
+      "crack",
+      "scratch"
+    ],
+    "key_cable_failure": "missing_wire",
+    "threshold_change_recommended": false,
+    "representation_investigation_recommended": true
+  },
+  "artifacts": {
+    "category_metrics": "artifacts\\evaluation\\day10_category_metrics.json",
+    "defect_type_metrics": "artifacts\\evaluation\\day10_defect_type_metrics.json"
+  }
+}

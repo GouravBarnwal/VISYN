@@ -1,0 +1,180 @@
+{
+  "experiment": "Day 14 architecture computational cost",
+  "device": "cpu",
+  "model": "MobileNetV3-Small",
+  "layers": {
+    "L4": {
+      "index": 4,
+      "channels": 40,
+      "spatial": "14x14"
+    },
+    "L8": {
+      "index": 8,
+      "channels": 48,
+      "spatial": "14x14"
+    }
+  },
+  "aggregation": "TOP5",
+  "reference_bank": "canonical 80% normal reference split",
+  "query_set": "canonical normal development split",
+  "warmup_runs": 3,
+  "timed_runs": 20,
+  "categories": {
+    "bottle": {
+      "category": "bottle",
+      "reference_images": 167,
+      "benchmark_query_images": 42,
+      "reference_bank": {
+        "L4_shape": [
+          32732,
+          40
+        ],
+        "L8_shape": [
+          32732,
+          48
+        ],
+        "L4_memory_mb": 4.9945068359375,
+        "L8_memory_mb": 5.993408203125,
+        "combined_memory_mb": 10.9879150390625
+      },
+      "latency_ms_median": {
+        "feature_extraction": 16.011774999924455,
+        "L4_scoring": 11.552950000123019,
+        "L8_scoring": 12.514549999650626,
+        "L4_only_total": 27.564725000047474,
+        "L8_only_total": 28.52632499957508,
+        "L4_L8_fusion_total": 40.726024999912624
+      }
+    },
+    "hazelnut": {
+      "category": "hazelnut",
+      "reference_images": 312,
+      "benchmark_query_images": 79,
+      "reference_bank": {
+        "L4_shape": [
+          61152,
+          40
+        ],
+        "L8_shape": [
+          61152,
+          48
+        ],
+        "L4_memory_mb": 9.3310546875,
+        "L8_memory_mb": 11.197265625,
+        "combined_memory_mb": 20.5283203125
+      },
+      "latency_ms_median": {
+        "feature_extraction": 16.311700000187557,
+        "L4_scoring": 25.2463999995598,
+        "L8_scoring": 26.25224999974307,
+        "L4_only_total": 41.558099999747355,
+        "L8_only_total": 42.56394999993063,
+        "L4_L8_fusion_total": 70.52310000017314
+      }
+    },
+    "cable": {
+      "category": "cable",
+      "reference_images": 179,
+      "benchmark_query_images": 45,
+      "reference_bank": {
+        "L4_shape": [
+          35084,
+          40
+        ],
+        "L8_shape": [
+          35084,
+          48
+        ],
+        "L4_memory_mb": 5.3533935546875,
+        "L8_memory_mb": 6.424072265625,
+        "combined_memory_mb": 11.7774658203125
+      },
+      "latency_ms_median": {
+        "feature_extraction": 18.4452000003148,
+        "L4_scoring": 14.064750000216009,
+        "L8_scoring": 15.41769999994358,
+        "L4_only_total": 32.50995000053081,
+        "L8_only_total": 33.86290000025838,
+        "L4_L8_fusion_total": 48.51090000011027
+      }
+    },
+    "capsule": {
+      "category": "capsule",
+      "reference_images": 175,
+      "benchmark_query_images": 44,
+      "reference_bank": {
+        "L4_shape": [
+          34300,
+          40
+        ],
+        "L8_shape": [
+          34300,
+          48
+        ],
+        "L4_memory_mb": 5.2337646484375,
+        "L8_memory_mb": 6.280517578125,
+        "combined_memory_mb": 11.5142822265625
+      },
+      "latency_ms_median": {
+        "feature_extraction": 16.113600000153383,
+        "L4_scoring": 12.03502499993192,
+        "L8_scoring": 13.878199999908247,
+        "L4_only_total": 28.148625000085303,
+        "L8_only_total": 29.99180000006163,
+        "L4_L8_fusion_total": 42.128249999905165
+      }
+    },
+    "screw": {
+      "category": "screw",
+      "reference_images": 256,
+      "benchmark_query_images": 64,
+      "reference_bank": {
+        "L4_shape": [
+          50176,
+          40
+        ],
+        "L8_shape": [
+          50176,
+          48
+        ],
+        "L4_memory_mb": 7.65625,
+        "L8_memory_mb": 9.1875,
+        "combined_memory_mb": 16.84375
+      },
+      "latency_ms_median": {
+        "feature_extraction": 16.210224999667844,
+        "L4_scoring": 20.053900000220892,
+        "L8_scoring": 21.468774999902962,
+        "L4_only_total": 36.264124999888736,
+        "L8_only_total": 37.678999999570806,
+        "L4_L8_fusion_total": 59.11227499927918
+      }
+    },
+    "metal_nut": {
+      "category": "metal_nut",
+      "reference_images": 176,
+      "benchmark_query_images": 44,
+      "reference_bank": {
+        "L4_shape": [
+          34496,
+          40
+        ],
+        "L8_shape": [
+          34496,
+          48
+        ],
+        "L4_memory_mb": 5.263671875,
+        "L8_memory_mb": 6.31640625,
+        "combined_memory_mb": 11.580078125
+      },
+      "latency_ms_median": {
+        "feature_extraction": 16.258950000064942,
+        "L4_scoring": 12.323174999892217,
+        "L8_scoring": 13.326299999789626,
+        "L4_only_total": 28.58212499995716,
+        "L8_only_total": 29.585249999854568,
+        "L4_L8_fusion_total": 42.26732499978425
+      }
+    }
+  }
+}

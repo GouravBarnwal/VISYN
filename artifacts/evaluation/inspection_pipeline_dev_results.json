@@ -1,0 +1,603 @@
+{
+  "model": "MobileNetV3-Small-L8",
+  "distance": "Euclidean torch.cdist p=2",
+  "aggregation": "TOP5",
+  "review_multiplier": 1.1,
+  "calibration_source": "artifacts\\evaluation\\calibration_candidates.json",
+  "normal_score_source": "artifacts\\evaluation\\mobilenet_l8_normal_dev_scores.json",
+  "defect_score_source": "artifacts\\evaluation\\mobilenet_l8_dev_scores.json",
+  "validation": {
+    "score_consistency": true,
+    "normal_decision_test": true,
+    "defect_policy_test": true,
+    "overall": true
+  },
+  "normal_samples": [
+    {
+      "path": "bottle\\train\\good\\001.png",
+      "score": 0.3779374957084656,
+      "expected_score": 0.3779374957084656,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "bottle",
+        "anomaly_score": 0.3779374957084656,
+        "threshold": 0.46985351681709286,
+        "review_threshold": 0.5168388684988022,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "bottle\\train\\good\\006.png",
+      "score": 0.4734756052494049,
+      "expected_score": 0.4734756052494049,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "REVIEW",
+      "actual_decision": "REVIEW",
+      "decision_ok": true,
+      "result": {
+        "category": "bottle",
+        "anomaly_score": 0.4734756052494049,
+        "threshold": 0.46985351681709286,
+        "review_threshold": 0.5168388684988022,
+        "decision": "REVIEW",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "hazelnut\\train\\good\\003.png",
+      "score": 0.6748072504997253,
+      "expected_score": 0.6748072504997253,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "hazelnut",
+        "anomaly_score": 0.6748072504997253,
+        "threshold": 0.7513870668411254,
+        "review_threshold": 0.826525773525238,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "hazelnut\\train\\good\\007.png",
+      "score": 0.7439081072807312,
+      "expected_score": 0.7439081072807312,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "hazelnut",
+        "anomaly_score": 0.7439081072807312,
+        "threshold": 0.7513870668411254,
+        "review_threshold": 0.826525773525238,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "cable\\train\\good\\015.png",
+      "score": 0.6689352989196777,
+      "expected_score": 0.6689352989196777,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "cable",
+        "anomaly_score": 0.6689352989196777,
+        "threshold": 0.7059989047050477,
+        "review_threshold": 0.7765987951755525,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "cable\\train\\good\\016.png",
+      "score": 0.6068823933601379,
+      "expected_score": 0.6068823933601379,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "cable",
+        "anomaly_score": 0.6068823933601379,
+        "threshold": 0.7059989047050477,
+        "review_threshold": 0.7765987951755525,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "capsule\\train\\good\\025.png",
+      "score": 0.3178256154060364,
+      "expected_score": 0.3178256154060364,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "capsule",
+        "anomaly_score": 0.3178256154060364,
+        "threshold": 0.5000054594874382,
+        "review_threshold": 0.5500060054361822,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "capsule\\train\\good\\030.png",
+      "score": 0.3247697949409485,
+      "expected_score": 0.3247697949409485,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "capsule",
+        "anomaly_score": 0.3247697949409485,
+        "threshold": 0.5000054594874382,
+        "review_threshold": 0.5500060054361822,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "screw\\train\\good\\001.png",
+      "score": 0.5792703628540039,
+      "expected_score": 0.5792703628540039,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "screw",
+        "anomaly_score": 0.5792703628540039,
+        "threshold": 0.6448165547847747,
+        "review_threshold": 0.7092982102632522,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "screw\\train\\good\\007.png",
+      "score": 0.555440366268158,
+      "expected_score": 0.555440366268158,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "screw",
+        "anomaly_score": 0.555440366268158,
+        "threshold": 0.6448165547847747,
+        "review_threshold": 0.7092982102632522,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "metal_nut\\train\\good\\000.png",
+      "score": 0.6233102679252625,
+      "expected_score": 0.6233102679252625,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "metal_nut",
+        "anomaly_score": 0.6233102679252625,
+        "threshold": 0.7377763795852661,
+        "review_threshold": 0.8115540175437927,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "metal_nut\\train\\good\\003.png",
+      "score": 0.6560115218162537,
+      "expected_score": 0.6560115218162537,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "metal_nut",
+        "anomaly_score": 0.6560115218162537,
+        "threshold": 0.7377763795852661,
+        "review_threshold": 0.8115540175437927,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    }
+  ],
+  "defect_samples": [
+    {
+      "path": "bottle\\test\\broken_large\\019.png",
+      "score": 0.9665285348892212,
+      "expected_score": 0.9665285348892212,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "FAIL",
+      "actual_decision": "FAIL",
+      "decision_ok": true,
+      "result": {
+        "category": "bottle",
+        "anomaly_score": 0.9665285348892212,
+        "threshold": 0.46985351681709286,
+        "review_threshold": 0.5168388684988022,
+        "decision": "FAIL",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "bottle\\test\\broken_large\\005.png",
+      "score": 0.957506000995636,
+      "expected_score": 0.957506000995636,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "FAIL",
+      "actual_decision": "FAIL",
+      "decision_ok": true,
+      "result": {
+        "category": "bottle",
+        "anomaly_score": 0.957506000995636,
+        "threshold": 0.46985351681709286,
+        "review_threshold": 0.5168388684988022,
+        "decision": "FAIL",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "hazelnut\\test\\crack\\013.png",
+      "score": 0.8017347455024719,
+      "expected_score": 0.8017347455024719,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "REVIEW",
+      "actual_decision": "REVIEW",
+      "decision_ok": true,
+      "result": {
+        "category": "hazelnut",
+        "anomaly_score": 0.8017347455024719,
+        "threshold": 0.7513870668411254,
+        "review_threshold": 0.826525773525238,
+        "decision": "REVIEW",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "hazelnut\\test\\crack\\012.png",
+      "score": 0.7823211550712585,
+      "expected_score": 0.7823211550712585,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "REVIEW",
+      "actual_decision": "REVIEW",
+      "decision_ok": true,
+      "result": {
+        "category": "hazelnut",
+        "anomaly_score": 0.7823211550712585,
+        "threshold": 0.7513870668411254,
+        "review_threshold": 0.826525773525238,
+        "decision": "REVIEW",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "cable\\test\\bent_wire\\007.png",
+      "score": 0.9010807275772095,
+      "expected_score": 0.9010807275772095,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "FAIL",
+      "actual_decision": "FAIL",
+      "decision_ok": true,
+      "result": {
+        "category": "cable",
+        "anomaly_score": 0.9010807275772095,
+        "threshold": 0.7059989047050477,
+        "review_threshold": 0.7765987951755525,
+        "decision": "FAIL",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "cable\\test\\bent_wire\\006.png",
+      "score": 0.866537868976593,
+      "expected_score": 0.866537868976593,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "FAIL",
+      "actual_decision": "FAIL",
+      "decision_ok": true,
+      "result": {
+        "category": "cable",
+        "anomaly_score": 0.866537868976593,
+        "threshold": 0.7059989047050477,
+        "review_threshold": 0.7765987951755525,
+        "decision": "FAIL",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "capsule\\test\\crack\\016.png",
+      "score": 0.4474213123321533,
+      "expected_score": 0.4474213123321533,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "capsule",
+        "anomaly_score": 0.4474213123321533,
+        "threshold": 0.5000054594874382,
+        "review_threshold": 0.5500060054361822,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "capsule\\test\\crack\\015.png",
+      "score": 0.6151071190834045,
+      "expected_score": 0.6151071190834045,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "FAIL",
+      "actual_decision": "FAIL",
+      "decision_ok": true,
+      "result": {
+        "category": "capsule",
+        "anomaly_score": 0.6151071190834045,
+        "threshold": 0.5000054594874382,
+        "review_threshold": 0.5500060054361822,
+        "decision": "FAIL",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "screw\\test\\manipulated_front\\015.png",
+      "score": 0.5866037607192993,
+      "expected_score": 0.5866037607192993,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "screw",
+        "anomaly_score": 0.5866037607192993,
+        "threshold": 0.6448165547847747,
+        "review_threshold": 0.7092982102632522,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "screw\\test\\manipulated_front\\005.png",
+      "score": 0.5585793256759644,
+      "expected_score": 0.5585793256759644,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "PASS",
+      "actual_decision": "PASS",
+      "decision_ok": true,
+      "result": {
+        "category": "screw",
+        "anomaly_score": 0.5585793256759644,
+        "threshold": 0.6448165547847747,
+        "review_threshold": 0.7092982102632522,
+        "decision": "PASS",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": false,
+          "evidence": null
+        }
+      }
+    },
+    {
+      "path": "metal_nut\\test\\bent\\016.png",
+      "score": 0.8104569315910339,
+      "expected_score": 0.8104569315910339,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "REVIEW",
+      "actual_decision": "REVIEW",
+      "decision_ok": true,
+      "result": {
+        "category": "metal_nut",
+        "anomaly_score": 0.8104569315910339,
+        "threshold": 0.7377763795852661,
+        "review_threshold": 0.8115540175437927,
+        "decision": "REVIEW",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    },
+    {
+      "path": "metal_nut\\test\\bent\\012.png",
+      "score": 0.7618514895439148,
+      "expected_score": 0.7618514895439148,
+      "score_difference": 0.0,
+      "score_ok": true,
+      "expected_decision": "REVIEW",
+      "actual_decision": "REVIEW",
+      "decision_ok": true,
+      "result": {
+        "category": "metal_nut",
+        "anomaly_score": 0.7618514895439148,
+        "threshold": 0.7377763795852661,
+        "review_threshold": 0.8115540175437927,
+        "decision": "REVIEW",
+        "score_aggregation": "TOP5",
+        "localization": {
+          "method": "hybrid_alpha_0.75_p95_largest_component",
+          "available": true,
+          "evidence": {
+            "integration_test": true,
+            "method": "hybrid_alpha_0.75_p95_largest_component"
+          }
+        }
+      }
+    }
+  ],
+  "score_errors": [],
+  "decision_errors": []
+}

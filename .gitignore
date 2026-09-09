@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local dataset
+data/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Local test files
+test.txt
+empty.png
+
+# Large experiment archives
+*.zip
+
+# Build/cache
+build/
+dist/
+*.egg-info/
+
+# Legacy experiment artifacts
+artifacts/patch_banks/
+artifacts/*_patch_bank.npy
+artifacts/evaluation/localization/visualizations/
+artifacts/evaluation/localization/visualizations_hybrid/
+
+# Legacy calibration artifacts
+artifacts/*/calibration_scores_top5.npy
+artifacts/*/threshold_candidates_top5.npy

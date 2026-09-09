@@ -1,0 +1,91 @@
+{
+  "category": "screw",
+  "resolutions": [
+    224,
+    320
+  ],
+  "reference_images": 256,
+  "normal_development_images": 64,
+  "defect_development_images": 58,
+  "reference_source": "normal_splits.json",
+  "defect_source": "defect_splits.json",
+  "threshold_method": "P99 normal development",
+  "top_k": 5,
+  "fusion": "0.5 L4 + 0.5 L8",
+  "results": {
+    "224": {
+      "resolution": 224,
+      "threshold": 0.5403674910962581,
+      "normal": {
+        "count": 64,
+        "mean": 0.47408746602013707,
+        "median": 0.4736778885126114,
+        "p95": 0.5212215863168239,
+        "max": 0.5570591688156128,
+        "false_positives": 1,
+        "false_positive_rate": 0.015625
+      },
+      "defects": {
+        "count": 58,
+        "detected": 12,
+        "detection_rate": 0.20689655172413793,
+        "mean": 0.5142711007903362,
+        "median": 0.5151267722249031,
+        "min": 0.4536803960800171,
+        "max": 0.6220737099647522
+      },
+      "metrics": {
+        "auroc": 0.8211206896551725,
+        "average_precision": 0.8034845876007316
+      },
+      "reference_bank": {
+        "reference_images": 256,
+        "L4_shape": [
+          50176,
+          40
+        ],
+        "L8_shape": [
+          50176,
+          48
+        ]
+      }
+    },
+    "320": {
+      "resolution": 320,
+      "threshold": 0.5780422034859657,
+      "normal": {
+        "count": 64,
+        "mean": 0.5226336964406073,
+        "median": 0.5234993100166321,
+        "p95": 0.5586953237652779,
+        "max": 0.5997506380081177,
+        "false_positives": 1,
+        "false_positive_rate": 0.015625
+      },
+      "defects": {
+        "count": 58,
+        "detected": 28,
+        "detection_rate": 0.4827586206896552,
+        "mean": 0.5766224812330871,
+        "median": 0.5764262676239014,
+        "min": 0.5141086429357529,
+        "max": 0.6732318997383118
+      },
+      "metrics": {
+        "auroc": 0.9191810344827587,
+        "average_precision": 0.9183087277004953
+      },
+      "reference_bank": {
+        "reference_images": 256,
+        "L4_shape": [
+          102400,
+          40
+        ],
+        "L8_shape": [
+          102400,
+          48
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1714 @@
+{
+  "method": "MobileNetV3-Small-L8",
+  "distance_metric": "euclidean_cdist_p2",
+  "aggregation": "TOP5",
+  "split": "canonical_normal_development",
+  "seed": 42,
+  "reference_ratio": 0.8,
+  "categories": {
+    "bottle": {
+      "samples": [
+        {
+          "path": "bottle\\train\\good\\001.png",
+          "score": 0.3779374957084656
+        },
+        {
+          "path": "bottle\\train\\good\\006.png",
+          "score": 0.4734756052494049
+        },
+        {
+          "path": "bottle\\train\\good\\007.png",
+          "score": 0.37293562293052673
+        },
+        {
+          "path": "bottle\\train\\good\\008.png",
+          "score": 0.41010981798171997
+        },
+        {
+          "path": "bottle\\train\\good\\022.png",
+          "score": 0.33087825775146484
+        },
+        {
+          "path": "bottle\\train\\good\\023.png",
+          "score": 0.44156113266944885
+        },
+        {
+          "path": "bottle\\train\\good\\026.png",
+          "score": 0.37733519077301025
+        },
+        {
+          "path": "bottle\\train\\good\\028.png",
+          "score": 0.3820180296897888
+        },
+        {
+          "path": "bottle\\train\\good\\035.png",
+          "score": 0.4238789677619934
+        },
+        {
+          "path": "bottle\\train\\good\\039.png",
+          "score": 0.3425503671169281
+        },
+        {
+          "path": "bottle\\train\\good\\040.png",
+          "score": 0.36461710929870605
+        },
+        {
+          "path": "bottle\\train\\good\\050.png",
+          "score": 0.3369818329811096
+        },
+        {
+          "path": "bottle\\train\\good\\055.png",
+          "score": 0.4100117087364197
+        },
+        {
+          "path": "bottle\\train\\good\\056.png",
+          "score": 0.4488319754600525
+        },
+        {
+          "path": "bottle\\train\\good\\057.png",
+          "score": 0.37981855869293213
+        },
+        {
+          "path": "bottle\\train\\good\\059.png",
+          "score": 0.35774311423301697
+        },
+        {
+          "path": "bottle\\train\\good\\062.png",
+          "score": 0.35497015714645386
+        },
+        {
+          "path": "bottle\\train\\good\\070.png",
+          "score": 0.24628813564777374
+        },
+        {
+          "path": "bottle\\train\\good\\071.png",
+          "score": 0.3962772786617279
+        },
+        {
+          "path": "bottle\\train\\good\\086.png",
+          "score": 0.40379661321640015
+        },
+        {
+          "path": "bottle\\train\\good\\087.png",
+          "score": 0.4088643193244934
+        },
+        {
+          "path": "bottle\\train\\good\\107.png",
+          "score": 0.3156712055206299
+        },
+        {
+          "path": "bottle\\train\\good\\108.png",
+          "score": 0.4482709765434265
+        },
+        {
+          "path": "bottle\\train\\good\\114.png",
+          "score": 0.4401344656944275
+        },
+        {
+          "path": "bottle\\train\\good\\129.png",
+          "score": 0.44686704874038696
+        },
+        {
+          "path": "bottle\\train\\good\\139.png",
+          "score": 0.4236336648464203
+        },
+        {
+          "path": "bottle\\train\\good\\143.png",
+          "score": 0.4145537316799164
+        },
+        {
+          "path": "bottle\\train\\good\\150.png",
+          "score": 0.44436565041542053
+        },
+        {
+          "path": "bottle\\train\\good\\151.png",
+          "score": 0.4259256422519684
+        },
+        {
+          "path": "bottle\\train\\good\\154.png",
+          "score": 0.4285775125026703
+        },
+        {
+          "path": "bottle\\train\\good\\163.png",
+          "score": 0.3835056722164154
+        },
+        {
+          "path": "bottle\\train\\good\\166.png",
+          "score": 0.3890165686607361
+        },
+        {
+          "path": "bottle\\train\\good\\173.png",
+          "score": 0.38683387637138367
+        },
+        {
+          "path": "bottle\\train\\good\\175.png",
+          "score": 0.3834390938282013
+        },
+        {
+          "path": "bottle\\train\\good\\179.png",
+          "score": 0.3550843596458435
+        },
+        {
+          "path": "bottle\\train\\good\\188.png",
+          "score": 0.40743160247802734
+        },
+        {
+          "path": "bottle\\train\\good\\189.png",
+          "score": 0.3338852524757385
+        },
+        {
+          "path": "bottle\\train\\good\\193.png",
+          "score": 0.37275850772857666
+        },
+        {
+          "path": "bottle\\train\\good\\196.png",
+          "score": 0.3624953627586365
+        },
+        {
+          "path": "bottle\\train\\good\\197.png",
+          "score": 0.44494882225990295
+        },
+        {
+          "path": "bottle\\train\\good\\205.png",
+          "score": 0.4646412432193756
+        },
+        {
+          "path": "bottle\\train\\good\\206.png",
+          "score": 0.40232425928115845
+        }
+      ],
+      "scores": [
+        0.3779374957084656,
+        0.4734756052494049,
+        0.37293562293052673,
+        0.41010981798171997,
+        0.33087825775146484,
+        0.44156113266944885,
+        0.37733519077301025,
+        0.3820180296897888,
+        0.4238789677619934,
+        0.3425503671169281,
+        0.36461710929870605,
+        0.3369818329811096,
+        0.4100117087364197,
+        0.4488319754600525,
+        0.37981855869293213,
+        0.35774311423301697,
+        0.35497015714645386,
+        0.24628813564777374,
+        0.3962772786617279,
+        0.40379661321640015,
+        0.4088643193244934,
+        0.3156712055206299,
+        0.4482709765434265,
+        0.4401344656944275,
+        0.44686704874038696,
+        0.4236336648464203,
+        0.4145537316799164,
+        0.44436565041542053,
+        0.4259256422519684,
+        0.4285775125026703,
+        0.3835056722164154,
+        0.3890165686607361,
+        0.38683387637138367,
+        0.3834390938282013,
+        0.3550843596458435,
+        0.40743160247802734,
+        0.3338852524757385,
+        0.37275850772857666,
+        0.3624953627586365,
+        0.44494882225990295,
+        0.4646412432193756,
+        0.40232425928115845
+      ],
+      "statistics": {
+        "count": 42,
+        "min": 0.24628813564777374,
+        "max": 0.4734756052494049,
+        "mean": 0.393220138336931,
+        "std": 0.04492812280121628,
+        "median": 0.392646923661232,
+        "p90": 0.44667522609233856,
+        "p95": 0.4488039255142212,
+        "p97_5": 0.4642460115253926,
+        "p99": 0.46985351681709286,
+        "p99_5": 0.47166456103324894
+      }
+    },
+    "hazelnut": {
+      "samples": [
+        {
+          "path": "hazelnut\\train\\good\\003.png",
+          "score": 0.6748072504997253
+        },
+        {
+          "path": "hazelnut\\train\\good\\007.png",
+          "score": 0.7439081072807312
+        },
+        {
+          "path": "hazelnut\\train\\good\\010.png",
+          "score": 0.7358422875404358
+        },
+        {
+          "path": "hazelnut\\train\\good\\016.png",
+          "score": 0.6459200382232666
+        },
+        {
+          "path": "hazelnut\\train\\good\\025.png",
+          "score": 0.7062230706214905
+        },
+        {
+          "path": "hazelnut\\train\\good\\027.png",
+          "score": 0.6986072659492493
+        },
+        {
+          "path": "hazelnut\\train\\good\\030.png",
+          "score": 0.7109035849571228
+        },
+        {
+          "path": "hazelnut\\train\\good\\031.png",
+          "score": 0.7150639891624451
+        },
+        {
+          "path": "hazelnut\\train\\good\\032.png",
+          "score": 0.6401535272598267
+        },
+        {
+          "path": "hazelnut\\train\\good\\034.png",
+          "score": 0.6505352854728699
+        },
+        {
+          "path": "hazelnut\\train\\good\\036.png",
+          "score": 0.7065078616142273
+        },
+        {
+          "path": "hazelnut\\train\\good\\038.png",
+          "score": 0.7005347013473511
+        },
+        {
+          "path": "hazelnut\\train\\good\\047.png",
+          "score": 0.6852264404296875
+        },
+        {
+          "path": "hazelnut\\train\\good\\048.png",
+          "score": 0.6347302198410034
+        },
+        {
+          "path": "hazelnut\\train\\good\\049.png",
+          "score": 0.675214409828186
+        },
+        {
+          "path": "hazelnut\\train\\good\\050.png",
+          "score": 0.6982399821281433
+        },
+        {
+          "path": "hazelnut\\train\\good\\055.png",
+          "score": 0.6178401112556458
+        },
+        {
+          "path": "hazelnut\\train\\good\\061.png",
+          "score": 0.6928761005401611
+        },
+        {
+          "path": "hazelnut\\train\\good\\067.png",
+          "score": 0.7219213843345642
+        },
+        {
+          "path": "hazelnut\\train\\good\\071.png",
+          "score": 0.6331399083137512
+        },
+        {
+          "path": "hazelnut\\train\\good\\085.png",
+          "score": 0.6908071637153625
+        },
+        {
+          "path": "hazelnut\\train\\good\\093.png",
+          "score": 0.6408854126930237
+        },
+        {
+          "path": "hazelnut\\train\\good\\097.png",
+          "score": 0.6442400217056274
+        },
+        {
+          "path": "hazelnut\\train\\good\\098.png",
+          "score": 0.6459207534790039
+        },
+        {
+          "path": "hazelnut\\train\\good\\109.png",
+          "score": 0.7779033780097961
+        },
+        {
+          "path": "hazelnut\\train\\good\\112.png",
+          "score": 0.7402056455612183
+        },
+        {
+          "path": "hazelnut\\train\\good\\115.png",
+          "score": 0.6519342660903931
+        },
+        {
+          "path": "hazelnut\\train\\good\\117.png",
+          "score": 0.6958914995193481
+        },
+        {
+          "path": "hazelnut\\train\\good\\121.png",
+          "score": 0.6929694414138794
+        },
+        {
+          "path": "hazelnut\\train\\good\\124.png",
+          "score": 0.7102389335632324
+        },
+        {
+          "path": "hazelnut\\train\\good\\126.png",
+          "score": 0.6997700333595276
+        },
+        {
+          "path": "hazelnut\\train\\good\\127.png",
+          "score": 0.7018564343452454
+        },
+        {
+          "path": "hazelnut\\train\\good\\142.png",
+          "score": 0.6985549926757812
+        },
+        {
+          "path": "hazelnut\\train\\good\\169.png",
+          "score": 0.687697172164917
+        },
+        {
+          "path": "hazelnut\\train\\good\\173.png",
+          "score": 0.6852225065231323
+        },
+        {
+          "path": "hazelnut\\train\\good\\181.png",
+          "score": 0.6908579468727112
+        },
+        {
+          "path": "hazelnut\\train\\good\\205.png",
+          "score": 0.7419651746749878
+        },
+        {
+          "path": "hazelnut\\train\\good\\206.png",
+          "score": 0.7376644611358643
+        },
+        {
+          "path": "hazelnut\\train\\good\\208.png",
+          "score": 0.7236582040786743
+        },
+        {
+          "path": "hazelnut\\train\\good\\210.png",
+          "score": 0.7111085653305054
+        },
+        {
+          "path": "hazelnut\\train\\good\\216.png",
+          "score": 0.6964482069015503
+        },
+        {
+          "path": "hazelnut\\train\\good\\220.png",
+          "score": 0.6736785173416138
+        },
+        {
+          "path": "hazelnut\\train\\good\\226.png",
+          "score": 0.6732484102249146
+        },
+        {
+          "path": "hazelnut\\train\\good\\229.png",
+          "score": 0.7304094433784485
+        },
+        {
+          "path": "hazelnut\\train\\good\\236.png",
+          "score": 0.6956825256347656
+        },
+        {
+          "path": "hazelnut\\train\\good\\239.png",
+          "score": 0.7216529250144958
+        },
+        {
+          "path": "hazelnut\\train\\good\\242.png",
+          "score": 0.6626960039138794
+        },
+        {
+          "path": "hazelnut\\train\\good\\246.png",
+          "score": 0.6955446004867554
+        },
+        {
+          "path": "hazelnut\\train\\good\\248.png",
+          "score": 0.7082852125167847
+        },
+        {
+          "path": "hazelnut\\train\\good\\263.png",
+          "score": 0.6945033073425293
+        },
+        {
+          "path": "hazelnut\\train\\good\\274.png",
+          "score": 0.6603883504867554
+        },
+        {
+          "path": "hazelnut\\train\\good\\276.png",
+          "score": 0.6582944989204407
+        },
+        {
+          "path": "hazelnut\\train\\good\\281.png",
+          "score": 0.6427079439163208
+        },
+        {
+          "path": "hazelnut\\train\\good\\283.png",
+          "score": 0.6782824397087097
+        },
+        {
+          "path": "hazelnut\\train\\good\\292.png",
+          "score": 0.7129570841789246
+        },
+        {
+          "path": "hazelnut\\train\\good\\295.png",
+          "score": 0.7321942448616028
+        },
+        {
+          "path": "hazelnut\\train\\good\\301.png",
+          "score": 0.7301065325737
+        },
+        {
+          "path": "hazelnut\\train\\good\\323.png",
+          "score": 0.6958467960357666
+        },
+        {
+          "path": "hazelnut\\train\\good\\330.png",
+          "score": 0.6261782050132751
+        },
+        {
+          "path": "hazelnut\\train\\good\\334.png",
+          "score": 0.7324375510215759
+        },
+        {
+          "path": "hazelnut\\train\\good\\337.png",
+          "score": 0.716039776802063
+        },
+        {
+          "path": "hazelnut\\train\\good\\342.png",
+          "score": 0.6906008720397949
+        },
+        {
+          "path": "hazelnut\\train\\good\\344.png",
+          "score": 0.6836549043655396
+        },
+        {
+          "path": "hazelnut\\train\\good\\349.png",
+          "score": 0.6858407855033875
+        },
+        {
+          "path": "hazelnut\\train\\good\\352.png",
+          "score": 0.7278550267219543
+        },
+        {
+          "path": "hazelnut\\train\\good\\355.png",
+          "score": 0.701457142829895
+        },
+        {
+          "path": "hazelnut\\train\\good\\356.png",
+          "score": 0.6719465851783752
+        },
+        {
+          "path": "hazelnut\\train\\good\\359.png",
+          "score": 0.6649898290634155
+        },
+        {
+          "path": "hazelnut\\train\\good\\362.png",
+          "score": 0.6716645956039429
+        },
+        {
+          "path": "hazelnut\\train\\good\\363.png",
+          "score": 0.6479791402816772
+        },
+        {
+          "path": "hazelnut\\train\\good\\364.png",
+          "score": 0.6674472093582153
+        },
+        {
+          "path": "hazelnut\\train\\good\\365.png",
+          "score": 0.6360211372375488
+        },
+        {
+          "path": "hazelnut\\train\\good\\366.png",
+          "score": 0.6810275912284851
+        },
+        {
+          "path": "hazelnut\\train\\good\\367.png",
+          "score": 0.6981251835823059
+        },
+        {
+          "path": "hazelnut\\train\\good\\368.png",
+          "score": 0.7052056193351746
+        },
+        {
+          "path": "hazelnut\\train\\good\\378.png",
+          "score": 0.66024249792099
+        },
+        {
+          "path": "hazelnut\\train\\good\\382.png",
+          "score": 0.6657918691635132
+        },
+        {
+          "path": "hazelnut\\train\\good\\384.png",
+          "score": 0.6900181174278259
+        },
+        {
+          "path": "hazelnut\\train\\good\\386.png",
+          "score": 0.6398555040359497
+        }
+      ],
+      "scores": [
+        0.6748072504997253,
+        0.7439081072807312,
+        0.7358422875404358,
+        0.6459200382232666,
+        0.7062230706214905,
+        0.6986072659492493,
+        0.7109035849571228,
+        0.7150639891624451,
+        0.6401535272598267,
+        0.6505352854728699,
+        0.7065078616142273,
+        0.7005347013473511,
+        0.6852264404296875,
+        0.6347302198410034,
+        0.675214409828186,
+        0.6982399821281433,
+        0.6178401112556458,
+        0.6928761005401611,
+        0.7219213843345642,
+        0.6331399083137512,
+        0.6908071637153625,
+        0.6408854126930237,
+        0.6442400217056274,
+        0.6459207534790039,
+        0.7779033780097961,
+        0.7402056455612183,
+        0.6519342660903931,
+        0.6958914995193481,
+        0.6929694414138794,
+        0.7102389335632324,
+        0.6997700333595276,
+        0.7018564343452454,
+        0.6985549926757812,
+        0.687697172164917,
+        0.6852225065231323,
+        0.6908579468727112,
+        0.7419651746749878,
+        0.7376644611358643,
+        0.7236582040786743,
+        0.7111085653305054,
+        0.6964482069015503,
+        0.6736785173416138,
+        0.6732484102249146,
+        0.7304094433784485,
+        0.6956825256347656,
+        0.7216529250144958,
+        0.6626960039138794,
+        0.6955446004867554,
+        0.7082852125167847,
+        0.6945033073425293,
+        0.6603883504867554,
+        0.6582944989204407,
+        0.6427079439163208,
+        0.6782824397087097,
+        0.7129570841789246,
+        0.7321942448616028,
+        0.7301065325737,
+        0.6958467960357666,
+        0.6261782050132751,
+        0.7324375510215759,
+        0.716039776802063,
+        0.6906008720397949,
+        0.6836549043655396,
+        0.6858407855033875,
+        0.7278550267219543,
+        0.701457142829895,
+        0.6719465851783752,
+        0.6649898290634155,
+        0.6716645956039429,
+        0.6479791402816772,
+        0.6674472093582153,
+        0.6360211372375488,
+        0.6810275912284851,
+        0.6981251835823059,
+        0.7052056193351746,
+        0.66024249792099,
+        0.6657918691635132,
+        0.6900181174278259,
+        0.6398555040359497
+      ],
+      "statistics": {
+        "count": 79,
+        "min": 0.6178401112556458,
+        "max": 0.7779033780097961,
+        "mean": 0.6884158698818351,
+        "std": 0.03236219208014174,
+        "median": 0.6928761005401611,
+        "p90": 0.7307664036750794,
+        "p95": 0.7379185795783997,
+        "p97_5": 0.7420623213052749,
+        "p99": 0.7513870668411254,
+        "p99_5": 0.7646452224254608
+      }
+    },
+    "cable": {
+      "samples": [
+        {
+          "path": "cable\\train\\good\\015.png",
+          "score": 0.6689352989196777
+        },
+        {
+          "path": "cable\\train\\good\\016.png",
+          "score": 0.6068823933601379
+        },
+        {
+          "path": "cable\\train\\good\\019.png",
+          "score": 0.6633355617523193
+        },
+        {
+          "path": "cable\\train\\good\\020.png",
+          "score": 0.6601439714431763
+        },
+        {
+          "path": "cable\\train\\good\\035.png",
+          "score": 0.6571990251541138
+        },
+        {
+          "path": "cable\\train\\good\\038.png",
+          "score": 0.6788719892501831
+        },
+        {
+          "path": "cable\\train\\good\\039.png",
+          "score": 0.6305544972419739
+        },
+        {
+          "path": "cable\\train\\good\\040.png",
+          "score": 0.658935546875
+        },
+        {
+          "path": "cable\\train\\good\\052.png",
+          "score": 0.6735353469848633
+        },
+        {
+          "path": "cable\\train\\good\\054.png",
+          "score": 0.6429885029792786
+        },
+        {
+          "path": "cable\\train\\good\\059.png",
+          "score": 0.6566247344017029
+        },
+        {
+          "path": "cable\\train\\good\\060.png",
+          "score": 0.6244551539421082
+        },
+        {
+          "path": "cable\\train\\good\\061.png",
+          "score": 0.6412442922592163
+        },
+        {
+          "path": "cable\\train\\good\\063.png",
+          "score": 0.668239414691925
+        },
+        {
+          "path": "cable\\train\\good\\066.png",
+          "score": 0.6287841200828552
+        },
+        {
+          "path": "cable\\train\\good\\069.png",
+          "score": 0.6950843930244446
+        },
+        {
+          "path": "cable\\train\\good\\070.png",
+          "score": 0.6811348795890808
+        },
+        {
+          "path": "cable\\train\\good\\073.png",
+          "score": 0.6234187483787537
+        },
+        {
+          "path": "cable\\train\\good\\081.png",
+          "score": 0.6977507472038269
+        },
+        {
+          "path": "cable\\train\\good\\084.png",
+          "score": 0.6402086019515991
+        },
+        {
+          "path": "cable\\train\\good\\085.png",
+          "score": 0.6906399130821228
+        },
+        {
+          "path": "cable\\train\\good\\098.png",
+          "score": 0.7015002369880676
+        },
+        {
+          "path": "cable\\train\\good\\104.png",
+          "score": 0.6587474346160889
+        },
+        {
+          "path": "cable\\train\\good\\106.png",
+          "score": 0.672613263130188
+        },
+        {
+          "path": "cable\\train\\good\\112.png",
+          "score": 0.6457469463348389
+        },
+        {
+          "path": "cable\\train\\good\\115.png",
+          "score": 0.6450051069259644
+        },
+        {
+          "path": "cable\\train\\good\\119.png",
+          "score": 0.6242021322250366
+        },
+        {
+          "path": "cable\\train\\good\\121.png",
+          "score": 0.7095335721969604
+        },
+        {
+          "path": "cable\\train\\good\\124.png",
+          "score": 0.6784543991088867
+        },
+        {
+          "path": "cable\\train\\good\\133.png",
+          "score": 0.611244797706604
+        },
+        {
+          "path": "cable\\train\\good\\138.png",
+          "score": 0.6113187670707703
+        },
+        {
+          "path": "cable\\train\\good\\160.png",
+          "score": 0.6889142394065857
+        },
+        {
+          "path": "cable\\train\\good\\163.png",
+          "score": 0.6874585151672363
+        },
+        {
+          "path": "cable\\train\\good\\177.png",
+          "score": 0.6674726605415344
+        },
+        {
+          "path": "cable\\train\\good\\180.png",
+          "score": 0.6881313323974609
+        },
+        {
+          "path": "cable\\train\\good\\182.png",
+          "score": 0.6000472903251648
+        },
+        {
+          "path": "cable\\train\\good\\186.png",
+          "score": 0.639011025428772
+        },
+        {
+          "path": "cable\\train\\good\\190.png",
+          "score": 0.6682323813438416
+        },
+        {
+          "path": "cable\\train\\good\\192.png",
+          "score": 0.6316371560096741
+        },
+        {
+          "path": "cable\\train\\good\\196.png",
+          "score": 0.6366927027702332
+        },
+        {
+          "path": "cable\\train\\good\\197.png",
+          "score": 0.6439388990402222
+        },
+        {
+          "path": "cable\\train\\good\\199.png",
+          "score": 0.6518921852111816
+        },
+        {
+          "path": "cable\\train\\good\\213.png",
+          "score": 0.6791051030158997
+        },
+        {
+          "path": "cable\\train\\good\\215.png",
+          "score": 0.6140159964561462
+        },
+        {
+          "path": "cable\\train\\good\\220.png",
+          "score": 0.625876784324646
+        }
+      ],
+      "scores": [
+        0.6689352989196777,
+        0.6068823933601379,
+        0.6633355617523193,
+        0.6601439714431763,
+        0.6571990251541138,
+        0.6788719892501831,
+        0.6305544972419739,
+        0.658935546875,
+        0.6735353469848633,
+        0.6429885029792786,
+        0.6566247344017029,
+        0.6244551539421082,
+        0.6412442922592163,
+        0.668239414691925,
+        0.6287841200828552,
+        0.6950843930244446,
+        0.6811348795890808,
+        0.6234187483787537,
+        0.6977507472038269,
+        0.6402086019515991,
+        0.6906399130821228,
+        0.7015002369880676,
+        0.6587474346160889,
+        0.672613263130188,
+        0.6457469463348389,
+        0.6450051069259644,
+        0.6242021322250366,
+        0.7095335721969604,
+        0.6784543991088867,
+        0.611244797706604,
+        0.6113187670707703,
+        0.6889142394065857,
+        0.6874585151672363,
+        0.6674726605415344,
+        0.6881313323974609,
+        0.6000472903251648,
+        0.639011025428772,
+        0.6682323813438416,
+        0.6316371560096741,
+        0.6366927027702332,
+        0.6439388990402222,
+        0.6518921852111816,
+        0.6791051030158997,
+        0.6140159964561462,
+        0.625876784324646
+      ],
+      "statistics": {
+        "count": 45,
+        "min": 0.6000472903251648,
+        "max": 0.7095335721969604,
+        "mean": 0.6548835568957858,
+        "std": 0.027836107282545174,
+        "median": 0.6571990251541138,
+        "p90": 0.6899496436119079,
+        "p95": 0.6972174763679504,
+        "p97_5": 0.7011252880096436,
+        "p99": 0.7059989047050477,
+        "p99_5": 0.7077662384510041
+      }
+    },
+    "capsule": {
+      "samples": [
+        {
+          "path": "capsule\\train\\good\\025.png",
+          "score": 0.3178256154060364
+        },
+        {
+          "path": "capsule\\train\\good\\030.png",
+          "score": 0.3247697949409485
+        },
+        {
+          "path": "capsule\\train\\good\\047.png",
+          "score": 0.35699132084846497
+        },
+        {
+          "path": "capsule\\train\\good\\049.png",
+          "score": 0.34873226284980774
+        },
+        {
+          "path": "capsule\\train\\good\\055.png",
+          "score": 0.34797921776771545
+        },
+        {
+          "path": "capsule\\train\\good\\056.png",
+          "score": 0.3614475429058075
+        },
+        {
+          "path": "capsule\\train\\good\\058.png",
+          "score": 0.35375741124153137
+        },
+        {
+          "path": "capsule\\train\\good\\059.png",
+          "score": 0.3353441059589386
+        },
+        {
+          "path": "capsule\\train\\good\\062.png",
+          "score": 0.405650794506073
+        },
+        {
+          "path": "capsule\\train\\good\\064.png",
+          "score": 0.48332276940345764
+        },
+        {
+          "path": "capsule\\train\\good\\069.png",
+          "score": 0.4124482572078705
+        },
+        {
+          "path": "capsule\\train\\good\\070.png",
+          "score": 0.38203316926956177
+        },
+        {
+          "path": "capsule\\train\\good\\072.png",
+          "score": 0.35604801774024963
+        },
+        {
+          "path": "capsule\\train\\good\\075.png",
+          "score": 0.3909134268760681
+        },
+        {
+          "path": "capsule\\train\\good\\078.png",
+          "score": 0.332855761051178
+        },
+        {
+          "path": "capsule\\train\\good\\080.png",
+          "score": 0.3431622385978699
+        },
+        {
+          "path": "capsule\\train\\good\\084.png",
+          "score": 0.44872578978538513
+        },
+        {
+          "path": "capsule\\train\\good\\088.png",
+          "score": 0.5125906467437744
+        },
+        {
+          "path": "capsule\\train\\good\\090.png",
+          "score": 0.3882284164428711
+        },
+        {
+          "path": "capsule\\train\\good\\094.png",
+          "score": 0.34429970383644104
+        },
+        {
+          "path": "capsule\\train\\good\\103.png",
+          "score": 0.33941173553466797
+        },
+        {
+          "path": "capsule\\train\\good\\108.png",
+          "score": 0.3606186509132385
+        },
+        {
+          "path": "capsule\\train\\good\\116.png",
+          "score": 0.37193024158477783
+        },
+        {
+          "path": "capsule\\train\\good\\121.png",
+          "score": 0.4077342450618744
+        },
+        {
+          "path": "capsule\\train\\good\\123.png",
+          "score": 0.47686976194381714
+        },
+        {
+          "path": "capsule\\train\\good\\134.png",
+          "score": 0.4301767349243164
+        },
+        {
+          "path": "capsule\\train\\good\\135.png",
+          "score": 0.414848268032074
+        },
+        {
+          "path": "capsule\\train\\good\\137.png",
+          "score": 0.4077250361442566
+        },
+        {
+          "path": "capsule\\train\\good\\140.png",
+          "score": 0.3912481665611267
+        },
+        {
+          "path": "capsule\\train\\good\\141.png",
+          "score": 0.42312532663345337
+        },
+        {
+          "path": "capsule\\train\\good\\148.png",
+          "score": 0.40826520323753357
+        },
+        {
+          "path": "capsule\\train\\good\\150.png",
+          "score": 0.4364899694919586
+        },
+        {
+          "path": "capsule\\train\\good\\152.png",
+          "score": 0.3561576008796692
+        },
+        {
+          "path": "capsule\\train\\good\\169.png",
+          "score": 0.3623691201210022
+        },
+        {
+          "path": "capsule\\train\\good\\176.png",
+          "score": 0.3418771028518677
+        },
+        {
+          "path": "capsule\\train\\good\\177.png",
+          "score": 0.3345057964324951
+        },
+        {
+          "path": "capsule\\train\\good\\179.png",
+          "score": 0.33109527826309204
+        },
+        {
+          "path": "capsule\\train\\good\\184.png",
+          "score": 0.34278783202171326
+        },
+        {
+          "path": "capsule\\train\\good\\186.png",
+          "score": 0.34927043318748474
+        },
+        {
+          "path": "capsule\\train\\good\\190.png",
+          "score": 0.3304906189441681
+        },
+        {
+          "path": "capsule\\train\\good\\192.png",
+          "score": 0.30818137526512146
+        },
+        {
+          "path": "capsule\\train\\good\\194.png",
+          "score": 0.40667420625686646
+        },
+        {
+          "path": "capsule\\train\\good\\213.png",
+          "score": 0.3387283384799957
+        },
+        {
+          "path": "capsule\\train\\good\\218.png",
+          "score": 0.33544012904167175
+        }
+      ],
+      "scores": [
+        0.3178256154060364,
+        0.3247697949409485,
+        0.35699132084846497,
+        0.34873226284980774,
+        0.34797921776771545,
+        0.3614475429058075,
+        0.35375741124153137,
+        0.3353441059589386,
+        0.405650794506073,
+        0.48332276940345764,
+        0.4124482572078705,
+        0.38203316926956177,
+        0.35604801774024963,
+        0.3909134268760681,
+        0.332855761051178,
+        0.3431622385978699,
+        0.44872578978538513,
+        0.5125906467437744,
+        0.3882284164428711,
+        0.34429970383644104,
+        0.33941173553466797,
+        0.3606186509132385,
+        0.37193024158477783,
+        0.4077342450618744,
+        0.47686976194381714,
+        0.4301767349243164,
+        0.414848268032074,
+        0.4077250361442566,
+        0.3912481665611267,
+        0.42312532663345337,
+        0.40826520323753357,
+        0.4364899694919586,
+        0.3561576008796692,
+        0.3623691201210022,
+        0.3418771028518677,
+        0.3345057964324951,
+        0.33109527826309204,
+        0.34278783202171326,
+        0.34927043318748474,
+        0.3304906189441681,
+        0.30818137526512146,
+        0.40667420625686646,
+        0.3387283384799957,
+        0.33544012904167175
+      ],
+      "statistics": {
+        "count": 44,
+        "min": 0.30818137526512146,
+        "max": 0.5125906467437744,
+        "mean": 0.3762078962542794,
+        "std": 0.04671050294244807,
+        "median": 0.35880498588085175,
+        "p90": 0.43459599912166597,
+        "p95": 0.4726481661200524,
+        "p97_5": 0.4828387938439846,
+        "p99": 0.5000054594874382,
+        "p99_5": 0.5062980531156062
+      }
+    },
+    "screw": {
+      "samples": [
+        {
+          "path": "screw\\train\\good\\001.png",
+          "score": 0.5792703628540039
+        },
+        {
+          "path": "screw\\train\\good\\007.png",
+          "score": 0.555440366268158
+        },
+        {
+          "path": "screw\\train\\good\\014.png",
+          "score": 0.4971961975097656
+        },
+        {
+          "path": "screw\\train\\good\\022.png",
+          "score": 0.5241391658782959
+        },
+        {
+          "path": "screw\\train\\good\\026.png",
+          "score": 0.5078628659248352
+        },
+        {
+          "path": "screw\\train\\good\\035.png",
+          "score": 0.5583904981613159
+        },
+        {
+          "path": "screw\\train\\good\\047.png",
+          "score": 0.5780742764472961
+        },
+        {
+          "path": "screw\\train\\good\\058.png",
+          "score": 0.5206959843635559
+        },
+        {
+          "path": "screw\\train\\good\\060.png",
+          "score": 0.5110949277877808
+        },
+        {
+          "path": "screw\\train\\good\\062.png",
+          "score": 0.5313980579376221
+        },
+        {
+          "path": "screw\\train\\good\\067.png",
+          "score": 0.5930652618408203
+        },
+        {
+          "path": "screw\\train\\good\\069.png",
+          "score": 0.5434168577194214
+        },
+        {
+          "path": "screw\\train\\good\\074.png",
+          "score": 0.5433882474899292
+        },
+        {
+          "path": "screw\\train\\good\\076.png",
+          "score": 0.5069068074226379
+        },
+        {
+          "path": "screw\\train\\good\\078.png",
+          "score": 0.5727124214172363
+        },
+        {
+          "path": "screw\\train\\good\\081.png",
+          "score": 0.4997169077396393
+        },
+        {
+          "path": "screw\\train\\good\\096.png",
+          "score": 0.5923608541488647
+        },
+        {
+          "path": "screw\\train\\good\\097.png",
+          "score": 0.49544447660446167
+        },
+        {
+          "path": "screw\\train\\good\\104.png",
+          "score": 0.5198460817337036
+        },
+        {
+          "path": "screw\\train\\good\\115.png",
+          "score": 0.6444168090820312
+        },
+        {
+          "path": "screw\\train\\good\\119.png",
+          "score": 0.5093415975570679
+        },
+        {
+          "path": "screw\\train\\good\\122.png",
+          "score": 0.5635080337524414
+        },
+        {
+          "path": "screw\\train\\good\\124.png",
+          "score": 0.46090373396873474
+        },
+        {
+          "path": "screw\\train\\good\\136.png",
+          "score": 0.5416098833084106
+        },
+        {
+          "path": "screw\\train\\good\\139.png",
+          "score": 0.5620771050453186
+        },
+        {
+          "path": "screw\\train\\good\\141.png",
+          "score": 0.5424836874008179
+        },
+        {
+          "path": "screw\\train\\good\\144.png",
+          "score": 0.5514779090881348
+        },
+        {
+          "path": "screw\\train\\good\\147.png",
+          "score": 0.5633143186569214
+        },
+        {
+          "path": "screw\\train\\good\\149.png",
+          "score": 0.4883018136024475
+        },
+        {
+          "path": "screw\\train\\good\\152.png",
+          "score": 0.5643647313117981
+        },
+        {
+          "path": "screw\\train\\good\\159.png",
+          "score": 0.5083268284797668
+        },
+        {
+          "path": "screw\\train\\good\\162.png",
+          "score": 0.5534507036209106
+        },
+        {
+          "path": "screw\\train\\good\\164.png",
+          "score": 0.49336662888526917
+        },
+        {
+          "path": "screw\\train\\good\\170.png",
+          "score": 0.5018994212150574
+        },
+        {
+          "path": "screw\\train\\good\\174.png",
+          "score": 0.64549720287323
+        },
+        {
+          "path": "screw\\train\\good\\176.png",
+          "score": 0.5874818563461304
+        },
+        {
+          "path": "screw\\train\\good\\193.png",
+          "score": 0.519244372844696
+        },
+        {
+          "path": "screw\\train\\good\\196.png",
+          "score": 0.5917327404022217
+        },
+        {
+          "path": "screw\\train\\good\\208.png",
+          "score": 0.6165443658828735
+        },
+        {
+          "path": "screw\\train\\good\\210.png",
+          "score": 0.4998325705528259
+        },
+        {
+          "path": "screw\\train\\good\\212.png",
+          "score": 0.4854319095611572
+        },
+        {
+          "path": "screw\\train\\good\\224.png",
+          "score": 0.5461357831954956
+        },
+        {
+          "path": "screw\\train\\good\\226.png",
+          "score": 0.5297237038612366
+        },
+        {
+          "path": "screw\\train\\good\\228.png",
+          "score": 0.573351263999939
+        },
+        {
+          "path": "screw\\train\\good\\233.png",
+          "score": 0.4701949656009674
+        },
+        {
+          "path": "screw\\train\\good\\236.png",
+          "score": 0.5004397630691528
+        },
+        {
+          "path": "screw\\train\\good\\241.png",
+          "score": 0.534034788608551
+        },
+        {
+          "path": "screw\\train\\good\\247.png",
+          "score": 0.5393038392066956
+        },
+        {
+          "path": "screw\\train\\good\\248.png",
+          "score": 0.5505497455596924
+        },
+        {
+          "path": "screw\\train\\good\\250.png",
+          "score": 0.49241286516189575
+        },
+        {
+          "path": "screw\\train\\good\\255.png",
+          "score": 0.5729357004165649
+        },
+        {
+          "path": "screw\\train\\good\\259.png",
+          "score": 0.48163431882858276
+        },
+        {
+          "path": "screw\\train\\good\\260.png",
+          "score": 0.561009407043457
+        },
+        {
+          "path": "screw\\train\\good\\281.png",
+          "score": 0.4789888262748718
+        },
+        {
+          "path": "screw\\train\\good\\282.png",
+          "score": 0.43514394760131836
+        },
+        {
+          "path": "screw\\train\\good\\284.png",
+          "score": 0.5453206896781921
+        },
+        {
+          "path": "screw\\train\\good\\287.png",
+          "score": 0.5131489038467407
+        },
+        {
+          "path": "screw\\train\\good\\290.png",
+          "score": 0.5305691957473755
+        },
+        {
+          "path": "screw\\train\\good\\291.png",
+          "score": 0.5128601789474487
+        },
+        {
+          "path": "screw\\train\\good\\293.png",
+          "score": 0.5409930944442749
+        },
+        {
+          "path": "screw\\train\\good\\303.png",
+          "score": 0.5565091967582703
+        },
+        {
+          "path": "screw\\train\\good\\305.png",
+          "score": 0.5356326699256897
+        },
+        {
+          "path": "screw\\train\\good\\308.png",
+          "score": 0.5392948985099792
+        },
+        {
+          "path": "screw\\train\\good\\316.png",
+          "score": 0.5448824763298035
+        }
+      ],
+      "scores": [
+        0.5792703628540039,
+        0.555440366268158,
+        0.4971961975097656,
+        0.5241391658782959,
+        0.5078628659248352,
+        0.5583904981613159,
+        0.5780742764472961,
+        0.5206959843635559,
+        0.5110949277877808,
+        0.5313980579376221,
+        0.5930652618408203,
+        0.5434168577194214,
+        0.5433882474899292,
+        0.5069068074226379,
+        0.5727124214172363,
+        0.4997169077396393,
+        0.5923608541488647,
+        0.49544447660446167,
+        0.5198460817337036,
+        0.6444168090820312,
+        0.5093415975570679,
+        0.5635080337524414,
+        0.46090373396873474,
+        0.5416098833084106,
+        0.5620771050453186,
+        0.5424836874008179,
+        0.5514779090881348,
+        0.5633143186569214,
+        0.4883018136024475,
+        0.5643647313117981,
+        0.5083268284797668,
+        0.5534507036209106,
+        0.49336662888526917,
+        0.5018994212150574,
+        0.64549720287323,
+        0.5874818563461304,
+        0.519244372844696,
+        0.5917327404022217,
+        0.6165443658828735,
+        0.4998325705528259,
+        0.4854319095611572,
+        0.5461357831954956,
+        0.5297237038612366,
+        0.573351263999939,
+        0.4701949656009674,
+        0.5004397630691528,
+        0.534034788608551,
+        0.5393038392066956,
+        0.5505497455596924,
+        0.49241286516189575,
+        0.5729357004165649,
+        0.48163431882858276,
+        0.561009407043457,
+        0.4789888262748718,
+        0.43514394760131836,
+        0.5453206896781921,
+        0.5131489038467407,
+        0.5305691957473755,
+        0.5128601789474487,
+        0.5409930944442749,
+        0.5565091967582703,
+        0.5356326699256897,
+        0.5392948985099792,
+        0.5448824763298035
+      ],
+      "statistics": {
+        "count": 64,
+        "min": 0.43514394760131836,
+        "max": 0.64549720287323,
+        "mean": 0.5360952978953719,
+        "std": 0.04055080241134254,
+        "median": 0.5392993688583374,
+        "p90": 0.5850184082984925,
+        "p95": 0.592959600687027,
+        "p97_5": 0.6283901542425154,
+        "p99": 0.6448165547847747,
+        "p99_5": 0.6451568788290024
+      }
+    },
+    "metal_nut": {
+      "samples": [
+        {
+          "path": "metal_nut\\train\\good\\000.png",
+          "score": 0.6233102679252625
+        },
+        {
+          "path": "metal_nut\\train\\good\\003.png",
+          "score": 0.6560115218162537
+        },
+        {
+          "path": "metal_nut\\train\\good\\005.png",
+          "score": 0.6484683156013489
+        },
+        {
+          "path": "metal_nut\\train\\good\\006.png",
+          "score": 0.6476610898971558
+        },
+        {
+          "path": "metal_nut\\train\\good\\012.png",
+          "score": 0.6890082359313965
+        },
+        {
+          "path": "metal_nut\\train\\good\\015.png",
+          "score": 0.6329206824302673
+        },
+        {
+          "path": "metal_nut\\train\\good\\017.png",
+          "score": 0.6236310005187988
+        },
+        {
+          "path": "metal_nut\\train\\good\\023.png",
+          "score": 0.6364024877548218
+        },
+        {
+          "path": "metal_nut\\train\\good\\028.png",
+          "score": 0.6680788993835449
+        },
+        {
+          "path": "metal_nut\\train\\good\\031.png",
+          "score": 0.690177321434021
+        },
+        {
+          "path": "metal_nut\\train\\good\\032.png",
+          "score": 0.6674181818962097
+        },
+        {
+          "path": "metal_nut\\train\\good\\033.png",
+          "score": 0.6747454404830933
+        },
+        {
+          "path": "metal_nut\\train\\good\\037.png",
+          "score": 0.6417590379714966
+        },
+        {
+          "path": "metal_nut\\train\\good\\044.png",
+          "score": 0.6285792589187622
+        },
+        {
+          "path": "metal_nut\\train\\good\\048.png",
+          "score": 0.7027350068092346
+        },
+        {
+          "path": "metal_nut\\train\\good\\052.png",
+          "score": 0.602449893951416
+        },
+        {
+          "path": "metal_nut\\train\\good\\053.png",
+          "score": 0.7257450819015503
+        },
+        {
+          "path": "metal_nut\\train\\good\\054.png",
+          "score": 0.6562601923942566
+        },
+        {
+          "path": "metal_nut\\train\\good\\055.png",
+          "score": 0.5890865325927734
+        },
+        {
+          "path": "metal_nut\\train\\good\\059.png",
+          "score": 0.651009202003479
+        },
+        {
+          "path": "metal_nut\\train\\good\\062.png",
+          "score": 0.7404117584228516
+        },
+        {
+          "path": "metal_nut\\train\\good\\064.png",
+          "score": 0.7342829704284668
+        },
+        {
+          "path": "metal_nut\\train\\good\\070.png",
+          "score": 0.675125777721405
+        },
+        {
+          "path": "metal_nut\\train\\good\\084.png",
+          "score": 0.6377425193786621
+        },
+        {
+          "path": "metal_nut\\train\\good\\085.png",
+          "score": 0.6736952662467957
+        },
+        {
+          "path": "metal_nut\\train\\good\\091.png",
+          "score": 0.6331464648246765
+        },
+        {
+          "path": "metal_nut\\train\\good\\101.png",
+          "score": 0.6509119272232056
+        },
+        {
+          "path": "metal_nut\\train\\good\\116.png",
+          "score": 0.596015453338623
+        },
+        {
+          "path": "metal_nut\\train\\good\\138.png",
+          "score": 0.6335887312889099
+        },
+        {
+          "path": "metal_nut\\train\\good\\141.png",
+          "score": 0.6756616830825806
+        },
+        {
+          "path": "metal_nut\\train\\good\\144.png",
+          "score": 0.6551128029823303
+        },
+        {
+          "path": "metal_nut\\train\\good\\150.png",
+          "score": 0.6410034894943237
+        },
+        {
+          "path": "metal_nut\\train\\good\\152.png",
+          "score": 0.6691199541091919
+        },
+        {
+          "path": "metal_nut\\train\\good\\163.png",
+          "score": 0.6726862192153931
+        },
+        {
+          "path": "metal_nut\\train\\good\\164.png",
+          "score": 0.6864398717880249
+        },
+        {
+          "path": "metal_nut\\train\\good\\169.png",
+          "score": 0.7042990922927856
+        },
+        {
+          "path": "metal_nut\\train\\good\\185.png",
+          "score": 0.6756606101989746
+        },
+        {
+          "path": "metal_nut\\train\\good\\190.png",
+          "score": 0.6996338963508606
+        },
+        {
+          "path": "metal_nut\\train\\good\\195.png",
+          "score": 0.6042518019676208
+        },
+        {
+          "path": "metal_nut\\train\\good\\201.png",
+          "score": 0.6138205528259277
+        },
+        {
+          "path": "metal_nut\\train\\good\\207.png",
+          "score": 0.611644446849823
+        },
+        {
+          "path": "metal_nut\\train\\good\\210.png",
+          "score": 0.6950041651725769
+        },
+        {
+          "path": "metal_nut\\train\\good\\211.png",
+          "score": 0.6137463450431824
+        },
+        {
+          "path": "metal_nut\\train\\good\\217.png",
+          "score": 0.6358379125595093
+        }
+      ],
+      "scores": [
+        0.6233102679252625,
+        0.6560115218162537,
+        0.6484683156013489,
+        0.6476610898971558,
+        0.6890082359313965,
+        0.6329206824302673,
+        0.6236310005187988,
+        0.6364024877548218,
+        0.6680788993835449,
+        0.690177321434021,
+        0.6674181818962097,
+        0.6747454404830933,
+        0.6417590379714966,
+        0.6285792589187622,
+        0.7027350068092346,
+        0.602449893951416,
+        0.7257450819015503,
+        0.6562601923942566,
+        0.5890865325927734,
+        0.651009202003479,
+        0.7404117584228516,
+        0.7342829704284668,
+        0.675125777721405,
+        0.6377425193786621,
+        0.6736952662467957,
+        0.6331464648246765,
+        0.6509119272232056,
+        0.596015453338623,
+        0.6335887312889099,
+        0.6756616830825806,
+        0.6551128029823303,
+        0.6410034894943237,
+        0.6691199541091919,
+        0.6726862192153931,
+        0.6864398717880249,
+        0.7042990922927856,
+        0.6756606101989746,
+        0.6996338963508606,
+        0.6042518019676208,
+        0.6138205528259277,
+        0.611644446849823,
+        0.6950041651725769,
+        0.6137463450431824,
+        0.6358379125595093
+      ],
+      "statistics": {
+        "count": 44,
+        "min": 0.5890865325927734,
+        "max": 0.7404117584228516,
+        "mean": 0.656461394645951,
+        "std": 0.03601552861892288,
+        "median": 0.6530610024929047,
+        "p90": 0.7018046736717224,
+        "p95": 0.7225281834602356,
+        "p97_5": 0.733642628788948,
+        "p99": 0.7377763795852661,
+        "p99_5": 0.7390940690040588
+      }
+    }
+  }
+}

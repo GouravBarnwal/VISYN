@@ -1,0 +1,238 @@
+{
+  "experiment": "Day 14 L4+L8 normalization ablation",
+  "final_locked_set_used": false,
+  "preprocessing": {
+    "resize": "224x224_direct",
+    "scale": "divide_by_255",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "distance": "Euclidean",
+  "aggregation": "TOP5",
+  "normalization": "median/MAD fitted on normal development only",
+  "fusion_weights": {
+    "L4": 0.5,
+    "L8": 0.5
+  },
+  "categories": {
+    "bottle": {
+      "normal_count": 42,
+      "defect_count": 31,
+      "normalization": {
+        "L4": {
+          "median": 0.3178786188364029,
+          "mad": 0.020375728607177734
+        },
+        "L8": {
+          "median": 0.3971990495920181,
+          "mad": 0.026171430945396423
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        "L8_raw": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        "fusion_raw_50_50": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 1.0,
+          "average_precision": 1.0
+        }
+      }
+    },
+    "hazelnut": {
+      "normal_count": 79,
+      "defect_count": 34,
+      "normalization": {
+        "L4": {
+          "median": 0.4986526370048523,
+          "mad": 0.016347765922546387
+        },
+        "L8": {
+          "median": 0.6903859972953796,
+          "mad": 0.02551358938217163
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 0.992553983618764,
+          "average_precision": 0.9848770664904195
+        },
+        "L8_raw": {
+          "auroc": 0.9843633655994043,
+          "average_precision": 0.9716640656082206
+        },
+        "fusion_raw_50_50": {
+          "auroc": 0.9977661950856291,
+          "average_precision": 0.9949552369967595
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 0.9970215934475055,
+          "average_precision": 0.993493248692666
+        }
+      }
+    },
+    "cable": {
+      "normal_count": 45,
+      "defect_count": 45,
+      "normalization": {
+        "L4": {
+          "median": 0.5966824293136597,
+          "mad": 0.01501697301864624
+        },
+        "L8": {
+          "median": 0.6539841294288635,
+          "mad": 0.02556663751602173
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 0.9041975308641975,
+          "average_precision": 0.9236609451164499
+        },
+        "L8_raw": {
+          "auroc": 0.928395061728395,
+          "average_precision": 0.9429022593072354
+        },
+        "fusion_raw_50_50": {
+          "auroc": 0.9639506172839506,
+          "average_precision": 0.9713631868503898
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 0.9575308641975308,
+          "average_precision": 0.9661901259540401
+        }
+      }
+    },
+    "capsule": {
+      "normal_count": 44,
+      "defect_count": 53,
+      "normalization": {
+        "L4": {
+          "median": 0.25199076533317566,
+          "mad": 0.02583719789981842
+        },
+        "L8": {
+          "median": 0.37402112782001495,
+          "mad": 0.02922278642654419
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 0.9258147512864494,
+          "average_precision": 0.9408556219425297
+        },
+        "L8_raw": {
+          "auroc": 0.8863636363636365,
+          "average_precision": 0.9093569375062898
+        },
+        "fusion_raw_50_50": {
+          "auroc": 0.9219554030874786,
+          "average_precision": 0.9361423473828436
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 0.9223842195540309,
+          "average_precision": 0.9368454514843192
+        }
+      }
+    },
+    "screw": {
+      "normal_count": 64,
+      "defect_count": 58,
+      "normalization": {
+        "L4": {
+          "median": 0.4160154163837433,
+          "mad": 0.023378372192382812
+        },
+        "L8": {
+          "median": 0.5354127883911133,
+          "mad": 0.02439326047897339
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 0.8195043103448275,
+          "average_precision": 0.7871313138637009
+        },
+        "L8_raw": {
+          "auroc": 0.75,
+          "average_precision": 0.7162960519112873
+        },
+        "fusion_raw_50_50": {
+          "auroc": 0.8308189655172413,
+          "average_precision": 0.80823574852669
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 0.8297413793103449,
+          "average_precision": 0.8100848373509257
+        }
+      }
+    },
+    "metal_nut": {
+      "normal_count": 44,
+      "defect_count": 45,
+      "normalization": {
+        "L4": {
+          "median": 0.5483851432800293,
+          "mad": 0.020258218050003052
+        },
+        "L8": {
+          "median": 0.6581222414970398,
+          "mad": 0.021437108516693115
+        }
+      },
+      "metrics": {
+        "L4_raw": {
+          "auroc": 0.9732323232323231,
+          "average_precision": 0.9832740662824744
+        },
+        "L8_raw": {
+          "auroc": 0.9969696969696971,
+          "average_precision": 0.9971398770311815
+        },
+        "fusion_raw_50_50": {
+          "auroc": 0.9924242424242424,
+          "average_precision": 0.9935901465746427
+        },
+        "fusion_normalized_50_50": {
+          "auroc": 0.9924242424242424,
+          "average_precision": 0.9935901465746427
+        }
+      }
+    }
+  },
+  "macro": {
+    "L4_raw": {
+      "auroc": 0.9358838165577602,
+      "average_precision": 0.9366331689492623
+    },
+    "L8_raw": {
+      "auroc": 0.9243486267768555,
+      "average_precision": 0.9228931985607024
+    },
+    "fusion_raw_50_50": {
+      "auroc": 0.9511525705664235,
+      "average_precision": 0.9507144443885543
+    },
+    "fusion_normalized_50_50": {
+      "auroc": 0.9498503831556091,
+      "average_precision": 0.9500339683427655
+    }
+  },
+  "normalized_fusion_gain_over_raw": -0.0013021874108144482
+}

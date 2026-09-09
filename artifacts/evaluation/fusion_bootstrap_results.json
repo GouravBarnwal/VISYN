@@ -1,0 +1,72 @@
+{
+  "configuration": {
+    "mobile_weight": 0.1,
+    "dino_weight": 0.9,
+    "aggregation": "max",
+    "bootstrap_samples": 5000,
+    "seed": 42,
+    "data_split": "development_only",
+    "final_test_used": false
+  },
+  "categories": {
+    "bottle": {
+      "mobile_auroc": 1.0,
+      "fusion_auroc": 0.999231950844854,
+      "observed_difference": -0.0007680491551459445,
+      "bootstrap_mean_difference": -0.000770199692780336,
+      "ci_95_low": -0.004608294930875556,
+      "ci_95_high": 1.1102230246251565e-16,
+      "probability_fusion_better": 0.0348
+    },
+    "hazelnut": {
+      "mobile_auroc": 0.9918093819806403,
+      "fusion_auroc": 0.9932985852568875,
+      "observed_difference": 0.0014892032762472418,
+      "bootstrap_mean_difference": 0.0014724497393894262,
+      "ci_95_low": -1.1102230246251565e-16,
+      "ci_95_high": 0.004839910647803425,
+      "probability_fusion_better": 0.87
+    },
+    "cable": {
+      "mobile_auroc": 0.9925925925925926,
+      "fusion_auroc": 0.9925925925925926,
+      "observed_difference": 0.0,
+      "bootstrap_mean_difference": 1.0635936575909e-17,
+      "ci_95_low": -1.1102230246251565e-16,
+      "ci_95_high": 1.1102230246251565e-16,
+      "probability_fusion_better": 0.2394
+    },
+    "capsule": {
+      "mobile_auroc": 0.9841337907375642,
+      "fusion_auroc": 0.9858490566037736,
+      "observed_difference": 0.0017152658662094034,
+      "bootstrap_mean_difference": 0.0017295025728988008,
+      "ci_95_low": -1.1102230246251565e-16,
+      "ci_95_high": 0.005574614065180228,
+      "probability_fusion_better": 0.8786
+    },
+    "screw": {
+      "mobile_auroc": 0.955010775862069,
+      "fusion_auroc": 0.9571659482758621,
+      "observed_difference": 0.0021551724137931494,
+      "bootstrap_mean_difference": 0.0021721982758620634,
+      "ci_95_low": -0.0008081896551724865,
+      "ci_95_high": 0.006465517241379226,
+      "probability_fusion_better": 0.8884
+    },
+    "metal_nut": {
+      "mobile_auroc": 0.998989898989899,
+      "fusion_auroc": 0.998989898989899,
+      "observed_difference": 0.0,
+      "bootstrap_mean_difference": 1.6653345369377347e-18,
+      "ci_95_low": -1.1102230246251565e-16,
+      "ci_95_high": 1.1102230246251565e-16,
+      "probability_fusion_better": 0.1344
+    }
+  },
+  "pooled": {
+    "mobile_auroc": 0.9360311155246608,
+    "fusion_auroc": 0.9366576819407009,
+    "difference": 0.0006265664160400863
+  }
+}

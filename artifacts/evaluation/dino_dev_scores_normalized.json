@@ -1,0 +1,4392 @@
+{
+  "bottle": {
+    "normal_dev": [
+      {
+        "path": "bottle/train/good/086.png",
+        "max": 0.32321470975875854,
+        "top5": 0.2928434908390045,
+        "top10": 0.27497318387031555,
+        "inference_ms": 55.3379899997708
+      },
+      {
+        "path": "bottle/train/good/197.png",
+        "max": 0.454374223947525,
+        "top5": 0.33934471011161804,
+        "top10": 0.2974854111671448,
+        "inference_ms": 55.44153000028018
+      },
+      {
+        "path": "bottle/train/good/039.png",
+        "max": 0.49062469601631165,
+        "top5": 0.42168179154396057,
+        "top10": 0.3418630063533783,
+        "inference_ms": 56.73894199981078
+      },
+      {
+        "path": "bottle/train/good/175.png",
+        "max": 0.492002010345459,
+        "top5": 0.3451634347438812,
+        "top10": 0.29501599073410034,
+        "inference_ms": 62.23309300003166
+      },
+      {
+        "path": "bottle/train/good/087.png",
+        "max": 0.5968178510665894,
+        "top5": 0.3853842318058014,
+        "top10": 0.3435947000980377,
+        "inference_ms": 57.6843280000503
+      },
+      {
+        "path": "bottle/train/good/193.png",
+        "max": 0.3815801739692688,
+        "top5": 0.30007123947143555,
+        "top10": 0.2716398537158966,
+        "inference_ms": 57.49184399974183
+      },
+      {
+        "path": "bottle/train/good/040.png",
+        "max": 0.3135122060775757,
+        "top5": 0.2850148379802704,
+        "top10": 0.26997819542884827,
+        "inference_ms": 55.7684049999807
+      },
+      {
+        "path": "bottle/train/good/001.png",
+        "max": 0.41913777589797974,
+        "top5": 0.3946312963962555,
+        "top10": 0.35851484537124634,
+        "inference_ms": 54.99565400032225
+      },
+      {
+        "path": "bottle/train/good/071.png",
+        "max": 0.40786072611808777,
+        "top5": 0.3464791774749756,
+        "top10": 0.3251800239086151,
+        "inference_ms": 50.448555999992095
+      },
+      {
+        "path": "bottle/train/good/150.png",
+        "max": 0.3727964162826538,
+        "top5": 0.30916720628738403,
+        "top10": 0.2870716154575348,
+        "inference_ms": 60.34242300029291
+      },
+      {
+        "path": "bottle/train/good/114.png",
+        "max": 0.3815496861934662,
+        "top5": 0.36046698689460754,
+        "top10": 0.3361014723777771,
+        "inference_ms": 60.2904879997368
+      },
+      {
+        "path": "bottle/train/good/056.png",
+        "max": 0.5107247829437256,
+        "top5": 0.3803008198738098,
+        "top10": 0.33921369910240173,
+        "inference_ms": 63.81814399992436
+      },
+      {
+        "path": "bottle/train/good/107.png",
+        "max": 0.3680955767631531,
+        "top5": 0.2995460629463196,
+        "top10": 0.27094340324401855,
+        "inference_ms": 54.223696000008204
+      },
+      {
+        "path": "bottle/train/good/196.png",
+        "max": 0.5004369616508484,
+        "top5": 0.3511447012424469,
+        "top10": 0.31203919649124146,
+        "inference_ms": 53.66734500012171
+      },
+      {
+        "path": "bottle/train/good/179.png",
+        "max": 0.32340532541275024,
+        "top5": 0.30419832468032837,
+        "top10": 0.28921276330947876,
+        "inference_ms": 54.23379300009401
+      },
+      {
+        "path": "bottle/train/good/166.png",
+        "max": 0.40514686703681946,
+        "top5": 0.3526868224143982,
+        "top10": 0.31886026263237,
+        "inference_ms": 49.124581000342005
+      },
+      {
+        "path": "bottle/train/good/050.png",
+        "max": 0.3148002028465271,
+        "top5": 0.2819875180721283,
+        "top10": 0.2542005181312561,
+        "inference_ms": 51.444859000184806
+      },
+      {
+        "path": "bottle/train/good/143.png",
+        "max": 0.3908875286579132,
+        "top5": 0.31395822763442993,
+        "top10": 0.2937753200531006,
+        "inference_ms": 48.96405300041806
+      },
+      {
+        "path": "bottle/train/good/206.png",
+        "max": 0.5208269953727722,
+        "top5": 0.3392011225223541,
+        "top10": 0.30348390340805054,
+        "inference_ms": 55.339973000172904
+      },
+      {
+        "path": "bottle/train/good/154.png",
+        "max": 0.35054725408554077,
+        "top5": 0.30299973487854004,
+        "top10": 0.2802000641822815,
+        "inference_ms": 49.47318499989706
+      },
+      {
+        "path": "bottle/train/good/129.png",
+        "max": 0.4348052144050598,
+        "top5": 0.3320886492729187,
+        "top10": 0.30239903926849365,
+        "inference_ms": 48.566740000296704
+      },
+      {
+        "path": "bottle/train/good/059.png",
+        "max": 0.43970078229904175,
+        "top5": 0.30853337049484253,
+        "top10": 0.2665174603462219,
+        "inference_ms": 48.938945999907446
+      },
+      {
+        "path": "bottle/train/good/055.png",
+        "max": 0.5405562520027161,
+        "top5": 0.41343003511428833,
+        "top10": 0.3462642729282379,
+        "inference_ms": 50.43149699986316
+      },
+      {
+        "path": "bottle/train/good/023.png",
+        "max": 0.4865814447402954,
+        "top5": 0.36537042260169983,
+        "top10": 0.3236061632633209,
+        "inference_ms": 48.52376600001662
+      },
+      {
+        "path": "bottle/train/good/007.png",
+        "max": 0.35961639881134033,
+        "top5": 0.33129236102104187,
+        "top10": 0.30152612924575806,
+        "inference_ms": 51.43237899983433
+      },
+      {
+        "path": "bottle/train/good/008.png",
+        "max": 0.524014949798584,
+        "top5": 0.41364914178848267,
+        "top10": 0.35479599237442017,
+        "inference_ms": 48.337914000057935
+      },
+      {
+        "path": "bottle/train/good/108.png",
+        "max": 0.4164041578769684,
+        "top5": 0.3479049503803253,
+        "top10": 0.32749122381210327,
+        "inference_ms": 50.00941399976
+      },
+      {
+        "path": "bottle/train/good/151.png",
+        "max": 0.42105206847190857,
+        "top5": 0.3494892716407776,
+        "top10": 0.3275482654571533,
+        "inference_ms": 49.57035999996151
+      },
+      {
+        "path": "bottle/train/good/022.png",
+        "max": 0.30177992582321167,
+        "top5": 0.2858477234840393,
+        "top10": 0.26960089802742004,
+        "inference_ms": 57.10930199984432
+      },
+      {
+        "path": "bottle/train/good/139.png",
+        "max": 0.4253076910972595,
+        "top5": 0.3778930604457855,
+        "top10": 0.353270947933197,
+        "inference_ms": 52.707821000240074
+      },
+      {
+        "path": "bottle/train/good/205.png",
+        "max": 0.43718695640563965,
+        "top5": 0.36556166410446167,
+        "top10": 0.331496000289917,
+        "inference_ms": 48.48120099995867
+      },
+      {
+        "path": "bottle/train/good/173.png",
+        "max": 0.32081592082977295,
+        "top5": 0.29158103466033936,
+        "top10": 0.27473440766334534,
+        "inference_ms": 47.72231900005863
+      },
+      {
+        "path": "bottle/train/good/026.png",
+        "max": 0.3545915484428406,
+        "top5": 0.3144014775753021,
+        "top10": 0.2970474660396576,
+        "inference_ms": 50.48102000000654
+      },
+      {
+        "path": "bottle/train/good/188.png",
+        "max": 0.3934478163719177,
+        "top5": 0.34583720564842224,
+        "top10": 0.3088470995426178,
+        "inference_ms": 50.35961199973826
+      },
+      {
+        "path": "bottle/train/good/035.png",
+        "max": 0.33357542753219604,
+        "top5": 0.27685779333114624,
+        "top10": 0.2536540627479553,
+        "inference_ms": 50.49406399984946
+      },
+      {
+        "path": "bottle/train/good/057.png",
+        "max": 0.4762517213821411,
+        "top5": 0.3506539463996887,
+        "top10": 0.30627718567848206,
+        "inference_ms": 48.369413999807875
+      },
+      {
+        "path": "bottle/train/good/062.png",
+        "max": 0.4544804096221924,
+        "top5": 0.34186607599258423,
+        "top10": 0.289083331823349,
+        "inference_ms": 47.47588899999755
+      },
+      {
+        "path": "bottle/train/good/070.png",
+        "max": 0.2446965128183365,
+        "top5": 0.21319261193275452,
+        "top10": 0.18678459525108337,
+        "inference_ms": 47.870042999875295
+      },
+      {
+        "path": "bottle/train/good/189.png",
+        "max": 0.3493267595767975,
+        "top5": 0.2959596812725067,
+        "top10": 0.2765970826148987,
+        "inference_ms": 48.88234100008049
+      },
+      {
+        "path": "bottle/train/good/006.png",
+        "max": 0.47219258546829224,
+        "top5": 0.3939305245876312,
+        "top10": 0.3759210407733917,
+        "inference_ms": 47.06413300027634
+      },
+      {
+        "path": "bottle/train/good/028.png",
+        "max": 0.3342426121234894,
+        "top5": 0.30461710691452026,
+        "top10": 0.2880469262599945,
+        "inference_ms": 48.68277000014132
+      },
+      {
+        "path": "bottle/train/good/163.png",
+        "max": 0.3589792251586914,
+        "top5": 0.30426719784736633,
+        "top10": 0.288361132144928,
+        "inference_ms": 48.11481200022172
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "bottle/test/broken_large/019.png",
+        "defect_type": "broken_large",
+        "max": 0.830424427986145,
+        "top5": 0.8157384991645813,
+        "top10": 0.8049381971359253,
+        "inference_ms": 48.476100000243605
+      },
+      {
+        "path": "bottle/test/broken_large/005.png",
+        "defect_type": "broken_large",
+        "max": 0.8070523738861084,
+        "top5": 0.7681396007537842,
+        "top10": 0.7453497052192688,
+        "inference_ms": 47.72183800014318
+      },
+      {
+        "path": "bottle/test/broken_large/014.png",
+        "defect_type": "broken_large",
+        "max": 0.9492161870002747,
+        "top5": 0.9253746867179871,
+        "top10": 0.86126708984375,
+        "inference_ms": 48.699296999984654
+      },
+      {
+        "path": "bottle/test/broken_large/004.png",
+        "defect_type": "broken_large",
+        "max": 0.8241271376609802,
+        "top5": 0.8121054768562317,
+        "top10": 0.7932590246200562,
+        "inference_ms": 48.61808799978462
+      },
+      {
+        "path": "bottle/test/broken_large/009.png",
+        "defect_type": "broken_large",
+        "max": 0.8265860080718994,
+        "top5": 0.7655819654464722,
+        "top10": 0.7328847050666809,
+        "inference_ms": 48.0146509999031
+      },
+      {
+        "path": "bottle/test/broken_large/013.png",
+        "defect_type": "broken_large",
+        "max": 0.823033332824707,
+        "top5": 0.7964844703674316,
+        "top10": 0.7818987965583801,
+        "inference_ms": 48.607023999920784
+      },
+      {
+        "path": "bottle/test/broken_large/015.png",
+        "defect_type": "broken_large",
+        "max": 0.7995196580886841,
+        "top5": 0.7586668133735657,
+        "top10": 0.7375692129135132,
+        "inference_ms": 47.45924600001672
+      },
+      {
+        "path": "bottle/test/broken_large/018.png",
+        "defect_type": "broken_large",
+        "max": 0.8657911419868469,
+        "top5": 0.8417738080024719,
+        "top10": 0.8243916630744934,
+        "inference_ms": 47.702387000299495
+      },
+      {
+        "path": "bottle/test/broken_large/006.png",
+        "defect_type": "broken_large",
+        "max": 0.8083378672599792,
+        "top5": 0.7854588031768799,
+        "top10": 0.7690157294273376,
+        "inference_ms": 51.85505800000101
+      },
+      {
+        "path": "bottle/test/broken_large/012.png",
+        "defect_type": "broken_large",
+        "max": 0.8306536078453064,
+        "top5": 0.7927131652832031,
+        "top10": 0.7349039912223816,
+        "inference_ms": 47.092315000099916
+      },
+      {
+        "path": "bottle/test/broken_small/009.png",
+        "defect_type": "broken_small",
+        "max": 0.7761529088020325,
+        "top5": 0.7082628011703491,
+        "top10": 0.64112788438797,
+        "inference_ms": 47.28506900028151
+      },
+      {
+        "path": "bottle/test/broken_small/003.png",
+        "defect_type": "broken_small",
+        "max": 0.8138595819473267,
+        "top5": 0.7973138689994812,
+        "top10": 0.779008686542511,
+        "inference_ms": 49.67996599998514
+      },
+      {
+        "path": "bottle/test/broken_small/010.png",
+        "defect_type": "broken_small",
+        "max": 0.8131576776504517,
+        "top5": 0.795615017414093,
+        "top10": 0.7729077339172363,
+        "inference_ms": 46.95397099976617
+      },
+      {
+        "path": "bottle/test/broken_small/015.png",
+        "defect_type": "broken_small",
+        "max": 0.7472366690635681,
+        "top5": 0.7214301228523254,
+        "top10": 0.6509818434715271,
+        "inference_ms": 48.5015949998342
+      },
+      {
+        "path": "bottle/test/broken_small/016.png",
+        "defect_type": "broken_small",
+        "max": 0.9085155725479126,
+        "top5": 0.8667410016059875,
+        "top10": 0.7786666750907898,
+        "inference_ms": 48.646369999914896
+      },
+      {
+        "path": "bottle/test/broken_small/019.png",
+        "defect_type": "broken_small",
+        "max": 0.8813794851303101,
+        "top5": 0.8400656580924988,
+        "top10": 0.7959428429603577,
+        "inference_ms": 46.15741000043272
+      },
+      {
+        "path": "bottle/test/broken_small/001.png",
+        "defect_type": "broken_small",
+        "max": 0.8384785652160645,
+        "top5": 0.8158639669418335,
+        "top10": 0.7302349805831909,
+        "inference_ms": 48.108258999945974
+      },
+      {
+        "path": "bottle/test/broken_small/011.png",
+        "defect_type": "broken_small",
+        "max": 0.7334058880805969,
+        "top5": 0.7072601318359375,
+        "top10": 0.6396628618240356,
+        "inference_ms": 50.06561199979842
+      },
+      {
+        "path": "bottle/test/broken_small/004.png",
+        "defect_type": "broken_small",
+        "max": 0.8804019093513489,
+        "top5": 0.8510379791259766,
+        "top10": 0.803758442401886,
+        "inference_ms": 46.32505299969125
+      },
+      {
+        "path": "bottle/test/broken_small/005.png",
+        "defect_type": "broken_small",
+        "max": 0.763964056968689,
+        "top5": 0.7055708765983582,
+        "top10": 0.6178861856460571,
+        "inference_ms": 46.39513199981593
+      },
+      {
+        "path": "bottle/test/broken_small/020.png",
+        "defect_type": "broken_small",
+        "max": 0.8434328436851501,
+        "top5": 0.8104187846183777,
+        "top10": 0.7701308131217957,
+        "inference_ms": 46.09627899981206
+      },
+      {
+        "path": "bottle/test/contamination/002.png",
+        "defect_type": "contamination",
+        "max": 0.5094087719917297,
+        "top5": 0.49189430475234985,
+        "top10": 0.4630504250526428,
+        "inference_ms": 45.543404999989434
+      },
+      {
+        "path": "bottle/test/contamination/010.png",
+        "defect_type": "contamination",
+        "max": 0.9288870096206665,
+        "top5": 0.9033519625663757,
+        "top10": 0.8700941801071167,
+        "inference_ms": 46.58328799996525
+      },
+      {
+        "path": "bottle/test/contamination/007.png",
+        "defect_type": "contamination",
+        "max": 1.230390191078186,
+        "top5": 1.2228617668151855,
+        "top10": 1.2035247087478638,
+        "inference_ms": 48.74290199995812
+      },
+      {
+        "path": "bottle/test/contamination/012.png",
+        "defect_type": "contamination",
+        "max": 0.798157274723053,
+        "top5": 0.7901843190193176,
+        "top10": 0.7801046967506409,
+        "inference_ms": 48.64532200008398
+      },
+      {
+        "path": "bottle/test/contamination/013.png",
+        "defect_type": "contamination",
+        "max": 1.0993825197219849,
+        "top5": 1.0761500597000122,
+        "top10": 1.0649867057800293,
+        "inference_ms": 50.7490179998058
+      },
+      {
+        "path": "bottle/test/contamination/000.png",
+        "defect_type": "contamination",
+        "max": 0.9250832796096802,
+        "top5": 0.9091280698776245,
+        "top10": 0.8826152086257935,
+        "inference_ms": 47.22650700023223
+      },
+      {
+        "path": "bottle/test/contamination/019.png",
+        "defect_type": "contamination",
+        "max": 0.7358243465423584,
+        "top5": 0.6562835574150085,
+        "top10": 0.5764436721801758,
+        "inference_ms": 45.8160529997258
+      },
+      {
+        "path": "bottle/test/contamination/015.png",
+        "defect_type": "contamination",
+        "max": 0.9677591919898987,
+        "top5": 0.9429376721382141,
+        "top10": 0.9041153788566589,
+        "inference_ms": 46.00810800002364
+      },
+      {
+        "path": "bottle/test/contamination/005.png",
+        "defect_type": "contamination",
+        "max": 1.0980854034423828,
+        "top5": 1.078574776649475,
+        "top10": 1.0604511499404907,
+        "inference_ms": 55.99757800018779
+      },
+      {
+        "path": "bottle/test/contamination/009.png",
+        "defect_type": "contamination",
+        "max": 0.9125646948814392,
+        "top5": 0.8437439203262329,
+        "top10": 0.785905659198761,
+        "inference_ms": 46.82769200007897
+      }
+    ]
+  },
+  "hazelnut": {
+    "normal_dev": [
+      {
+        "path": "hazelnut/train/good/136.png",
+        "max": 0.5648837685585022,
+        "top5": 0.5420230627059937,
+        "top10": 0.5248304605484009,
+        "inference_ms": 74.4066769998426
+      },
+      {
+        "path": "hazelnut/train/good/107.png",
+        "max": 0.5894266366958618,
+        "top5": 0.5602431297302246,
+        "top10": 0.5333107113838196,
+        "inference_ms": 74.61626600024829
+      },
+      {
+        "path": "hazelnut/train/good/181.png",
+        "max": 0.5821527242660522,
+        "top5": 0.5599864721298218,
+        "top10": 0.5201162695884705,
+        "inference_ms": 77.93687699995644
+      },
+      {
+        "path": "hazelnut/train/good/189.png",
+        "max": 0.5845406651496887,
+        "top5": 0.5385240912437439,
+        "top10": 0.5130685567855835,
+        "inference_ms": 74.81974399979663
+      },
+      {
+        "path": "hazelnut/train/good/083.png",
+        "max": 0.5645988583564758,
+        "top5": 0.5441316962242126,
+        "top10": 0.5252264142036438,
+        "inference_ms": 76.39626299987867
+      },
+      {
+        "path": "hazelnut/train/good/186.png",
+        "max": 0.532307505607605,
+        "top5": 0.4943769574165344,
+        "top10": 0.4800037443637848,
+        "inference_ms": 78.14510600019275
+      },
+      {
+        "path": "hazelnut/train/good/232.png",
+        "max": 0.5407022833824158,
+        "top5": 0.5159226059913635,
+        "top10": 0.4899565577507019,
+        "inference_ms": 78.9894239997011
+      },
+      {
+        "path": "hazelnut/train/good/352.png",
+        "max": 0.6010313630104065,
+        "top5": 0.5776154398918152,
+        "top10": 0.5416156649589539,
+        "inference_ms": 77.8305939998063
+      },
+      {
+        "path": "hazelnut/train/good/380.png",
+        "max": 0.6783475875854492,
+        "top5": 0.6319238543510437,
+        "top10": 0.6132588982582092,
+        "inference_ms": 78.72711299978619
+      },
+      {
+        "path": "hazelnut/train/good/051.png",
+        "max": 0.5935260057449341,
+        "top5": 0.5571178197860718,
+        "top10": 0.5255336165428162,
+        "inference_ms": 76.97235000023284
+      },
+      {
+        "path": "hazelnut/train/good/370.png",
+        "max": 0.6700537204742432,
+        "top5": 0.5787808895111084,
+        "top10": 0.5422745943069458,
+        "inference_ms": 76.26493899988418
+      },
+      {
+        "path": "hazelnut/train/good/335.png",
+        "max": 0.5383736491203308,
+        "top5": 0.493046373128891,
+        "top10": 0.4706980586051941,
+        "inference_ms": 74.38104399989243
+      },
+      {
+        "path": "hazelnut/train/good/148.png",
+        "max": 0.6322512626647949,
+        "top5": 0.5496404767036438,
+        "top10": 0.5277107357978821,
+        "inference_ms": 76.13530799972068
+      },
+      {
+        "path": "hazelnut/train/good/116.png",
+        "max": 0.5966801643371582,
+        "top5": 0.47951117157936096,
+        "top10": 0.4478139877319336,
+        "inference_ms": 76.52489600013723
+      },
+      {
+        "path": "hazelnut/train/good/023.png",
+        "max": 0.5572786927223206,
+        "top5": 0.5362886786460876,
+        "top10": 0.5120777487754822,
+        "inference_ms": 72.68124700021872
+      },
+      {
+        "path": "hazelnut/train/good/035.png",
+        "max": 0.5644112825393677,
+        "top5": 0.5051272511482239,
+        "top10": 0.4712618291378021,
+        "inference_ms": 74.31882399987444
+      },
+      {
+        "path": "hazelnut/train/good/098.png",
+        "max": 0.5356740355491638,
+        "top5": 0.5113425850868225,
+        "top10": 0.4948217272758484,
+        "inference_ms": 73.33325299987337
+      },
+      {
+        "path": "hazelnut/train/good/295.png",
+        "max": 0.4708736538887024,
+        "top5": 0.4595136046409607,
+        "top10": 0.44928082823753357,
+        "inference_ms": 73.3239399996819
+      },
+      {
+        "path": "hazelnut/train/good/185.png",
+        "max": 0.5347700715065002,
+        "top5": 0.5143635272979736,
+        "top10": 0.4893738627433777,
+        "inference_ms": 75.98918099984076
+      },
+      {
+        "path": "hazelnut/train/good/316.png",
+        "max": 0.5907818675041199,
+        "top5": 0.5594683289527893,
+        "top10": 0.5444607734680176,
+        "inference_ms": 75.20191799994791
+      },
+      {
+        "path": "hazelnut/train/good/321.png",
+        "max": 0.4709523320198059,
+        "top5": 0.45800337195396423,
+        "top10": 0.44633427262306213,
+        "inference_ms": 73.75235300014538
+      },
+      {
+        "path": "hazelnut/train/good/150.png",
+        "max": 0.5616406202316284,
+        "top5": 0.5364865064620972,
+        "top10": 0.5161492824554443,
+        "inference_ms": 80.45055999991746
+      },
+      {
+        "path": "hazelnut/train/good/282.png",
+        "max": 0.5375402569770813,
+        "top5": 0.46817150712013245,
+        "top10": 0.4423573613166809,
+        "inference_ms": 77.50558899988391
+      },
+      {
+        "path": "hazelnut/train/good/040.png",
+        "max": 0.560327410697937,
+        "top5": 0.5435131788253784,
+        "top10": 0.5319920778274536,
+        "inference_ms": 76.70042200015814
+      },
+      {
+        "path": "hazelnut/train/good/193.png",
+        "max": 0.6754862666130066,
+        "top5": 0.594505250453949,
+        "top10": 0.5615518689155579,
+        "inference_ms": 75.72804900019037
+      },
+      {
+        "path": "hazelnut/train/good/063.png",
+        "max": 0.5297948122024536,
+        "top5": 0.49842119216918945,
+        "top10": 0.4812219738960266,
+        "inference_ms": 74.03839000016887
+      },
+      {
+        "path": "hazelnut/train/good/274.png",
+        "max": 0.6151229739189148,
+        "top5": 0.5593651533126831,
+        "top10": 0.5331718921661377,
+        "inference_ms": 78.33027700007733
+      },
+      {
+        "path": "hazelnut/train/good/235.png",
+        "max": 0.6640280485153198,
+        "top5": 0.5205286741256714,
+        "top10": 0.4905622899532318,
+        "inference_ms": 70.99064000021826
+      },
+      {
+        "path": "hazelnut/train/good/022.png",
+        "max": 0.6266565322875977,
+        "top5": 0.5341898202896118,
+        "top10": 0.505346953868866,
+        "inference_ms": 71.92038099992715
+      },
+      {
+        "path": "hazelnut/train/good/135.png",
+        "max": 0.593981146812439,
+        "top5": 0.5670755505561829,
+        "top10": 0.5534827709197998,
+        "inference_ms": 77.8788729999178
+      },
+      {
+        "path": "hazelnut/train/good/309.png",
+        "max": 0.5751627087593079,
+        "top5": 0.542321503162384,
+        "top10": 0.5154657959938049,
+        "inference_ms": 105.61269299978449
+      },
+      {
+        "path": "hazelnut/train/good/176.png",
+        "max": 0.6145581007003784,
+        "top5": 0.5139007568359375,
+        "top10": 0.482094943523407,
+        "inference_ms": 105.25190499993187
+      },
+      {
+        "path": "hazelnut/train/good/183.png",
+        "max": 0.6548048853874207,
+        "top5": 0.5900054574012756,
+        "top10": 0.55350661277771,
+        "inference_ms": 103.4603650000463
+      },
+      {
+        "path": "hazelnut/train/good/049.png",
+        "max": 0.5314894914627075,
+        "top5": 0.5068814158439636,
+        "top10": 0.483906090259552,
+        "inference_ms": 92.40749499986123
+      },
+      {
+        "path": "hazelnut/train/good/194.png",
+        "max": 0.6239023804664612,
+        "top5": 0.5396660566329956,
+        "top10": 0.5153687596321106,
+        "inference_ms": 127.86433700011912
+      },
+      {
+        "path": "hazelnut/train/good/372.png",
+        "max": 0.5609884262084961,
+        "top5": 0.5286911129951477,
+        "top10": 0.49528318643569946,
+        "inference_ms": 94.43145099976391
+      },
+      {
+        "path": "hazelnut/train/good/381.png",
+        "max": 0.5214222073554993,
+        "top5": 0.48605141043663025,
+        "top10": 0.46485424041748047,
+        "inference_ms": 95.71186499988471
+      },
+      {
+        "path": "hazelnut/train/good/172.png",
+        "max": 0.5685783624649048,
+        "top5": 0.5290930867195129,
+        "top10": 0.5082558393478394,
+        "inference_ms": 95.26699499974711
+      },
+      {
+        "path": "hazelnut/train/good/110.png",
+        "max": 0.5794287919998169,
+        "top5": 0.5077346563339233,
+        "top10": 0.4677131772041321,
+        "inference_ms": 89.78547500009881
+      },
+      {
+        "path": "hazelnut/train/good/079.png",
+        "max": 0.6173473000526428,
+        "top5": 0.5298532843589783,
+        "top10": 0.5034670829772949,
+        "inference_ms": 95.2345279997644
+      },
+      {
+        "path": "hazelnut/train/good/357.png",
+        "max": 0.6043483018875122,
+        "top5": 0.5577205419540405,
+        "top10": 0.527840256690979,
+        "inference_ms": 92.61742800026695
+      },
+      {
+        "path": "hazelnut/train/good/174.png",
+        "max": 0.5724850296974182,
+        "top5": 0.530411958694458,
+        "top10": 0.49631375074386597,
+        "inference_ms": 94.70071999976426
+      },
+      {
+        "path": "hazelnut/train/good/375.png",
+        "max": 0.7112921476364136,
+        "top5": 0.6279476284980774,
+        "top10": 0.5896971821784973,
+        "inference_ms": 101.31658399996013
+      },
+      {
+        "path": "hazelnut/train/good/081.png",
+        "max": 0.6271343231201172,
+        "top5": 0.58503258228302,
+        "top10": 0.5465519428253174,
+        "inference_ms": 101.97765199973219
+      },
+      {
+        "path": "hazelnut/train/good/003.png",
+        "max": 0.613111138343811,
+        "top5": 0.5552916526794434,
+        "top10": 0.5133951306343079,
+        "inference_ms": 95.67031899996437
+      },
+      {
+        "path": "hazelnut/train/good/142.png",
+        "max": 0.609379768371582,
+        "top5": 0.566466212272644,
+        "top10": 0.5351036190986633,
+        "inference_ms": 108.0671690001509
+      },
+      {
+        "path": "hazelnut/train/good/301.png",
+        "max": 0.4958321154117584,
+        "top5": 0.46193423867225647,
+        "top10": 0.4486815333366394,
+        "inference_ms": 97.19413699986035
+      },
+      {
+        "path": "hazelnut/train/good/229.png",
+        "max": 0.5647702217102051,
+        "top5": 0.5367794632911682,
+        "top10": 0.5092636346817017,
+        "inference_ms": 99.01802600006704
+      },
+      {
+        "path": "hazelnut/train/good/112.png",
+        "max": 0.8121985197067261,
+        "top5": 0.656226634979248,
+        "top10": 0.5898430347442627,
+        "inference_ms": 93.93835600030798
+      },
+      {
+        "path": "hazelnut/train/good/214.png",
+        "max": 0.5339680910110474,
+        "top5": 0.49871087074279785,
+        "top10": 0.4786514341831207,
+        "inference_ms": 97.8131410001879
+      },
+      {
+        "path": "hazelnut/train/good/378.png",
+        "max": 0.608259379863739,
+        "top5": 0.5417388677597046,
+        "top10": 0.5142523050308228,
+        "inference_ms": 92.88624000009804
+      },
+      {
+        "path": "hazelnut/train/good/359.png",
+        "max": 0.580071210861206,
+        "top5": 0.5522329807281494,
+        "top10": 0.5328338742256165,
+        "inference_ms": 104.43542100028935
+      },
+      {
+        "path": "hazelnut/train/good/332.png",
+        "max": 0.5966415405273438,
+        "top5": 0.5496042966842651,
+        "top10": 0.5206648707389832,
+        "inference_ms": 106.77547900013451
+      },
+      {
+        "path": "hazelnut/train/good/101.png",
+        "max": 0.6008347868919373,
+        "top5": 0.518717885017395,
+        "top10": 0.4807887673377991,
+        "inference_ms": 98.00737999967168
+      },
+      {
+        "path": "hazelnut/train/good/287.png",
+        "max": 0.5238281488418579,
+        "top5": 0.5055012702941895,
+        "top10": 0.4767327904701233,
+        "inference_ms": 104.69153800022468
+      },
+      {
+        "path": "hazelnut/train/good/013.png",
+        "max": 0.5656696557998657,
+        "top5": 0.547565758228302,
+        "top10": 0.535344660282135,
+        "inference_ms": 97.74811199986289
+      },
+      {
+        "path": "hazelnut/train/good/308.png",
+        "max": 0.6371369361877441,
+        "top5": 0.5114930868148804,
+        "top10": 0.466835081577301,
+        "inference_ms": 109.86895799987906
+      },
+      {
+        "path": "hazelnut/train/good/258.png",
+        "max": 0.5145700573921204,
+        "top5": 0.4735417366027832,
+        "top10": 0.45480817556381226,
+        "inference_ms": 101.98804800029393
+      },
+      {
+        "path": "hazelnut/train/good/119.png",
+        "max": 0.5065379738807678,
+        "top5": 0.4616215229034424,
+        "top10": 0.44954004883766174,
+        "inference_ms": 101.94100700027775
+      },
+      {
+        "path": "hazelnut/train/good/111.png",
+        "max": 0.5842283368110657,
+        "top5": 0.5551446676254272,
+        "top10": 0.5332807302474976,
+        "inference_ms": 104.29085799978566
+      },
+      {
+        "path": "hazelnut/train/good/047.png",
+        "max": 0.49380216002464294,
+        "top5": 0.47342783212661743,
+        "top10": 0.4620703160762787,
+        "inference_ms": 100.84806400027446
+      },
+      {
+        "path": "hazelnut/train/good/015.png",
+        "max": 0.6098337769508362,
+        "top5": 0.5582796335220337,
+        "top10": 0.5399599671363831,
+        "inference_ms": 103.27351299974907
+      },
+      {
+        "path": "hazelnut/train/good/016.png",
+        "max": 0.5656932592391968,
+        "top5": 0.510299801826477,
+        "top10": 0.48047542572021484,
+        "inference_ms": 94.56435099991722
+      },
+      {
+        "path": "hazelnut/train/good/216.png",
+        "max": 0.5853215456008911,
+        "top5": 0.5455285906791687,
+        "top10": 0.5177687406539917,
+        "inference_ms": 97.61097599994173
+      },
+      {
+        "path": "hazelnut/train/good/302.png",
+        "max": 0.6305860280990601,
+        "top5": 0.5742106437683105,
+        "top10": 0.5406496524810791,
+        "inference_ms": 104.03834399994594
+      },
+      {
+        "path": "hazelnut/train/good/044.png",
+        "max": 0.5825696587562561,
+        "top5": 0.5576851963996887,
+        "top10": 0.5324283838272095,
+        "inference_ms": 111.10690599980444
+      },
+      {
+        "path": "hazelnut/train/good/279.png",
+        "max": 0.5763860940933228,
+        "top5": 0.4987313151359558,
+        "top10": 0.46415582299232483,
+        "inference_ms": 108.52949099989928
+      },
+      {
+        "path": "hazelnut/train/good/387.png",
+        "max": 0.5284660458564758,
+        "top5": 0.513556957244873,
+        "top10": 0.4853277802467346,
+        "inference_ms": 109.88846899999771
+      },
+      {
+        "path": "hazelnut/train/good/346.png",
+        "max": 0.5371813178062439,
+        "top5": 0.47659093141555786,
+        "top10": 0.45418858528137207,
+        "inference_ms": 109.57081800006563
+      },
+      {
+        "path": "hazelnut/train/good/052.png",
+        "max": 0.6128718256950378,
+        "top5": 0.5424914360046387,
+        "top10": 0.5214616060256958,
+        "inference_ms": 98.99347500004296
+      },
+      {
+        "path": "hazelnut/train/good/377.png",
+        "max": 0.6113936305046082,
+        "top5": 0.5688319206237793,
+        "top10": 0.52131587266922,
+        "inference_ms": 76.73112099973878
+      },
+      {
+        "path": "hazelnut/train/good/071.png",
+        "max": 0.47114554047584534,
+        "top5": 0.4580182135105133,
+        "top10": 0.441062867641449,
+        "inference_ms": 81.03798399997686
+      },
+      {
+        "path": "hazelnut/train/good/114.png",
+        "max": 0.567432701587677,
+        "top5": 0.5346131920814514,
+        "top10": 0.5059026479721069,
+        "inference_ms": 82.16943999968862
+      },
+      {
+        "path": "hazelnut/train/good/125.png",
+        "max": 0.5272821187973022,
+        "top5": 0.5117188692092896,
+        "top10": 0.4926374852657318,
+        "inference_ms": 75.77132300002631
+      },
+      {
+        "path": "hazelnut/train/good/140.png",
+        "max": 0.6890171766281128,
+        "top5": 0.648862361907959,
+        "top10": 0.6266552805900574,
+        "inference_ms": 76.15462500007197
+      },
+      {
+        "path": "hazelnut/train/good/379.png",
+        "max": 0.6401544809341431,
+        "top5": 0.6304284930229187,
+        "top10": 0.6017850041389465,
+        "inference_ms": 76.85381399960534
+      },
+      {
+        "path": "hazelnut/train/good/012.png",
+        "max": 0.5927650928497314,
+        "top5": 0.5406493544578552,
+        "top10": 0.5137985944747925,
+        "inference_ms": 77.0689000000857
+      },
+      {
+        "path": "hazelnut/train/good/057.png",
+        "max": 0.5143908858299255,
+        "top5": 0.47861209511756897,
+        "top10": 0.4633428156375885,
+        "inference_ms": 76.95501299986063
+      },
+      {
+        "path": "hazelnut/train/good/327.png",
+        "max": 0.580207884311676,
+        "top5": 0.5639760494232178,
+        "top10": 0.519555926322937,
+        "inference_ms": 80.6598720000693
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "hazelnut/test/crack/013.png",
+        "defect_type": "crack",
+        "max": 0.7955551147460938,
+        "top5": 0.7816663384437561,
+        "top10": 0.7511168718338013,
+        "inference_ms": 85.81817200001751
+      },
+      {
+        "path": "hazelnut/test/crack/012.png",
+        "defect_type": "crack",
+        "max": 0.7792304754257202,
+        "top5": 0.7539987564086914,
+        "top10": 0.7424771189689636,
+        "inference_ms": 76.17892400003257
+      },
+      {
+        "path": "hazelnut/test/crack/004.png",
+        "defect_type": "crack",
+        "max": 0.9026488661766052,
+        "top5": 0.8634921908378601,
+        "top10": 0.8476725816726685,
+        "inference_ms": 80.56091199978255
+      },
+      {
+        "path": "hazelnut/test/crack/009.png",
+        "defect_type": "crack",
+        "max": 0.970163106918335,
+        "top5": 0.9308163523674011,
+        "top10": 0.9079837799072266,
+        "inference_ms": 77.2985499997958
+      },
+      {
+        "path": "hazelnut/test/crack/005.png",
+        "defect_type": "crack",
+        "max": 0.8899250030517578,
+        "top5": 0.8547221422195435,
+        "top10": 0.8173248171806335,
+        "inference_ms": 73.59402699967177
+      },
+      {
+        "path": "hazelnut/test/crack/007.png",
+        "defect_type": "crack",
+        "max": 1.0233185291290283,
+        "top5": 0.9843608736991882,
+        "top10": 0.9622849225997925,
+        "inference_ms": 74.94391199998063
+      },
+      {
+        "path": "hazelnut/test/crack/016.png",
+        "defect_type": "crack",
+        "max": 0.849067211151123,
+        "top5": 0.8056942224502563,
+        "top10": 0.7498151063919067,
+        "inference_ms": 79.07759799991254
+      },
+      {
+        "path": "hazelnut/test/crack/006.png",
+        "defect_type": "crack",
+        "max": 0.807746171951294,
+        "top5": 0.7844477295875549,
+        "top10": 0.7706214785575867,
+        "inference_ms": 74.1646739998032
+      },
+      {
+        "path": "hazelnut/test/crack/010.png",
+        "defect_type": "crack",
+        "max": 0.9763966202735901,
+        "top5": 0.9606684446334839,
+        "top10": 0.9478920102119446,
+        "inference_ms": 77.29156300001705
+      },
+      {
+        "path": "hazelnut/test/cut/011.png",
+        "defect_type": "cut",
+        "max": 0.7451480627059937,
+        "top5": 0.7222957611083984,
+        "top10": 0.7033326029777527,
+        "inference_ms": 78.36255599977449
+      },
+      {
+        "path": "hazelnut/test/cut/014.png",
+        "defect_type": "cut",
+        "max": 0.8216663002967834,
+        "top5": 0.7768581509590149,
+        "top10": 0.7022897601127625,
+        "inference_ms": 79.25272900001801
+      },
+      {
+        "path": "hazelnut/test/cut/010.png",
+        "defect_type": "cut",
+        "max": 0.7904042601585388,
+        "top5": 0.7661163210868835,
+        "top10": 0.7077435255050659,
+        "inference_ms": 79.9004129999048
+      },
+      {
+        "path": "hazelnut/test/cut/008.png",
+        "defect_type": "cut",
+        "max": 0.8137235045433044,
+        "top5": 0.7953134179115295,
+        "top10": 0.7675975561141968,
+        "inference_ms": 86.40662800007703
+      },
+      {
+        "path": "hazelnut/test/cut/015.png",
+        "defect_type": "cut",
+        "max": 0.7922331690788269,
+        "top5": 0.7848528623580933,
+        "top10": 0.742000162601471,
+        "inference_ms": 87.3027610000463
+      },
+      {
+        "path": "hazelnut/test/cut/001.png",
+        "defect_type": "cut",
+        "max": 0.852957010269165,
+        "top5": 0.844016432762146,
+        "top10": 0.8294242024421692,
+        "inference_ms": 77.5928540001587
+      },
+      {
+        "path": "hazelnut/test/cut/012.png",
+        "defect_type": "cut",
+        "max": 0.8001236319541931,
+        "top5": 0.7537444233894348,
+        "top10": 0.7132481336593628,
+        "inference_ms": 76.07560600035868
+      },
+      {
+        "path": "hazelnut/test/cut/005.png",
+        "defect_type": "cut",
+        "max": 0.8167151212692261,
+        "top5": 0.7255607843399048,
+        "top10": 0.6892118453979492,
+        "inference_ms": 77.20553700028177
+      },
+      {
+        "path": "hazelnut/test/hole/014.png",
+        "defect_type": "hole",
+        "max": 0.9864423274993896,
+        "top5": 0.9393879175186157,
+        "top10": 0.8880594372749329,
+        "inference_ms": 76.5488090000872
+      },
+      {
+        "path": "hazelnut/test/hole/017.png",
+        "defect_type": "hole",
+        "max": 0.9312531352043152,
+        "top5": 0.8835886716842651,
+        "top10": 0.8032078742980957,
+        "inference_ms": 78.08552899996357
+      },
+      {
+        "path": "hazelnut/test/hole/006.png",
+        "defect_type": "hole",
+        "max": 0.8718144297599792,
+        "top5": 0.8114350438117981,
+        "top10": 0.7663482427597046,
+        "inference_ms": 77.38212300000669
+      },
+      {
+        "path": "hazelnut/test/hole/002.png",
+        "defect_type": "hole",
+        "max": 0.9197138547897339,
+        "top5": 0.8806784749031067,
+        "top10": 0.7867549657821655,
+        "inference_ms": 76.17524900024364
+      },
+      {
+        "path": "hazelnut/test/hole/015.png",
+        "defect_type": "hole",
+        "max": 0.9184058308601379,
+        "top5": 0.8547468185424805,
+        "top10": 0.739762008190155,
+        "inference_ms": 76.17382199987333
+      },
+      {
+        "path": "hazelnut/test/hole/010.png",
+        "defect_type": "hole",
+        "max": 0.9690256714820862,
+        "top5": 0.9560517072677612,
+        "top10": 0.9085351228713989,
+        "inference_ms": 80.07917899976746
+      },
+      {
+        "path": "hazelnut/test/hole/016.png",
+        "defect_type": "hole",
+        "max": 0.7702921032905579,
+        "top5": 0.7463139891624451,
+        "top10": 0.7286899089813232,
+        "inference_ms": 78.76570999997057
+      },
+      {
+        "path": "hazelnut/test/hole/001.png",
+        "defect_type": "hole",
+        "max": 0.856448233127594,
+        "top5": 0.8178866505622864,
+        "top10": 0.6608659029006958,
+        "inference_ms": 76.79873600000064
+      },
+      {
+        "path": "hazelnut/test/hole/008.png",
+        "defect_type": "hole",
+        "max": 0.855078935623169,
+        "top5": 0.7635441422462463,
+        "top10": 0.6597587466239929,
+        "inference_ms": 79.18818899997859
+      },
+      {
+        "path": "hazelnut/test/print/014.png",
+        "defect_type": "print",
+        "max": 0.8443012833595276,
+        "top5": 0.8311006426811218,
+        "top10": 0.8105089068412781,
+        "inference_ms": 85.85630199968364
+      },
+      {
+        "path": "hazelnut/test/print/011.png",
+        "defect_type": "print",
+        "max": 0.8411071300506592,
+        "top5": 0.8175774812698364,
+        "top10": 0.8074138760566711,
+        "inference_ms": 78.21456000010585
+      },
+      {
+        "path": "hazelnut/test/print/005.png",
+        "defect_type": "print",
+        "max": 0.9186360239982605,
+        "top5": 0.8471121788024902,
+        "top10": 0.7941839098930359,
+        "inference_ms": 76.79895100000067
+      },
+      {
+        "path": "hazelnut/test/print/008.png",
+        "defect_type": "print",
+        "max": 1.1976877450942993,
+        "top5": 1.1724363565444946,
+        "top10": 1.1596652269363403,
+        "inference_ms": 74.94334600005459
+      },
+      {
+        "path": "hazelnut/test/print/007.png",
+        "defect_type": "print",
+        "max": 0.7734017968177795,
+        "top5": 0.7509031295776367,
+        "top10": 0.7392879724502563,
+        "inference_ms": 75.28443700039134
+      },
+      {
+        "path": "hazelnut/test/print/009.png",
+        "defect_type": "print",
+        "max": 0.7686072587966919,
+        "top5": 0.7415534257888794,
+        "top10": 0.7019197344779968,
+        "inference_ms": 75.77866399969935
+      },
+      {
+        "path": "hazelnut/test/print/015.png",
+        "defect_type": "print",
+        "max": 0.7057491540908813,
+        "top5": 0.6885355114936829,
+        "top10": 0.6350514888763428,
+        "inference_ms": 75.17969700029425
+      },
+      {
+        "path": "hazelnut/test/print/016.png",
+        "defect_type": "print",
+        "max": 0.8360571265220642,
+        "top5": 0.8085261583328247,
+        "top10": 0.7896280288696289,
+        "inference_ms": 74.21561899991502
+      }
+    ]
+  },
+  "cable": {
+    "normal_dev": [
+      {
+        "path": "cable/train/good/214.png",
+        "max": 0.5189705491065979,
+        "top5": 0.49832606315612793,
+        "top10": 0.4803091585636139,
+        "inference_ms": 73.14007100012532
+      },
+      {
+        "path": "cable/train/good/086.png",
+        "max": 0.6782556772232056,
+        "top5": 0.592330276966095,
+        "top10": 0.5698865056037903,
+        "inference_ms": 66.61838699983491
+      },
+      {
+        "path": "cable/train/good/204.png",
+        "max": 0.6158320903778076,
+        "top5": 0.5494683980941772,
+        "top10": 0.5213693380355835,
+        "inference_ms": 68.85517699993216
+      },
+      {
+        "path": "cable/train/good/039.png",
+        "max": 0.5176586508750916,
+        "top5": 0.4952498972415924,
+        "top10": 0.4837040901184082,
+        "inference_ms": 65.26006300009612
+      },
+      {
+        "path": "cable/train/good/212.png",
+        "max": 0.6240934729576111,
+        "top5": 0.5734713077545166,
+        "top10": 0.544238269329071,
+        "inference_ms": 77.74392600003921
+      },
+      {
+        "path": "cable/train/good/087.png",
+        "max": 0.6198634505271912,
+        "top5": 0.5461226105690002,
+        "top10": 0.5094972848892212,
+        "inference_ms": 71.5109239999947
+      },
+      {
+        "path": "cable/train/good/208.png",
+        "max": 0.6291215419769287,
+        "top5": 0.5476545095443726,
+        "top10": 0.5207189321517944,
+        "inference_ms": 70.1769110000896
+      },
+      {
+        "path": "cable/train/good/178.png",
+        "max": 0.7919414043426514,
+        "top5": 0.6770445704460144,
+        "top10": 0.5897799730300903,
+        "inference_ms": 66.71271400000478
+      },
+      {
+        "path": "cable/train/good/040.png",
+        "max": 0.6171184182167053,
+        "top5": 0.5888556241989136,
+        "top10": 0.5704385042190552,
+        "inference_ms": 70.0725019996753
+      },
+      {
+        "path": "cable/train/good/001.png",
+        "max": 0.548944354057312,
+        "top5": 0.5207123756408691,
+        "top10": 0.5032692551612854,
+        "inference_ms": 72.46684399979131
+      },
+      {
+        "path": "cable/train/good/071.png",
+        "max": 0.6700886487960815,
+        "top5": 0.5897024273872375,
+        "top10": 0.5656818151473999,
+        "inference_ms": 69.83756900035587
+      },
+      {
+        "path": "cable/train/good/150.png",
+        "max": 0.6232064366340637,
+        "top5": 0.588130533695221,
+        "top10": 0.5611201524734497,
+        "inference_ms": 68.10212900018087
+      },
+      {
+        "path": "cable/train/good/114.png",
+        "max": 0.5899171829223633,
+        "top5": 0.5694021582603455,
+        "top10": 0.5511389970779419,
+        "inference_ms": 69.47288199989998
+      },
+      {
+        "path": "cable/train/good/056.png",
+        "max": 0.641447126865387,
+        "top5": 0.5746903419494629,
+        "top10": 0.5502662658691406,
+        "inference_ms": 68.6696400002802
+      },
+      {
+        "path": "cable/train/good/107.png",
+        "max": 0.5538306832313538,
+        "top5": 0.5251733064651489,
+        "top10": 0.5045645833015442,
+        "inference_ms": 66.34817800022574
+      },
+      {
+        "path": "cable/train/good/211.png",
+        "max": 0.6483885049819946,
+        "top5": 0.5969222784042358,
+        "top10": 0.5783013105392456,
+        "inference_ms": 69.00398100015082
+      },
+      {
+        "path": "cable/train/good/179.png",
+        "max": 0.6276756525039673,
+        "top5": 0.578532874584198,
+        "top10": 0.5486513376235962,
+        "inference_ms": 71.48496499985413
+      },
+      {
+        "path": "cable/train/good/166.png",
+        "max": 0.5899844765663147,
+        "top5": 0.5769180059432983,
+        "top10": 0.5520753264427185,
+        "inference_ms": 67.53484899991236
+      },
+      {
+        "path": "cable/train/good/183.png",
+        "max": 0.555611252784729,
+        "top5": 0.5099324584007263,
+        "top10": 0.4863056540489197,
+        "inference_ms": 83.03340800011938
+      },
+      {
+        "path": "cable/train/good/050.png",
+        "max": 0.6313517689704895,
+        "top5": 0.6127456426620483,
+        "top10": 0.5850652456283569,
+        "inference_ms": 67.4555120003788
+      },
+      {
+        "path": "cable/train/good/143.png",
+        "max": 0.5756278038024902,
+        "top5": 0.5325390696525574,
+        "top10": 0.5133653283119202,
+        "inference_ms": 66.3506029995915
+      },
+      {
+        "path": "cable/train/good/221.png",
+        "max": 0.6153350472450256,
+        "top5": 0.571954071521759,
+        "top10": 0.5340232253074646,
+        "inference_ms": 68.55818900021404
+      },
+      {
+        "path": "cable/train/good/154.png",
+        "max": 0.5671329498291016,
+        "top5": 0.554515540599823,
+        "top10": 0.5294752717018127,
+        "inference_ms": 66.93325600008393
+      },
+      {
+        "path": "cable/train/good/129.png",
+        "max": 0.67830491065979,
+        "top5": 0.5832656621932983,
+        "top10": 0.5304833650588989,
+        "inference_ms": 72.12559599975066
+      },
+      {
+        "path": "cable/train/good/059.png",
+        "max": 0.6349724531173706,
+        "top5": 0.5766497850418091,
+        "top10": 0.5327391624450684,
+        "inference_ms": 71.61734000010256
+      },
+      {
+        "path": "cable/train/good/055.png",
+        "max": 0.6376597285270691,
+        "top5": 0.5800822377204895,
+        "top10": 0.5535526871681213,
+        "inference_ms": 69.88693700031945
+      },
+      {
+        "path": "cable/train/good/023.png",
+        "max": 0.567879855632782,
+        "top5": 0.5380200743675232,
+        "top10": 0.5266867876052856,
+        "inference_ms": 72.70860499966147
+      },
+      {
+        "path": "cable/train/good/007.png",
+        "max": 0.5410298109054565,
+        "top5": 0.5104557275772095,
+        "top10": 0.4913354814052582,
+        "inference_ms": 72.43487800042203
+      },
+      {
+        "path": "cable/train/good/008.png",
+        "max": 0.5144780874252319,
+        "top5": 0.5009700655937195,
+        "top10": 0.4903220236301422,
+        "inference_ms": 71.99492799963991
+      },
+      {
+        "path": "cable/train/good/108.png",
+        "max": 0.6231051087379456,
+        "top5": 0.5588073134422302,
+        "top10": 0.5256491303443909,
+        "inference_ms": 73.05501599967101
+      },
+      {
+        "path": "cable/train/good/151.png",
+        "max": 0.5545476078987122,
+        "top5": 0.5270885229110718,
+        "top10": 0.5079405903816223,
+        "inference_ms": 70.2985930001887
+      },
+      {
+        "path": "cable/train/good/022.png",
+        "max": 0.5901561975479126,
+        "top5": 0.5523014068603516,
+        "top10": 0.5305097699165344,
+        "inference_ms": 68.71393200026432
+      },
+      {
+        "path": "cable/train/good/139.png",
+        "max": 0.4871789813041687,
+        "top5": 0.47881799936294556,
+        "top10": 0.4603897035121918,
+        "inference_ms": 68.37882800027728
+      },
+      {
+        "path": "cable/train/good/220.png",
+        "max": 0.5480433106422424,
+        "top5": 0.5278399586677551,
+        "top10": 0.5097624063491821,
+        "inference_ms": 80.78904800004238
+      },
+      {
+        "path": "cable/train/good/173.png",
+        "max": 0.6322757005691528,
+        "top5": 0.5908533930778503,
+        "top10": 0.5524950623512268,
+        "inference_ms": 67.85766700022577
+      },
+      {
+        "path": "cable/train/good/026.png",
+        "max": 0.49564889073371887,
+        "top5": 0.48977380990982056,
+        "top10": 0.4797298312187195,
+        "inference_ms": 69.78562300037083
+      },
+      {
+        "path": "cable/train/good/188.png",
+        "max": 0.5732991695404053,
+        "top5": 0.5347803831100464,
+        "top10": 0.5052878260612488,
+        "inference_ms": 70.1193360000616
+      },
+      {
+        "path": "cable/train/good/035.png",
+        "max": 0.5589117407798767,
+        "top5": 0.5303992629051208,
+        "top10": 0.5127413272857666,
+        "inference_ms": 71.18264300015653
+      },
+      {
+        "path": "cable/train/good/057.png",
+        "max": 0.6887422800064087,
+        "top5": 0.5790680646896362,
+        "top10": 0.5470375418663025,
+        "inference_ms": 71.93455900005574
+      },
+      {
+        "path": "cable/train/good/062.png",
+        "max": 0.5719007849693298,
+        "top5": 0.5402604341506958,
+        "top10": 0.518225371837616,
+        "inference_ms": 69.97037200017076
+      },
+      {
+        "path": "cable/train/good/070.png",
+        "max": 0.6095897555351257,
+        "top5": 0.569477915763855,
+        "top10": 0.5531450510025024,
+        "inference_ms": 70.82946499986065
+      },
+      {
+        "path": "cable/train/good/189.png",
+        "max": 0.6809394359588623,
+        "top5": 0.5715211629867554,
+        "top10": 0.5425416827201843,
+        "inference_ms": 71.3381999999001
+      },
+      {
+        "path": "cable/train/good/006.png",
+        "max": 0.5960897207260132,
+        "top5": 0.5293620824813843,
+        "top10": 0.49660724401474,
+        "inference_ms": 71.81177599977673
+      },
+      {
+        "path": "cable/train/good/028.png",
+        "max": 0.5633747577667236,
+        "top5": 0.5330871343612671,
+        "top10": 0.5174639821052551,
+        "inference_ms": 70.7962410001528
+      },
+      {
+        "path": "cable/train/good/163.png",
+        "max": 0.690730631351471,
+        "top5": 0.635505735874176,
+        "top10": 0.585298478603363,
+        "inference_ms": 77.20459600022878
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "cable/test/bent_wire/007.png",
+        "defect_type": "bent_wire",
+        "max": 0.9878961443901062,
+        "top5": 0.9455666542053223,
+        "top10": 0.9162071943283081,
+        "inference_ms": 70.92228099963904
+      },
+      {
+        "path": "cable/test/bent_wire/006.png",
+        "defect_type": "bent_wire",
+        "max": 0.9577322602272034,
+        "top5": 0.8738382458686829,
+        "top10": 0.8237020373344421,
+        "inference_ms": 70.8278329998393
+      },
+      {
+        "path": "cable/test/bent_wire/002.png",
+        "defect_type": "bent_wire",
+        "max": 0.8163175582885742,
+        "top5": 0.7487351298332214,
+        "top10": 0.707384467124939,
+        "inference_ms": 77.82229500026006
+      },
+      {
+        "path": "cable/test/bent_wire/009.png",
+        "defect_type": "bent_wire",
+        "max": 0.9791424870491028,
+        "top5": 0.9640389680862427,
+        "top10": 0.9383660554885864,
+        "inference_ms": 70.61831800001528
+      },
+      {
+        "path": "cable/test/bent_wire/012.png",
+        "defect_type": "bent_wire",
+        "max": 0.9624031782150269,
+        "top5": 0.9449254274368286,
+        "top10": 0.9178609848022461,
+        "inference_ms": 70.76637300042421
+      },
+      {
+        "path": "cable/test/bent_wire/005.png",
+        "defect_type": "bent_wire",
+        "max": 1.0427597761154175,
+        "top5": 1.020432949066162,
+        "top10": 0.9956309199333191,
+        "inference_ms": 72.89831800017055
+      },
+      {
+        "path": "cable/test/cable_swap/005.png",
+        "defect_type": "cable_swap",
+        "max": 0.6410025358200073,
+        "top5": 0.5973092913627625,
+        "top10": 0.5661740899085999,
+        "inference_ms": 71.84116500002347
+      },
+      {
+        "path": "cable/test/cable_swap/007.png",
+        "defect_type": "cable_swap",
+        "max": 0.6777352094650269,
+        "top5": 0.6139278411865234,
+        "top10": 0.5991023182868958,
+        "inference_ms": 75.33679899961498
+      },
+      {
+        "path": "cable/test/cable_swap/002.png",
+        "defect_type": "cable_swap",
+        "max": 0.7093870043754578,
+        "top5": 0.6216313242912292,
+        "top10": 0.5964024066925049,
+        "inference_ms": 71.85250700013057
+      },
+      {
+        "path": "cable/test/cable_swap/009.png",
+        "defect_type": "cable_swap",
+        "max": 0.7013678550720215,
+        "top5": 0.6178232431411743,
+        "top10": 0.5805237889289856,
+        "inference_ms": 75.0559359998988
+      },
+      {
+        "path": "cable/test/cable_swap/010.png",
+        "defect_type": "cable_swap",
+        "max": 0.6197417378425598,
+        "top5": 0.5707213878631592,
+        "top10": 0.557023286819458,
+        "inference_ms": 73.76769799975591
+      },
+      {
+        "path": "cable/test/cable_swap/006.png",
+        "defect_type": "cable_swap",
+        "max": 0.5508283972740173,
+        "top5": 0.5227795839309692,
+        "top10": 0.5095401406288147,
+        "inference_ms": 71.04332600010821
+      },
+      {
+        "path": "cable/test/combined/008.png",
+        "defect_type": "combined",
+        "max": 1.0371755361557007,
+        "top5": 0.996992290019989,
+        "top10": 0.936358630657196,
+        "inference_ms": 80.68783399994572
+      },
+      {
+        "path": "cable/test/combined/009.png",
+        "defect_type": "combined",
+        "max": 0.8603057861328125,
+        "top5": 0.8339868783950806,
+        "top10": 0.7783633470535278,
+        "inference_ms": 74.65456899990386
+      },
+      {
+        "path": "cable/test/combined/005.png",
+        "defect_type": "combined",
+        "max": 0.9320734143257141,
+        "top5": 0.8689436912536621,
+        "top10": 0.8333112597465515,
+        "inference_ms": 74.51789400010966
+      },
+      {
+        "path": "cable/test/combined/002.png",
+        "defect_type": "combined",
+        "max": 0.9269859194755554,
+        "top5": 0.875836968421936,
+        "top10": 0.7712381482124329,
+        "inference_ms": 72.35565300015878
+      },
+      {
+        "path": "cable/test/combined/010.png",
+        "defect_type": "combined",
+        "max": 0.9236541390419006,
+        "top5": 0.8773550987243652,
+        "top10": 0.8499125242233276,
+        "inference_ms": 79.22324500032119
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/013.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.7493717670440674,
+        "top5": 0.71361243724823,
+        "top10": 0.6672602891921997,
+        "inference_ms": 74.6060229998875
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/007.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.7972020506858826,
+        "top5": 0.7663050889968872,
+        "top10": 0.7165620923042297,
+        "inference_ms": 74.77259799998137
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/000.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.7897195816040039,
+        "top5": 0.725183367729187,
+        "top10": 0.6856541633605957,
+        "inference_ms": 77.69943599987528
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/011.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.8640186786651611,
+        "top5": 0.8410285711288452,
+        "top10": 0.7925747036933899,
+        "inference_ms": 81.34533599968563
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/004.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 1.0296858549118042,
+        "top5": 0.9778085947036743,
+        "top10": 0.903505802154541,
+        "inference_ms": 74.92544000024282
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/008.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.7780776619911194,
+        "top5": 0.7246333360671997,
+        "top10": 0.6689897775650024,
+        "inference_ms": 76.99724399981278
+      },
+      {
+        "path": "cable/test/cut_inner_insulation/002.png",
+        "defect_type": "cut_inner_insulation",
+        "max": 0.7805298566818237,
+        "top5": 0.6807786822319031,
+        "top10": 0.6278836727142334,
+        "inference_ms": 74.27975999962655
+      },
+      {
+        "path": "cable/test/cut_outer_insulation/009.png",
+        "defect_type": "cut_outer_insulation",
+        "max": 0.7886782288551331,
+        "top5": 0.7478692531585693,
+        "top10": 0.6884823441505432,
+        "inference_ms": 75.55058500020095
+      },
+      {
+        "path": "cable/test/cut_outer_insulation/007.png",
+        "defect_type": "cut_outer_insulation",
+        "max": 0.8273865580558777,
+        "top5": 0.8161913156509399,
+        "top10": 0.7314480543136597,
+        "inference_ms": 76.45698200030893
+      },
+      {
+        "path": "cable/test/cut_outer_insulation/003.png",
+        "defect_type": "cut_outer_insulation",
+        "max": 0.7860847115516663,
+        "top5": 0.7408667802810669,
+        "top10": 0.6802616715431213,
+        "inference_ms": 78.98902099987026
+      },
+      {
+        "path": "cable/test/cut_outer_insulation/005.png",
+        "defect_type": "cut_outer_insulation",
+        "max": 0.8798385858535767,
+        "top5": 0.8138803243637085,
+        "top10": 0.7139286398887634,
+        "inference_ms": 72.43189400014671
+      },
+      {
+        "path": "cable/test/cut_outer_insulation/002.png",
+        "defect_type": "cut_outer_insulation",
+        "max": 0.8935302495956421,
+        "top5": 0.8757007718086243,
+        "top10": 0.7658209204673767,
+        "inference_ms": 73.36081499988722
+      },
+      {
+        "path": "cable/test/missing_cable/007.png",
+        "defect_type": "missing_cable",
+        "max": 1.014715313911438,
+        "top5": 0.9761336445808411,
+        "top10": 0.9534222483634949,
+        "inference_ms": 71.33046699982515
+      },
+      {
+        "path": "cable/test/missing_cable/002.png",
+        "defect_type": "missing_cable",
+        "max": 0.9149677753448486,
+        "top5": 0.8698652982711792,
+        "top10": 0.8321617841720581,
+        "inference_ms": 80.81552499970712
+      },
+      {
+        "path": "cable/test/missing_cable/005.png",
+        "defect_type": "missing_cable",
+        "max": 0.9539351463317871,
+        "top5": 0.8851594924926758,
+        "top10": 0.8378458023071289,
+        "inference_ms": 73.30098000011276
+      },
+      {
+        "path": "cable/test/missing_cable/008.png",
+        "defect_type": "missing_cable",
+        "max": 0.9664490818977356,
+        "top5": 0.9292504191398621,
+        "top10": 0.9117606282234192,
+        "inference_ms": 73.61781899999187
+      },
+      {
+        "path": "cable/test/missing_cable/006.png",
+        "defect_type": "missing_cable",
+        "max": 1.0765546560287476,
+        "top5": 1.0590393543243408,
+        "top10": 1.047551155090332,
+        "inference_ms": 73.43760300000213
+      },
+      {
+        "path": "cable/test/missing_cable/010.png",
+        "defect_type": "missing_cable",
+        "max": 1.0098804235458374,
+        "top5": 0.9419075846672058,
+        "top10": 0.8902407884597778,
+        "inference_ms": 73.38595200008058
+      },
+      {
+        "path": "cable/test/missing_wire/007.png",
+        "defect_type": "missing_wire",
+        "max": 0.6578459739685059,
+        "top5": 0.591717004776001,
+        "top10": 0.56209397315979,
+        "inference_ms": 75.18320600001971
+      },
+      {
+        "path": "cable/test/missing_wire/003.png",
+        "defect_type": "missing_wire",
+        "max": 0.740801215171814,
+        "top5": 0.706764817237854,
+        "top10": 0.6735628843307495,
+        "inference_ms": 75.29064999971524
+      },
+      {
+        "path": "cable/test/missing_wire/004.png",
+        "defect_type": "missing_wire",
+        "max": 0.7983425259590149,
+        "top5": 0.7696872353553772,
+        "top10": 0.7026225328445435,
+        "inference_ms": 76.30615599964585
+      },
+      {
+        "path": "cable/test/missing_wire/000.png",
+        "defect_type": "missing_wire",
+        "max": 0.6157078742980957,
+        "top5": 0.5845826864242554,
+        "top10": 0.5524380207061768,
+        "inference_ms": 76.91095800009862
+      },
+      {
+        "path": "cable/test/missing_wire/006.png",
+        "defect_type": "missing_wire",
+        "max": 0.6490968465805054,
+        "top5": 0.5662286877632141,
+        "top10": 0.546343207359314,
+        "inference_ms": 80.12325500021689
+      },
+      {
+        "path": "cable/test/poke_insulation/000.png",
+        "defect_type": "poke_insulation",
+        "max": 0.8867179155349731,
+        "top5": 0.706893265247345,
+        "top10": 0.596535861492157,
+        "inference_ms": 75.36695399994642
+      },
+      {
+        "path": "cable/test/poke_insulation/005.png",
+        "defect_type": "poke_insulation",
+        "max": 0.8931000828742981,
+        "top5": 0.8461540341377258,
+        "top10": 0.7217440605163574,
+        "inference_ms": 75.31704999973954
+      },
+      {
+        "path": "cable/test/poke_insulation/004.png",
+        "defect_type": "poke_insulation",
+        "max": 0.757132887840271,
+        "top5": 0.7206767797470093,
+        "top10": 0.6609037518501282,
+        "inference_ms": 76.5552640000351
+      },
+      {
+        "path": "cable/test/poke_insulation/001.png",
+        "defect_type": "poke_insulation",
+        "max": 0.8144835829734802,
+        "top5": 0.7979204654693604,
+        "top10": 0.7525731921195984,
+        "inference_ms": 97.30760200000077
+      },
+      {
+        "path": "cable/test/poke_insulation/007.png",
+        "defect_type": "poke_insulation",
+        "max": 0.8149068355560303,
+        "top5": 0.8019169569015503,
+        "top10": 0.7647467851638794,
+        "inference_ms": 103.31913099980738
+      }
+    ]
+  },
+  "capsule": {
+    "normal_dev": [
+      {
+        "path": "capsule/train/good/086.png",
+        "max": 0.4142749309539795,
+        "top5": 0.3546740412712097,
+        "top10": 0.3191388249397278,
+        "inference_ms": 95.93370699985826
+      },
+      {
+        "path": "capsule/train/good/199.png",
+        "max": 0.43007904291152954,
+        "top5": 0.3572973310947418,
+        "top10": 0.32364392280578613,
+        "inference_ms": 95.23672700015595
+      },
+      {
+        "path": "capsule/train/good/039.png",
+        "max": 0.32659655809402466,
+        "top5": 0.2961433529853821,
+        "top10": 0.26814597845077515,
+        "inference_ms": 98.62426699964999
+      },
+      {
+        "path": "capsule/train/good/184.png",
+        "max": 0.33170777559280396,
+        "top5": 0.2844143807888031,
+        "top10": 0.26880958676338196,
+        "inference_ms": 96.71291400036353
+      },
+      {
+        "path": "capsule/train/good/087.png",
+        "max": 0.34215453267097473,
+        "top5": 0.3149455189704895,
+        "top10": 0.3010869026184082,
+        "inference_ms": 96.05795600009515
+      },
+      {
+        "path": "capsule/train/good/203.png",
+        "max": 0.49132633209228516,
+        "top5": 0.3880382180213928,
+        "top10": 0.3329058885574341,
+        "inference_ms": 95.86297000032573
+      },
+      {
+        "path": "capsule/train/good/178.png",
+        "max": 0.3964201807975769,
+        "top5": 0.3449190557003021,
+        "top10": 0.314057856798172,
+        "inference_ms": 91.22994500012283
+      },
+      {
+        "path": "capsule/train/good/040.png",
+        "max": 0.3373497724533081,
+        "top5": 0.3039797246456146,
+        "top10": 0.27589210867881775,
+        "inference_ms": 96.1335440001676
+      },
+      {
+        "path": "capsule/train/good/001.png",
+        "max": 0.4500732123851776,
+        "top5": 0.36256125569343567,
+        "top10": 0.3148196339607239,
+        "inference_ms": 92.76097400015715
+      },
+      {
+        "path": "capsule/train/good/071.png",
+        "max": 0.4896053969860077,
+        "top5": 0.38256582617759705,
+        "top10": 0.35430803894996643,
+        "inference_ms": 93.73942000001989
+      },
+      {
+        "path": "capsule/train/good/150.png",
+        "max": 0.4554668366909027,
+        "top5": 0.3327174782752991,
+        "top10": 0.301785945892334,
+        "inference_ms": 90.60182700022779
+      },
+      {
+        "path": "capsule/train/good/114.png",
+        "max": 0.49458274245262146,
+        "top5": 0.3860377371311188,
+        "top10": 0.3463326394557953,
+        "inference_ms": 91.47062500005632
+      },
+      {
+        "path": "capsule/train/good/056.png",
+        "max": 0.32163578271865845,
+        "top5": 0.28906092047691345,
+        "top10": 0.2707310914993286,
+        "inference_ms": 96.99244100011128
+      },
+      {
+        "path": "capsule/train/good/107.png",
+        "max": 0.5221815705299377,
+        "top5": 0.3788772225379944,
+        "top10": 0.3164496421813965,
+        "inference_ms": 94.25608199990165
+      },
+      {
+        "path": "capsule/train/good/206.png",
+        "max": 0.5150131583213806,
+        "top5": 0.361156702041626,
+        "top10": 0.3203068971633911,
+        "inference_ms": 94.02933199999097
+      },
+      {
+        "path": "capsule/train/good/179.png",
+        "max": 0.37741968035697937,
+        "top5": 0.29967013001441956,
+        "top10": 0.27779510617256165,
+        "inference_ms": 92.84755400040012
+      },
+      {
+        "path": "capsule/train/good/166.png",
+        "max": 0.4364992082118988,
+        "top5": 0.3834291398525238,
+        "top10": 0.3506328761577606,
+        "inference_ms": 90.92684899997039
+      },
+      {
+        "path": "capsule/train/good/183.png",
+        "max": 0.34088414907455444,
+        "top5": 0.3257208466529846,
+        "top10": 0.30172353982925415,
+        "inference_ms": 91.34724599971378
+      },
+      {
+        "path": "capsule/train/good/050.png",
+        "max": 0.3416156470775604,
+        "top5": 0.3172169625759125,
+        "top10": 0.301536500453949,
+        "inference_ms": 91.31825799977378
+      },
+      {
+        "path": "capsule/train/good/143.png",
+        "max": 0.3688370883464813,
+        "top5": 0.3292025625705719,
+        "top10": 0.3137415051460266,
+        "inference_ms": 103.71059199997035
+      },
+      {
+        "path": "capsule/train/good/216.png",
+        "max": 0.5667893886566162,
+        "top5": 0.45047205686569214,
+        "top10": 0.3750774562358856,
+        "inference_ms": 94.44838599983996
+      },
+      {
+        "path": "capsule/train/good/154.png",
+        "max": 0.3506316542625427,
+        "top5": 0.3179958462715149,
+        "top10": 0.2997167408466339,
+        "inference_ms": 92.31443799990302
+      },
+      {
+        "path": "capsule/train/good/129.png",
+        "max": 0.3864981234073639,
+        "top5": 0.32607877254486084,
+        "top10": 0.3003855049610138,
+        "inference_ms": 94.593765999889
+      },
+      {
+        "path": "capsule/train/good/059.png",
+        "max": 0.4020755887031555,
+        "top5": 0.3245345652103424,
+        "top10": 0.2999378740787506,
+        "inference_ms": 89.79070900022634
+      },
+      {
+        "path": "capsule/train/good/055.png",
+        "max": 0.4223507344722748,
+        "top5": 0.37424585223197937,
+        "top10": 0.33682307600975037,
+        "inference_ms": 95.99879000006695
+      },
+      {
+        "path": "capsule/train/good/023.png",
+        "max": 0.30173587799072266,
+        "top5": 0.27883264422416687,
+        "top10": 0.25766614079475403,
+        "inference_ms": 92.75330199989185
+      },
+      {
+        "path": "capsule/train/good/007.png",
+        "max": 0.4642401933670044,
+        "top5": 0.32671988010406494,
+        "top10": 0.2843741476535797,
+        "inference_ms": 98.72461600025417
+      },
+      {
+        "path": "capsule/train/good/008.png",
+        "max": 0.5846143364906311,
+        "top5": 0.44284892082214355,
+        "top10": 0.38086241483688354,
+        "inference_ms": 94.52793400032533
+      },
+      {
+        "path": "capsule/train/good/108.png",
+        "max": 0.4298957884311676,
+        "top5": 0.3683066964149475,
+        "top10": 0.33339956402778625,
+        "inference_ms": 95.62704099971597
+      },
+      {
+        "path": "capsule/train/good/151.png",
+        "max": 0.4975750744342804,
+        "top5": 0.3636191487312317,
+        "top10": 0.3271992802619934,
+        "inference_ms": 96.9827889998669
+      },
+      {
+        "path": "capsule/train/good/022.png",
+        "max": 0.3573211431503296,
+        "top5": 0.31343570351600647,
+        "top10": 0.2947985529899597,
+        "inference_ms": 99.81117999996059
+      },
+      {
+        "path": "capsule/train/good/139.png",
+        "max": 0.3664851784706116,
+        "top5": 0.3171096444129944,
+        "top10": 0.2940760850906372,
+        "inference_ms": 94.81434799999988
+      },
+      {
+        "path": "capsule/train/good/215.png",
+        "max": 0.4103381633758545,
+        "top5": 0.3571627736091614,
+        "top10": 0.32347309589385986,
+        "inference_ms": 94.39600799987602
+      },
+      {
+        "path": "capsule/train/good/173.png",
+        "max": 0.39511924982070923,
+        "top5": 0.3530314862728119,
+        "top10": 0.3107962906360626,
+        "inference_ms": 99.22525499996482
+      },
+      {
+        "path": "capsule/train/good/026.png",
+        "max": 0.3443989157676697,
+        "top5": 0.32765859365463257,
+        "top10": 0.30060505867004395,
+        "inference_ms": 100.79306699981316
+      },
+      {
+        "path": "capsule/train/good/188.png",
+        "max": 0.3510356843471527,
+        "top5": 0.31112998723983765,
+        "top10": 0.2860754132270813,
+        "inference_ms": 93.71892499984824
+      },
+      {
+        "path": "capsule/train/good/035.png",
+        "max": 0.3647495210170746,
+        "top5": 0.32673710584640503,
+        "top10": 0.29241278767585754,
+        "inference_ms": 97.66325700002199
+      },
+      {
+        "path": "capsule/train/good/057.png",
+        "max": 0.40886303782463074,
+        "top5": 0.36123111844062805,
+        "top10": 0.3207370340824127,
+        "inference_ms": 95.25760299993635
+      },
+      {
+        "path": "capsule/train/good/062.png",
+        "max": 0.33332231640815735,
+        "top5": 0.3154050409793854,
+        "top10": 0.29878097772598267,
+        "inference_ms": 76.06166000005032
+      },
+      {
+        "path": "capsule/train/good/070.png",
+        "max": 0.5100432634353638,
+        "top5": 0.3935420513153076,
+        "top10": 0.3445854187011719,
+        "inference_ms": 75.62975600012578
+      },
+      {
+        "path": "capsule/train/good/189.png",
+        "max": 0.3328549265861511,
+        "top5": 0.2954937517642975,
+        "top10": 0.27797406911849976,
+        "inference_ms": 73.36544200006756
+      },
+      {
+        "path": "capsule/train/good/006.png",
+        "max": 0.3431061804294586,
+        "top5": 0.3187867999076843,
+        "top10": 0.2945272922515869,
+        "inference_ms": 73.94616700003098
+      },
+      {
+        "path": "capsule/train/good/028.png",
+        "max": 0.34862425923347473,
+        "top5": 0.3094680905342102,
+        "top10": 0.29069608449935913,
+        "inference_ms": 80.7454199998574
+      },
+      {
+        "path": "capsule/train/good/163.png",
+        "max": 0.43233823776245117,
+        "top5": 0.3817850649356842,
+        "top10": 0.34089183807373047,
+        "inference_ms": 77.66489000005095
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "capsule/test/crack/016.png",
+        "defect_type": "crack",
+        "max": 0.5178939700126648,
+        "top5": 0.40352511405944824,
+        "top10": 0.3575853705406189,
+        "inference_ms": 77.08400999990772
+      },
+      {
+        "path": "capsule/test/crack/015.png",
+        "defect_type": "crack",
+        "max": 0.8354713320732117,
+        "top5": 0.7558069825172424,
+        "top10": 0.6140621304512024,
+        "inference_ms": 77.00941499979308
+      },
+      {
+        "path": "capsule/test/crack/002.png",
+        "defect_type": "crack",
+        "max": 0.585966169834137,
+        "top5": 0.4899149537086487,
+        "top10": 0.4350201189517975,
+        "inference_ms": 79.32529499976226
+      },
+      {
+        "path": "capsule/test/crack/014.png",
+        "defect_type": "crack",
+        "max": 0.9229658842086792,
+        "top5": 0.5264483690261841,
+        "top10": 0.4138745367527008,
+        "inference_ms": 73.24142700008451
+      },
+      {
+        "path": "capsule/test/crack/005.png",
+        "defect_type": "crack",
+        "max": 0.4779919385910034,
+        "top5": 0.44191932678222656,
+        "top10": 0.4026206135749817,
+        "inference_ms": 72.11096500032
+      },
+      {
+        "path": "capsule/test/crack/013.png",
+        "defect_type": "crack",
+        "max": 0.7797790765762329,
+        "top5": 0.49553316831588745,
+        "top10": 0.4126816391944885,
+        "inference_ms": 73.44189500008724
+      },
+      {
+        "path": "capsule/test/crack/017.png",
+        "defect_type": "crack",
+        "max": 0.8379002809524536,
+        "top5": 0.8026407957077026,
+        "top10": 0.6295164823532104,
+        "inference_ms": 71.42206499975146
+      },
+      {
+        "path": "capsule/test/crack/012.png",
+        "defect_type": "crack",
+        "max": 0.7285518646240234,
+        "top5": 0.582770824432373,
+        "top10": 0.5288309454917908,
+        "inference_ms": 72.43464900011531
+      },
+      {
+        "path": "capsule/test/crack/022.png",
+        "defect_type": "crack",
+        "max": 0.7198973298072815,
+        "top5": 0.5751278400421143,
+        "top10": 0.46438559889793396,
+        "inference_ms": 74.08414800011087
+      },
+      {
+        "path": "capsule/test/crack/006.png",
+        "defect_type": "crack",
+        "max": 0.8542703986167908,
+        "top5": 0.7558540105819702,
+        "top10": 0.6196419596672058,
+        "inference_ms": 74.75688599970454
+      },
+      {
+        "path": "capsule/test/crack/009.png",
+        "defect_type": "crack",
+        "max": 0.7144591808319092,
+        "top5": 0.6244295835494995,
+        "top10": 0.4881019592285156,
+        "inference_ms": 72.83085600010963
+      },
+      {
+        "path": "capsule/test/faulty_imprint/009.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.5291304588317871,
+        "top5": 0.41774576902389526,
+        "top10": 0.38777121901512146,
+        "inference_ms": 78.18163000001732
+      },
+      {
+        "path": "capsule/test/faulty_imprint/003.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.6847214698791504,
+        "top5": 0.4733204245567322,
+        "top10": 0.3965337872505188,
+        "inference_ms": 72.60078599983899
+      },
+      {
+        "path": "capsule/test/faulty_imprint/010.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.6930110454559326,
+        "top5": 0.5286955237388611,
+        "top10": 0.4275515675544739,
+        "inference_ms": 71.7546040000343
+      },
+      {
+        "path": "capsule/test/faulty_imprint/016.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.6593142151832581,
+        "top5": 0.46361231803894043,
+        "top10": 0.39643123745918274,
+        "inference_ms": 72.7086470001268
+      },
+      {
+        "path": "capsule/test/faulty_imprint/015.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.44160032272338867,
+        "top5": 0.3952941596508026,
+        "top10": 0.3576273024082184,
+        "inference_ms": 74.02529199998753
+      },
+      {
+        "path": "capsule/test/faulty_imprint/018.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.5799092054367065,
+        "top5": 0.3904414772987366,
+        "top10": 0.35112032294273376,
+        "inference_ms": 76.47023900017302
+      },
+      {
+        "path": "capsule/test/faulty_imprint/001.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.5048573017120361,
+        "top5": 0.4710610806941986,
+        "top10": 0.4225584864616394,
+        "inference_ms": 71.67712000000392
+      },
+      {
+        "path": "capsule/test/faulty_imprint/019.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.3592967092990875,
+        "top5": 0.3426129221916199,
+        "top10": 0.32314804196357727,
+        "inference_ms": 72.38843799996175
+      },
+      {
+        "path": "capsule/test/faulty_imprint/004.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.46470120549201965,
+        "top5": 0.4425305426120758,
+        "top10": 0.4098799228668213,
+        "inference_ms": 71.93455400010862
+      },
+      {
+        "path": "capsule/test/faulty_imprint/005.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.4403253197669983,
+        "top5": 0.41715025901794434,
+        "top10": 0.385737806558609,
+        "inference_ms": 73.34806600010779
+      },
+      {
+        "path": "capsule/test/faulty_imprint/006.png",
+        "defect_type": "faulty_imprint",
+        "max": 0.5102297067642212,
+        "top5": 0.3663606345653534,
+        "top10": 0.33924412727355957,
+        "inference_ms": 72.16246600000886
+      },
+      {
+        "path": "capsule/test/poke/002.png",
+        "defect_type": "poke",
+        "max": 0.48119938373565674,
+        "top5": 0.40671950578689575,
+        "top10": 0.361492395401001,
+        "inference_ms": 75.09844400010479
+      },
+      {
+        "path": "capsule/test/poke/010.png",
+        "defect_type": "poke",
+        "max": 0.7170981764793396,
+        "top5": 0.44086670875549316,
+        "top10": 0.38733941316604614,
+        "inference_ms": 71.78334000036557
+      },
+      {
+        "path": "capsule/test/poke/007.png",
+        "defect_type": "poke",
+        "max": 0.7417173981666565,
+        "top5": 0.6219900250434875,
+        "top10": 0.4835468828678131,
+        "inference_ms": 72.71973700017043
+      },
+      {
+        "path": "capsule/test/poke/012.png",
+        "defect_type": "poke",
+        "max": 0.45421063899993896,
+        "top5": 0.4110615849494934,
+        "top10": 0.3901948034763336,
+        "inference_ms": 77.57163499991293
+      },
+      {
+        "path": "capsule/test/poke/013.png",
+        "defect_type": "poke",
+        "max": 0.7076579332351685,
+        "top5": 0.5496593713760376,
+        "top10": 0.4420205056667328,
+        "inference_ms": 75.48325500010833
+      },
+      {
+        "path": "capsule/test/poke/000.png",
+        "defect_type": "poke",
+        "max": 0.9473450183868408,
+        "top5": 0.9134210348129272,
+        "top10": 0.819497287273407,
+        "inference_ms": 71.80137799969089
+      },
+      {
+        "path": "capsule/test/poke/019.png",
+        "defect_type": "poke",
+        "max": 0.7727022767066956,
+        "top5": 0.5499001741409302,
+        "top10": 0.45781072974205017,
+        "inference_ms": 74.19016099993314
+      },
+      {
+        "path": "capsule/test/poke/015.png",
+        "defect_type": "poke",
+        "max": 0.8353622555732727,
+        "top5": 0.5486167669296265,
+        "top10": 0.44818276166915894,
+        "inference_ms": 73.65773299989087
+      },
+      {
+        "path": "capsule/test/poke/005.png",
+        "defect_type": "poke",
+        "max": 0.6738789677619934,
+        "top5": 0.5839993953704834,
+        "top10": 0.5164200067520142,
+        "inference_ms": 76.5296260001378
+      },
+      {
+        "path": "capsule/test/poke/009.png",
+        "defect_type": "poke",
+        "max": 0.6464641690254211,
+        "top5": 0.534395158290863,
+        "top10": 0.4283159375190735,
+        "inference_ms": 71.88527100015563
+      },
+      {
+        "path": "capsule/test/scratch/006.png",
+        "defect_type": "scratch",
+        "max": 0.6771352887153625,
+        "top5": 0.4554361402988434,
+        "top10": 0.3900086581707001,
+        "inference_ms": 73.27055599989762
+      },
+      {
+        "path": "capsule/test/scratch/000.png",
+        "defect_type": "scratch",
+        "max": 0.6882871389389038,
+        "top5": 0.5274947285652161,
+        "top10": 0.42730504274368286,
+        "inference_ms": 72.60810900015713
+      },
+      {
+        "path": "capsule/test/scratch/015.png",
+        "defect_type": "scratch",
+        "max": 0.7774174213409424,
+        "top5": 0.5952062606811523,
+        "top10": 0.4974265992641449,
+        "inference_ms": 72.50433599983808
+      },
+      {
+        "path": "capsule/test/scratch/019.png",
+        "defect_type": "scratch",
+        "max": 0.6933111548423767,
+        "top5": 0.6236933469772339,
+        "top10": 0.49706998467445374,
+        "inference_ms": 72.81915200019284
+      },
+      {
+        "path": "capsule/test/scratch/018.png",
+        "defect_type": "scratch",
+        "max": 0.834349513053894,
+        "top5": 0.5963712930679321,
+        "top10": 0.45512834191322327,
+        "inference_ms": 73.86305600039123
+      },
+      {
+        "path": "capsule/test/scratch/022.png",
+        "defect_type": "scratch",
+        "max": 0.7055315375328064,
+        "top5": 0.6687719225883484,
+        "top10": 0.540115475654602,
+        "inference_ms": 72.28435600018202
+      },
+      {
+        "path": "capsule/test/scratch/009.png",
+        "defect_type": "scratch",
+        "max": 0.7318268418312073,
+        "top5": 0.537371039390564,
+        "top10": 0.43057021498680115,
+        "inference_ms": 73.98234699985551
+      },
+      {
+        "path": "capsule/test/scratch/013.png",
+        "defect_type": "scratch",
+        "max": 0.6790768504142761,
+        "top5": 0.5683015584945679,
+        "top10": 0.4833177626132965,
+        "inference_ms": 76.82210799976019
+      },
+      {
+        "path": "capsule/test/scratch/002.png",
+        "defect_type": "scratch",
+        "max": 0.578479528427124,
+        "top5": 0.44737499952316284,
+        "top10": 0.39882490038871765,
+        "inference_ms": 73.66514700015614
+      },
+      {
+        "path": "capsule/test/scratch/001.png",
+        "defect_type": "scratch",
+        "max": 0.620434582233429,
+        "top5": 0.4965222477912903,
+        "top10": 0.42647624015808105,
+        "inference_ms": 73.52917599973807
+      },
+      {
+        "path": "capsule/test/scratch/020.png",
+        "defect_type": "scratch",
+        "max": 0.6663922071456909,
+        "top5": 0.5879418253898621,
+        "top10": 0.49091172218322754,
+        "inference_ms": 75.81685700006346
+      },
+      {
+        "path": "capsule/test/squeeze/002.png",
+        "defect_type": "squeeze",
+        "max": 0.5408987402915955,
+        "top5": 0.5297080278396606,
+        "top10": 0.511155903339386,
+        "inference_ms": 74.66064199979883
+      },
+      {
+        "path": "capsule/test/squeeze/000.png",
+        "defect_type": "squeeze",
+        "max": 0.9587685465812683,
+        "top5": 0.8936169743537903,
+        "top10": 0.8474582433700562,
+        "inference_ms": 73.7534009999763
+      },
+      {
+        "path": "capsule/test/squeeze/013.png",
+        "defect_type": "squeeze",
+        "max": 0.7458223104476929,
+        "top5": 0.6793153882026672,
+        "top10": 0.6403340101242065,
+        "inference_ms": 81.79265400031
+      },
+      {
+        "path": "capsule/test/squeeze/012.png",
+        "defect_type": "squeeze",
+        "max": 0.8791511058807373,
+        "top5": 0.7787953615188599,
+        "top10": 0.7203242182731628,
+        "inference_ms": 74.20611599991389
+      },
+      {
+        "path": "capsule/test/squeeze/014.png",
+        "defect_type": "squeeze",
+        "max": 0.8192310333251953,
+        "top5": 0.7947343587875366,
+        "top10": 0.7834486961364746,
+        "inference_ms": 72.4747600002047
+      },
+      {
+        "path": "capsule/test/squeeze/015.png",
+        "defect_type": "squeeze",
+        "max": 0.871436595916748,
+        "top5": 0.7687638401985168,
+        "top10": 0.6985412240028381,
+        "inference_ms": 73.63954599986755
+      },
+      {
+        "path": "capsule/test/squeeze/008.png",
+        "defect_type": "squeeze",
+        "max": 0.8540591597557068,
+        "top5": 0.7112541794776917,
+        "top10": 0.604862630367279,
+        "inference_ms": 73.2177770000817
+      },
+      {
+        "path": "capsule/test/squeeze/017.png",
+        "defect_type": "squeeze",
+        "max": 0.8623855710029602,
+        "top5": 0.6360805630683899,
+        "top10": 0.5605148077011108,
+        "inference_ms": 73.14501700011533
+      },
+      {
+        "path": "capsule/test/squeeze/011.png",
+        "defect_type": "squeeze",
+        "max": 0.8610481023788452,
+        "top5": 0.8318451642990112,
+        "top10": 0.8039156198501587,
+        "inference_ms": 74.46442199989178
+      },
+      {
+        "path": "capsule/test/squeeze/005.png",
+        "defect_type": "squeeze",
+        "max": 0.8730539083480835,
+        "top5": 0.6873464584350586,
+        "top10": 0.5985523462295532,
+        "inference_ms": 73.16184000001158
+      }
+    ]
+  },
+  "screw": {
+    "normal_dev": [
+      {
+        "path": "screw/train/good/107.png",
+        "max": 0.4737273156642914,
+        "top5": 0.43989020586013794,
+        "top10": 0.411689817905426,
+        "inference_ms": 55.03476800004137
+      },
+      {
+        "path": "screw/train/good/181.png",
+        "max": 0.44880211353302,
+        "top5": 0.4334734082221985,
+        "top10": 0.4208041727542877,
+        "inference_ms": 55.22969999992711
+      },
+      {
+        "path": "screw/train/good/189.png",
+        "max": 0.49542924761772156,
+        "top5": 0.44150233268737793,
+        "top10": 0.41541165113449097,
+        "inference_ms": 54.10733300004722
+      },
+      {
+        "path": "screw/train/good/083.png",
+        "max": 0.4401099681854248,
+        "top5": 0.3918619751930237,
+        "top10": 0.37617504596710205,
+        "inference_ms": 50.85136400020929
+      },
+      {
+        "path": "screw/train/good/186.png",
+        "max": 0.49259012937545776,
+        "top5": 0.4342990517616272,
+        "top10": 0.4102044701576233,
+        "inference_ms": 49.35537300025317
+      },
+      {
+        "path": "screw/train/good/232.png",
+        "max": 0.44962698221206665,
+        "top5": 0.41081470251083374,
+        "top10": 0.3916637897491455,
+        "inference_ms": 49.68260099985855
+      },
+      {
+        "path": "screw/train/good/290.png",
+        "max": 0.44146254658699036,
+        "top5": 0.4176321029663086,
+        "top10": 0.40162092447280884,
+        "inference_ms": 49.34197200009294
+      },
+      {
+        "path": "screw/train/good/284.png",
+        "max": 0.36681824922561646,
+        "top5": 0.3571154475212097,
+        "top10": 0.34999459981918335,
+        "inference_ms": 46.2477209998724
+      },
+      {
+        "path": "screw/train/good/051.png",
+        "max": 0.42808204889297485,
+        "top5": 0.3909035623073578,
+        "top10": 0.37375789880752563,
+        "inference_ms": 45.346351000262075
+      },
+      {
+        "path": "screw/train/good/304.png",
+        "max": 0.4279276728630066,
+        "top5": 0.38618096709251404,
+        "top10": 0.37169140577316284,
+        "inference_ms": 46.71475599980113
+      },
+      {
+        "path": "screw/train/good/277.png",
+        "max": 0.41715410351753235,
+        "top5": 0.3927876055240631,
+        "top10": 0.37392130494117737,
+        "inference_ms": 45.75808300023709
+      },
+      {
+        "path": "screw/train/good/148.png",
+        "max": 0.3714475929737091,
+        "top5": 0.3555991053581238,
+        "top10": 0.34376779198646545,
+        "inference_ms": 44.619009000143706
+      },
+      {
+        "path": "screw/train/good/116.png",
+        "max": 0.4516136348247528,
+        "top5": 0.3883570730686188,
+        "top10": 0.3672448992729187,
+        "inference_ms": 45.481037000172364
+      },
+      {
+        "path": "screw/train/good/023.png",
+        "max": 0.41645482182502747,
+        "top5": 0.38774555921554565,
+        "top10": 0.3710244596004486,
+        "inference_ms": 46.17328400036058
+      },
+      {
+        "path": "screw/train/good/035.png",
+        "max": 0.40889808535575867,
+        "top5": 0.3931485414505005,
+        "top10": 0.37757736444473267,
+        "inference_ms": 45.71176299987201
+      },
+      {
+        "path": "screw/train/good/098.png",
+        "max": 0.46880167722702026,
+        "top5": 0.40424808859825134,
+        "top10": 0.3799434304237366,
+        "inference_ms": 44.86757399990893
+      },
+      {
+        "path": "screw/train/good/185.png",
+        "max": 0.412425696849823,
+        "top5": 0.38963890075683594,
+        "top10": 0.3703194260597229,
+        "inference_ms": 47.89234600002601
+      },
+      {
+        "path": "screw/train/good/150.png",
+        "max": 0.39742547273635864,
+        "top5": 0.3709465563297272,
+        "top10": 0.35892054438591003,
+        "inference_ms": 45.93477599973994
+      },
+      {
+        "path": "screw/train/good/040.png",
+        "max": 0.44875410199165344,
+        "top5": 0.40804609656333923,
+        "top10": 0.3823222219944,
+        "inference_ms": 46.088859000064986
+      },
+      {
+        "path": "screw/train/good/193.png",
+        "max": 0.45015889406204224,
+        "top5": 0.3966156542301178,
+        "top10": 0.3778713345527649,
+        "inference_ms": 44.759302000329626
+      },
+      {
+        "path": "screw/train/good/063.png",
+        "max": 0.43579602241516113,
+        "top5": 0.40861576795578003,
+        "top10": 0.3883935809135437,
+        "inference_ms": 48.552476999702776
+      },
+      {
+        "path": "screw/train/good/274.png",
+        "max": 0.4245542287826538,
+        "top5": 0.379851758480072,
+        "top10": 0.3614955544471741,
+        "inference_ms": 42.98563500015007
+      },
+      {
+        "path": "screw/train/good/235.png",
+        "max": 0.4455585777759552,
+        "top5": 0.40080833435058594,
+        "top10": 0.38989561796188354,
+        "inference_ms": 43.80668100020557
+      },
+      {
+        "path": "screw/train/good/022.png",
+        "max": 0.3590257167816162,
+        "top5": 0.34304723143577576,
+        "top10": 0.3310512602329254,
+        "inference_ms": 43.32922999992661
+      },
+      {
+        "path": "screw/train/good/135.png",
+        "max": 0.4534516930580139,
+        "top5": 0.4082641005516052,
+        "top10": 0.3862740099430084,
+        "inference_ms": 45.83045199979097
+      },
+      {
+        "path": "screw/train/good/176.png",
+        "max": 0.5623001456260681,
+        "top5": 0.4557177424430847,
+        "top10": 0.4170188307762146,
+        "inference_ms": 45.28542900015964
+      },
+      {
+        "path": "screw/train/good/183.png",
+        "max": 0.449770450592041,
+        "top5": 0.4119916558265686,
+        "top10": 0.3870878517627716,
+        "inference_ms": 45.20789500020328
+      },
+      {
+        "path": "screw/train/good/049.png",
+        "max": 0.45394521951675415,
+        "top5": 0.40924376249313354,
+        "top10": 0.38213759660720825,
+        "inference_ms": 44.888922999689385
+      },
+      {
+        "path": "screw/train/good/194.png",
+        "max": 0.49814537167549133,
+        "top5": 0.3944093585014343,
+        "top10": 0.37165436148643494,
+        "inference_ms": 43.803690999993705
+      },
+      {
+        "path": "screw/train/good/306.png",
+        "max": 0.4579322040081024,
+        "top5": 0.416189968585968,
+        "top10": 0.3980540931224823,
+        "inference_ms": 43.922625000050175
+      },
+      {
+        "path": "screw/train/good/313.png",
+        "max": 0.4795185923576355,
+        "top5": 0.41205650568008423,
+        "top10": 0.39282622933387756,
+        "inference_ms": 44.17335199968875
+      },
+      {
+        "path": "screw/train/good/172.png",
+        "max": 0.5030980706214905,
+        "top5": 0.4559814929962158,
+        "top10": 0.4331595301628113,
+        "inference_ms": 46.76201600022978
+      },
+      {
+        "path": "screw/train/good/110.png",
+        "max": 0.4554869830608368,
+        "top5": 0.41445764899253845,
+        "top10": 0.3878856599330902,
+        "inference_ms": 44.39463299968338
+      },
+      {
+        "path": "screw/train/good/079.png",
+        "max": 0.4602585732936859,
+        "top5": 0.43911629915237427,
+        "top10": 0.42079487442970276,
+        "inference_ms": 45.36910999968313
+      },
+      {
+        "path": "screw/train/good/295.png",
+        "max": 0.47280174493789673,
+        "top5": 0.42978745698928833,
+        "top10": 0.4089844226837158,
+        "inference_ms": 46.53108499996961
+      },
+      {
+        "path": "screw/train/good/174.png",
+        "max": 0.39616960287094116,
+        "top5": 0.3842758536338806,
+        "top10": 0.3741120994091034,
+        "inference_ms": 44.93218200013871
+      },
+      {
+        "path": "screw/train/good/309.png",
+        "max": 0.366537868976593,
+        "top5": 0.3572057783603668,
+        "top10": 0.35058170557022095,
+        "inference_ms": 45.07841600025131
+      },
+      {
+        "path": "screw/train/good/081.png",
+        "max": 0.4288395941257477,
+        "top5": 0.4034375250339508,
+        "top10": 0.3838838040828705,
+        "inference_ms": 44.99768400000903
+      },
+      {
+        "path": "screw/train/good/003.png",
+        "max": 0.4882451295852661,
+        "top5": 0.44132575392723083,
+        "top10": 0.41397279500961304,
+        "inference_ms": 51.10403800017593
+      },
+      {
+        "path": "screw/train/good/142.png",
+        "max": 0.4505678713321686,
+        "top5": 0.42627042531967163,
+        "top10": 0.39736443758010864,
+        "inference_ms": 44.4444569998268
+      },
+      {
+        "path": "screw/train/good/229.png",
+        "max": 0.37625405192375183,
+        "top5": 0.3561576008796692,
+        "top10": 0.3433983623981476,
+        "inference_ms": 44.867124000120384
+      },
+      {
+        "path": "screw/train/good/112.png",
+        "max": 0.42630282044410706,
+        "top5": 0.41304129362106323,
+        "top10": 0.3969845175743103,
+        "inference_ms": 45.287403000202175
+      },
+      {
+        "path": "screw/train/good/214.png",
+        "max": 0.3910796046257019,
+        "top5": 0.3747499883174896,
+        "top10": 0.36469215154647827,
+        "inference_ms": 48.502189999908296
+      },
+      {
+        "path": "screw/train/good/312.png",
+        "max": 0.5136053562164307,
+        "top5": 0.45862364768981934,
+        "top10": 0.4198775291442871,
+        "inference_ms": 44.23949000010907
+      },
+      {
+        "path": "screw/train/good/101.png",
+        "max": 0.48180750012397766,
+        "top5": 0.4539753794670105,
+        "top10": 0.41861504316329956,
+        "inference_ms": 45.420732000366115
+      },
+      {
+        "path": "screw/train/good/287.png",
+        "max": 0.4909918010234833,
+        "top5": 0.43997326493263245,
+        "top10": 0.4144195020198822,
+        "inference_ms": 44.009825000102865
+      },
+      {
+        "path": "screw/train/good/013.png",
+        "max": 0.3846810460090637,
+        "top5": 0.37686842679977417,
+        "top10": 0.3657148480415344,
+        "inference_ms": 44.04624199969476
+      },
+      {
+        "path": "screw/train/good/258.png",
+        "max": 0.527535080909729,
+        "top5": 0.4563051760196686,
+        "top10": 0.42567285895347595,
+        "inference_ms": 44.214406999799394
+      },
+      {
+        "path": "screw/train/good/119.png",
+        "max": 0.8054478764533997,
+        "top5": 0.5170347690582275,
+        "top10": 0.4519883990287781,
+        "inference_ms": 43.87288899988562
+      },
+      {
+        "path": "screw/train/good/111.png",
+        "max": 0.41186994314193726,
+        "top5": 0.39482203125953674,
+        "top10": 0.382615864276886,
+        "inference_ms": 44.73906499970326
+      },
+      {
+        "path": "screw/train/good/047.png",
+        "max": 0.496819406747818,
+        "top5": 0.4666841924190521,
+        "top10": 0.4510624408721924,
+        "inference_ms": 45.37621000008585
+      },
+      {
+        "path": "screw/train/good/015.png",
+        "max": 0.47938981652259827,
+        "top5": 0.4367290437221527,
+        "top10": 0.4107744097709656,
+        "inference_ms": 43.81517499996335
+      },
+      {
+        "path": "screw/train/good/016.png",
+        "max": 0.4536691904067993,
+        "top5": 0.4142336845397949,
+        "top10": 0.3973124921321869,
+        "inference_ms": 44.166417000269576
+      },
+      {
+        "path": "screw/train/good/216.png",
+        "max": 0.443667471408844,
+        "top5": 0.4133439064025879,
+        "top10": 0.3950609862804413,
+        "inference_ms": 45.03216800003429
+      },
+      {
+        "path": "screw/train/good/302.png",
+        "max": 0.44799572229385376,
+        "top5": 0.40304452180862427,
+        "top10": 0.3825875520706177,
+        "inference_ms": 49.643788000139466
+      },
+      {
+        "path": "screw/train/good/044.png",
+        "max": 0.4161657392978668,
+        "top5": 0.3776104748249054,
+        "top10": 0.35267311334609985,
+        "inference_ms": 54.93458599994483
+      },
+      {
+        "path": "screw/train/good/279.png",
+        "max": 0.3929678201675415,
+        "top5": 0.369291752576828,
+        "top10": 0.34936243295669556,
+        "inference_ms": 43.75277500002994
+      },
+      {
+        "path": "screw/train/good/052.png",
+        "max": 0.4373151659965515,
+        "top5": 0.4001184105873108,
+        "top10": 0.3783898651599884,
+        "inference_ms": 44.53991700029292
+      },
+      {
+        "path": "screw/train/good/071.png",
+        "max": 0.42802733182907104,
+        "top5": 0.3814575672149658,
+        "top10": 0.3593829870223999,
+        "inference_ms": 45.46027600008529
+      },
+      {
+        "path": "screw/train/good/114.png",
+        "max": 0.41572996973991394,
+        "top5": 0.38842710852622986,
+        "top10": 0.37664490938186646,
+        "inference_ms": 44.690365999940695
+      },
+      {
+        "path": "screw/train/good/125.png",
+        "max": 0.41052141785621643,
+        "top5": 0.37862664461135864,
+        "top10": 0.36068934202194214,
+        "inference_ms": 44.255091000195534
+      },
+      {
+        "path": "screw/train/good/140.png",
+        "max": 0.519312858581543,
+        "top5": 0.4780101776123047,
+        "top10": 0.45073556900024414,
+        "inference_ms": 54.69567799991637
+      },
+      {
+        "path": "screw/train/good/012.png",
+        "max": 0.45433756709098816,
+        "top5": 0.39691758155822754,
+        "top10": 0.3677513003349304,
+        "inference_ms": 43.73649499984822
+      },
+      {
+        "path": "screw/train/good/057.png",
+        "max": 0.4146049916744232,
+        "top5": 0.3924870193004608,
+        "top10": 0.37092170119285583,
+        "inference_ms": 44.59829100005663
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "screw/test/manipulated_front/015.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5251386165618896,
+        "top5": 0.4969864785671234,
+        "top10": 0.478001207113266,
+        "inference_ms": 48.47805500003233
+      },
+      {
+        "path": "screw/test/manipulated_front/005.png",
+        "defect_type": "manipulated_front",
+        "max": 0.517519474029541,
+        "top5": 0.47292500734329224,
+        "top10": 0.44554153084754944,
+        "inference_ms": 44.39203499987343
+      },
+      {
+        "path": "screw/test/manipulated_front/018.png",
+        "defect_type": "manipulated_front",
+        "max": 0.6202921271324158,
+        "top5": 0.505388617515564,
+        "top10": 0.4592243731021881,
+        "inference_ms": 43.37843100029204
+      },
+      {
+        "path": "screw/test/manipulated_front/023.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5548073053359985,
+        "top5": 0.4316767752170563,
+        "top10": 0.4029926657676697,
+        "inference_ms": 44.36285499969017
+      },
+      {
+        "path": "screw/test/manipulated_front/013.png",
+        "defect_type": "manipulated_front",
+        "max": 0.6146512627601624,
+        "top5": 0.5176948308944702,
+        "top10": 0.47405701875686646,
+        "inference_ms": 44.71376199990118
+      },
+      {
+        "path": "screw/test/manipulated_front/010.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5038452744483948,
+        "top5": 0.4677836000919342,
+        "top10": 0.4391438961029053,
+        "inference_ms": 44.87087300003623
+      },
+      {
+        "path": "screw/test/manipulated_front/017.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5158888697624207,
+        "top5": 0.450306236743927,
+        "top10": 0.4100666046142578,
+        "inference_ms": 43.76578100027473
+      },
+      {
+        "path": "screw/test/manipulated_front/011.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5018414855003357,
+        "top5": 0.46444612741470337,
+        "top10": 0.43141603469848633,
+        "inference_ms": 43.68228600014845
+      },
+      {
+        "path": "screw/test/manipulated_front/014.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5261809825897217,
+        "top5": 0.48152798414230347,
+        "top10": 0.4503205418586731,
+        "inference_ms": 44.45984799986036
+      },
+      {
+        "path": "screw/test/manipulated_front/016.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5785847902297974,
+        "top5": 0.5062459707260132,
+        "top10": 0.4726596474647522,
+        "inference_ms": 45.20381599968459
+      },
+      {
+        "path": "screw/test/manipulated_front/001.png",
+        "defect_type": "manipulated_front",
+        "max": 0.6807406544685364,
+        "top5": 0.5321143865585327,
+        "top10": 0.4550791382789612,
+        "inference_ms": 44.15327799961233
+      },
+      {
+        "path": "screw/test/manipulated_front/012.png",
+        "defect_type": "manipulated_front",
+        "max": 0.5970966219902039,
+        "top5": 0.5149984955787659,
+        "top10": 0.46621599793434143,
+        "inference_ms": 47.1275559998503
+      },
+      {
+        "path": "screw/test/scratch_head/009.png",
+        "defect_type": "scratch_head",
+        "max": 0.683916449546814,
+        "top5": 0.4956488609313965,
+        "top10": 0.4565052092075348,
+        "inference_ms": 47.859759000402846
+      },
+      {
+        "path": "screw/test/scratch_head/023.png",
+        "defect_type": "scratch_head",
+        "max": 0.4837491810321808,
+        "top5": 0.4673275053501129,
+        "top10": 0.4532979130744934,
+        "inference_ms": 46.743482000238146
+      },
+      {
+        "path": "screw/test/scratch_head/007.png",
+        "defect_type": "scratch_head",
+        "max": 0.7174544930458069,
+        "top5": 0.5630196332931519,
+        "top10": 0.49064064025878906,
+        "inference_ms": 44.29634899997836
+      },
+      {
+        "path": "screw/test/scratch_head/003.png",
+        "defect_type": "scratch_head",
+        "max": 0.4371452331542969,
+        "top5": 0.4220646023750305,
+        "top10": 0.40814924240112305,
+        "inference_ms": 45.166741000230104
+      },
+      {
+        "path": "screw/test/scratch_head/021.png",
+        "defect_type": "scratch_head",
+        "max": 0.5500505566596985,
+        "top5": 0.49776896834373474,
+        "top10": 0.47214871644973755,
+        "inference_ms": 45.27925900038099
+      },
+      {
+        "path": "screw/test/scratch_head/002.png",
+        "defect_type": "scratch_head",
+        "max": 0.4095783233642578,
+        "top5": 0.39003700017929077,
+        "top10": 0.3782854974269867,
+        "inference_ms": 44.309054000223114
+      },
+      {
+        "path": "screw/test/scratch_head/016.png",
+        "defect_type": "scratch_head",
+        "max": 0.6631510853767395,
+        "top5": 0.447376549243927,
+        "top10": 0.412209689617157,
+        "inference_ms": 43.80837100006829
+      },
+      {
+        "path": "screw/test/scratch_head/017.png",
+        "defect_type": "scratch_head",
+        "max": 0.4769221842288971,
+        "top5": 0.4666406512260437,
+        "top10": 0.4437156319618225,
+        "inference_ms": 44.37223800005086
+      },
+      {
+        "path": "screw/test/scratch_head/019.png",
+        "defect_type": "scratch_head",
+        "max": 0.6111257672309875,
+        "top5": 0.5879954099655151,
+        "top10": 0.5395006537437439,
+        "inference_ms": 49.26000400018893
+      },
+      {
+        "path": "screw/test/scratch_head/011.png",
+        "defect_type": "scratch_head",
+        "max": 0.8105732202529907,
+        "top5": 0.4855222702026367,
+        "top10": 0.429602712392807,
+        "inference_ms": 44.51083699996161
+      },
+      {
+        "path": "screw/test/scratch_head/015.png",
+        "defect_type": "scratch_head",
+        "max": 0.6170182824134827,
+        "top5": 0.49231523275375366,
+        "top10": 0.4380410313606262,
+        "inference_ms": 47.188946999995096
+      },
+      {
+        "path": "screw/test/scratch_head/014.png",
+        "defect_type": "scratch_head",
+        "max": 0.6044138669967651,
+        "top5": 0.508808434009552,
+        "top10": 0.4497775137424469,
+        "inference_ms": 43.50840600000083
+      },
+      {
+        "path": "screw/test/scratch_neck/000.png",
+        "defect_type": "scratch_neck",
+        "max": 0.7179355025291443,
+        "top5": 0.6095439195632935,
+        "top10": 0.5740741491317749,
+        "inference_ms": 44.76409100016099
+      },
+      {
+        "path": "screw/test/scratch_neck/018.png",
+        "defect_type": "scratch_neck",
+        "max": 0.8683233261108398,
+        "top5": 0.6205171346664429,
+        "top10": 0.5230122208595276,
+        "inference_ms": 47.87486099985472
+      },
+      {
+        "path": "screw/test/scratch_neck/005.png",
+        "defect_type": "scratch_neck",
+        "max": 0.5417498350143433,
+        "top5": 0.481251060962677,
+        "top10": 0.4412946105003357,
+        "inference_ms": 48.08608600023945
+      },
+      {
+        "path": "screw/test/scratch_neck/008.png",
+        "defect_type": "scratch_neck",
+        "max": 0.9712842106819153,
+        "top5": 0.7562176585197449,
+        "top10": 0.584189772605896,
+        "inference_ms": 44.854599999780476
+      },
+      {
+        "path": "screw/test/scratch_neck/007.png",
+        "defect_type": "scratch_neck",
+        "max": 0.8409613966941833,
+        "top5": 0.5786439776420593,
+        "top10": 0.5073633790016174,
+        "inference_ms": 45.514583999647584
+      },
+      {
+        "path": "screw/test/scratch_neck/021.png",
+        "defect_type": "scratch_neck",
+        "max": 0.9046882390975952,
+        "top5": 0.5511170625686646,
+        "top10": 0.48537516593933105,
+        "inference_ms": 43.405514000369294
+      },
+      {
+        "path": "screw/test/scratch_neck/016.png",
+        "defect_type": "scratch_neck",
+        "max": 0.9270125031471252,
+        "top5": 0.6329590082168579,
+        "top10": 0.5273569822311401,
+        "inference_ms": 44.935606999843
+      },
+      {
+        "path": "screw/test/scratch_neck/022.png",
+        "defect_type": "scratch_neck",
+        "max": 0.935645341873169,
+        "top5": 0.5250976085662842,
+        "top10": 0.4585497975349426,
+        "inference_ms": 43.631187999835674
+      },
+      {
+        "path": "screw/test/scratch_neck/014.png",
+        "defect_type": "scratch_neck",
+        "max": 0.6682918667793274,
+        "top5": 0.504705548286438,
+        "top10": 0.4554470479488373,
+        "inference_ms": 44.00463000001764
+      },
+      {
+        "path": "screw/test/scratch_neck/013.png",
+        "defect_type": "scratch_neck",
+        "max": 0.8024737238883972,
+        "top5": 0.6136091947555542,
+        "top10": 0.523147702217102,
+        "inference_ms": 44.777414000236604
+      },
+      {
+        "path": "screw/test/scratch_neck/015.png",
+        "defect_type": "scratch_neck",
+        "max": 0.930987536907196,
+        "top5": 0.7116569876670837,
+        "top10": 0.6106187105178833,
+        "inference_ms": 46.73648600009983
+      },
+      {
+        "path": "screw/test/scratch_neck/004.png",
+        "defect_type": "scratch_neck",
+        "max": 0.8050257563591003,
+        "top5": 0.5506008863449097,
+        "top10": 0.4733975827693939,
+        "inference_ms": 44.25918200013257
+      },
+      {
+        "path": "screw/test/thread_side/012.png",
+        "defect_type": "thread_side",
+        "max": 0.40996459126472473,
+        "top5": 0.36984872817993164,
+        "top10": 0.35665005445480347,
+        "inference_ms": 43.42261400006464
+      },
+      {
+        "path": "screw/test/thread_side/011.png",
+        "defect_type": "thread_side",
+        "max": 0.5078124403953552,
+        "top5": 0.47368350625038147,
+        "top10": 0.45094919204711914,
+        "inference_ms": 43.87759199971697
+      },
+      {
+        "path": "screw/test/thread_side/013.png",
+        "defect_type": "thread_side",
+        "max": 0.7054597735404968,
+        "top5": 0.5020776987075806,
+        "top10": 0.45116448402404785,
+        "inference_ms": 45.5845749997934
+      },
+      {
+        "path": "screw/test/thread_side/009.png",
+        "defect_type": "thread_side",
+        "max": 0.47490373253822327,
+        "top5": 0.4504607319831848,
+        "top10": 0.4284203052520752,
+        "inference_ms": 45.087570999839954
+      },
+      {
+        "path": "screw/test/thread_side/019.png",
+        "defect_type": "thread_side",
+        "max": 0.4727853536605835,
+        "top5": 0.44913673400878906,
+        "top10": 0.432208389043808,
+        "inference_ms": 43.8508100000945
+      },
+      {
+        "path": "screw/test/thread_side/014.png",
+        "defect_type": "thread_side",
+        "max": 0.7909314632415771,
+        "top5": 0.5667542219161987,
+        "top10": 0.47768324613571167,
+        "inference_ms": 43.777621000117506
+      },
+      {
+        "path": "screw/test/thread_side/001.png",
+        "defect_type": "thread_side",
+        "max": 0.5959603786468506,
+        "top5": 0.4703894257545471,
+        "top10": 0.4259771704673767,
+        "inference_ms": 51.43255700022564
+      },
+      {
+        "path": "screw/test/thread_side/000.png",
+        "defect_type": "thread_side",
+        "max": 0.5569165945053101,
+        "top5": 0.4498979449272156,
+        "top10": 0.4283127784729004,
+        "inference_ms": 45.653141000002506
+      },
+      {
+        "path": "screw/test/thread_side/015.png",
+        "defect_type": "thread_side",
+        "max": 0.44049349427223206,
+        "top5": 0.4131653308868408,
+        "top10": 0.39986467361450195,
+        "inference_ms": 49.748222999824065
+      },
+      {
+        "path": "screw/test/thread_side/003.png",
+        "defect_type": "thread_side",
+        "max": 0.7050001621246338,
+        "top5": 0.5488735437393188,
+        "top10": 0.4817911982536316,
+        "inference_ms": 43.560438999975304
+      },
+      {
+        "path": "screw/test/thread_side/020.png",
+        "defect_type": "thread_side",
+        "max": 0.5420101881027222,
+        "top5": 0.46139734983444214,
+        "top10": 0.43800172209739685,
+        "inference_ms": 44.39070599983097
+      },
+      {
+        "path": "screw/test/thread_top/007.png",
+        "defect_type": "thread_top",
+        "max": 0.7322906851768494,
+        "top5": 0.6570970416069031,
+        "top10": 0.5704066753387451,
+        "inference_ms": 45.185269999819866
+      },
+      {
+        "path": "screw/test/thread_top/005.png",
+        "defect_type": "thread_top",
+        "max": 0.8843947649002075,
+        "top5": 0.6516762971878052,
+        "top10": 0.5443961024284363,
+        "inference_ms": 45.09289699990404
+      },
+      {
+        "path": "screw/test/thread_top/000.png",
+        "defect_type": "thread_top",
+        "max": 0.7790224552154541,
+        "top5": 0.5871584415435791,
+        "top10": 0.5093964338302612,
+        "inference_ms": 45.046168999760994
+      },
+      {
+        "path": "screw/test/thread_top/001.png",
+        "defect_type": "thread_top",
+        "max": 0.9115219712257385,
+        "top5": 0.6358134746551514,
+        "top10": 0.5375115871429443,
+        "inference_ms": 46.92000800014284
+      },
+      {
+        "path": "screw/test/thread_top/013.png",
+        "defect_type": "thread_top",
+        "max": 0.5811862945556641,
+        "top5": 0.5676475763320923,
+        "top10": 0.5397379398345947,
+        "inference_ms": 61.50856300018859
+      },
+      {
+        "path": "screw/test/thread_top/017.png",
+        "defect_type": "thread_top",
+        "max": 0.7452306151390076,
+        "top5": 0.5676342248916626,
+        "top10": 0.5001198649406433,
+        "inference_ms": 59.42446600010953
+      },
+      {
+        "path": "screw/test/thread_top/009.png",
+        "defect_type": "thread_top",
+        "max": 0.5400525331497192,
+        "top5": 0.44558897614479065,
+        "top10": 0.4233853816986084,
+        "inference_ms": 62.075889999960054
+      },
+      {
+        "path": "screw/test/thread_top/019.png",
+        "defect_type": "thread_top",
+        "max": 0.7743718028068542,
+        "top5": 0.5292073488235474,
+        "top10": 0.47661393880844116,
+        "inference_ms": 58.21064600013415
+      },
+      {
+        "path": "screw/test/thread_top/016.png",
+        "defect_type": "thread_top",
+        "max": 0.517648458480835,
+        "top5": 0.4442433714866638,
+        "top10": 0.4234312176704407,
+        "inference_ms": 62.0143559999633
+      },
+      {
+        "path": "screw/test/thread_top/020.png",
+        "defect_type": "thread_top",
+        "max": 0.9020591974258423,
+        "top5": 0.8226982951164246,
+        "top10": 0.6551452875137329,
+        "inference_ms": 60.58133699980317
+      },
+      {
+        "path": "screw/test/thread_top/008.png",
+        "defect_type": "thread_top",
+        "max": 0.45825278759002686,
+        "top5": 0.44495344161987305,
+        "top10": 0.43130427598953247,
+        "inference_ms": 56.21167300023444
+      }
+    ]
+  },
+  "metal_nut": {
+    "normal_dev": [
+      {
+        "path": "metal_nut/train/good/086.png",
+        "max": 0.6270990371704102,
+        "top5": 0.43389397859573364,
+        "top10": 0.396176278591156,
+        "inference_ms": 53.402921999804676
+      },
+      {
+        "path": "metal_nut/train/good/200.png",
+        "max": 0.5712065100669861,
+        "top5": 0.4917789399623871,
+        "top10": 0.44303837418556213,
+        "inference_ms": 58.99519199965653
+      },
+      {
+        "path": "metal_nut/train/good/039.png",
+        "max": 0.5066514015197754,
+        "top5": 0.4365948736667633,
+        "top10": 0.4102992117404938,
+        "inference_ms": 50.66388500017638
+      },
+      {
+        "path": "metal_nut/train/good/185.png",
+        "max": 0.4643929600715637,
+        "top5": 0.4179130494594574,
+        "top10": 0.39414799213409424,
+        "inference_ms": 55.446122999910585
+      },
+      {
+        "path": "metal_nut/train/good/087.png",
+        "max": 0.6108450293540955,
+        "top5": 0.4877045154571533,
+        "top10": 0.4411422312259674,
+        "inference_ms": 53.824435000024096
+      },
+      {
+        "path": "metal_nut/train/good/204.png",
+        "max": 0.5710440278053284,
+        "top5": 0.46488285064697266,
+        "top10": 0.43581146001815796,
+        "inference_ms": 51.40199500010567
+      },
+      {
+        "path": "metal_nut/train/good/178.png",
+        "max": 0.5697371959686279,
+        "top5": 0.517400860786438,
+        "top10": 0.4895920753479004,
+        "inference_ms": 50.94258600001922
+      },
+      {
+        "path": "metal_nut/train/good/040.png",
+        "max": 0.47984248399734497,
+        "top5": 0.4316501021385193,
+        "top10": 0.40629440546035767,
+        "inference_ms": 50.84567399990192
+      },
+      {
+        "path": "metal_nut/train/good/001.png",
+        "max": 0.5159748196601868,
+        "top5": 0.44746869802474976,
+        "top10": 0.4249548017978668,
+        "inference_ms": 51.24422700009745
+      },
+      {
+        "path": "metal_nut/train/good/071.png",
+        "max": 0.5588860511779785,
+        "top5": 0.5000447034835815,
+        "top10": 0.455750048160553,
+        "inference_ms": 50.496125999870856
+      },
+      {
+        "path": "metal_nut/train/good/150.png",
+        "max": 0.5075250267982483,
+        "top5": 0.4338257312774658,
+        "top10": 0.4063030779361725,
+        "inference_ms": 51.43391399997199
+      },
+      {
+        "path": "metal_nut/train/good/114.png",
+        "max": 0.4516575038433075,
+        "top5": 0.4217442572116852,
+        "top10": 0.4021173119544983,
+        "inference_ms": 52.824752000105946
+      },
+      {
+        "path": "metal_nut/train/good/056.png",
+        "max": 0.6094900965690613,
+        "top5": 0.47697558999061584,
+        "top10": 0.4490912854671478,
+        "inference_ms": 52.93843299978107
+      },
+      {
+        "path": "metal_nut/train/good/107.png",
+        "max": 0.5701377987861633,
+        "top5": 0.4638994634151459,
+        "top10": 0.42696890234947205,
+        "inference_ms": 50.43844900001204
+      },
+      {
+        "path": "metal_nut/train/good/207.png",
+        "max": 0.443400114774704,
+        "top5": 0.4105237126350403,
+        "top10": 0.400590181350708,
+        "inference_ms": 51.2243880002643
+      },
+      {
+        "path": "metal_nut/train/good/179.png",
+        "max": 0.5360803604125977,
+        "top5": 0.4490528702735901,
+        "top10": 0.4152016043663025,
+        "inference_ms": 52.22428100023535
+      },
+      {
+        "path": "metal_nut/train/good/166.png",
+        "max": 0.4890702962875366,
+        "top5": 0.39452916383743286,
+        "top10": 0.36185020208358765,
+        "inference_ms": 52.83719999988534
+      },
+      {
+        "path": "metal_nut/train/good/183.png",
+        "max": 0.5062061548233032,
+        "top5": 0.4271703362464905,
+        "top10": 0.3912385106086731,
+        "inference_ms": 52.726780000284634
+      },
+      {
+        "path": "metal_nut/train/good/050.png",
+        "max": 0.5407350063323975,
+        "top5": 0.4798332154750824,
+        "top10": 0.4417608678340912,
+        "inference_ms": 62.490114999945945
+      },
+      {
+        "path": "metal_nut/train/good/143.png",
+        "max": 0.43714237213134766,
+        "top5": 0.4074269235134125,
+        "top10": 0.3877895474433899,
+        "inference_ms": 54.942320000009204
+      },
+      {
+        "path": "metal_nut/train/good/217.png",
+        "max": 0.49252694845199585,
+        "top5": 0.43185824155807495,
+        "top10": 0.4124583303928375,
+        "inference_ms": 61.36973999991824
+      },
+      {
+        "path": "metal_nut/train/good/154.png",
+        "max": 0.45397672057151794,
+        "top5": 0.4440035820007324,
+        "top10": 0.42365407943725586,
+        "inference_ms": 50.03516999977364
+      },
+      {
+        "path": "metal_nut/train/good/129.png",
+        "max": 0.6123195886611938,
+        "top5": 0.4527541995048523,
+        "top10": 0.41065603494644165,
+        "inference_ms": 52.56305300008535
+      },
+      {
+        "path": "metal_nut/train/good/059.png",
+        "max": 0.5623752474784851,
+        "top5": 0.4803762435913086,
+        "top10": 0.4624047875404358,
+        "inference_ms": 55.67145499981052
+      },
+      {
+        "path": "metal_nut/train/good/055.png",
+        "max": 0.5060969591140747,
+        "top5": 0.4329237937927246,
+        "top10": 0.4055350422859192,
+        "inference_ms": 49.98240400027498
+      },
+      {
+        "path": "metal_nut/train/good/023.png",
+        "max": 0.5033324956893921,
+        "top5": 0.4295221269130707,
+        "top10": 0.3909090459346771,
+        "inference_ms": 50.53830699989703
+      },
+      {
+        "path": "metal_nut/train/good/007.png",
+        "max": 0.5301581025123596,
+        "top5": 0.4930105209350586,
+        "top10": 0.4559897780418396,
+        "inference_ms": 49.92227599996113
+      },
+      {
+        "path": "metal_nut/train/good/008.png",
+        "max": 0.41963711380958557,
+        "top5": 0.40987324714660645,
+        "top10": 0.39457833766937256,
+        "inference_ms": 51.95349799987525
+      },
+      {
+        "path": "metal_nut/train/good/108.png",
+        "max": 0.4616639316082001,
+        "top5": 0.43407273292541504,
+        "top10": 0.4072524905204773,
+        "inference_ms": 52.87878700028159
+      },
+      {
+        "path": "metal_nut/train/good/151.png",
+        "max": 0.4390793740749359,
+        "top5": 0.41090989112854004,
+        "top10": 0.38731151819229126,
+        "inference_ms": 49.163865000082296
+      },
+      {
+        "path": "metal_nut/train/good/022.png",
+        "max": 0.5720718502998352,
+        "top5": 0.5278775095939636,
+        "top10": 0.5109261274337769,
+        "inference_ms": 50.416712000242114
+      },
+      {
+        "path": "metal_nut/train/good/139.png",
+        "max": 0.4752259850502014,
+        "top5": 0.42409810423851013,
+        "top10": 0.39051130414009094,
+        "inference_ms": 50.23162399993453
+      },
+      {
+        "path": "metal_nut/train/good/216.png",
+        "max": 0.5275909900665283,
+        "top5": 0.4472007155418396,
+        "top10": 0.41654378175735474,
+        "inference_ms": 48.99078600010398
+      },
+      {
+        "path": "metal_nut/train/good/173.png",
+        "max": 0.4725742042064667,
+        "top5": 0.4391719400882721,
+        "top10": 0.4196092188358307,
+        "inference_ms": 49.06580299984853
+      },
+      {
+        "path": "metal_nut/train/good/026.png",
+        "max": 0.39144155383110046,
+        "top5": 0.38658827543258667,
+        "top10": 0.3763616681098938,
+        "inference_ms": 52.48664800001279
+      },
+      {
+        "path": "metal_nut/train/good/188.png",
+        "max": 0.5720412135124207,
+        "top5": 0.4693630337715149,
+        "top10": 0.4405159056186676,
+        "inference_ms": 49.46234599992749
+      },
+      {
+        "path": "metal_nut/train/good/035.png",
+        "max": 0.5370766520500183,
+        "top5": 0.4652126729488373,
+        "top10": 0.4168909192085266,
+        "inference_ms": 48.61135600003763
+      },
+      {
+        "path": "metal_nut/train/good/057.png",
+        "max": 0.7513871788978577,
+        "top5": 0.5028659701347351,
+        "top10": 0.4563513696193695,
+        "inference_ms": 52.80350599969097
+      },
+      {
+        "path": "metal_nut/train/good/062.png",
+        "max": 0.5443430542945862,
+        "top5": 0.484404981136322,
+        "top10": 0.4463627338409424,
+        "inference_ms": 50.24502400010533
+      },
+      {
+        "path": "metal_nut/train/good/070.png",
+        "max": 0.5498213768005371,
+        "top5": 0.5018792748451233,
+        "top10": 0.46066299080848694,
+        "inference_ms": 52.53679999987071
+      },
+      {
+        "path": "metal_nut/train/good/189.png",
+        "max": 0.4497482478618622,
+        "top5": 0.41262301802635193,
+        "top10": 0.39017707109451294,
+        "inference_ms": 50.00880700026755
+      },
+      {
+        "path": "metal_nut/train/good/006.png",
+        "max": 0.5515314340591431,
+        "top5": 0.450082391500473,
+        "top10": 0.41004467010498047,
+        "inference_ms": 57.518672999776754
+      },
+      {
+        "path": "metal_nut/train/good/028.png",
+        "max": 0.4211527705192566,
+        "top5": 0.41308480501174927,
+        "top10": 0.39199164509773254,
+        "inference_ms": 56.35926099967037
+      },
+      {
+        "path": "metal_nut/train/good/163.png",
+        "max": 0.43512818217277527,
+        "top5": 0.4089035391807556,
+        "top10": 0.3944372534751892,
+        "inference_ms": 54.52896699989651
+      }
+    ],
+    "defect_dev": [
+      {
+        "path": "metal_nut/test/bent/016.png",
+        "defect_type": "bent",
+        "max": 0.8163681626319885,
+        "top5": 0.752702534198761,
+        "top10": 0.6650887727737427,
+        "inference_ms": 53.19349499995951
+      },
+      {
+        "path": "metal_nut/test/bent/012.png",
+        "defect_type": "bent",
+        "max": 0.9314391613006592,
+        "top5": 0.8651105761528015,
+        "top10": 0.7773148417472839,
+        "inference_ms": 51.76045999996859
+      },
+      {
+        "path": "metal_nut/test/bent/009.png",
+        "defect_type": "bent",
+        "max": 0.9927630424499512,
+        "top5": 0.8994768261909485,
+        "top10": 0.7859832644462585,
+        "inference_ms": 55.148305000329856
+      },
+      {
+        "path": "metal_nut/test/bent/019.png",
+        "defect_type": "bent",
+        "max": 0.7728784084320068,
+        "top5": 0.7347009778022766,
+        "top10": 0.6939834356307983,
+        "inference_ms": 53.58066899998448
+      },
+      {
+        "path": "metal_nut/test/bent/018.png",
+        "defect_type": "bent",
+        "max": 0.8479825258255005,
+        "top5": 0.8004101514816284,
+        "top10": 0.7605641484260559,
+        "inference_ms": 49.54417999988436
+      },
+      {
+        "path": "metal_nut/test/bent/006.png",
+        "defect_type": "bent",
+        "max": 0.7196059823036194,
+        "top5": 0.6461955308914185,
+        "top10": 0.5474725961685181,
+        "inference_ms": 53.231381000387046
+      },
+      {
+        "path": "metal_nut/test/bent/005.png",
+        "defect_type": "bent",
+        "max": 0.9537644386291504,
+        "top5": 0.9228938817977905,
+        "top10": 0.854899525642395,
+        "inference_ms": 50.054575000103796
+      },
+      {
+        "path": "metal_nut/test/bent/010.png",
+        "defect_type": "bent",
+        "max": 1.0610432624816895,
+        "top5": 1.006317138671875,
+        "top10": 0.9838062524795532,
+        "inference_ms": 49.20888900005593
+      },
+      {
+        "path": "metal_nut/test/bent/015.png",
+        "defect_type": "bent",
+        "max": 0.9188216328620911,
+        "top5": 0.8943189382553101,
+        "top10": 0.8112703561782837,
+        "inference_ms": 49.231791000238445
+      },
+      {
+        "path": "metal_nut/test/bent/021.png",
+        "defect_type": "bent",
+        "max": 0.806245744228363,
+        "top5": 0.7357087135314941,
+        "top10": 0.6757338643074036,
+        "inference_ms": 54.41792500005249
+      },
+      {
+        "path": "metal_nut/test/bent/011.png",
+        "defect_type": "bent",
+        "max": 0.8454781770706177,
+        "top5": 0.8215203285217285,
+        "top10": 0.7364791631698608,
+        "inference_ms": 55.02464900018822
+      },
+      {
+        "path": "metal_nut/test/bent/017.png",
+        "defect_type": "bent",
+        "max": 0.9439238905906677,
+        "top5": 0.9153245091438293,
+        "top10": 0.8296356201171875,
+        "inference_ms": 48.8606300000356
+      },
+      {
+        "path": "metal_nut/test/color/017.png",
+        "defect_type": "color",
+        "max": 0.750609278678894,
+        "top5": 0.6794164776802063,
+        "top10": 0.6187452673912048,
+        "inference_ms": 55.148029000065435
+      },
+      {
+        "path": "metal_nut/test/color/007.png",
+        "defect_type": "color",
+        "max": 0.8962328433990479,
+        "top5": 0.8378235101699829,
+        "top10": 0.7514004707336426,
+        "inference_ms": 55.094093999741744
+      },
+      {
+        "path": "metal_nut/test/color/019.png",
+        "defect_type": "color",
+        "max": 0.8141833543777466,
+        "top5": 0.7447149157524109,
+        "top10": 0.6515989303588867,
+        "inference_ms": 57.33617800024149
+      },
+      {
+        "path": "metal_nut/test/color/011.png",
+        "defect_type": "color",
+        "max": 0.9293767213821411,
+        "top5": 0.9188163876533508,
+        "top10": 0.8962346911430359,
+        "inference_ms": 51.67607300018062
+      },
+      {
+        "path": "metal_nut/test/color/004.png",
+        "defect_type": "color",
+        "max": 0.8715368509292603,
+        "top5": 0.7160652279853821,
+        "top10": 0.5613313913345337,
+        "inference_ms": 55.080059000374604
+      },
+      {
+        "path": "metal_nut/test/color/015.png",
+        "defect_type": "color",
+        "max": 0.7384019494056702,
+        "top5": 0.6786360144615173,
+        "top10": 0.5937780141830444,
+        "inference_ms": 55.19000900039828
+      },
+      {
+        "path": "metal_nut/test/color/014.png",
+        "defect_type": "color",
+        "max": 0.9682278633117676,
+        "top5": 0.9004637002944946,
+        "top10": 0.6788604855537415,
+        "inference_ms": 48.9113560001897
+      },
+      {
+        "path": "metal_nut/test/color/009.png",
+        "defect_type": "color",
+        "max": 1.0453532934188843,
+        "top5": 1.0221372842788696,
+        "top10": 0.8376535177230835,
+        "inference_ms": 40.64648500025214
+      },
+      {
+        "path": "metal_nut/test/color/006.png",
+        "defect_type": "color",
+        "max": 1.1500147581100464,
+        "top5": 1.0931427478790283,
+        "top10": 0.8098410367965698,
+        "inference_ms": 39.978790000077424
+      },
+      {
+        "path": "metal_nut/test/color/016.png",
+        "defect_type": "color",
+        "max": 0.7172338962554932,
+        "top5": 0.6982306241989136,
+        "top10": 0.6337173581123352,
+        "inference_ms": 45.81169199991564
+      },
+      {
+        "path": "metal_nut/test/color/001.png",
+        "defect_type": "color",
+        "max": 0.9640403985977173,
+        "top5": 0.9305246472358704,
+        "top10": 0.7602006196975708,
+        "inference_ms": 40.61414899979354
+      },
+      {
+        "path": "metal_nut/test/flip/005.png",
+        "defect_type": "flip",
+        "max": 0.769294023513794,
+        "top5": 0.7311331033706665,
+        "top10": 0.7096761465072632,
+        "inference_ms": 39.62680599988744
+      },
+      {
+        "path": "metal_nut/test/flip/018.png",
+        "defect_type": "flip",
+        "max": 0.8811385631561279,
+        "top5": 0.8145591616630554,
+        "top10": 0.7381963729858398,
+        "inference_ms": 38.708366000264505
+      },
+      {
+        "path": "metal_nut/test/flip/008.png",
+        "defect_type": "flip",
+        "max": 0.7389456629753113,
+        "top5": 0.7120615243911743,
+        "top10": 0.6918677091598511,
+        "inference_ms": 38.74167000003581
+      },
+      {
+        "path": "metal_nut/test/flip/019.png",
+        "defect_type": "flip",
+        "max": 0.8372923135757446,
+        "top5": 0.8018625974655151,
+        "top10": 0.7410363554954529,
+        "inference_ms": 39.89423899975009
+      },
+      {
+        "path": "metal_nut/test/flip/007.png",
+        "defect_type": "flip",
+        "max": 0.7199723124504089,
+        "top5": 0.7021292448043823,
+        "top10": 0.6895110011100769,
+        "inference_ms": 39.89074100036305
+      },
+      {
+        "path": "metal_nut/test/flip/020.png",
+        "defect_type": "flip",
+        "max": 0.8040315508842468,
+        "top5": 0.7605656385421753,
+        "top10": 0.7275766134262085,
+        "inference_ms": 39.008493999972416
+      },
+      {
+        "path": "metal_nut/test/flip/015.png",
+        "defect_type": "flip",
+        "max": 0.8418552279472351,
+        "top5": 0.7669953107833862,
+        "top10": 0.7136825323104858,
+        "inference_ms": 39.10093800004688
+      },
+      {
+        "path": "metal_nut/test/flip/014.png",
+        "defect_type": "flip",
+        "max": 0.716820240020752,
+        "top5": 0.6885846257209778,
+        "top10": 0.6682683229446411,
+        "inference_ms": 42.608069000380056
+      },
+      {
+        "path": "metal_nut/test/flip/013.png",
+        "defect_type": "flip",
+        "max": 0.7940755486488342,
+        "top5": 0.7390009760856628,
+        "top10": 0.6924041509628296,
+        "inference_ms": 39.14226000006238
+      },
+      {
+        "path": "metal_nut/test/flip/004.png",
+        "defect_type": "flip",
+        "max": 0.772830605506897,
+        "top5": 0.7425829768180847,
+        "top10": 0.6970793008804321,
+        "inference_ms": 38.557145000140736
+      },
+      {
+        "path": "metal_nut/test/flip/021.png",
+        "defect_type": "flip",
+        "max": 0.7148253917694092,
+        "top5": 0.694818377494812,
+        "top10": 0.6762775182723999,
+        "inference_ms": 38.74799200002599
+      },
+      {
+        "path": "metal_nut/test/scratch/009.png",
+        "defect_type": "scratch",
+        "max": 0.7639243006706238,
+        "top5": 0.6932137608528137,
+        "top10": 0.651561439037323,
+        "inference_ms": 39.36994700006835
+      },
+      {
+        "path": "metal_nut/test/scratch/014.png",
+        "defect_type": "scratch",
+        "max": 0.8527339696884155,
+        "top5": 0.8148786425590515,
+        "top10": 0.744910478591919,
+        "inference_ms": 42.127402999994956
+      },
+      {
+        "path": "metal_nut/test/scratch/020.png",
+        "defect_type": "scratch",
+        "max": 0.84470134973526,
+        "top5": 0.7416073679924011,
+        "top10": 0.5952081084251404,
+        "inference_ms": 39.32868099991538
+      },
+      {
+        "path": "metal_nut/test/scratch/013.png",
+        "defect_type": "scratch",
+        "max": 0.8745567202568054,
+        "top5": 0.8525711297988892,
+        "top10": 0.8034102320671082,
+        "inference_ms": 43.611521999991965
+      },
+      {
+        "path": "metal_nut/test/scratch/001.png",
+        "defect_type": "scratch",
+        "max": 0.7600946426391602,
+        "top5": 0.7163100242614746,
+        "top10": 0.6784884929656982,
+        "inference_ms": 39.51304500014885
+      },
+      {
+        "path": "metal_nut/test/scratch/000.png",
+        "defect_type": "scratch",
+        "max": 0.693649172782898,
+        "top5": 0.5784616470336914,
+        "top10": 0.49295496940612793,
+        "inference_ms": 38.61628499998915
+      },
+      {
+        "path": "metal_nut/test/scratch/012.png",
+        "defect_type": "scratch",
+        "max": 0.771452009677887,
+        "top5": 0.7620154619216919,
+        "top10": 0.7393977046012878,
+        "inference_ms": 40.64347099983934
+      },
+      {
+        "path": "metal_nut/test/scratch/016.png",
+        "defect_type": "scratch",
+        "max": 0.9488488435745239,
+        "top5": 0.9280456304550171,
+        "top10": 0.8793562054634094,
+        "inference_ms": 40.03202100011549
+      },
+      {
+        "path": "metal_nut/test/scratch/003.png",
+        "defect_type": "scratch",
+        "max": 0.724419891834259,
+        "top5": 0.7043747305870056,
+        "top10": 0.6803751587867737,
+        "inference_ms": 49.2057209999075
+      },
+      {
+        "path": "metal_nut/test/scratch/018.png",
+        "defect_type": "scratch",
+        "max": 0.9115814566612244,
+        "top5": 0.905195415019989,
+        "top10": 0.8776895403862,
+        "inference_ms": 39.524922000055085
+      },
+      {
+        "path": "metal_nut/test/scratch/010.png",
+        "defect_type": "scratch",
+        "max": 0.7925761938095093,
+        "top5": 0.7585635185241699,
+        "top10": 0.7332268953323364,
+        "inference_ms": 39.153462999820476
+      }
+    ]
+  }
+}

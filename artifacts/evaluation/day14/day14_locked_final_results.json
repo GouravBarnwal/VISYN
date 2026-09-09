@@ -1,0 +1,149 @@
+{
+  "experiment": "VisionForge Day 14 corrected locked final-set evaluation",
+  "final_test_used": true,
+  "final_test_used_for_tuning": false,
+  "preprocessing": {
+    "resize": "direct_224x224",
+    "scaling": "/255",
+    "normalization": "ImageNet mean/std",
+    "center_crop": false
+  },
+  "model": "MobileNetV3-Small",
+  "layers": {
+    "L4": {
+      "index": 4,
+      "channels": 40,
+      "spatial": "14x14"
+    },
+    "L8": {
+      "index": 8,
+      "channels": 48,
+      "spatial": "14x14"
+    }
+  },
+  "distance": "Euclidean",
+  "aggregation": "TOP5",
+  "fusion": {
+    "type": "raw_weighted_average",
+    "L4_weight": 0.5,
+    "L8_weight": 0.5
+  },
+  "categories": {
+    "bottle": {
+      "reference_count": 167,
+      "normal_development_count": 42,
+      "final_defect_count": 32,
+      "l4": {
+        "auroc": 1.0,
+        "average_precision": 1.0
+      },
+      "l8": {
+        "auroc": 1.0,
+        "average_precision": 1.0
+      },
+      "fusion_50_50": {
+        "auroc": 1.0,
+        "average_precision": 1.0
+      }
+    },
+    "hazelnut": {
+      "reference_count": 312,
+      "normal_development_count": 79,
+      "final_defect_count": 36,
+      "l4": {
+        "auroc": 0.9841772151898734,
+        "average_precision": 0.9827475827475828
+      },
+      "l8": {
+        "auroc": 0.9627285513361462,
+        "average_precision": 0.9574050026705551
+      },
+      "fusion_50_50": {
+        "auroc": 0.9869901547116736,
+        "average_precision": 0.9819223985890653
+      }
+    },
+    "cable": {
+      "reference_count": 179,
+      "normal_development_count": 45,
+      "final_defect_count": 47,
+      "l4": {
+        "auroc": 0.9078014184397163,
+        "average_precision": 0.9339893160842443
+      },
+      "l8": {
+        "auroc": 0.9546099290780141,
+        "average_precision": 0.9652382906390226
+      },
+      "fusion_50_50": {
+        "auroc": 0.9640661938534278,
+        "average_precision": 0.9734271145444542
+      }
+    },
+    "capsule": {
+      "reference_count": 175,
+      "normal_development_count": 44,
+      "final_defect_count": 56,
+      "l4": {
+        "auroc": 0.9245129870129871,
+        "average_precision": 0.9397846130662111
+      },
+      "l8": {
+        "auroc": 0.8871753246753247,
+        "average_precision": 0.9113612948807496
+      },
+      "fusion_50_50": {
+        "auroc": 0.9208603896103896,
+        "average_precision": 0.9343772480972312
+      }
+    },
+    "screw": {
+      "reference_count": 256,
+      "normal_development_count": 64,
+      "final_defect_count": 61,
+      "l4": {
+        "auroc": 0.8268442622950819,
+        "average_precision": 0.791942471401391
+      },
+      "l8": {
+        "auroc": 0.7482069672131147,
+        "average_precision": 0.7291898914122125
+      },
+      "fusion_50_50": {
+        "auroc": 0.8463114754098361,
+        "average_precision": 0.8353809557234343
+      }
+    },
+    "metal_nut": {
+      "reference_count": 176,
+      "normal_development_count": 44,
+      "final_defect_count": 48,
+      "l4": {
+        "auroc": 0.9573863636363636,
+        "average_precision": 0.9686074992951178
+      },
+      "l8": {
+        "auroc": 0.9839015151515151,
+        "average_precision": 0.9874166951552096
+      },
+      "fusion_50_50": {
+        "auroc": 0.9881628787878788,
+        "average_precision": 0.9900020369663797
+      }
+    }
+  },
+  "macro_average": {
+    "L4": {
+      "auroc": 0.9334537077623369,
+      "average_precision": 0.9361785804324244
+    },
+    "L8": {
+      "auroc": 0.9227703812423526,
+      "average_precision": 0.9251018624596248
+    },
+    "fusion_50_50": {
+      "auroc": 0.951065182062201,
+      "average_precision": 0.9525182923200942
+    }
+  }
+}

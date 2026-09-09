@@ -1,0 +1,83 @@
+{
+  "protocol": {
+    "model": "MobileNetV3-Small",
+    "representation": "L8",
+    "feature_map": "48x14x14",
+    "patch_count": 196,
+    "descriptor_dimension": 48,
+    "distance": "1 - cosine_similarity",
+    "aggregation": "spatial patch scores",
+    "reference_bank": "canonical normal reference split",
+    "evaluation_split": "development defect split",
+    "final_test_used": false
+  },
+  "results": {
+    "bottle": {
+      "development_defect_images": 31,
+      "valid_images": 31,
+      "pixel_auroc": 0.9474566524325763,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 32732
+    },
+    "hazelnut": {
+      "development_defect_images": 34,
+      "valid_images": 34,
+      "pixel_auroc": 0.9617101403906261,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 61152
+    },
+    "cable": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "pixel_auroc": 0.8429684693048,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 35084
+    },
+    "capsule": {
+      "development_defect_images": 53,
+      "valid_images": 53,
+      "pixel_auroc": 0.8830926892588546,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 34300
+    },
+    "screw": {
+      "development_defect_images": 58,
+      "valid_images": 58,
+      "pixel_auroc": 0.949914782481432,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 50176
+    },
+    "metal_nut": {
+      "development_defect_images": 45,
+      "valid_images": 45,
+      "pixel_auroc": 0.8393413458989147,
+      "feature_map": [
+        14,
+        14
+      ],
+      "descriptor_dimension": 48,
+      "reference_bank_size": 34496
+    }
+  },
+  "macro_pixel_auroc": 0.9040806799612007
+}

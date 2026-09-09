@@ -1,0 +1,488 @@
+{
+  "max": {
+    "mobile_macro_auroc": 0.9870894066937943,
+    "dino_macro_auroc": 0.9657805735624287,
+    "weight_search": [
+      {
+        "mobile_weight": 0.0,
+        "dino_weight": 1.0,
+        "macro_auroc": 0.9657805735624287,
+        "category_auroc": {
+          "bottle": 0.9961597542242704,
+          "hazelnut": 0.9955323901712584,
+          "cable": 0.942716049382716,
+          "capsule": 0.95368782161235,
+          "screw": 0.9116379310344828,
+          "metal_nut": 0.9949494949494949
+        }
+      },
+      {
+        "mobile_weight": 0.1,
+        "dino_weight": 0.9,
+        "macro_auroc": 0.9878546720939783,
+        "category_auroc": {
+          "bottle": 0.999231950844854,
+          "hazelnut": 0.9932985852568875,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9858490566037736,
+          "screw": 0.9571659482758621,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.2,
+        "dino_weight": 0.8,
+        "macro_auroc": 0.9874739933536381,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9921816827997021,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9849914236706689,
+          "screw": 0.9560883620689655,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.3,
+        "dino_weight": 0.7,
+        "macro_auroc": 0.9872955743807483,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9558189655172413,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.4,
+        "dino_weight": 0.6,
+        "macro_auroc": 0.9872506749554609,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9555495689655172,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.5,
+        "dino_weight": 0.5,
+        "macro_auroc": 0.9872057755301737,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9552801724137931,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.6,
+        "dino_weight": 0.4,
+        "macro_auroc": 0.9872057755301737,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9552801724137931,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.7,
+        "dino_weight": 0.30000000000000004,
+        "macro_auroc": 0.9871343061190817,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9841337907375642,
+          "screw": 0.9552801724137931,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.8,
+        "dino_weight": 0.19999999999999996,
+        "macro_auroc": 0.9870894066937943,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9841337907375642,
+          "screw": 0.955010775862069,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 0.9,
+        "dino_weight": 0.09999999999999998,
+        "macro_auroc": 0.9870894066937943,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9841337907375642,
+          "screw": 0.955010775862069,
+          "metal_nut": 0.998989898989899
+        }
+      },
+      {
+        "mobile_weight": 1.0,
+        "dino_weight": 0.0,
+        "macro_auroc": 0.9870894066937943,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9918093819806403,
+          "cable": 0.9925925925925926,
+          "capsule": 0.9841337907375642,
+          "screw": 0.955010775862069,
+          "metal_nut": 0.998989898989899
+        }
+      }
+    ],
+    "best_global": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9878546720939783,
+      "category_auroc": {
+        "bottle": 0.999231950844854,
+        "hazelnut": 0.9932985852568875,
+        "cable": 0.9925925925925926,
+        "capsule": 0.9858490566037736,
+        "screw": 0.9571659482758621,
+        "metal_nut": 0.998989898989899
+      }
+    }
+  },
+  "top5": {
+    "mobile_macro_auroc": 0.9867218075349676,
+    "dino_macro_auroc": 0.9764874156636608,
+    "weight_search": [
+      {
+        "mobile_weight": 0.0,
+        "dino_weight": 1.0,
+        "macro_auroc": 0.9764874156636608,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 1.0,
+          "cable": 0.9506172839506173,
+          "capsule": 0.9772727272727272,
+          "screw": 0.9310344827586207,
+          "metal_nut": 1.0
+        }
+      },
+      {
+        "mobile_weight": 0.1,
+        "dino_weight": 0.9,
+        "macro_auroc": 0.9871158134693933,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.983704974271012,
+          "screw": 0.9533943965517242,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.2,
+        "dino_weight": 0.8,
+        "macro_auroc": 0.9869279752219217,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9828473413379074,
+          "screw": 0.953125,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.3,
+        "dino_weight": 0.7,
+        "macro_auroc": 0.9867932769460598,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9828473413379074,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.4,
+        "dino_weight": 0.6,
+        "macro_auroc": 0.9867932769460598,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9828473413379074,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.5,
+        "dino_weight": 0.5,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.6,
+        "dino_weight": 0.4,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.7,
+        "dino_weight": 0.30000000000000004,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.8,
+        "dino_weight": 0.19999999999999996,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.9,
+        "dino_weight": 0.09999999999999998,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950618,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 1.0,
+        "dino_weight": 0.0,
+        "macro_auroc": 0.9867218075349676,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.992553983618764,
+          "cable": 0.9950617283950617,
+          "capsule": 0.9824185248713551,
+          "screw": 0.9523168103448276,
+          "metal_nut": 0.997979797979798
+        }
+      }
+    ],
+    "best_global": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9871158134693933,
+      "category_auroc": {
+        "bottle": 1.0,
+        "hazelnut": 0.992553983618764,
+        "cable": 0.9950617283950618,
+        "capsule": 0.983704974271012,
+        "screw": 0.9533943965517242,
+        "metal_nut": 0.997979797979798
+      }
+    }
+  },
+  "top10": {
+    "mobile_macro_auroc": 0.9860179728722581,
+    "dino_macro_auroc": 0.9802360742050253,
+    "weight_search": [
+      {
+        "mobile_weight": 0.0,
+        "dino_weight": 1.0,
+        "macro_auroc": 0.9802360742050253,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 1.0,
+          "cable": 0.9590123456790124,
+          "capsule": 0.9875643224699829,
+          "screw": 0.935344827586207,
+          "metal_nut": 0.9994949494949495
+        }
+      },
+      {
+        "mobile_weight": 0.1,
+        "dino_weight": 0.9,
+        "macro_auroc": 0.9863854088208789,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9482758620689655,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.2,
+        "dino_weight": 0.8,
+        "macro_auroc": 0.9862507105450168,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.9845626072041166,
+          "screw": 0.9474676724137931,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.3,
+        "dino_weight": 0.7,
+        "macro_auroc": 0.9861343417086373,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.9841337907375644,
+          "screw": 0.947198275862069,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.4,
+        "dino_weight": 0.6,
+        "macro_auroc": 0.9861343417086373,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.9841337907375644,
+          "screw": 0.947198275862069,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.5,
+        "dino_weight": 0.5,
+        "macro_auroc": 0.9860628722975453,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.983704974271012,
+          "screw": 0.947198275862069,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.6,
+        "dino_weight": 0.4,
+        "macro_auroc": 0.9860179728722581,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.983704974271012,
+          "screw": 0.9469288793103449,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.7,
+        "dino_weight": 0.30000000000000004,
+        "macro_auroc": 0.9860179728722581,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.983704974271012,
+          "screw": 0.9469288793103449,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.8,
+        "dino_weight": 0.19999999999999996,
+        "macro_auroc": 0.9860179728722581,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.983704974271012,
+          "screw": 0.9469288793103449,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 0.9,
+        "dino_weight": 0.09999999999999998,
+        "macro_auroc": 0.9860179728722581,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378258,
+          "cable": 0.9945679012345678,
+          "capsule": 0.983704974271012,
+          "screw": 0.9469288793103449,
+          "metal_nut": 0.997979797979798
+        }
+      },
+      {
+        "mobile_weight": 1.0,
+        "dino_weight": 0.0,
+        "macro_auroc": 0.9860179728722581,
+        "category_auroc": {
+          "bottle": 1.0,
+          "hazelnut": 0.9929262844378257,
+          "cable": 0.994567901234568,
+          "capsule": 0.983704974271012,
+          "screw": 0.9469288793103449,
+          "metal_nut": 0.997979797979798
+        }
+      }
+    ],
+    "best_global": {
+      "mobile_weight": 0.1,
+      "dino_weight": 0.9,
+      "macro_auroc": 0.9863854088208789,
+      "category_auroc": {
+        "bottle": 1.0,
+        "hazelnut": 0.9929262844378258,
+        "cable": 0.9945679012345678,
+        "capsule": 0.9845626072041166,
+        "screw": 0.9482758620689655,
+        "metal_nut": 0.997979797979798
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "category": "screw",
+  "resolutions": [
+    224,
+    320,
+    448
+  ],
+  "reference_split": "train_good",
+  "normal_evaluation_split": "test_good",
+  "defect_types": [
+    "manipulated_front",
+    "scratch_head",
+    "scratch_neck",
+    "thread_side",
+    "thread_top"
+  ],
+  "top_k": 5,
+  "threshold_method": "P99_normal_scores",
+  "results": {
+    "224": {
+      "resolution": 224,
+      "reference_images": 320,
+      "normal_images": 20,
+      "threshold": 0.532706169039011,
+      "normal": {
+        "mean_score": 0.47822544649243354,
+        "median_score": 0.4817371815443039,
+        "p95_score": 0.5247007794678211,
+        "max_score": 0.5347075164318085,
+        "false_positives": 1,
+        "false_positive_rate": 0.05
+      },
+      "defects": {
+        "manipulated_front": {
+          "count": 10,
+          "detected": 2,
+          "detection_rate": 0.2,
+          "mean_score": 0.5113774612545967,
+          "min_score": 0.45711028575897217,
+          "max_score": 0.5535334050655365
+        },
+        "scratch_head": {
+          "count": 10,
+          "detected": 0,
+          "detection_rate": 0.0,
+          "mean_score": 0.5017777070403099,
+          "min_score": 0.4488377869129181,
+          "max_score": 0.528704971075058
+        },
+        "scratch_neck": {
+          "count": 10,
+          "detected": 4,
+          "detection_rate": 0.4,
+          "mean_score": 0.5355962052941322,
+          "min_score": 0.473059743642807,
+          "max_score": 0.5960129499435425
+        },
+        "thread_side": {
+          "count": 10,
+          "detected": 0,
+          "detection_rate": 0.0,
+          "mean_score": 0.48402880877256393,
+          "min_score": 0.462554469704628,
+          "max_score": 0.5053403526544571
+        },
+        "thread_top": {
+          "count": 10,
+          "detected": 5,
+          "detection_rate": 0.5,
+          "mean_score": 0.5207264438271523,
+          "min_score": 0.4487571120262146,
+          "max_score": 0.6137045621871948
+        }
+      },
+      "reference_bank": {
+        "L4_shape": [
+          62720,
+          40
+        ],
+        "L8_shape": [
+          62720,
+          48
+        ]
+      }
+    },
+    "320": {
+      "resolution": 320,
+      "reference_images": 320,
+      "normal_images": 20,
+      "threshold": 0.5567246733605862,
+      "normal": {
+        "mean_score": 0.5281512469053269,
+        "median_score": 0.5312076061964035,
+        "p95_score": 0.5538116984069348,
+        "max_score": 0.557452917098999,
+        "false_positives": 1,
+        "false_positive_rate": 0.05
+      },
+      "defects": {
+        "manipulated_front": {
+          "count": 10,
+          "detected": 3,
+          "detection_rate": 0.3,
+          "mean_score": 0.5428479209542274,
+          "min_score": 0.5116809904575348,
+          "max_score": 0.5728396475315094
+        },
+        "scratch_head": {
+          "count": 10,
+          "detected": 7,
+          "detection_rate": 0.7,
+          "mean_score": 0.568769833445549,
+          "min_score": 0.5376905500888824,
+          "max_score": 0.6024127304553986
+        },
+        "scratch_neck": {
+          "count": 10,
+          "detected": 9,
+          "detection_rate": 0.9,
+          "mean_score": 0.5996026143431663,
+          "min_score": 0.549823671579361,
+          "max_score": 0.6794984936714172
+        },
+        "thread_side": {
+          "count": 10,
+          "detected": 3,
+          "detection_rate": 0.3,
+          "mean_score": 0.55636096149683,
+          "min_score": 0.5359908491373062,
+          "max_score": 0.5910376012325287
+        },
+        "thread_top": {
+          "count": 10,
+          "detected": 9,
+          "detection_rate": 0.9,
+          "mean_score": 0.5977247297763825,
+          "min_score": 0.5563135743141174,
+          "max_score": 0.689873993396759
+        }
+      },
+      "reference_bank": {
+        "L4_shape": [
+          128000,
+          40
+        ],
+        "L8_shape": [
+          128000,
+          48
+        ]
+      }
+    },
+    "448": {
+      "resolution": 448,
+      "reference_images": 320,
+      "normal_images": 20,
+      "threshold": 0.6335238540172576,
+      "normal": {
+        "mean_score": 0.5828758969902992,
+        "median_score": 0.5808077901601791,
+        "p95_score": 0.6165870845317841,
+        "max_score": 0.6377580463886261,
+        "false_positives": 1,
+        "false_positive_rate": 0.05
+      },
+      "defects": {
+        "manipulated_front": {
+          "count": 10,
+          "detected": 1,
+          "detection_rate": 0.1,
+          "mean_score": 0.5901256933808326,
+          "min_score": 0.5567343384027481,
+          "max_score": 0.6410297155380249
+        },
+        "scratch_head": {
+          "count": 10,
+          "detected": 9,
+          "detection_rate": 0.9,
+          "mean_score": 0.6527194261550904,
+          "min_score": 0.6136112213134766,
+          "max_score": 0.7015626728534698
+        },
+        "scratch_neck": {
+          "count": 10,
+          "detected": 5,
+          "detection_rate": 0.5,
+          "mean_score": 0.6366098672151566,
+          "min_score": 0.5841761529445648,
+          "max_score": 0.6996319591999054
+        },
+        "thread_side": {
+          "count": 10,
+          "detected": 2,
+          "detection_rate": 0.2,
+          "mean_score": 0.6001005128026009,
+          "min_score": 0.5568853318691254,
+          "max_score": 0.6426607370376587
+        },
+        "thread_top": {
+          "count": 10,
+          "detected": 7,
+          "detection_rate": 0.7,
+          "mean_score": 0.6588260620832443,
+          "min_score": 0.6051767468452454,
+          "max_score": 0.7194167673587799
+        }
+      },
+      "reference_bank": {
+        "L4_shape": [
+          250880,
+          40
+        ],
+        "L8_shape": [
+          250880,
+          48
+        ]
+      }
+    }
+  }
+}

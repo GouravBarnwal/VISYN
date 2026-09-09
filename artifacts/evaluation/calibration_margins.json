@@ -1,0 +1,248 @@
+{
+  "threshold_policy": "P99.0",
+  "score_aggregation": "TOP5",
+  "source": "artifacts\\evaluation\\mobilenet_l8_dev_scores.json",
+  "final_defect_set_used": false,
+  "categories": {
+    "bottle": {
+      "threshold": 0.11158741138875483,
+      "minimum_margin": 0.47116493560373784,
+      "weakest_defect_score": 0.5827523469924927,
+      "weakest_defect_type": "contamination",
+      "weakest_path": "bottle\\test\\contamination\\019.png",
+      "mean_margin": 0.7694917028637667,
+      "closest_five": [
+        {
+          "path": "bottle\\test\\contamination\\019.png",
+          "defect_type": "contamination",
+          "score": 0.5827523469924927,
+          "margin": 0.47116493560373784
+        },
+        {
+          "path": "bottle\\test\\contamination\\012.png",
+          "defect_type": "contamination",
+          "score": 0.633996307849884,
+          "margin": 0.5224088964611292
+        },
+        {
+          "path": "bottle\\test\\contamination\\002.png",
+          "defect_type": "contamination",
+          "score": 0.7198904752731323,
+          "margin": 0.6083030638843775
+        },
+        {
+          "path": "bottle\\test\\broken_small\\015.png",
+          "defect_type": "broken_small",
+          "score": 0.7457610368728638,
+          "margin": 0.6341736254841089
+        },
+        {
+          "path": "bottle\\test\\broken_small\\011.png",
+          "defect_type": "broken_small",
+          "score": 0.7846469283103943,
+          "margin": 0.6730595169216395
+        }
+      ]
+    },
+    "hazelnut": {
+      "threshold": 0.28279238045215604,
+      "minimum_margin": 0.4238423198461533,
+      "weakest_defect_score": 0.7066347002983093,
+      "weakest_defect_type": "cut",
+      "weakest_path": "hazelnut\\test\\cut\\014.png",
+      "mean_margin": 0.5258752793073654,
+      "closest_five": [
+        {
+          "path": "hazelnut\\test\\cut\\014.png",
+          "defect_type": "cut",
+          "score": 0.7066347002983093,
+          "margin": 0.4238423198461533
+        },
+        {
+          "path": "hazelnut\\test\\hole\\015.png",
+          "defect_type": "hole",
+          "score": 0.7198243737220764,
+          "margin": 0.43703199326992037
+        },
+        {
+          "path": "hazelnut\\test\\hole\\001.png",
+          "defect_type": "hole",
+          "score": 0.7233724594116211,
+          "margin": 0.44058007895946505
+        },
+        {
+          "path": "hazelnut\\test\\hole\\008.png",
+          "defect_type": "hole",
+          "score": 0.7234286069869995,
+          "margin": 0.44063622653484347
+        },
+        {
+          "path": "hazelnut\\test\\hole\\002.png",
+          "defect_type": "hole",
+          "score": 0.7483776807785034,
+          "margin": 0.4655853003263474
+        }
+      ]
+    },
+    "cable": {
+      "threshold": 0.2499224865436554,
+      "minimum_margin": 0.41424575209617615,
+      "weakest_defect_score": 0.6641682386398315,
+      "weakest_defect_type": "missing_wire",
+      "weakest_path": "cable\\test\\missing_wire\\000.png",
+      "mean_margin": 0.5447007175286609,
+      "closest_five": [
+        {
+          "path": "cable\\test\\missing_wire\\000.png",
+          "defect_type": "missing_wire",
+          "score": 0.6641682386398315,
+          "margin": 0.41424575209617615
+        },
+        {
+          "path": "cable\\test\\missing_wire\\007.png",
+          "defect_type": "missing_wire",
+          "score": 0.6694520711898804,
+          "margin": 0.419529584646225
+        },
+        {
+          "path": "cable\\test\\missing_wire\\006.png",
+          "defect_type": "missing_wire",
+          "score": 0.6705049276351929,
+          "margin": 0.4205824410915375
+        },
+        {
+          "path": "cable\\test\\cable_swap\\006.png",
+          "defect_type": "cable_swap",
+          "score": 0.679435133934021,
+          "margin": 0.4295126473903656
+        },
+        {
+          "path": "cable\\test\\cable_swap\\005.png",
+          "defect_type": "cable_swap",
+          "score": 0.6802552938461304,
+          "margin": 0.430332807302475
+        }
+      ]
+    },
+    "capsule": {
+      "threshold": 0.1279035346210003,
+      "minimum_margin": 0.20683975651860237,
+      "weakest_defect_score": 0.33474329113960266,
+      "weakest_defect_type": "crack",
+      "weakest_path": "capsule\\test\\crack\\022.png",
+      "mean_margin": 0.38894657868540505,
+      "closest_five": [
+        {
+          "path": "capsule\\test\\crack\\022.png",
+          "defect_type": "crack",
+          "score": 0.33474329113960266,
+          "margin": 0.20683975651860237
+        },
+        {
+          "path": "capsule\\test\\faulty_imprint\\003.png",
+          "defect_type": "faulty_imprint",
+          "score": 0.3562801480293274,
+          "margin": 0.2283766134083271
+        },
+        {
+          "path": "capsule\\test\\faulty_imprint\\006.png",
+          "defect_type": "faulty_imprint",
+          "score": 0.3684977889060974,
+          "margin": 0.24059425428509712
+        },
+        {
+          "path": "capsule\\test\\scratch\\009.png",
+          "defect_type": "scratch",
+          "score": 0.3730577528476715,
+          "margin": 0.24515421822667122
+        },
+        {
+          "path": "capsule\\test\\crack\\005.png",
+          "defect_type": "crack",
+          "score": 0.37321847677230835,
+          "margin": 0.24531494215130806
+        }
+      ]
+    },
+    "screw": {
+      "threshold": 0.21168590649962424,
+      "minimum_margin": 0.2870832873880863,
+      "weakest_defect_score": 0.49876919388771057,
+      "weakest_defect_type": "scratch_head",
+      "weakest_path": "screw\\test\\scratch_head\\002.png",
+      "mean_margin": 0.3643678346635964,
+      "closest_five": [
+        {
+          "path": "screw\\test\\scratch_head\\002.png",
+          "defect_type": "scratch_head",
+          "score": 0.49876919388771057,
+          "margin": 0.2870832873880863
+        },
+        {
+          "path": "screw\\test\\thread_side\\019.png",
+          "defect_type": "thread_side",
+          "score": 0.5012534260749817,
+          "margin": 0.2895675195753574
+        },
+        {
+          "path": "screw\\test\\scratch_head\\023.png",
+          "defect_type": "scratch_head",
+          "score": 0.5017951726913452,
+          "margin": 0.29010926619172095
+        },
+        {
+          "path": "screw\\test\\thread_side\\014.png",
+          "defect_type": "thread_side",
+          "score": 0.5181812047958374,
+          "margin": 0.30649529829621314
+        },
+        {
+          "path": "screw\\test\\thread_top\\016.png",
+          "defect_type": "thread_top",
+          "score": 0.5233612060546875,
+          "margin": 0.31167529955506323
+        }
+      ]
+    },
+    "metal_nut": {
+      "threshold": 0.2734225884079933,
+      "minimum_margin": 0.4199149712920189,
+      "weakest_defect_score": 0.6933375597000122,
+      "weakest_defect_type": "bent",
+      "weakest_path": "metal_nut\\test\\bent\\021.png",
+      "mean_margin": 0.5343282022409973,
+      "closest_five": [
+        {
+          "path": "metal_nut\\test\\bent\\021.png",
+          "defect_type": "bent",
+          "score": 0.6933375597000122,
+          "margin": 0.4199149712920189
+        },
+        {
+          "path": "metal_nut\\test\\scratch\\000.png",
+          "defect_type": "scratch",
+          "score": 0.7054140567779541,
+          "margin": 0.4319914683699608
+        },
+        {
+          "path": "metal_nut\\test\\color\\004.png",
+          "defect_type": "color",
+          "score": 0.7205058932304382,
+          "margin": 0.4470833048224449
+        },
+        {
+          "path": "metal_nut\\test\\scratch\\020.png",
+          "defect_type": "scratch",
+          "score": 0.7325877547264099,
+          "margin": 0.4591651663184166
+        },
+        {
+          "path": "metal_nut\\test\\bent\\015.png",
+          "defect_type": "bent",
+          "score": 0.7520452737808228,
+          "margin": 0.4786226853728294
+        }
+      ]
+    }
+  }
+}
