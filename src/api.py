@@ -4,6 +4,7 @@ from tempfile import NamedTemporaryFile
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from matplotlib import category
 from pydantic import BaseModel
 
 from src.production_inference import ProductionInferenceEngine
@@ -108,7 +109,7 @@ def health():
     return {
         "status": "healthy",
         "engine_loaded": True,
-        "categories": sorted(engine.reference_banks.keys()),
+        "categories": sorted(engine.reference_bank_paths.keys()),
     }
 
 
@@ -126,16 +127,11 @@ async def inspect(
             detail="Production engine is not loaded.",
         )
 
-    if category not in engine.reference_banks:
+    if category not in engine.reference_bank_paths:
         raise HTTPException(
             status_code=400,
-            detail=(
-                f"Unsupported category: {category}. "
-                f"Supported categories: "
-                f"{sorted(engine.reference_banks.keys())}"
-            ),
+            detail=f"Unsupported category: {category}. Supported categories: {sorted(engine.reference_bank_paths.keys())}",
         )
-
     if not file.filename:
         raise HTTPException(
             status_code=400,

@@ -1,4 +1,5 @@
 from pathlib import Path
+import gc
 import json
 
 import numpy as np
@@ -24,22 +25,25 @@ from src.production_config import (
 
 REFERENCE_BANK_ROOT = ARTIFACTS_ROOT / "production" / "reference_banks"
 
-
-REFERENCE_BANK_MANIFEST = ARTIFACTS_ROOT / "production" / "reference_bank_manifest.json"
+REFERENCE_BANK_MANIFEST = (
+    ARTIFACTS_ROOT / "production" / "reference_bank_manifest.json"
+)
 
 
 class ProductionInferenceEngine:
     """
     VISYN production inference engine.
 
-    The model, reference banks, and calibrated thresholds
-    are loaded once during initialization.
+    Memory-optimized deployment architecture:
 
-    Supported modes:
-        - single-image inspection
-        - batched inspection
+        - MobileNet model loaded once.
+        - Thresholds loaded once.
+        - Reference-bank metadata loaded once.
+        - Only the currently requested category's L4/L8
+          reference banks are kept in memory.
 
-    Production scoring:
+    Production scoring remains unchanged:
+
         MobileNetV3-Small L4 + L8
         normalized patch features
         Euclidean-equivalent distance
@@ -53,15 +57,26 @@ class ProductionInferenceEngine:
         device=None,
     ):
         self.device = (
-            torch.device(device) if device is not None else torch.device("cpu")
+            torch.device(device)
+            if device is not None
+            else torch.device("cpu")
         )
 
+        # Only the currently loaded category lives here.
         self.reference_banks = {}
+
+        # Paths and shapes for all categories remain lightweight metadata.
+        self.reference_bank_paths = {}
+
+        self.reference_bank_shapes = {}
+
         self.thresholds = {}
+
+        self.active_category = None
 
         self.model = self._load_model()
 
-        self._load_reference_banks()
+        self._load_reference_bank_metadata()
         self._load_thresholds()
 
         self._validate_configuration()
@@ -89,7 +104,9 @@ class ProductionInferenceEngine:
     @staticmethod
     def _load_json(path):
         if not path.exists():
-            raise FileNotFoundError(f"Required artifact not found: {path}")
+            raise FileNotFoundError(
+                f"Required artifact not found: {path}"
+            )
 
         with open(
             path,
@@ -99,15 +116,23 @@ class ProductionInferenceEngine:
             return json.load(f)
 
     # ========================================================
-    # REFERENCE BANKS
+    # REFERENCE-BANK METADATA
     # ========================================================
 
-    def _load_reference_banks(self):
-        manifest = self._load_json(REFERENCE_BANK_MANIFEST)
+    def _load_reference_bank_metadata(self):
+        """
+        Validate and register all reference-bank files without
+        loading their contents into RAM.
+        """
+
+        manifest = self._load_json(
+            REFERENCE_BANK_MANIFEST
+        )
 
         if manifest.get("model") != "MobileNetV3-Small":
             raise RuntimeError(
-                "Reference-bank model does not match " "the production model."
+                "Reference-bank model does not match "
+                "the production model."
             )
 
         feature_layers = manifest.get(
@@ -116,84 +141,16 @@ class ProductionInferenceEngine:
         )
 
         if feature_layers.get("L4", {}).get("layer_index") != 4:
-            raise RuntimeError("Reference-bank L4 configuration mismatch.")
+            raise RuntimeError(
+                "Reference-bank L4 configuration mismatch."
+            )
 
         if feature_layers.get("L8", {}).get("layer_index") != 8:
-            raise RuntimeError("Reference-bank L8 configuration mismatch.")
+            raise RuntimeError(
+                "Reference-bank L8 configuration mismatch."
+            )
 
-        for category in CATEGORIES:
-            category_data = manifest["categories"].get(category)
-
-            if category_data is None:
-                raise RuntimeError(f"Missing manifest entry for " f"{category}.")
-
-            l4_path = REFERENCE_BANK_ROOT / category / "L4.npy"
-
-            l8_path = REFERENCE_BANK_ROOT / category / "L8.npy"
-
-            if not l4_path.exists():
-                raise FileNotFoundError(f"Missing L4 bank: {l4_path}")
-
-            if not l8_path.exists():
-                raise FileNotFoundError(f"Missing L8 bank: {l8_path}")
-
-            l4 = np.load(
-                l4_path,
-            ).copy()
-
-            l8 = np.load(
-                l8_path,
-            ).copy()
-
-            expected_l4_shape = tuple(category_data["l4_shape"])
-
-            expected_l8_shape = tuple(category_data["l8_shape"])
-
-            if l4.shape != expected_l4_shape:
-                raise RuntimeError(
-                    f"{category}: L4 bank shape "
-                    f"mismatch. "
-                    f"Expected {expected_l4_shape}, "
-                    f"got {l4.shape}."
-                )
-
-            if l8.shape != expected_l8_shape:
-                raise RuntimeError(
-                    f"{category}: L8 bank shape "
-                    f"mismatch. "
-                    f"Expected {expected_l8_shape}, "
-                    f"got {l8.shape}."
-                )
-
-            if l4.shape[1] != 40:
-                raise RuntimeError(f"{category}: invalid L4 " "feature dimension.")
-
-            if l8.shape[1] != 48:
-                raise RuntimeError(f"{category}: invalid L8 " "feature dimension.")
-
-            # Convert once at startup.
-            #
-            # The arrays are already float32 normalized
-            # production artifacts.
-            l4_tensor = torch.from_numpy(np.asarray(l4)).to(self.device)
-
-            l8_tensor = torch.from_numpy(np.asarray(l8)).to(self.device)
-
-            self.reference_banks[category] = {
-                "L4": l4_tensor,
-                "L8": l8_tensor,
-            }
-
-    # ========================================================
-    # THRESHOLDS
-    # ========================================================
-
-    def _load_thresholds(self):
-        calibration_path = ARTIFACTS_ROOT / "evaluation" / "production_thresholds.json"
-
-        calibration = self._load_json(calibration_path)
-
-        categories = calibration.get(
+        categories = manifest.get(
             "categories",
             {},
         )
@@ -202,61 +159,283 @@ class ProductionInferenceEngine:
             category_data = categories.get(category)
 
             if category_data is None:
-                raise RuntimeError(f"Missing production threshold " f"for {category}.")
+                raise RuntimeError(
+                    f"Missing manifest entry for {category}."
+                )
+
+            l4_path = (
+                REFERENCE_BANK_ROOT
+                / category
+                / "L4.npy"
+            )
+
+            l8_path = (
+                REFERENCE_BANK_ROOT
+                / category
+                / "L8.npy"
+            )
+
+            if not l4_path.exists():
+                raise FileNotFoundError(
+                    f"Missing L4 bank: {l4_path}"
+                )
+
+            if not l8_path.exists():
+                raise FileNotFoundError(
+                    f"Missing L8 bank: {l8_path}"
+                )
+
+            expected_l4_shape = tuple(
+                category_data["l4_shape"]
+            )
+
+            expected_l8_shape = tuple(
+                category_data["l8_shape"]
+            )
+
+            if len(expected_l4_shape) != 2:
+                raise RuntimeError(
+                    f"{category}: invalid L4 shape "
+                    f"{expected_l4_shape}."
+                )
+
+            if len(expected_l8_shape) != 2:
+                raise RuntimeError(
+                    f"{category}: invalid L8 shape "
+                    f"{expected_l8_shape}."
+                )
+
+            if expected_l4_shape[1] != 40:
+                raise RuntimeError(
+                    f"{category}: invalid L4 "
+                    "feature dimension."
+                )
+
+            if expected_l8_shape[1] != 48:
+                raise RuntimeError(
+                    f"{category}: invalid L8 "
+                    "feature dimension."
+                )
+
+            self.reference_bank_paths[category] = {
+                "L4": l4_path,
+                "L8": l8_path,
+            }
+
+            self.reference_bank_shapes[category] = {
+                "L4": expected_l4_shape,
+                "L8": expected_l8_shape,
+            }
+
+    # ========================================================
+    # LAZY REFERENCE-BANK LOADING
+    # ========================================================
+
+    def _release_reference_bank(self):
+        """
+        Release the currently loaded category from memory.
+        """
+
+        self.reference_banks.clear()
+        self.active_category = None
+
+        gc.collect()
+
+    def _load_category_bank(self, category):
+        """
+        Load only one category's L4/L8 reference banks.
+
+        If another category is currently loaded, release it first.
+        """
+
+        if category not in CATEGORIES:
+            raise ValueError(
+                f"Unsupported category: {category}"
+            )
+
+        if self.active_category == category:
+            return
+
+        self._release_reference_bank()
+
+        paths = self.reference_bank_paths[category]
+
+        expected_shapes = self.reference_bank_shapes[
+            category
+        ]
+
+        # Load L4.
+        l4 = np.load(
+            paths["L4"],
+        )
+
+        if l4.shape != expected_shapes["L4"]:
+            raise RuntimeError(
+                f"{category}: L4 bank shape mismatch. "
+                f"Expected {expected_shapes['L4']}, "
+                f"got {l4.shape}."
+            )
+
+        # Load L8.
+        l8 = np.load(
+            paths["L8"],
+        )
+
+        if l8.shape != expected_shapes["L8"]:
+            raise RuntimeError(
+                f"{category}: L8 bank shape mismatch. "
+                f"Expected {expected_shapes['L8']}, "
+                f"got {l8.shape}."
+            )
+
+        # Convert the selected category only.
+        l4_tensor = torch.from_numpy(
+            np.asarray(l4)
+        ).to(self.device)
+
+        l8_tensor = torch.from_numpy(
+            np.asarray(l8)
+        ).to(self.device)
+
+        self.reference_banks[category] = {
+            "L4": l4_tensor,
+            "L8": l8_tensor,
+        }
+
+        self.active_category = category
+
+    def get_reference_bank(self, category):
+        """
+        Return the selected category's production bank.
+
+        This is the public access point used by inference
+        and localization.
+        """
+
+        self._load_category_bank(category)
+
+        return self.reference_banks[category]
+
+    # ========================================================
+    # THRESHOLDS
+    # ========================================================
+
+    def _load_thresholds(self):
+        calibration_path = (
+            ARTIFACTS_ROOT
+            / "evaluation"
+            / "production_thresholds.json"
+        )
+
+        calibration = self._load_json(
+            calibration_path
+        )
+
+        categories = calibration.get(
+            "categories",
+            {},
+        )
+
+        for category in CATEGORIES:
+            category_data = categories.get(
+                category
+            )
+
+            if category_data is None:
+                raise RuntimeError(
+                    f"Missing production threshold "
+                    f"for {category}."
+                )
 
             if "threshold" in category_data:
                 threshold = category_data["threshold"]
 
             elif "p99_threshold" in category_data:
-                threshold = category_data["p99_threshold"]
+                threshold = category_data[
+                    "p99_threshold"
+                ]
 
             elif "percentile_candidates" in category_data:
                 threshold = None
 
-                for candidate in category_data["percentile_candidates"]:
-                    if float(candidate["percentile"]) == 99.0:
-                        threshold = candidate["threshold"]
+                for candidate in category_data[
+                    "percentile_candidates"
+                ]:
+                    if (
+                        float(candidate["percentile"])
+                        == 99.0
+                    ):
+                        threshold = candidate[
+                            "threshold"
+                        ]
                         break
 
                 if threshold is None:
-                    raise RuntimeError(f"P99 threshold not found " f"for {category}.")
+                    raise RuntimeError(
+                        f"P99 threshold not found "
+                        f"for {category}."
+                    )
 
             else:
-                raise RuntimeError(f"No usable threshold found " f"for {category}.")
+                raise RuntimeError(
+                    f"No usable threshold found "
+                    f"for {category}."
+                )
 
-            self.thresholds[category] = float(threshold)
+            self.thresholds[category] = float(
+                threshold
+            )
 
     # ========================================================
     # CONFIGURATION VALIDATION
     # ========================================================
 
     def _validate_configuration(self):
-        missing_banks = [
-            category for category in CATEGORIES if category not in self.reference_banks
+        missing_paths = [
+            category
+            for category in CATEGORIES
+            if category not in self.reference_bank_paths
         ]
 
-        if missing_banks:
+        if missing_paths:
             raise RuntimeError(
-                "Missing reference banks for: " + ", ".join(missing_banks)
+                "Missing reference banks for: "
+                + ", ".join(missing_paths)
             )
 
         missing_thresholds = [
-            category for category in CATEGORIES if category not in self.thresholds
+            category
+            for category in CATEGORIES
+            if category not in self.thresholds
         ]
 
         if missing_thresholds:
             raise RuntimeError(
-                "Missing thresholds for: " + ", ".join(missing_thresholds)
+                "Missing thresholds for: "
+                + ", ".join(missing_thresholds)
             )
 
         if not 0.0 <= FUSION_WEIGHT_L4 <= 1.0:
-            raise RuntimeError("Invalid L4 fusion weight.")
+            raise RuntimeError(
+                "Invalid L4 fusion weight."
+            )
 
         if not 0.0 <= FUSION_WEIGHT_L8 <= 1.0:
-            raise RuntimeError("Invalid L8 fusion weight.")
+            raise RuntimeError(
+                "Invalid L8 fusion weight."
+            )
 
-        if abs(FUSION_WEIGHT_L4 + FUSION_WEIGHT_L8 - 1.0) > SCORE_EQUIVALENCE_TOLERANCE:
-            raise RuntimeError("Fusion weights must sum to 1.")
+        if (
+            abs(
+                FUSION_WEIGHT_L4
+                + FUSION_WEIGHT_L8
+                - 1.0
+            )
+            > SCORE_EQUIVALENCE_TOLERANCE
+        ):
+            raise RuntimeError(
+                "Fusion weights must sum to 1."
+            )
 
     # ========================================================
     # FEATURE EXTRACTION
@@ -276,7 +455,9 @@ class ProductionInferenceEngine:
         l4 = None
         l8 = None
 
-        for index, layer in enumerate(self.model.features):
+        for index, layer in enumerate(
+            self.model.features
+        ):
             x = layer(x)
 
             if index == 4:
@@ -286,17 +467,29 @@ class ProductionInferenceEngine:
                 l8 = x
 
         if l4 is None or l8 is None:
-            raise RuntimeError("Failed to capture L4/L8 features.")
+            raise RuntimeError(
+                "Failed to capture L4/L8 features."
+            )
 
         batch_size = l4.shape[0]
 
-        l4 = l4.permute(0, 2, 3, 1).reshape(
+        l4 = l4.permute(
+            0,
+            2,
+            3,
+            1,
+        ).reshape(
             batch_size,
             -1,
             l4.shape[1],
         )
 
-        l8 = l8.permute(0, 2, 3, 1).reshape(
+        l8 = l8.permute(
+            0,
+            2,
+            3,
+            1,
+        ).reshape(
             batch_size,
             -1,
             l8.shape[1],
@@ -345,28 +538,41 @@ class ProductionInferenceEngine:
                 num_references,
             )
 
-            reference_chunk = reference_bank[start:end]
+            reference_chunk = reference_bank[
+                start:end
+            ]
 
-            similarity = query @ reference_chunk.T
+            similarity = (
+                query @ reference_chunk.T
+            )
 
-            chunk_best = similarity.max(dim=1).values
+            chunk_best = similarity.max(
+                dim=1
+            ).values
 
             best_similarity = torch.maximum(
                 best_similarity,
                 chunk_best,
             )
 
-        squared_distance = 2.0 - 2.0 * best_similarity
+        squared_distance = (
+            2.0 - 2.0 * best_similarity
+        )
 
         squared_distance = torch.clamp(
             squared_distance,
             min=0.0,
         )
 
-        distances = torch.sqrt(squared_distance)
+        distances = torch.sqrt(
+            squared_distance
+        )
 
         if distances.shape[0] < TOP_K:
-            raise RuntimeError("Reference bank contains fewer " "than TOP_K distances.")
+            raise RuntimeError(
+                "Reference bank contains fewer "
+                "than TOP_K distances."
+            )
 
         topk = torch.topk(
             distances,
@@ -385,7 +591,9 @@ class ProductionInferenceEngine:
         score,
         threshold,
     ):
-        review_threshold = threshold * REVIEW_MULTIPLIER
+        review_threshold = (
+            threshold * REVIEW_MULTIPLIER
+        )
 
         if score < threshold:
             decision = "PASS"
@@ -409,22 +617,34 @@ class ProductionInferenceEngine:
         category,
     ):
         if category not in CATEGORIES:
-            raise ValueError(f"Unsupported category: " f"{category}")
+            raise ValueError(
+                f"Unsupported category: {category}"
+            )
 
         if not image_paths:
-            raise ValueError("image_paths cannot be empty.")
+            raise ValueError(
+                "image_paths cannot be empty."
+            )
 
-        l4_queries, l8_queries = self.extract_features(image_paths)
+        # Load ONLY the requested category.
+        reference_bank = self.get_reference_bank(
+            category
+        )
 
-        l4_bank = self.reference_banks[category]["L4"]
+        l4_queries, l8_queries = (
+            self.extract_features(image_paths)
+        )
 
-        l8_bank = self.reference_banks[category]["L8"]
+        l4_bank = reference_bank["L4"]
+        l8_bank = reference_bank["L8"]
 
         threshold = self.thresholds[category]
 
         results = []
 
-        for index, image_path in enumerate(image_paths):
+        for index, image_path in enumerate(
+            image_paths
+        ):
             l4_score = self._score_chunked(
                 l4_queries[index],
                 l4_bank,
@@ -435,24 +655,41 @@ class ProductionInferenceEngine:
                 l8_bank,
             )
 
-            fusion_score = FUSION_WEIGHT_L4 * l4_score + FUSION_WEIGHT_L8 * l8_score
+            fusion_score = (
+                FUSION_WEIGHT_L4 * l4_score
+                + FUSION_WEIGHT_L8 * l8_score
+            )
 
-            score = float(fusion_score.item())
+            score = float(
+                fusion_score.item()
+            )
 
-            decision, review_threshold = self._classify(
-                score,
-                threshold,
+            decision, review_threshold = (
+                self._classify(
+                    score,
+                    threshold,
+                )
             )
 
             results.append(
                 {
-                    "image_path": str(Path(image_path)),
+                    "image_path": str(
+                        Path(image_path)
+                    ),
                     "category": category,
-                    "l4_score": float(l4_score.item()),
-                    "l8_score": float(l8_score.item()),
+                    "l4_score": float(
+                        l4_score.item()
+                    ),
+                    "l8_score": float(
+                        l8_score.item()
+                    ),
                     "anomaly_score": score,
-                    "threshold": float(threshold),
-                    "review_threshold": float(review_threshold),
+                    "threshold": float(
+                        threshold
+                    ),
+                    "review_threshold": float(
+                        review_threshold
+                    ),
                     "decision": decision,
                 }
             )

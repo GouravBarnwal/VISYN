@@ -431,14 +431,25 @@ class ProductionLocalizer:
         # Reference banks
         # --------------------------------------------------------
 
-        l4_bank = self.engine.reference_banks[category]["L4"].detach().cpu().numpy()
+        reference_bank = self.engine.get_reference_bank(category)
 
-        l8_bank = self.engine.reference_banks[category]["L8"].detach().cpu().numpy()
+        l4_bank = (
+            reference_bank["L4"]
+            .detach()
+            .cpu()
+            .numpy()
+        )
+
+        l8_bank = (
+            reference_bank["L8"]
+            .detach()
+            .cpu()
+            .numpy()
+        )
 
         # --------------------------------------------------------
         # Patch-level anomaly distances
         # --------------------------------------------------------
-
         l4_patch_scores = _nearest_patch_distances(
             l4_queries[0].detach().cpu().numpy(),
             l4_bank,
