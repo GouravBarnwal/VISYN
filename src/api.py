@@ -1,16 +1,22 @@
 from contextlib import asynccontextmanager
+from io import BytesIO
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from PIL import Image
 from pydantic import BaseModel
 
 from src.production_inference import ProductionInferenceEngine
 from src.production_localization import ProductionLocalizer
 
+
 engine = None
 localizer = None
+
+MAX_IMAGE_PIXELS = 50_000_000
+WARNING_IMAGE_PIXELS = 25_000_000
 
 
 class InspectionResponse(BaseModel):
@@ -66,6 +72,7 @@ async def lifespan(app: FastAPI):
     global localizer
 
     print("Loading VISYN production engine...")
+
     engine = ProductionInferenceEngine()
     localizer = ProductionLocalizer(engine)
 
@@ -85,6 +92,8 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -131,8 +140,13 @@ async def inspect(
     if category not in engine.reference_bank_paths:
         raise HTTPException(
             status_code=400,
-            detail=f"Unsupported category: {category}. Supported categories: {sorted(engine.reference_bank_paths.keys())}",
+            detail=(
+                f"Unsupported category: {category}. "
+                f"Supported categories: "
+                f"{sorted(engine.reference_bank_paths.keys())}"
+            ),
         )
+
     if not file.filename:
         raise HTTPException(
             status_code=400,
@@ -148,7 +162,7 @@ async def inspect(
     if file.content_type not in allowed_types:
         raise HTTPException(
             status_code=400,
-            detail=("Unsupported image type. " "Use JPEG, PNG, or WebP."),
+            detail="Unsupported image type. Use JPEG, PNG, or WebP.",
         )
 
     suffix = Path(file.filename).suffix.lower()
@@ -170,6 +184,29 @@ async def inspect(
         raise HTTPException(
             status_code=400,
             detail="Uploaded file is empty.",
+        )
+
+    try:
+        with Image.open(BytesIO(contents)) as image:
+            width, height = image.size
+            pixel_count = width * height
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=400,
+            detail="Unable to decode the uploaded image.",
+        ) from exc
+
+    if pixel_count > MAX_IMAGE_PIXELS:
+        megapixels = pixel_count / 1_000_000
+
+        raise HTTPException(
+            status_code=413,
+            detail=(
+                "Image is too large. Maximum supported size is "
+                f"50 megapixels. This image is {megapixels:.1f} "
+                "megapixels."
+            ),
         )
 
     temporary_path = None
@@ -203,10 +240,10 @@ async def inspect(
         )
 
         bounding_box = localization_result.get("bounding_box")
-
         center = localization_result.get("center")
-
-        region_statistics = localization_result.get("region_statistics")
+        region_statistics = localization_result.get(
+            "region_statistics"
+        )
 
         localization = LocalizationResponse(
             method=localization_result["method"],
