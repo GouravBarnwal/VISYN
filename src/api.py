@@ -3,11 +3,11 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src.production_inference import ProductionInferenceEngine
 from src.production_localization import ProductionLocalizer
-
 
 engine = None
 localizer = None
@@ -85,6 +85,16 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
@@ -98,9 +108,7 @@ def health():
     return {
         "status": "healthy",
         "engine_loaded": True,
-        "categories": sorted(
-            engine.reference_banks.keys()
-        ),
+        "categories": sorted(engine.reference_banks.keys()),
     }
 
 
@@ -143,10 +151,7 @@ async def inspect(
     if file.content_type not in allowed_types:
         raise HTTPException(
             status_code=400,
-            detail=(
-                "Unsupported image type. "
-                "Use JPEG, PNG, or WebP."
-            ),
+            detail=("Unsupported image type. " "Use JPEG, PNG, or WebP."),
         )
 
     suffix = Path(file.filename).suffix.lower()
@@ -178,9 +183,7 @@ async def inspect(
             suffix=suffix,
         ) as temporary_file:
             temporary_file.write(contents)
-            temporary_path = Path(
-                temporary_file.name
-            )
+            temporary_path = Path(temporary_file.name)
 
         raw_result = engine.inspect(
             category=category,
@@ -198,23 +201,15 @@ async def inspect(
             l8_score=raw_result["l8_score"],
             anomaly_score=raw_result["anomaly_score"],
             threshold=raw_result["threshold"],
-            review_threshold=raw_result[
-                "review_threshold"
-            ],
+            review_threshold=raw_result["review_threshold"],
             decision=raw_result["decision"],
         )
 
-        bounding_box = localization_result.get(
-            "bounding_box"
-        )
+        bounding_box = localization_result.get("bounding_box")
 
-        center = localization_result.get(
-            "center"
-        )
+        center = localization_result.get("center")
 
-        region_statistics = localization_result.get(
-            "region_statistics"
-        )
+        region_statistics = localization_result.get("region_statistics")
 
         localization = LocalizationResponse(
             method=localization_result["method"],
@@ -242,18 +237,10 @@ async def inspect(
             ),
             region_statistics=(
                 RegionStatisticsResponse(
-                    pixel_count=region_statistics[
-                        "pixel_count"
-                    ],
-                    mean_anomaly=region_statistics[
-                        "mean_anomaly"
-                    ],
-                    max_anomaly=region_statistics[
-                        "max_anomaly"
-                    ],
-                    min_anomaly=region_statistics[
-                        "min_anomaly"
-                    ],
+                    pixel_count=region_statistics["pixel_count"],
+                    mean_anomaly=region_statistics["mean_anomaly"],
+                    max_anomaly=region_statistics["max_anomaly"],
+                    min_anomaly=region_statistics["min_anomaly"],
                 )
                 if region_statistics is not None
                 else None
@@ -278,6 +265,4 @@ async def inspect(
 
     finally:
         if temporary_path is not None:
-            temporary_path.unlink(
-                missing_ok=True
-            )
+            temporary_path.unlink(missing_ok=True)
