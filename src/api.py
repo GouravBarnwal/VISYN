@@ -4,7 +4,6 @@ from tempfile import NamedTemporaryFile
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from matplotlib import category
 from pydantic import BaseModel
 
 from src.production_inference import ProductionInferenceEngine
